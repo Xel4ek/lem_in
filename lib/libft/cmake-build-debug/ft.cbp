@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="ft"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libft">
+				<Option output="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/liblibft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libft/fast">
+				<Option output="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/liblibft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/alexey/projects/push_swap/lib/libft"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 libft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/alexey/projects/push_swap/lib/libft/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/includes/libft.h">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_atoi.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_atoi_base.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_bzero.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_ceil.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_isalnum.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_isalpha.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_isascii.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_isdigit.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_isprint.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_itoa_base.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstadd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstappend.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_collapse.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_del.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_pop_front.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_back.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstd_push_front.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstdelone.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstiter.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstmap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_lstnew.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memalloc.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memccpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memcmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memcpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memjoin.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memmove.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_memset.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_nbrlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putchar.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putchar_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putendl.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putendl_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putnbr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putnbr_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_putstr_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_quick_sort.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_sort_str_table.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strcapitalize.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strcat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strclr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strcmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strcpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strdup.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strequ.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_striter.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_striteri.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strjoin.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strlcat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strmap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strmapi.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strncat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strncmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strncpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strnequ.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strnew.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strnstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strrchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strsplit.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strsub.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_strtrim.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_swap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_tolower.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_toupper.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/ft_upper_bound.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/src/get_next_line.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/push_swap/lib/libft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

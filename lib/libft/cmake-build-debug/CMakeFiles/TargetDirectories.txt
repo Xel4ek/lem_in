@@ -1,0 +1,3 @@
+/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles/libft.dir
+/home/alexey/projects/push_swap/lib/libft/cmake-build-debug/CMakeFiles/edit_cache.dir
