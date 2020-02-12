@@ -16,11 +16,9 @@ void	ft_lstd_pop_front(t_list **head)
 {
 	t_list *ptr;
 
-	ptr = NULL;
 	if (head && *head)
 	{
-		if (!ptr)
-			ptr = *head;
+		ptr = *head;
 		if (ptr != (*head)->next)
 			ptr = (*head)->next;
 		else

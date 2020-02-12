@@ -13,3 +13,25 @@ void ft_split_edge(t_edge **edge)
 		ft_remove_edge(edge);
 	}
 }
+
+void ft_split_all_edges(t_vertex *vertex)
+{
+	size_t edge_count;
+
+	edge_count = ft_lstdlen(vertex->edge_in_list);
+	while (edge_count--)
+	{
+		if((*((t_edge **)vertex->edge_in_list->content))->oriented)
+			vertex->edge_in_list = vertex->edge_in_list->next;
+		ft_split_edge(((t_edge **)vertex->edge_in_list->content));
+	}
+
+	edge_count = ft_lstdlen(vertex->edge_out_list);
+	while (edge_count--)
+	{
+		if((*((t_edge **)vertex->edge_out_list->content))->oriented)
+			vertex->edge_out_list = vertex->edge_out_list->next;
+		ft_split_edge(((t_edge **)vertex->edge_out_list->content));
+	}
+
+}

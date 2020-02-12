@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
+CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lem_in
-
-# Build rule for target.
-lem_in: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lem_in
-.PHONY : lem_in
-
-# fast build rule for target.
-lem_in/fast:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
-.PHONY : lem_in/fast
-
-#=============================================================================
 # Target rules for targets named test_str_len
 
 # Build rule for target.
@@ -135,6 +122,19 @@ test_str_len: cmake_check_build_system
 test_str_len/fast:
 	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
 .PHONY : test_str_len/fast
+
+#=============================================================================
+# Target rules for targets named lem_in
+
+# Build rule for target.
+lem_in: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lem_in
+.PHONY : lem_in
+
+# fast build rule for target.
+lem_in/fast:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
+.PHONY : lem_in/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -229,6 +229,60 @@ src/ft_add_vertex.s: src/ft_add_vertex.c.s
 src/ft_add_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.s
 .PHONY : src/ft_add_vertex.c.s
+
+src/ft_convert_graph.o: src/ft_convert_graph.c.o
+
+.PHONY : src/ft_convert_graph.o
+
+# target to build an object file
+src/ft_convert_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o
+.PHONY : src/ft_convert_graph.c.o
+
+src/ft_convert_graph.i: src/ft_convert_graph.c.i
+
+.PHONY : src/ft_convert_graph.i
+
+# target to preprocess a source file
+src/ft_convert_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.i
+.PHONY : src/ft_convert_graph.c.i
+
+src/ft_convert_graph.s: src/ft_convert_graph.c.s
+
+.PHONY : src/ft_convert_graph.s
+
+# target to generate assembly for a file
+src/ft_convert_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.s
+.PHONY : src/ft_convert_graph.c.s
+
+src/ft_grahp_dfs.o: src/ft_grahp_dfs.c.o
+
+.PHONY : src/ft_grahp_dfs.o
+
+# target to build an object file
+src/ft_grahp_dfs.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o
+.PHONY : src/ft_grahp_dfs.c.o
+
+src/ft_grahp_dfs.i: src/ft_grahp_dfs.c.i
+
+.PHONY : src/ft_grahp_dfs.i
+
+# target to preprocess a source file
+src/ft_grahp_dfs.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.i
+.PHONY : src/ft_grahp_dfs.c.i
+
+src/ft_grahp_dfs.s: src/ft_grahp_dfs.c.s
+
+.PHONY : src/ft_grahp_dfs.s
+
+# target to generate assembly for a file
+src/ft_grahp_dfs.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.s
+.PHONY : src/ft_grahp_dfs.c.s
 
 src/ft_move_edge.o: src/ft_move_edge.c.o
 
@@ -445,6 +499,33 @@ src/ft_print_tools.s: src/ft_print_tools.c.s
 src/ft_print_tools.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.s
 .PHONY : src/ft_print_tools.c.s
+
+src/ft_queue_pop.o: src/ft_queue_pop.c.o
+
+.PHONY : src/ft_queue_pop.o
+
+# target to build an object file
+src/ft_queue_pop.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o
+.PHONY : src/ft_queue_pop.c.o
+
+src/ft_queue_pop.i: src/ft_queue_pop.c.i
+
+.PHONY : src/ft_queue_pop.i
+
+# target to preprocess a source file
+src/ft_queue_pop.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.i
+.PHONY : src/ft_queue_pop.c.i
+
+src/ft_queue_pop.s: src/ft_queue_pop.c.s
+
+.PHONY : src/ft_queue_pop.s
+
+# target to generate assembly for a file
+src/ft_queue_pop.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.s
+.PHONY : src/ft_queue_pop.c.s
 
 src/ft_remove_vertex.o: src/ft_remove_vertex.c.o
 
@@ -668,10 +749,10 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test_str_len"
+	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lem_in"
-	@echo "... rebuild_cache"
-	@echo "... test_str_len"
 	@echo "... libft"
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
@@ -682,6 +763,12 @@ help:
 	@echo "... src/ft_add_vertex.o"
 	@echo "... src/ft_add_vertex.i"
 	@echo "... src/ft_add_vertex.s"
+	@echo "... src/ft_convert_graph.o"
+	@echo "... src/ft_convert_graph.i"
+	@echo "... src/ft_convert_graph.s"
+	@echo "... src/ft_grahp_dfs.o"
+	@echo "... src/ft_grahp_dfs.i"
+	@echo "... src/ft_grahp_dfs.s"
 	@echo "... src/ft_move_edge.o"
 	@echo "... src/ft_move_edge.i"
 	@echo "... src/ft_move_edge.s"
@@ -706,6 +793,9 @@ help:
 	@echo "... src/ft_print_tools.o"
 	@echo "... src/ft_print_tools.i"
 	@echo "... src/ft_print_tools.s"
+	@echo "... src/ft_queue_pop.o"
+	@echo "... src/ft_queue_pop.i"
+	@echo "... src/ft_queue_pop.s"
 	@echo "... src/ft_remove_vertex.o"
 	@echo "... src/ft_remove_vertex.i"
 	@echo "... src/ft_remove_vertex.s"

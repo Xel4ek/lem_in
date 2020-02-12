@@ -9,8 +9,8 @@ void ft_split_vertex(t_graph **graph, t_vertex **vertex)
 
 	if (vertex && *vertex && graph && *graph)
 	{
-		new_vertex_in = ft_new_verex((*vertex)->id + 100, (*vertex)->name);
-		new_vertex_out = ft_new_verex((*vertex)->id + 200, (*vertex)->name);
+		new_vertex_in = ft_new_verex((*vertex)->id , (*vertex)->name);
+		new_vertex_out = ft_new_verex((*vertex)->id + 1, (*vertex)->name);
 		new_vertex_in->edge_in_list = (*vertex)->edge_in_list;
 		new_vertex_in->edge_out_list = NULL;
 		(*vertex)->edge_in_list = NULL;

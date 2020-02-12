@@ -5,6 +5,12 @@
 
 #include <libft_structs.h>
 
+enum e_color{
+	white,
+	grey,
+	black
+};
+
 typedef struct	s_graph
 {
 	t_list*		vertex_list;
@@ -15,6 +21,8 @@ typedef struct	s_vertex
 	int			id;
 	t_list		*edge_in_list;
 	t_list		*edge_out_list;
+	enum e_color	color;
+	struct s_vertex *parrent;
 	char		*name;
 }				t_vertex;
 
@@ -42,6 +50,9 @@ void ft_add_vertex(t_graph *graph, t_vertex *vertex);
 void ft_remove_edge(t_edge **edge);
 void ft_split_edge(t_edge **edge);
 void ft_remove_vertex(t_graph **graph, t_vertex **vertex);
-
+void ft_convert_graph_to_oriented(t_graph **graph);
 void ft_split_vertex(t_graph **graph, t_vertex **vertex);
+void ft_split_all_edges(t_vertex *vertex);
+int ft_graph_dfs(t_graph *graph, int target_id);
+void	*ft_queue_pop(t_list **queue);
 #endif

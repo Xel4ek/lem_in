@@ -16,6 +16,16 @@ CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../src/ft_add_vertex.c
 
+CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../src/ft_convert_graph.c
+
+CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../src/ft_grahp_dfs.c
+
 CMakeFiles/lem_in.dir/src/ft_move_edge.c.o: ../src/ft_move_edge.c
 
 CMakeFiles/lem_in.dir/src/ft_new_edge.c.o: ../includes/lem_in.h
@@ -53,6 +63,11 @@ CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../src/ft_print_tools.c
+
+CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../src/ft_queue_pop.c
 
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../lib/libft/includes/libft.h

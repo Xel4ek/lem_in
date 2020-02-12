@@ -3,7 +3,19 @@
 
 void ft_print_vertex(t_vertex *vertex)
 {
-	ft_printf("{%d, %s}\n", vertex->id, vertex->name);
+	if (vertex->parrent)
+		ft_printf("{%d, %s, parent: %d, color: %d}\n",
+				  vertex->id,
+				  vertex->name,
+				  vertex->parrent->id,
+				  vertex->color);
+	else
+		ft_printf("{%d, %s, parent: %d, color: %d}\n",
+				  vertex->id,
+				  vertex->name,
+				  0,
+				  vertex->color);
+
 }
 
 void ft_print_vertex_all(t_vertex **vertex_list_link, const int size)
