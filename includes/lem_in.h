@@ -14,6 +14,7 @@ enum e_color{
 typedef struct	s_graph
 {
 	t_list*		vertex_list;
+	size_t      ants_count;
 }				t_graph;
 
 typedef struct	s_vertex

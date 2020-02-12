@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/hwolf/projects/lem_in/lib/libft/includes -I/Users/hwolf/projects/lem_in/includes -I/Users/hwolf/projects/lem_in/lib/libft 
+C_INCLUDES = -I/Users/ayooden/lemin-2/lib/libft/includes -I/Users/ayooden/lemin-2/includes -I/Users/ayooden/lemin-2/lib/libft 
 
