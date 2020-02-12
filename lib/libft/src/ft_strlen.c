@@ -14,10 +14,24 @@
 
 size_t	ft_strlen(const char *str)
 {
-	const char *ptr;
+	const char				*char_ptr;
+	const unsigned long int	*longword_ptr;
+	unsigned long int		longword;
+	unsigned long int		himagic;
+	unsigned long int		lomagic;
 
-	ptr = str;
-	while (*ptr)
-		++ptr;
-	return (ptr - str);
+	char_ptr = str;
+	while ((unsigned long int) char_ptr & (sizeof(longword) - 1))
+		if (*char_ptr++ == '\0')
+			return (char_ptr - str - 1);
+	longword_ptr = (unsigned long int*)char_ptr;
+	himagic = 0x8080808080808080L;
+	lomagic = 0x0101010101010101L;
+	longword = *longword_ptr++;
+	while (((longword - lomagic) & ~longword & himagic) == 0)
+		longword = *longword_ptr++;
+	char_ptr = (const char *) (longword_ptr - 1) - 1;
+	while (*(++char_ptr))
+		;
+	return (char_ptr - str);
 }

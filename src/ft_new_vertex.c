@@ -11,6 +11,8 @@ t_vertex *ft_new_verex(const int vertex_id, char* name){
 		ft_memdel((void**)&new_vertex);
 		return (NULL);
 	}
+	new_vertex->edge_in_list = NULL;
+	new_vertex->edge_out_list = NULL;
 	ft_set_vertex(new_vertex, vertex_id, name);
 	return (new_vertex);
 }

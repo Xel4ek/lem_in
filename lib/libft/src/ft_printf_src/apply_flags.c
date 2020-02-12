@@ -96,19 +96,17 @@ void	apply_width(t_param *param, char *prefix, int len)
 	if (param->width > 0 && param->flag.zero && !param->flag.minus)
 		space = '0';
 	while (i++ < param->width - len - 1)
-	{
 		if (i >= param->width - param->precision)
 			ptr[i] = space;
 		else
 			ptr[i] = ' ';
-	}
 	ptr[i] = 0;
 	apply_flag_minus(param, prefix, ptr);
 }
 
 int		apply_flags(t_param *param)
 {
-	int		len;
+	size_t		len;
 	char	*temp;
 	char	prefix[3];
 
@@ -121,9 +119,9 @@ int		apply_flags(t_param *param)
 		apply_hex(param, prefix);
 	apply_sign(param, prefix);
 	len = (param->line_size) + ft_strlen(prefix);
-	if (param->width < len)
-		param->width = len;
-	if (len < param->width)
+	if (param->width < (int)len)
+		param->width = (int)len;
+	if ((int)len < param->width)
 		apply_width(param, prefix, len);
 	else
 	{

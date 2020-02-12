@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../lib/libft/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+libft.h
+../lib/libft/includes/libft.h
+
+../lib/libft/includes/libft.h
+string.h
+-
+stdint.h
+-
+stdlib.h
+-
+libft_structs.h
+../lib/libft/includes/libft_structs.h
+
+../lib/libft/includes/libft_structs.h
+string.h
+-
+
+/home/xel/projects/lem_in/test_str_len.c
+libft.h
+/home/xel/projects/lem_in/libft.h
+stdlib.h
+-
+stdio.h
+-
+ft_printf.h
+/home/xel/projects/lem_in/ft_printf.h
+

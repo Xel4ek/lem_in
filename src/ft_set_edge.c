@@ -1,7 +1,8 @@
 #include "lem_in.h"
 
-void	ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, const int flow){
+void	ft_set_edge(t_edge *const edge, t_vertex *const start, t_vertex *const end, int flow, int oriented){
 	edge->start = start;
 	edge->end = end;
+	edge->oriented = oriented;
 	edge->flow = flow;
 }

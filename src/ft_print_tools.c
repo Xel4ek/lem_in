@@ -1,7 +1,12 @@
 #include "lem_in.h"
 #include "libft.h"
 
-void ft_print_vertex(t_vertex **vertex_list_link, const int size)
+void ft_print_vertex(t_vertex *vertex)
+{
+	ft_printf("{%d, %s}\n", vertex->id, vertex->name);
+}
+
+void ft_print_vertex_all(t_vertex **vertex_list_link, const int size)
 {
 	int i;
 	t_vertex *vertex_list;

@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
+CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,19 @@ lem_in/fast:
 .PHONY : lem_in/fast
 
 #=============================================================================
+# Target rules for targets named test_str_len
+
+# Build rule for target.
+test_str_len: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
+.PHONY : test_str_len
+
+# fast build rule for target.
+test_str_len/fast:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
+.PHONY : test_str_len/fast
+
+#=============================================================================
 # Target rules for targets named libft
 
 # Build rule for target.
@@ -135,6 +148,114 @@ libft: cmake_check_build_system
 libft/fast:
 	$(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
+
+src/fr_remove_egde.o: src/fr_remove_egde.c.o
+
+.PHONY : src/fr_remove_egde.o
+
+# target to build an object file
+src/fr_remove_egde.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o
+.PHONY : src/fr_remove_egde.c.o
+
+src/fr_remove_egde.i: src/fr_remove_egde.c.i
+
+.PHONY : src/fr_remove_egde.i
+
+# target to preprocess a source file
+src/fr_remove_egde.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i
+.PHONY : src/fr_remove_egde.c.i
+
+src/fr_remove_egde.s: src/fr_remove_egde.c.s
+
+.PHONY : src/fr_remove_egde.s
+
+# target to generate assembly for a file
+src/fr_remove_egde.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
+.PHONY : src/fr_remove_egde.c.s
+
+src/ft_add_edge.o: src/ft_add_edge.c.o
+
+.PHONY : src/ft_add_edge.o
+
+# target to build an object file
+src/ft_add_edge.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.o
+.PHONY : src/ft_add_edge.c.o
+
+src/ft_add_edge.i: src/ft_add_edge.c.i
+
+.PHONY : src/ft_add_edge.i
+
+# target to preprocess a source file
+src/ft_add_edge.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.i
+.PHONY : src/ft_add_edge.c.i
+
+src/ft_add_edge.s: src/ft_add_edge.c.s
+
+.PHONY : src/ft_add_edge.s
+
+# target to generate assembly for a file
+src/ft_add_edge.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.s
+.PHONY : src/ft_add_edge.c.s
+
+src/ft_add_vertex.o: src/ft_add_vertex.c.o
+
+.PHONY : src/ft_add_vertex.o
+
+# target to build an object file
+src/ft_add_vertex.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o
+.PHONY : src/ft_add_vertex.c.o
+
+src/ft_add_vertex.i: src/ft_add_vertex.c.i
+
+.PHONY : src/ft_add_vertex.i
+
+# target to preprocess a source file
+src/ft_add_vertex.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.i
+.PHONY : src/ft_add_vertex.c.i
+
+src/ft_add_vertex.s: src/ft_add_vertex.c.s
+
+.PHONY : src/ft_add_vertex.s
+
+# target to generate assembly for a file
+src/ft_add_vertex.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.s
+.PHONY : src/ft_add_vertex.c.s
+
+src/ft_move_edge.o: src/ft_move_edge.c.o
+
+.PHONY : src/ft_move_edge.o
+
+# target to build an object file
+src/ft_move_edge.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.o
+.PHONY : src/ft_move_edge.c.o
+
+src/ft_move_edge.i: src/ft_move_edge.c.i
+
+.PHONY : src/ft_move_edge.i
+
+# target to preprocess a source file
+src/ft_move_edge.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.i
+.PHONY : src/ft_move_edge.c.i
+
+src/ft_move_edge.s: src/ft_move_edge.c.s
+
+.PHONY : src/ft_move_edge.s
+
+# target to generate assembly for a file
+src/ft_move_edge.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.s
+.PHONY : src/ft_move_edge.c.s
 
 src/ft_new_edge.o: src/ft_new_edge.c.o
 
@@ -190,6 +311,87 @@ src/ft_new_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_vertex.c.s
 .PHONY : src/ft_new_vertex.c.s
 
+src/ft_print_edge.o: src/ft_print_edge.c.o
+
+.PHONY : src/ft_print_edge.o
+
+# target to build an object file
+src/ft_print_edge.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.o
+.PHONY : src/ft_print_edge.c.o
+
+src/ft_print_edge.i: src/ft_print_edge.c.i
+
+.PHONY : src/ft_print_edge.i
+
+# target to preprocess a source file
+src/ft_print_edge.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.i
+.PHONY : src/ft_print_edge.c.i
+
+src/ft_print_edge.s: src/ft_print_edge.c.s
+
+.PHONY : src/ft_print_edge.s
+
+# target to generate assembly for a file
+src/ft_print_edge.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.s
+.PHONY : src/ft_print_edge.c.s
+
+src/ft_print_egde_list.o: src/ft_print_egde_list.c.o
+
+.PHONY : src/ft_print_egde_list.o
+
+# target to build an object file
+src/ft_print_egde_list.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.o
+.PHONY : src/ft_print_egde_list.c.o
+
+src/ft_print_egde_list.i: src/ft_print_egde_list.c.i
+
+.PHONY : src/ft_print_egde_list.i
+
+# target to preprocess a source file
+src/ft_print_egde_list.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.i
+.PHONY : src/ft_print_egde_list.c.i
+
+src/ft_print_egde_list.s: src/ft_print_egde_list.c.s
+
+.PHONY : src/ft_print_egde_list.s
+
+# target to generate assembly for a file
+src/ft_print_egde_list.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.s
+.PHONY : src/ft_print_egde_list.c.s
+
+src/ft_print_graph.o: src/ft_print_graph.c.o
+
+.PHONY : src/ft_print_graph.o
+
+# target to build an object file
+src/ft_print_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.o
+.PHONY : src/ft_print_graph.c.o
+
+src/ft_print_graph.i: src/ft_print_graph.c.i
+
+.PHONY : src/ft_print_graph.i
+
+# target to preprocess a source file
+src/ft_print_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.i
+.PHONY : src/ft_print_graph.c.i
+
+src/ft_print_graph.s: src/ft_print_graph.c.s
+
+.PHONY : src/ft_print_graph.s
+
+# target to generate assembly for a file
+src/ft_print_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.s
+.PHONY : src/ft_print_graph.c.s
+
 src/ft_print_matrix.o: src/ft_print_matrix.c.o
 
 .PHONY : src/ft_print_matrix.o
@@ -243,6 +445,33 @@ src/ft_print_tools.s: src/ft_print_tools.c.s
 src/ft_print_tools.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.s
 .PHONY : src/ft_print_tools.c.s
+
+src/ft_remove_vertex.o: src/ft_remove_vertex.c.o
+
+.PHONY : src/ft_remove_vertex.o
+
+# target to build an object file
+src/ft_remove_vertex.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o
+.PHONY : src/ft_remove_vertex.c.o
+
+src/ft_remove_vertex.i: src/ft_remove_vertex.c.i
+
+.PHONY : src/ft_remove_vertex.i
+
+# target to preprocess a source file
+src/ft_remove_vertex.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.i
+.PHONY : src/ft_remove_vertex.c.i
+
+src/ft_remove_vertex.s: src/ft_remove_vertex.c.s
+
+.PHONY : src/ft_remove_vertex.s
+
+# target to generate assembly for a file
+src/ft_remove_vertex.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.s
+.PHONY : src/ft_remove_vertex.c.s
 
 src/ft_set_edge.o: src/ft_set_edge.c.o
 
@@ -298,6 +527,60 @@ src/ft_set_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_vertex.c.s
 .PHONY : src/ft_set_vertex.c.s
 
+src/ft_split_egde.o: src/ft_split_egde.c.o
+
+.PHONY : src/ft_split_egde.o
+
+# target to build an object file
+src/ft_split_egde.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.o
+.PHONY : src/ft_split_egde.c.o
+
+src/ft_split_egde.i: src/ft_split_egde.c.i
+
+.PHONY : src/ft_split_egde.i
+
+# target to preprocess a source file
+src/ft_split_egde.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.i
+.PHONY : src/ft_split_egde.c.i
+
+src/ft_split_egde.s: src/ft_split_egde.c.s
+
+.PHONY : src/ft_split_egde.s
+
+# target to generate assembly for a file
+src/ft_split_egde.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.s
+.PHONY : src/ft_split_egde.c.s
+
+src/ft_split_vertex.o: src/ft_split_vertex.c.o
+
+.PHONY : src/ft_split_vertex.o
+
+# target to build an object file
+src/ft_split_vertex.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o
+.PHONY : src/ft_split_vertex.c.o
+
+src/ft_split_vertex.i: src/ft_split_vertex.c.i
+
+.PHONY : src/ft_split_vertex.i
+
+# target to preprocess a source file
+src/ft_split_vertex.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.i
+.PHONY : src/ft_split_vertex.c.i
+
+src/ft_split_vertex.s: src/ft_split_vertex.c.s
+
+.PHONY : src/ft_split_vertex.s
+
+# target to generate assembly for a file
+src/ft_split_vertex.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.s
+.PHONY : src/ft_split_vertex.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -325,37 +608,128 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/test_graph.o: src/test_graph.c.o
+
+.PHONY : src/test_graph.o
+
+# target to build an object file
+src/test_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.o
+.PHONY : src/test_graph.c.o
+
+src/test_graph.i: src/test_graph.c.i
+
+.PHONY : src/test_graph.i
+
+# target to preprocess a source file
+src/test_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.i
+.PHONY : src/test_graph.c.i
+
+src/test_graph.s: src/test_graph.c.s
+
+.PHONY : src/test_graph.s
+
+# target to generate assembly for a file
+src/test_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.s
+.PHONY : src/test_graph.c.s
+
+test_str_len.o: test_str_len.c.o
+
+.PHONY : test_str_len.o
+
+# target to build an object file
+test_str_len.c.o:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/test_str_len.c.o
+.PHONY : test_str_len.c.o
+
+test_str_len.i: test_str_len.c.i
+
+.PHONY : test_str_len.i
+
+# target to preprocess a source file
+test_str_len.c.i:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/test_str_len.c.i
+.PHONY : test_str_len.c.i
+
+test_str_len.s: test_str_len.c.s
+
+.PHONY : test_str_len.s
+
+# target to generate assembly for a file
+test_str_len.c.s:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/test_str_len.c.s
+.PHONY : test_str_len.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... lem_in"
+	@echo "... rebuild_cache"
+	@echo "... test_str_len"
 	@echo "... libft"
+	@echo "... src/fr_remove_egde.o"
+	@echo "... src/fr_remove_egde.i"
+	@echo "... src/fr_remove_egde.s"
+	@echo "... src/ft_add_edge.o"
+	@echo "... src/ft_add_edge.i"
+	@echo "... src/ft_add_edge.s"
+	@echo "... src/ft_add_vertex.o"
+	@echo "... src/ft_add_vertex.i"
+	@echo "... src/ft_add_vertex.s"
+	@echo "... src/ft_move_edge.o"
+	@echo "... src/ft_move_edge.i"
+	@echo "... src/ft_move_edge.s"
 	@echo "... src/ft_new_edge.o"
 	@echo "... src/ft_new_edge.i"
 	@echo "... src/ft_new_edge.s"
 	@echo "... src/ft_new_vertex.o"
 	@echo "... src/ft_new_vertex.i"
 	@echo "... src/ft_new_vertex.s"
+	@echo "... src/ft_print_edge.o"
+	@echo "... src/ft_print_edge.i"
+	@echo "... src/ft_print_edge.s"
+	@echo "... src/ft_print_egde_list.o"
+	@echo "... src/ft_print_egde_list.i"
+	@echo "... src/ft_print_egde_list.s"
+	@echo "... src/ft_print_graph.o"
+	@echo "... src/ft_print_graph.i"
+	@echo "... src/ft_print_graph.s"
 	@echo "... src/ft_print_matrix.o"
 	@echo "... src/ft_print_matrix.i"
 	@echo "... src/ft_print_matrix.s"
 	@echo "... src/ft_print_tools.o"
 	@echo "... src/ft_print_tools.i"
 	@echo "... src/ft_print_tools.s"
+	@echo "... src/ft_remove_vertex.o"
+	@echo "... src/ft_remove_vertex.i"
+	@echo "... src/ft_remove_vertex.s"
 	@echo "... src/ft_set_edge.o"
 	@echo "... src/ft_set_edge.i"
 	@echo "... src/ft_set_edge.s"
 	@echo "... src/ft_set_vertex.o"
 	@echo "... src/ft_set_vertex.i"
 	@echo "... src/ft_set_vertex.s"
+	@echo "... src/ft_split_egde.o"
+	@echo "... src/ft_split_egde.i"
+	@echo "... src/ft_split_egde.s"
+	@echo "... src/ft_split_vertex.o"
+	@echo "... src/ft_split_vertex.i"
+	@echo "... src/ft_split_vertex.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/test_graph.o"
+	@echo "... src/test_graph.i"
+	@echo "... src/test_graph.s"
+	@echo "... test_str_len.o"
+	@echo "... test_str_len.i"
+	@echo "... test_str_len.s"
 .PHONY : help
 
 

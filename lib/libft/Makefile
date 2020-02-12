@@ -12,7 +12,7 @@
 
 NAME = libft.a
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -pipe
 SRC =	ft_abs.c \
 		ft_atoi_base.c \
 		ft_atoi.c \

@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../lib/libft/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+libft.h
+../lib/libft/includes/libft.h
+
 ../lib/libft/includes/libft.h
 string.h
 -
@@ -20,11 +32,7 @@ libft_structs.h
 string.h
 -
 
-/Users/hwolf/projects/lem_in/lib/libft/src/ft_memcmp.c
-libft.h
-/Users/hwolf/projects/lem_in/lib/libft/src/libft.h
-
-/Users/hwolf/projects/lem_in/lib/libft/src/ft_memset.c
-libft.h
-/Users/hwolf/projects/lem_in/lib/libft/src/libft.h
+/home/xel/projects/lem_in/lib/libft/src/ft_printf_src/apply_flags.c
+ft_printf.h
+/home/xel/projects/lem_in/lib/libft/src/ft_printf_src/ft_printf.h
 
