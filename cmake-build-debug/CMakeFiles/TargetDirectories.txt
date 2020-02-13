@@ -1,7 +1,7 @@
-/Users/ayooden/lemin-2/cmake-build-debug/CMakeFiles/test_str_len.dir
-/Users/ayooden/lemin-2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/ayooden/lemin-2/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/ayooden/lemin-2/cmake-build-debug/CMakeFiles/lem_in.dir
-/Users/ayooden/lemin-2/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
-/Users/ayooden/lemin-2/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir
-/Users/ayooden/lemin-2/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
+/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir
+/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/test_str_len.dir
+/home/alexey/projects/lem_in/cmake-build-debug/lib/libft/CMakeFiles/rebuild_cache.dir
+/home/alexey/projects/lem_in/cmake-build-debug/lib/libft/CMakeFiles/libft.dir
+/home/alexey/projects/lem_in/cmake-build-debug/lib/libft/CMakeFiles/edit_cache.dir

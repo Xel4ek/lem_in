@@ -25,6 +25,7 @@ typedef struct	s_vertex
 	enum e_color	color;
 	struct s_vertex *parrent;
 	char		*name;
+	int			test;
 }				t_vertex;
 
 typedef struct s_edge
@@ -56,4 +57,13 @@ void ft_split_vertex(t_graph **graph, t_vertex **vertex);
 void ft_split_all_edges(t_vertex *vertex);
 int ft_graph_dfs(t_graph *graph, int target_id);
 void	*ft_queue_pop(t_list **queue);
+
+void ft_print_egde_fd(int fd, t_edge *edge);
+void ft_print_egde_list_dot(int fd, t_list *egde_list);
+void ft_save_digraph_as_dot(int fd, const t_graph *graph);
+void ft_print_vertex_dot(int fd, t_vertex *vertex);
+void ft_save_graph_as_dot(int fd, const t_graph *graph);
+void ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
+void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
+t_list			*ft_queue_new(void *content);
 #endif

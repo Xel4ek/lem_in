@@ -1,0 +1,30 @@
+digraph 4 {
+	"0 zero";
+	"1 zero";
+	"2 one";
+	"3 one";
+	"4 two";
+	"5 two";
+	"6 three";
+	"7 three";
+	"8 four";
+	"9 four";
+	"10 five";
+	"11 five";
+	"3 one" -> "0 zero";
+	"0 zero" -> "1 zero";
+	"1 zero" -> "2 one";
+	"5 two" -> "2 one";
+	"7 three" -> "2 one";
+	"2 one" -> "3 one";
+	"3 one" -> "4 two";
+	"4 two" -> "5 two";
+	"3 one" -> "6 three";
+	"9 four" -> "6 three";
+	"11 five" -> "6 three";
+	"6 three" -> "7 three";
+	"7 three" -> "8 four";
+	"8 four" -> "9 four";
+	"7 three" -> "10 five";
+	"10 five" -> "11 five";
+	}

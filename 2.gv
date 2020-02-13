@@ -1,0 +1,13 @@
+graph 3 {
+	"0 zero";
+	"2 one";
+	"4 two";
+	"6 three";
+	"8 four";
+	"10 five";
+	"0 zero" -- "2 one";
+	"2 one" -- "4 two";
+	"2 one" -- "6 three";
+	"6 three" -- "8 four";
+	"6 three" -- "10 five";
+	}

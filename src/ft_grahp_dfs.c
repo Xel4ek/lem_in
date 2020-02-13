@@ -22,12 +22,12 @@ void ft_add_implement_verses_in_queue(t_vertex *vertex, t_list **queue)
 	edge_count = ft_lstdlen(vertex->edge_out_list);
 	while (edge_count--)
 	{
-		if((*((t_edge **)vertex->edge_out_list->content))->end->color == white)
+		if((*(t_edge **)vertex->edge_out_list->content)->end->color == white)
 		{
-			current = (*((t_edge **)vertex->edge_out_list->content))->end;
+			current = (*(t_edge **)vertex->edge_out_list->content)->end;
 			current->color = grey;
 			current->parrent = vertex;
-			ft_lstd_push_front(queue, ft_lstdnew(&current, sizeof(t_vertex)));
+			ft_lstd_push_front(queue, ft_queue_new(&(*(t_edge **)vertex->edge_out_list->content)->end));
 		}
 		vertex->edge_out_list = vertex->edge_out_list->next;
 	}
@@ -42,19 +42,26 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 	ft_reset_vertex_color(graph);
 	queue = NULL;
 	current = (t_vertex*)graph->vertex_list->content;
+
+	ft_lstd_push_front(&queue, ft_queue_new((t_vertex**)&graph->vertex_list->content));
 	current->color = grey;
-	ft_lstd_push_front(&queue, ft_lstdnew(&current, sizeof(t_vertex*)));
+
 	while (queue)
 	{
 		current = *((t_vertex**)ft_queue_pop(&queue));
 		if (current->id == target_id)
 		{
+//			while (((t_vertex *)graph->vertex_list->content)->id != current->id)
+//				graph->vertex_list = graph->vertex_list->next;
 			while(current->id)
 			{
 				ft_printf("%d -> ",current->id);
+//				((t_vertex *)graph->vertex_list->content)->parrent = current->parrent;
 				current = current->parrent;
 			}
 			ft_printf("\n");
+			while (queue)
+				ft_queue_pop(&queue);
 			return 1;
 		}
 		current->color = black;

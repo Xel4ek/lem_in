@@ -64,6 +64,10 @@ CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../src/ft_print_tools.c
 
+CMakeFiles/lem_in.dir/src/ft_queue_new.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_queue_new.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_queue_new.c.o: ../src/ft_queue_new.c
+
 CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o: ../lib/libft/includes/libft_structs.h
@@ -73,6 +77,12 @@ CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../src/ft_remove_vertex.c
+
+CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../lib/libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../src/ft_save_as_dot.c
 
 CMakeFiles/lem_in.dir/src/ft_set_edge.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_set_edge.c.o: ../lib/libft/includes/libft_structs.h

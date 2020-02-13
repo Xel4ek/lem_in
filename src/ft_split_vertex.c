@@ -16,6 +16,7 @@ void ft_split_vertex(t_graph **graph, t_vertex **vertex)
 		(*vertex)->edge_in_list = NULL;
 
 		len = ft_lstdlen(new_vertex_in->edge_in_list);
+
 		while (len--)
 		{
 			(*((t_edge**)new_vertex_in->edge_in_list->content))->end = new_vertex_in;
