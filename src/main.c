@@ -26,7 +26,9 @@ int main()
 //	ft_printf("--------------------------------\n");
 //	while (((t_vertex *)graph->vertex_list->content)->id != 0)
 //		graph->vertex_list = graph->vertex_list->next;
+
 	ft_convert_graph_to_oriented(&graph);
+
 //	vertex = (t_vertex *)graph->vertex_list->next->next->content;
 //	ft_printf("-With---------------------------\n");
 //	ft_print_vertex(vertex);
@@ -34,7 +36,11 @@ int main()
 //	ft_split_all_edges(vertex);
 	ft_print_graph(graph);
 	ft_printf("--------------------------------\n");
+
+	while(((t_vertex*)graph->vertex_list->content)->id)
+		graph->vertex_list = graph->vertex_list->next;
 	temp = ft_graph_dfs(graph, 11);
+
 	ft_printf("-%d-----------------------------\n",temp);
 	vertex = ((t_vertex *)graph->vertex_list->prev->content);
 	ft_print_graph(graph);

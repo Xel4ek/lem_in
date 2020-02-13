@@ -14,7 +14,18 @@ set(SRC
         src/ft_add_edge.c
         src/ft_print_egde_list.c
         src/ft_print_edge.c
-        src/ft_add_vertex.c src/ft_split_egde.c src/fr_remove_egde.c src/ft_split_vertex.c src/ft_remove_vertex.c src/ft_move_edge.c src/ft_convert_graph.c src/ft_grahp_dfs.c src/ft_queue_pop.c src/ft_save_as_dot.c src/ft_queue_new.c)
+        src/ft_add_vertex.c
+        src/ft_split_egde.c
+        src/fr_remove_egde.c
+        src/ft_split_vertex.c
+        src/ft_remove_vertex.c
+        src/ft_move_edge.c
+        src/ft_convert_graph.c
+        src/ft_grahp_dfs.c
+        src/ft_queue_pop.c
+        src/ft_save_as_dot.c
+        src/ft_queue_new.c
+        )
 
 
 include_directories(lib/libft/includes)

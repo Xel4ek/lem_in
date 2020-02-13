@@ -22,8 +22,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"
   "CMakeFiles/lem_in.dir/src/test_graph.c.o"
-  "lem_in"
+  "lem_in.exe"
   "lem_in.pdb"
+  "liblem_in.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

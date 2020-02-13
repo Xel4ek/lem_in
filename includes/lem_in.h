@@ -48,7 +48,7 @@ void ft_set_vertex(t_vertex *vertex, int vertex_id, const char *name);
 int ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented);
 void ft_print_egde(t_edge *edge);
 void ft_print_egde_list(t_list *egde_list);
-void ft_add_vertex(t_graph *graph, t_vertex *vertex);
+void ft_add_vertex_back(t_graph *graph, t_vertex *vertex);
 void ft_remove_edge(t_edge **edge);
 void ft_split_edge(t_edge **edge);
 void ft_remove_vertex(t_graph **graph, t_vertex **vertex);
@@ -66,4 +66,6 @@ void ft_save_graph_as_dot(int fd, const t_graph *graph);
 void ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
 void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
 t_list			*ft_queue_new(void *content);
+void ft_add_vertex_front(t_graph *graph, t_vertex *vertex);
+
 #endif

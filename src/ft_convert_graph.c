@@ -13,6 +13,8 @@ void ft_convert_graph_to_oriented(t_graph **graph)
 	}
 
 	vertex_count = ft_lstdlen((*graph)->vertex_list);
-	while (vertex_count--)
-		ft_split_vertex(graph, (t_vertex **)&(*graph)->vertex_list->content);
+	while (vertex_count--) {
+		ft_split_vertex(graph, (t_vertex **) &(*graph)->vertex_list->content);
+		(*graph)->vertex_list = (*graph)->vertex_list->prev->prev;
+	}
 }

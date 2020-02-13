@@ -14,16 +14,13 @@
 
 void	ft_lstd_push_back(t_list **head, t_list *new)
 {
-	if (head && new)
+	if (head && new && *head)
 	{
-		if (*head)
-		{
-			new->next = *head;
-			new->prev = (*head)->prev;
-			new->next->prev = new;
-			new->prev->next = new;
-		}
-		else
-			*head = new;
+		new->next = *head;
+		new->prev = (*head)->prev;
+		new->next->prev = new;
+		new->prev->next = new;
 	}
+	else
+		*head = new;
 }

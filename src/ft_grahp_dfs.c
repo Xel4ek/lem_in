@@ -45,7 +45,7 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 
 	ft_lstd_push_front(&queue, ft_queue_new((t_vertex**)&graph->vertex_list->content));
 	current->color = grey;
-
+	current->test = 1;
 	while (queue)
 	{
 		current = *((t_vertex**)ft_queue_pop(&queue));
@@ -56,9 +56,11 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 			while(current->id)
 			{
 				ft_printf("%d -> ",current->id);
+				current->test = 1;
 //				((t_vertex *)graph->vertex_list->content)->parrent = current->parrent;
 				current = current->parrent;
 			}
+//			current->test = 1;
 			ft_printf("\n");
 			while (queue)
 				ft_queue_pop(&queue);
