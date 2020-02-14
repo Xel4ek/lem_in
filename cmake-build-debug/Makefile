@@ -581,6 +581,33 @@ src/ft_remove_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.s
 .PHONY : src/ft_remove_vertex.c.s
 
+src/ft_reset_edge_oriented.o: src/ft_reset_edge_oriented.c.o
+
+.PHONY : src/ft_reset_edge_oriented.o
+
+# target to build an object file
+src/ft_reset_edge_oriented.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o
+.PHONY : src/ft_reset_edge_oriented.c.o
+
+src/ft_reset_edge_oriented.i: src/ft_reset_edge_oriented.c.i
+
+.PHONY : src/ft_reset_edge_oriented.i
+
+# target to preprocess a source file
+src/ft_reset_edge_oriented.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.i
+.PHONY : src/ft_reset_edge_oriented.c.i
+
+src/ft_reset_edge_oriented.s: src/ft_reset_edge_oriented.c.s
+
+.PHONY : src/ft_reset_edge_oriented.s
+
+# target to generate assembly for a file
+src/ft_reset_edge_oriented.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s
+.PHONY : src/ft_reset_edge_oriented.c.s
+
 src/ft_save_as_dot.o: src/ft_save_as_dot.c.o
 
 .PHONY : src/ft_save_as_dot.o
@@ -715,6 +742,33 @@ src/ft_split_vertex.s: src/ft_split_vertex.c.s
 src/ft_split_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.s
 .PHONY : src/ft_split_vertex.c.s
+
+src/ft_spllit_all_graph_edge.o: src/ft_spllit_all_graph_edge.c.o
+
+.PHONY : src/ft_spllit_all_graph_edge.o
+
+# target to build an object file
+src/ft_spllit_all_graph_edge.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o
+.PHONY : src/ft_spllit_all_graph_edge.c.o
+
+src/ft_spllit_all_graph_edge.i: src/ft_spllit_all_graph_edge.c.i
+
+.PHONY : src/ft_spllit_all_graph_edge.i
+
+# target to preprocess a source file
+src/ft_spllit_all_graph_edge.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.i
+.PHONY : src/ft_spllit_all_graph_edge.c.i
+
+src/ft_spllit_all_graph_edge.s: src/ft_spllit_all_graph_edge.c.s
+
+.PHONY : src/ft_spllit_all_graph_edge.s
+
+# target to generate assembly for a file
+src/ft_spllit_all_graph_edge.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s
+.PHONY : src/ft_spllit_all_graph_edge.c.s
 
 src/main.o: src/main.c.o
 
@@ -856,6 +910,9 @@ help:
 	@echo "... src/ft_remove_vertex.o"
 	@echo "... src/ft_remove_vertex.i"
 	@echo "... src/ft_remove_vertex.s"
+	@echo "... src/ft_reset_edge_oriented.o"
+	@echo "... src/ft_reset_edge_oriented.i"
+	@echo "... src/ft_reset_edge_oriented.s"
 	@echo "... src/ft_save_as_dot.o"
 	@echo "... src/ft_save_as_dot.i"
 	@echo "... src/ft_save_as_dot.s"
@@ -871,6 +928,9 @@ help:
 	@echo "... src/ft_split_vertex.o"
 	@echo "... src/ft_split_vertex.i"
 	@echo "... src/ft_split_vertex.s"
+	@echo "... src/ft_spllit_all_graph_edge.o"
+	@echo "... src/ft_spllit_all_graph_edge.i"
+	@echo "... src/ft_spllit_all_graph_edge.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

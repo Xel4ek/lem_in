@@ -39,13 +39,21 @@ int main()
 
 	while(((t_vertex*)graph->vertex_list->content)->id)
 		graph->vertex_list = graph->vertex_list->next;
-	temp = ft_graph_dfs(graph, 11);
+	temp = ft_graph_dfs(graph, 8);
 
 	ft_printf("-%d-----------------------------\n",temp);
 	vertex = ((t_vertex *)graph->vertex_list->prev->content);
 	ft_print_graph(graph);
 
 	fd = open("../1.gv", O_CREAT | O_WRONLY | O_TRUNC);
+	ft_save_digraph_as_dot(fd, graph);
+	close(fd);
+//	ft_reset_edge_oriented(graph);
+//	ft_split_all_graph_edge(graph);
+	ft_printf("--------------------------------\n",temp);
+	ft_print_graph(graph);
+
+	fd = open("../3.gv", O_CREAT | O_WRONLY | O_TRUNC);
 	ft_save_digraph_as_dot(fd, graph);
 	close(fd);
 	ft_printf("\nDone\n");

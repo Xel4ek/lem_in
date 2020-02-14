@@ -25,7 +25,7 @@ set(SRC
         src/ft_queue_pop.c
         src/ft_save_as_dot.c
         src/ft_queue_new.c
-        )
+        src/ft_spllit_all_graph_edge.c src/ft_reset_edge_oriented.c)
 
 
 include_directories(lib/libft/includes)

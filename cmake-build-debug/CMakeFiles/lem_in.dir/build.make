@@ -343,9 +343,35 @@ CMakeFiles/lem_in.dir/src/ft_queue_new.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_queue_new.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/lem_in/src/ft_queue_new.c -o CMakeFiles/lem_in.dir/src/ft_queue_new.c.s
 
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: ../src/ft_spllit_all_graph_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o   -c /cygdrive/e/shcool_42/lem_in/src/ft_spllit_all_graph_edge.c
+
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/lem_in/src/ft_spllit_all_graph_edge.c > CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.i
+
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/lem_in/src/ft_spllit_all_graph_edge.c -o CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s
+
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: ../src/ft_reset_edge_oriented.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o   -c /cygdrive/e/shcool_42/lem_in/src/ft_reset_edge_oriented.c
+
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /cygdrive/e/shcool_42/lem_in/src/ft_reset_edge_oriented.c > CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.i
+
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /cygdrive/e/shcool_42/lem_in/src/ft_reset_edge_oriented.c -o CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s
+
 CMakeFiles/lem_in.dir/src/main.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/lem_in.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/lem_in.dir/src/main.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/main.c.o   -c /cygdrive/e/shcool_42/lem_in/src/main.c
 
 CMakeFiles/lem_in.dir/src/main.c.i: cmake_force
@@ -380,6 +406,8 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_queue_new.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o" \
 "CMakeFiles/lem_in.dir/src/main.c.o"
 
 # External object files for target lem_in
@@ -407,11 +435,13 @@ lem_in.exe: CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o
 lem_in.exe: CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o
 lem_in.exe: CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o
 lem_in.exe: CMakeFiles/lem_in.dir/src/ft_queue_new.c.o
+lem_in.exe: CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o
+lem_in.exe: CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o
 lem_in.exe: CMakeFiles/lem_in.dir/src/main.c.o
 lem_in.exe: CMakeFiles/lem_in.dir/build.make
 lem_in.exe: lib/libft/liblibft.a
 lem_in.exe: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable lem_in.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking C executable lem_in.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

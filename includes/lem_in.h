@@ -67,5 +67,6 @@ void ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
 void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
 t_list			*ft_queue_new(void *content);
 void ft_add_vertex_front(t_graph *graph, t_vertex *vertex);
-
+void ft_split_all_graph_edge(t_graph *graph);
+void ft_reset_edge_oriented(t_graph *graph);
 #endif

@@ -78,6 +78,11 @@ CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o: ../src/ft_remove_vertex.c
 
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o: ../src/ft_reset_edge_oriented.c
+
 CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o: ../lib/libft/includes/libft.h
@@ -102,6 +107,11 @@ CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: ../src/ft_split_vertex.c
+
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o: ../src/ft_spllit_all_graph_edge.c
 
 CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft.h

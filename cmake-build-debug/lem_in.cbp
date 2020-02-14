@@ -500,6 +500,9 @@
 		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/ft_remove_vertex.c">
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/ft_reset_edge_oriented.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/ft_save_as_dot.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -513,6 +516,9 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/ft_split_vertex.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/ft_spllit_all_graph_edge.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/cygdrive/e/shcool_42/lem_in/src/main.c">

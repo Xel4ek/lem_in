@@ -10,6 +10,7 @@ void ft_reset_vertex_color(t_graph *graph)
 	{
 		((t_vertex*)graph->vertex_list->content)->color = white;
 		((t_vertex*)graph->vertex_list->content)->parrent = 0;
+		((t_vertex*)graph->vertex_list->content)->test = 0;
 		graph->vertex_list = graph->vertex_list->next;
 	}
 }
