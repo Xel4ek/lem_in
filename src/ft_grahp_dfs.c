@@ -52,16 +52,12 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 		current = *((t_vertex**)ft_queue_pop(&queue));
 		if (current->id == target_id)
 		{
-//			while (((t_vertex *)graph->vertex_list->content)->id != current->id)
-//				graph->vertex_list = graph->vertex_list->next;
 			while(current->id)
 			{
 				ft_printf("%d -> ",current->id);
 				current->test = 1;
-//				((t_vertex *)graph->vertex_list->content)->parrent = current->parrent;
 				current = current->parrent;
 			}
-//			current->test = 1;
 			ft_printf("\n");
 			while (queue)
 				ft_queue_pop(&queue);

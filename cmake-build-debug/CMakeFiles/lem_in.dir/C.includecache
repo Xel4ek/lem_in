@@ -10,6 +10,18 @@
 libft_structs.h
 -
 
+../lib/libft/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+libft.h
+../lib/libft/includes/libft.h
+
 ../lib/libft/includes/libft.h
 string.h
 -
@@ -24,17 +36,17 @@ libft_structs.h
 string.h
 -
 
-/cygdrive/e/shcool_42/lem_in/src/main.c
+/cygdrive/e/shcool_42/lem_in/src/ft_grahp_dfs.c
 libft.h
 /cygdrive/e/shcool_42/lem_in/src/libft.h
 lem_in.h
 /cygdrive/e/shcool_42/lem_in/src/lem_in.h
-sys/types.h
--
-sys/stat.h
--
-fcntl.h
--
-unistd.h
--
+
+/cygdrive/e/shcool_42/lem_in/src/ft_save_as_dot.c
+lem_in.h
+/cygdrive/e/shcool_42/lem_in/src/lem_in.h
+libft.h
+/cygdrive/e/shcool_42/lem_in/src/libft.h
+ft_printf.h
+/cygdrive/e/shcool_42/lem_in/src/ft_printf.h
 
