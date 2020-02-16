@@ -19,11 +19,12 @@ typedef struct	s_graph
 
 typedef struct	s_vertex
 {
-	int			id;
+
 	t_list		*edge_in_list;
 	t_list		*edge_out_list;
-	enum e_color	color;
 	struct s_vertex *parrent;
+    int			id;
+    enum e_color	color;
 	char		*name;
 	int			test;
 }				t_vertex;
@@ -32,9 +33,11 @@ typedef struct s_edge
 {
 	t_vertex		*start;
 	t_vertex		*end;
+    int				flow;
 	int 			oriented;
-	int				flow;
+
 }				t_edge;
+
 
 t_graph *mygraph(void);
 void ft_print_graph(const t_graph *graph);

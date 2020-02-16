@@ -5,9 +5,15 @@ graph 3 {
 	"6 three";
 	"8 four";
 	"10 five";
+	"12 five";
+	"14 five";
 	"0 zero" -- "2 one";
 	"2 one" -- "4 two";
-	"2 one" -- "6 three";
+	"6 three" -- "4 two";
+	"14 five" -- "4 two";
+	"0 zero" -- "6 three";
 	"6 three" -- "8 four";
-	"6 three" -- "10 five";
+	"2 one" -- "10 five";
+	"12 five" -- "10 five";
+	"14 five" -- "12 five";
 	}

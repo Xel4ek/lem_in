@@ -10,8 +10,7 @@ void ft_print_egde(t_edge *edge){
 }
 
 void ft_print_egde_fd(int fd, t_edge *edge){
-		if ((edge->start->test == 1 && edge->end->test == 1 && edge->start->id == (edge->end->parrent == NULL ? 0 : edge->end->parrent->id)) ||
-				(edge->end->test == 1 && edge->start->test == 1 && edge->end->id == (edge->start->parrent == NULL ? 0 : edge->start->parrent->id)))
+		if (edge->flow)
 			ft_printf_fd(fd, "\t\"%d %s\" -> \"%d %s\" [dir = forward color = \"green\"];\n",
 						 edge->start->id,
 						 edge->start->name,

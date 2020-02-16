@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
+CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lem_in
-
-# Build rule for target.
-lem_in: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lem_in
-.PHONY : lem_in
-
-# fast build rule for target.
-lem_in/fast:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
-.PHONY : lem_in/fast
-
-#=============================================================================
 # Target rules for targets named test_str_len
 
 # Build rule for target.
@@ -135,6 +122,32 @@ test_str_len: cmake_check_build_system
 test_str_len/fast:
 	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
 .PHONY : test_str_len/fast
+
+#=============================================================================
+# Target rules for targets named short_test
+
+# Build rule for target.
+short_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 short_test
+.PHONY : short_test
+
+# fast build rule for target.
+short_test/fast:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/build
+.PHONY : short_test/fast
+
+#=============================================================================
+# Target rules for targets named lem_in
+
+# Build rule for target.
+lem_in: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lem_in
+.PHONY : lem_in
+
+# fast build rule for target.
+lem_in/fast:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
+.PHONY : lem_in/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -155,6 +168,7 @@ src/fr_remove_egde.o: src/fr_remove_egde.c.o
 
 # target to build an object file
 src/fr_remove_egde.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o
 .PHONY : src/fr_remove_egde.c.o
 
@@ -164,6 +178,7 @@ src/fr_remove_egde.i: src/fr_remove_egde.c.i
 
 # target to preprocess a source file
 src/fr_remove_egde.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i
 .PHONY : src/fr_remove_egde.c.i
 
@@ -173,6 +188,7 @@ src/fr_remove_egde.s: src/fr_remove_egde.c.s
 
 # target to generate assembly for a file
 src/fr_remove_egde.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
 .PHONY : src/fr_remove_egde.c.s
 
@@ -182,6 +198,7 @@ src/ft_add_edge.o: src/ft_add_edge.c.o
 
 # target to build an object file
 src/ft_add_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.o
 .PHONY : src/ft_add_edge.c.o
 
@@ -191,6 +208,7 @@ src/ft_add_edge.i: src/ft_add_edge.c.i
 
 # target to preprocess a source file
 src/ft_add_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.i
 .PHONY : src/ft_add_edge.c.i
 
@@ -200,6 +218,7 @@ src/ft_add_edge.s: src/ft_add_edge.c.s
 
 # target to generate assembly for a file
 src/ft_add_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_edge.c.s
 .PHONY : src/ft_add_edge.c.s
 
@@ -209,6 +228,7 @@ src/ft_add_vertex.o: src/ft_add_vertex.c.o
 
 # target to build an object file
 src/ft_add_vertex.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_vertex.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o
 .PHONY : src/ft_add_vertex.c.o
 
@@ -218,6 +238,7 @@ src/ft_add_vertex.i: src/ft_add_vertex.c.i
 
 # target to preprocess a source file
 src/ft_add_vertex.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_vertex.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.i
 .PHONY : src/ft_add_vertex.c.i
 
@@ -227,6 +248,7 @@ src/ft_add_vertex.s: src/ft_add_vertex.c.s
 
 # target to generate assembly for a file
 src/ft_add_vertex.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_vertex.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.s
 .PHONY : src/ft_add_vertex.c.s
 
@@ -236,6 +258,7 @@ src/ft_convert_graph.o: src/ft_convert_graph.c.o
 
 # target to build an object file
 src/ft_convert_graph.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_convert_graph.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o
 .PHONY : src/ft_convert_graph.c.o
 
@@ -245,6 +268,7 @@ src/ft_convert_graph.i: src/ft_convert_graph.c.i
 
 # target to preprocess a source file
 src/ft_convert_graph.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_convert_graph.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.i
 .PHONY : src/ft_convert_graph.c.i
 
@@ -254,6 +278,7 @@ src/ft_convert_graph.s: src/ft_convert_graph.c.s
 
 # target to generate assembly for a file
 src/ft_convert_graph.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_convert_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.s
 .PHONY : src/ft_convert_graph.c.s
 
@@ -263,6 +288,7 @@ src/ft_grahp_dfs.o: src/ft_grahp_dfs.c.o
 
 # target to build an object file
 src/ft_grahp_dfs.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o
 .PHONY : src/ft_grahp_dfs.c.o
 
@@ -272,6 +298,7 @@ src/ft_grahp_dfs.i: src/ft_grahp_dfs.c.i
 
 # target to preprocess a source file
 src/ft_grahp_dfs.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.i
 .PHONY : src/ft_grahp_dfs.c.i
 
@@ -281,6 +308,7 @@ src/ft_grahp_dfs.s: src/ft_grahp_dfs.c.s
 
 # target to generate assembly for a file
 src/ft_grahp_dfs.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.s
 .PHONY : src/ft_grahp_dfs.c.s
 
@@ -290,6 +318,7 @@ src/ft_move_edge.o: src/ft_move_edge.c.o
 
 # target to build an object file
 src/ft_move_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.o
 .PHONY : src/ft_move_edge.c.o
 
@@ -299,6 +328,7 @@ src/ft_move_edge.i: src/ft_move_edge.c.i
 
 # target to preprocess a source file
 src/ft_move_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.i
 .PHONY : src/ft_move_edge.c.i
 
@@ -308,6 +338,7 @@ src/ft_move_edge.s: src/ft_move_edge.c.s
 
 # target to generate assembly for a file
 src/ft_move_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.s
 .PHONY : src/ft_move_edge.c.s
 
@@ -317,6 +348,7 @@ src/ft_new_edge.o: src/ft_new_edge.c.o
 
 # target to build an object file
 src/ft_new_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_edge.c.o
 .PHONY : src/ft_new_edge.c.o
 
@@ -326,6 +358,7 @@ src/ft_new_edge.i: src/ft_new_edge.c.i
 
 # target to preprocess a source file
 src/ft_new_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_edge.c.i
 .PHONY : src/ft_new_edge.c.i
 
@@ -335,6 +368,7 @@ src/ft_new_edge.s: src/ft_new_edge.c.s
 
 # target to generate assembly for a file
 src/ft_new_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_edge.c.s
 .PHONY : src/ft_new_edge.c.s
 
@@ -344,6 +378,7 @@ src/ft_new_vertex.o: src/ft_new_vertex.c.o
 
 # target to build an object file
 src/ft_new_vertex.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_vertex.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_vertex.c.o
 .PHONY : src/ft_new_vertex.c.o
 
@@ -353,6 +388,7 @@ src/ft_new_vertex.i: src/ft_new_vertex.c.i
 
 # target to preprocess a source file
 src/ft_new_vertex.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_vertex.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_vertex.c.i
 .PHONY : src/ft_new_vertex.c.i
 
@@ -362,6 +398,7 @@ src/ft_new_vertex.s: src/ft_new_vertex.c.s
 
 # target to generate assembly for a file
 src/ft_new_vertex.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_vertex.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_vertex.c.s
 .PHONY : src/ft_new_vertex.c.s
 
@@ -371,6 +408,7 @@ src/ft_print_edge.o: src/ft_print_edge.c.o
 
 # target to build an object file
 src/ft_print_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.o
 .PHONY : src/ft_print_edge.c.o
 
@@ -380,6 +418,7 @@ src/ft_print_edge.i: src/ft_print_edge.c.i
 
 # target to preprocess a source file
 src/ft_print_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.i
 .PHONY : src/ft_print_edge.c.i
 
@@ -389,6 +428,7 @@ src/ft_print_edge.s: src/ft_print_edge.c.s
 
 # target to generate assembly for a file
 src/ft_print_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_edge.c.s
 .PHONY : src/ft_print_edge.c.s
 
@@ -398,6 +438,7 @@ src/ft_print_egde_list.o: src/ft_print_egde_list.c.o
 
 # target to build an object file
 src/ft_print_egde_list.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.o
 .PHONY : src/ft_print_egde_list.c.o
 
@@ -407,6 +448,7 @@ src/ft_print_egde_list.i: src/ft_print_egde_list.c.i
 
 # target to preprocess a source file
 src/ft_print_egde_list.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_egde_list.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.i
 .PHONY : src/ft_print_egde_list.c.i
 
@@ -416,6 +458,7 @@ src/ft_print_egde_list.s: src/ft_print_egde_list.c.s
 
 # target to generate assembly for a file
 src/ft_print_egde_list.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_egde_list.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.s
 .PHONY : src/ft_print_egde_list.c.s
 
@@ -425,6 +468,7 @@ src/ft_print_graph.o: src/ft_print_graph.c.o
 
 # target to build an object file
 src/ft_print_graph.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_graph.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.o
 .PHONY : src/ft_print_graph.c.o
 
@@ -434,6 +478,7 @@ src/ft_print_graph.i: src/ft_print_graph.c.i
 
 # target to preprocess a source file
 src/ft_print_graph.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_graph.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.i
 .PHONY : src/ft_print_graph.c.i
 
@@ -443,6 +488,7 @@ src/ft_print_graph.s: src/ft_print_graph.c.s
 
 # target to generate assembly for a file
 src/ft_print_graph.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.s
 .PHONY : src/ft_print_graph.c.s
 
@@ -452,6 +498,7 @@ src/ft_print_matrix.o: src/ft_print_matrix.c.o
 
 # target to build an object file
 src/ft_print_matrix.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_matrix.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o
 .PHONY : src/ft_print_matrix.c.o
 
@@ -461,6 +508,7 @@ src/ft_print_matrix.i: src/ft_print_matrix.c.i
 
 # target to preprocess a source file
 src/ft_print_matrix.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_matrix.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_matrix.c.i
 .PHONY : src/ft_print_matrix.c.i
 
@@ -470,6 +518,7 @@ src/ft_print_matrix.s: src/ft_print_matrix.c.s
 
 # target to generate assembly for a file
 src/ft_print_matrix.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_matrix.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_matrix.c.s
 .PHONY : src/ft_print_matrix.c.s
 
@@ -479,6 +528,7 @@ src/ft_print_tools.o: src/ft_print_tools.c.o
 
 # target to build an object file
 src/ft_print_tools.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_tools.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.o
 .PHONY : src/ft_print_tools.c.o
 
@@ -488,6 +538,7 @@ src/ft_print_tools.i: src/ft_print_tools.c.i
 
 # target to preprocess a source file
 src/ft_print_tools.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_tools.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.i
 .PHONY : src/ft_print_tools.c.i
 
@@ -497,6 +548,7 @@ src/ft_print_tools.s: src/ft_print_tools.c.s
 
 # target to generate assembly for a file
 src/ft_print_tools.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_tools.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.s
 .PHONY : src/ft_print_tools.c.s
 
@@ -506,6 +558,7 @@ src/ft_queue_new.o: src/ft_queue_new.c.o
 
 # target to build an object file
 src/ft_queue_new.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_new.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_new.c.o
 .PHONY : src/ft_queue_new.c.o
 
@@ -515,6 +568,7 @@ src/ft_queue_new.i: src/ft_queue_new.c.i
 
 # target to preprocess a source file
 src/ft_queue_new.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_new.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_new.c.i
 .PHONY : src/ft_queue_new.c.i
 
@@ -524,6 +578,7 @@ src/ft_queue_new.s: src/ft_queue_new.c.s
 
 # target to generate assembly for a file
 src/ft_queue_new.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_new.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_new.c.s
 .PHONY : src/ft_queue_new.c.s
 
@@ -533,6 +588,7 @@ src/ft_queue_pop.o: src/ft_queue_pop.c.o
 
 # target to build an object file
 src/ft_queue_pop.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_pop.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o
 .PHONY : src/ft_queue_pop.c.o
 
@@ -542,6 +598,7 @@ src/ft_queue_pop.i: src/ft_queue_pop.c.i
 
 # target to preprocess a source file
 src/ft_queue_pop.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_pop.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.i
 .PHONY : src/ft_queue_pop.c.i
 
@@ -551,6 +608,7 @@ src/ft_queue_pop.s: src/ft_queue_pop.c.s
 
 # target to generate assembly for a file
 src/ft_queue_pop.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_queue_pop.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.s
 .PHONY : src/ft_queue_pop.c.s
 
@@ -560,6 +618,7 @@ src/ft_remove_vertex.o: src/ft_remove_vertex.c.o
 
 # target to build an object file
 src/ft_remove_vertex.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o
 .PHONY : src/ft_remove_vertex.c.o
 
@@ -569,6 +628,7 @@ src/ft_remove_vertex.i: src/ft_remove_vertex.c.i
 
 # target to preprocess a source file
 src/ft_remove_vertex.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_vertex.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.i
 .PHONY : src/ft_remove_vertex.c.i
 
@@ -578,6 +638,7 @@ src/ft_remove_vertex.s: src/ft_remove_vertex.c.s
 
 # target to generate assembly for a file
 src/ft_remove_vertex.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_vertex.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.s
 .PHONY : src/ft_remove_vertex.c.s
 
@@ -587,6 +648,7 @@ src/ft_reset_edge_oriented.o: src/ft_reset_edge_oriented.c.o
 
 # target to build an object file
 src/ft_reset_edge_oriented.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o
 .PHONY : src/ft_reset_edge_oriented.c.o
 
@@ -596,6 +658,7 @@ src/ft_reset_edge_oriented.i: src/ft_reset_edge_oriented.c.i
 
 # target to preprocess a source file
 src/ft_reset_edge_oriented.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.i
 .PHONY : src/ft_reset_edge_oriented.c.i
 
@@ -605,6 +668,7 @@ src/ft_reset_edge_oriented.s: src/ft_reset_edge_oriented.c.s
 
 # target to generate assembly for a file
 src/ft_reset_edge_oriented.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s
 .PHONY : src/ft_reset_edge_oriented.c.s
 
@@ -614,6 +678,7 @@ src/ft_reverse_edge.o: src/ft_reverse_edge.c.o
 
 # target to build an object file
 src/ft_reverse_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.o
 .PHONY : src/ft_reverse_edge.c.o
 
@@ -623,6 +688,7 @@ src/ft_reverse_edge.i: src/ft_reverse_edge.c.i
 
 # target to preprocess a source file
 src/ft_reverse_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reverse_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.i
 .PHONY : src/ft_reverse_edge.c.i
 
@@ -632,6 +698,7 @@ src/ft_reverse_edge.s: src/ft_reverse_edge.c.s
 
 # target to generate assembly for a file
 src/ft_reverse_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_reverse_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.s
 .PHONY : src/ft_reverse_edge.c.s
 
@@ -641,6 +708,7 @@ src/ft_save_as_dot.o: src/ft_save_as_dot.c.o
 
 # target to build an object file
 src/ft_save_as_dot.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o
 .PHONY : src/ft_save_as_dot.c.o
 
@@ -650,6 +718,7 @@ src/ft_save_as_dot.i: src/ft_save_as_dot.c.i
 
 # target to preprocess a source file
 src/ft_save_as_dot.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_save_as_dot.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.i
 .PHONY : src/ft_save_as_dot.c.i
 
@@ -659,6 +728,7 @@ src/ft_save_as_dot.s: src/ft_save_as_dot.c.s
 
 # target to generate assembly for a file
 src/ft_save_as_dot.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_save_as_dot.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.s
 .PHONY : src/ft_save_as_dot.c.s
 
@@ -668,6 +738,7 @@ src/ft_set_edge.o: src/ft_set_edge.c.o
 
 # target to build an object file
 src/ft_set_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_edge.c.o
 .PHONY : src/ft_set_edge.c.o
 
@@ -677,6 +748,7 @@ src/ft_set_edge.i: src/ft_set_edge.c.i
 
 # target to preprocess a source file
 src/ft_set_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_edge.c.i
 .PHONY : src/ft_set_edge.c.i
 
@@ -686,6 +758,7 @@ src/ft_set_edge.s: src/ft_set_edge.c.s
 
 # target to generate assembly for a file
 src/ft_set_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_edge.c.s
 .PHONY : src/ft_set_edge.c.s
 
@@ -695,6 +768,7 @@ src/ft_set_vertex.o: src/ft_set_vertex.c.o
 
 # target to build an object file
 src/ft_set_vertex.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_vertex.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_vertex.c.o
 .PHONY : src/ft_set_vertex.c.o
 
@@ -704,6 +778,7 @@ src/ft_set_vertex.i: src/ft_set_vertex.c.i
 
 # target to preprocess a source file
 src/ft_set_vertex.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_vertex.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_vertex.c.i
 .PHONY : src/ft_set_vertex.c.i
 
@@ -713,6 +788,7 @@ src/ft_set_vertex.s: src/ft_set_vertex.c.s
 
 # target to generate assembly for a file
 src/ft_set_vertex.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_vertex.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_vertex.c.s
 .PHONY : src/ft_set_vertex.c.s
 
@@ -722,6 +798,7 @@ src/ft_split_egde.o: src/ft_split_egde.c.o
 
 # target to build an object file
 src/ft_split_egde.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_egde.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.o
 .PHONY : src/ft_split_egde.c.o
 
@@ -731,6 +808,7 @@ src/ft_split_egde.i: src/ft_split_egde.c.i
 
 # target to preprocess a source file
 src/ft_split_egde.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_egde.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.i
 .PHONY : src/ft_split_egde.c.i
 
@@ -740,6 +818,7 @@ src/ft_split_egde.s: src/ft_split_egde.c.s
 
 # target to generate assembly for a file
 src/ft_split_egde.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_egde.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_egde.c.s
 .PHONY : src/ft_split_egde.c.s
 
@@ -749,6 +828,7 @@ src/ft_split_vertex.o: src/ft_split_vertex.c.o
 
 # target to build an object file
 src/ft_split_vertex.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_vertex.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o
 .PHONY : src/ft_split_vertex.c.o
 
@@ -758,6 +838,7 @@ src/ft_split_vertex.i: src/ft_split_vertex.c.i
 
 # target to preprocess a source file
 src/ft_split_vertex.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_vertex.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.i
 .PHONY : src/ft_split_vertex.c.i
 
@@ -767,6 +848,7 @@ src/ft_split_vertex.s: src/ft_split_vertex.c.s
 
 # target to generate assembly for a file
 src/ft_split_vertex.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_split_vertex.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_split_vertex.c.s
 .PHONY : src/ft_split_vertex.c.s
 
@@ -776,6 +858,7 @@ src/ft_spllit_all_graph_edge.o: src/ft_spllit_all_graph_edge.c.o
 
 # target to build an object file
 src/ft_spllit_all_graph_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o
 .PHONY : src/ft_spllit_all_graph_edge.c.o
 
@@ -785,6 +868,7 @@ src/ft_spllit_all_graph_edge.i: src/ft_spllit_all_graph_edge.c.i
 
 # target to preprocess a source file
 src/ft_spllit_all_graph_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.i
 .PHONY : src/ft_spllit_all_graph_edge.c.i
 
@@ -794,6 +878,7 @@ src/ft_spllit_all_graph_edge.s: src/ft_spllit_all_graph_edge.c.s
 
 # target to generate assembly for a file
 src/ft_spllit_all_graph_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s
 .PHONY : src/ft_spllit_all_graph_edge.c.s
 
@@ -824,12 +909,40 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/short_test.o: src/short_test.c.o
+
+.PHONY : src/short_test.o
+
+# target to build an object file
+src/short_test.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/short_test.c.o
+.PHONY : src/short_test.c.o
+
+src/short_test.i: src/short_test.c.i
+
+.PHONY : src/short_test.i
+
+# target to preprocess a source file
+src/short_test.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/short_test.c.i
+.PHONY : src/short_test.c.i
+
+src/short_test.s: src/short_test.c.s
+
+.PHONY : src/short_test.s
+
+# target to generate assembly for a file
+src/short_test.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/short_test.c.s
+.PHONY : src/short_test.c.s
+
 src/test_graph.o: src/test_graph.c.o
 
 .PHONY : src/test_graph.o
 
 # target to build an object file
 src/test_graph.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/test_graph.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.o
 .PHONY : src/test_graph.c.o
 
@@ -839,6 +952,7 @@ src/test_graph.i: src/test_graph.c.i
 
 # target to preprocess a source file
 src/test_graph.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/test_graph.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.i
 .PHONY : src/test_graph.c.i
 
@@ -848,6 +962,7 @@ src/test_graph.s: src/test_graph.c.s
 
 # target to generate assembly for a file
 src/test_graph.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/test_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/test_graph.c.s
 .PHONY : src/test_graph.c.s
 
@@ -884,10 +999,11 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... lem_in"
-	@echo "... rebuild_cache"
 	@echo "... test_str_len"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... short_test"
+	@echo "... lem_in"
 	@echo "... libft"
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
@@ -964,6 +1080,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/short_test.o"
+	@echo "... src/short_test.i"
+	@echo "... src/short_test.s"
 	@echo "... src/test_graph.o"
 	@echo "... src/test_graph.i"
 	@echo "... src/test_graph.s"

@@ -38,7 +38,7 @@ void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end)
 		{
 //			test = ((t_vertex*)(*(t_edge**)end->edge_in_list->content)->start)->id;
 			if (((t_vertex*)(*(t_edge**)end->edge_in_list->content)->start) == start) {
-				ft_add_edge(end, start, (*(t_edge**)end->edge_in_list->content)->flow, (*(t_edge**)end->edge_in_list->content)->oriented);
+				ft_add_edge(end, start, ((*(t_edge**)end->edge_in_list->content)->flow)^1, (*(t_edge**)end->edge_in_list->content)->oriented);
 				ft_remove_edge((t_edge**)end->edge_in_list->content);
 //				(t_vertex*)graph->vertex_list->next->next->content)->edge_in_list->content
 //				ft_lstd_pop_front(&start->edge_out_list);

@@ -1,17 +1,27 @@
 digraph 5 {
 	"0 zero";
-	"3 one";
-	"2 one";
+	"5 two";
+	"4 two";
 	"7 three";
 	"6 three";
 	"10 five";
+	"13 five";
+	"12 five";
+	"15 five";
+	"14 five";
 	"1 zero";
-	"3 one" -> "0 zero";
+	"7 three" -> "0 zero";
 	"1 zero" -> "0 zero" [dir = forward color = "green"];
-	"6 three" -> "3 one" [dir = forward color = "green"];
-	"7 three" -> "2 one";
-	"3 one" -> "2 one" [dir = forward color = "green"];
-	"10 five" -> "7 three" [dir = forward color = "green"];
+	"14 five" -> "5 two" [dir = forward color = "green"];
+	"5 two" -> "4 two" [dir = forward color = "green"];
+	"15 five" -> "4 two";
+	"4 two" -> "7 three" [dir = forward color = "green"];
 	"7 three" -> "6 three" [dir = forward color = "green"];
-	"2 one" -> "1 zero" [dir = forward color = "green"];
+	"5 two" -> "6 three";
+	"10 five" -> "13 five" [dir = forward color = "green"];
+	"13 five" -> "12 five" [dir = forward color = "green"];
+	"12 five" -> "15 five" [dir = forward color = "green"];
+	"13 five" -> "14 five";
+	"15 five" -> "14 five" [dir = forward color = "green"];
+	"6 three" -> "1 zero" [dir = forward color = "green"];
 	}

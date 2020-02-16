@@ -33,7 +33,10 @@ include_directories(includes)
 
 add_executable(lem_in ${SRC} src/main.c)
 add_executable(test_str_len test_str_len.c)
+add_executable(short_test ${SRC} src/short_test.c)
+
 
 add_subdirectory(lib/libft)
 target_link_libraries(lem_in libft)
 target_link_libraries(test_str_len libft)
+target_link_libraries(short_test libft)
