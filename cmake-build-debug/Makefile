@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/e/shcool_42/lem_in
+CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/lem_in/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Admin/.CLion2019.2/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -608,6 +608,33 @@ src/ft_reset_edge_oriented.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.s
 .PHONY : src/ft_reset_edge_oriented.c.s
 
+src/ft_reverse_edge.o: src/ft_reverse_edge.c.o
+
+.PHONY : src/ft_reverse_edge.o
+
+# target to build an object file
+src/ft_reverse_edge.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.o
+.PHONY : src/ft_reverse_edge.c.o
+
+src/ft_reverse_edge.i: src/ft_reverse_edge.c.i
+
+.PHONY : src/ft_reverse_edge.i
+
+# target to preprocess a source file
+src/ft_reverse_edge.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.i
+.PHONY : src/ft_reverse_edge.c.i
+
+src/ft_reverse_edge.s: src/ft_reverse_edge.c.s
+
+.PHONY : src/ft_reverse_edge.s
+
+# target to generate assembly for a file
+src/ft_reverse_edge.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.s
+.PHONY : src/ft_reverse_edge.c.s
+
 src/ft_save_as_dot.o: src/ft_save_as_dot.c.o
 
 .PHONY : src/ft_save_as_dot.o
@@ -913,6 +940,9 @@ help:
 	@echo "... src/ft_reset_edge_oriented.o"
 	@echo "... src/ft_reset_edge_oriented.i"
 	@echo "... src/ft_reset_edge_oriented.s"
+	@echo "... src/ft_reverse_edge.o"
+	@echo "... src/ft_reverse_edge.i"
+	@echo "... src/ft_reverse_edge.s"
 	@echo "... src/ft_save_as_dot.o"
 	@echo "... src/ft_save_as_dot.i"
 	@echo "... src/ft_save_as_dot.s"

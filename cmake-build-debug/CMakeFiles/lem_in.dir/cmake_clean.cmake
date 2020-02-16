@@ -16,6 +16,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o"
   "CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o"
   "CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o"
   "CMakeFiles/lem_in.dir/src/ft_set_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_set_vertex.c.o"
@@ -24,9 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"
   "CMakeFiles/lem_in.dir/src/test_graph.c.o"
-  "lem_in.exe"
+  "lem_in"
   "lem_in.pdb"
-  "liblem_in.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

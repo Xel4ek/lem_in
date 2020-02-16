@@ -1,0 +1,17 @@
+digraph 5 {
+	"0 zero";
+	"3 one";
+	"2 one";
+	"7 three";
+	"6 three";
+	"10 five";
+	"1 zero";
+	"3 one" -> "0 zero";
+	"1 zero" -> "0 zero" [dir = forward color = "green"];
+	"6 three" -> "3 one" [dir = forward color = "green"];
+	"7 three" -> "2 one";
+	"3 one" -> "2 one" [dir = forward color = "green"];
+	"10 five" -> "7 three" [dir = forward color = "green"];
+	"7 three" -> "6 three" [dir = forward color = "green"];
+	"2 one" -> "1 zero" [dir = forward color = "green"];
+	}

@@ -5,121 +5,126 @@ CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/fr_remove_egde.c
+ /home/xel/projects/lem_in/src/fr_remove_egde.c
 CMakeFiles/lem_in.dir/src/ft_add_edge.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_add_edge.c
+ /home/xel/projects/lem_in/src/ft_add_edge.c
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_add_vertex.c
+ /home/xel/projects/lem_in/src/ft_add_vertex.c
 CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_convert_graph.c
+ /home/xel/projects/lem_in/src/ft_convert_graph.c
 CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_grahp_dfs.c
+ /home/xel/projects/lem_in/src/ft_grahp_dfs.c
 CMakeFiles/lem_in.dir/src/ft_move_edge.c.o
- /cygdrive/e/shcool_42/lem_in/src/ft_move_edge.c
+ /home/xel/projects/lem_in/src/ft_move_edge.c
 CMakeFiles/lem_in.dir/src/ft_new_edge.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_new_edge.c
+ /home/xel/projects/lem_in/src/ft_new_edge.c
 CMakeFiles/lem_in.dir/src/ft_new_vertex.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_new_vertex.c
+ /home/xel/projects/lem_in/src/ft_new_vertex.c
 CMakeFiles/lem_in.dir/src/ft_print_edge.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_print_edge.c
+ /home/xel/projects/lem_in/src/ft_print_edge.c
 CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_print_egde_list.c
+ /home/xel/projects/lem_in/src/ft_print_egde_list.c
 CMakeFiles/lem_in.dir/src/ft_print_graph.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/ft_printf.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_print_graph.c
+ /home/xel/projects/lem_in/src/ft_print_graph.c
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_print_matrix.c
+ /home/xel/projects/lem_in/src/ft_print_matrix.c
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_print_tools.c
+ /home/xel/projects/lem_in/src/ft_print_tools.c
 CMakeFiles/lem_in.dir/src/ft_queue_new.c.o
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_queue_new.c
+ /home/xel/projects/lem_in/src/ft_queue_new.c
 CMakeFiles/lem_in.dir/src/ft_queue_pop.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_queue_pop.c
+ /home/xel/projects/lem_in/src/ft_queue_pop.c
 CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_remove_vertex.c
+ /home/xel/projects/lem_in/src/ft_remove_vertex.c
 CMakeFiles/lem_in.dir/src/ft_reset_edge_oriented.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_reset_edge_oriented.c
+ /home/xel/projects/lem_in/src/ft_reset_edge_oriented.c
+CMakeFiles/lem_in.dir/src/ft_reverse_edge.c.o
+ ../includes/lem_in.h
+ ../lib/libft/includes/libft.h
+ ../lib/libft/includes/libft_structs.h
+ /home/xel/projects/lem_in/src/ft_reverse_edge.c
 CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/ft_printf.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_save_as_dot.c
+ /home/xel/projects/lem_in/src/ft_save_as_dot.c
 CMakeFiles/lem_in.dir/src/ft_set_edge.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_set_edge.c
+ /home/xel/projects/lem_in/src/ft_set_edge.c
 CMakeFiles/lem_in.dir/src/ft_set_vertex.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_set_vertex.c
+ /home/xel/projects/lem_in/src/ft_set_vertex.c
 CMakeFiles/lem_in.dir/src/ft_split_egde.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_split_egde.c
+ /home/xel/projects/lem_in/src/ft_split_egde.c
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_split_vertex.c
+ /home/xel/projects/lem_in/src/ft_split_vertex.c
 CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/ft_spllit_all_graph_edge.c
+ /home/xel/projects/lem_in/src/ft_spllit_all_graph_edge.c
 CMakeFiles/lem_in.dir/src/main.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/main.c
+ /home/xel/projects/lem_in/src/main.c
 CMakeFiles/lem_in.dir/src/test_graph.c.o
  ../includes/lem_in.h
  ../lib/libft/includes/libft.h
  ../lib/libft/includes/libft_structs.h
- /cygdrive/e/shcool_42/lem_in/src/test_graph.c
+ /home/xel/projects/lem_in/src/test_graph.c

@@ -1,4 +1,4 @@
-C:\Users\Admin\.CLion2019.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/e/shcool_42/lem_in
+/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xel/projects/lem_in
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/e/shcool_42/lem_in/cmake-build-debug
+-- Build files have been written to: /home/xel/projects/lem_in/cmake-build-debug

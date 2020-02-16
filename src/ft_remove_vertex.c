@@ -11,7 +11,5 @@ void ft_remove_vertex(t_graph **graph, t_vertex **vertex){
 		while (*vertex != (t_vertex*)(*graph)->vertex_list->content)
 			(*graph)->vertex_list = (*graph)->vertex_list->next;
 		ft_lstd_pop_front(&(*graph)->vertex_list);
-
 	}
-
 }

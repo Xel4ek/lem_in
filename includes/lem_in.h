@@ -69,4 +69,9 @@ t_list			*ft_queue_new(void *content);
 void ft_add_vertex_front(t_graph *graph, t_vertex *vertex);
 void ft_split_all_graph_edge(t_graph *graph);
 void ft_reset_edge_oriented(t_graph *graph);
+
+void ft_reverse_edge(t_edge **edge);
+
+int ft_graph_bfs(t_graph *graph, int target_id);
+void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 #endif
