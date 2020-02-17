@@ -8,20 +8,24 @@ void ft_split_vertex(t_graph **graph, t_vertex **vertex)
 
 	if (vertex && *vertex && graph && *graph)
 	{
-		new_vertex_out = ft_new_verex((*vertex)->id + 1, (*vertex)->name);
-		new_vertex_out->edge_out_list = (*vertex)->edge_out_list;
-		new_vertex_out->edge_in_list = NULL;
-		(*vertex)->edge_out_list = NULL;
-		ft_add_vertex_back(*graph, new_vertex_out);
-		len = ft_lstdlen(new_vertex_out->edge_out_list);
-
-		while (len--)
+		if ((*vertex)->id != 0 && (*vertex)->id != -2)
 		{
-			(*(t_edge**)( (t_vertex*)(*graph)->vertex_list->prev->content)->edge_out_list->content)->start = ( (t_vertex*)(*graph)->vertex_list->prev->content);
-			((t_vertex*)(*graph)->vertex_list->prev->content)->edge_out_list = ((t_vertex*)(*graph)->vertex_list->prev->content)->edge_out_list->next;
+			new_vertex_out = ft_new_verex((*vertex)->id + 1, (*vertex)->name);
+			new_vertex_out->edge_out_list = (*vertex)->edge_out_list;
+			new_vertex_out->edge_in_list = NULL;
+			(*vertex)->edge_out_list = NULL;
+			ft_add_vertex_back(*graph, new_vertex_out);
+			len = ft_lstdlen(new_vertex_out->edge_out_list);
+
+			while (len--)
+			{
+				(*(t_edge **) ((t_vertex *) (*graph)->vertex_list->prev->content)->edge_out_list->content)->start = ((t_vertex *) (*graph)->vertex_list->prev->content);
+				((t_vertex *) (*graph)->vertex_list->prev->content)->edge_out_list = ((t_vertex *) (*graph)->vertex_list->prev->content)->edge_out_list->next;
+			}
+
+			ft_add_edge((t_vertex *) (*graph)->vertex_list->content,
+						(t_vertex *) (*graph)->vertex_list->prev->content, 0,
+						1);
 		}
-
-
-		ft_add_edge((t_vertex*)(*graph)->vertex_list->content, (t_vertex*)(*graph)->vertex_list->prev->content, 0, 1);
 	}
 }

@@ -23,6 +23,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/short_test.dir/src/ft_split_egde.c.o"
   "CMakeFiles/short_test.dir/src/ft_split_vertex.c.o"
   "CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o"
+  "CMakeFiles/short_test.dir/src/read_map.c.o"
   "CMakeFiles/short_test.dir/src/short_test.c.o"
   "CMakeFiles/short_test.dir/src/test_graph.c.o"
   "short_test"

@@ -14,7 +14,13 @@ int main()
 	int fd;
 	int i;
 	int graph_len;
-	graph = mygraph();
+//	graph = mygraph();
+	fd = open("../input.txt", O_RDONLY);
+//	fd = 0;
+	graph = NULL;
+	if (!ft_get_graph(&graph, fd))
+		return (write(2, "Error\n", 6));
+	close(fd);
 	ft_print_graph(graph);
 	fd = open("../2.gv", O_CREAT | O_WRONLY | O_TRUNC);
 	ft_save_graph_as_dot(fd, graph);
@@ -41,20 +47,21 @@ int main()
 	while(((t_vertex*)graph->vertex_list->content)->id)
 		graph->vertex_list = graph->vertex_list->next;
 
-	ft_printf("-%d-----------------------------\n",temp);
+	ft_printf("------------------------------\n");
 	vertex = ((t_vertex *)graph->vertex_list->prev->content);
 	ft_print_graph(graph);
 
 	fd = open("../1.gv", O_CREAT | O_WRONLY | O_TRUNC);
 	ft_save_digraph_as_dot(fd, graph);
 	close(fd);
-
-	temp = ft_graph_bfs(graph, 10);
+	temp = 0;
+	while(ft_graph_bfs(graph, -2))
+		++temp;
 //	temp = ft_graph_dfs(graph, 8);
 
 //	ft_reset_edge_oriented(graph);
 //	ft_split_all_graph_edge(graph);
-	ft_printf("--------------------------------\n",temp);
+	ft_printf("--%d-----------------------------\n",temp);
 //	residual
 	ft_print_graph(graph);
 

@@ -77,4 +77,6 @@ void ft_reverse_edge(t_edge **edge);
 
 int ft_graph_bfs(t_graph *graph, int target_id);
 void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
+
+int ft_get_graph(t_graph **graph, int fd);
 #endif

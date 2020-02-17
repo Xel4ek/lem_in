@@ -25,7 +25,8 @@ set(SRC
         src/ft_queue_pop.c
         src/ft_save_as_dot.c
         src/ft_queue_new.c
-        src/ft_spllit_all_graph_edge.c src/ft_reset_edge_oriented.c src/ft_reverse_edge.c)
+        src/ft_spllit_all_graph_edge.c src/ft_reset_edge_oriented.c src/ft_reverse_edge.c
+        src/read_map.c)
 
 
 include_directories(lib/libft/includes)
@@ -34,9 +35,10 @@ include_directories(includes)
 add_executable(lem_in ${SRC} src/main.c)
 add_executable(test_str_len test_str_len.c)
 add_executable(short_test ${SRC} src/short_test.c)
-
+add_executable(read_map ${SRC} src/read_only.c)
 
 add_subdirectory(lib/libft)
 target_link_libraries(lem_in libft)
 target_link_libraries(test_str_len libft)
 target_link_libraries(short_test libft)
+target_link_libraries(read_map libft)

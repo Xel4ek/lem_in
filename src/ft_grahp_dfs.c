@@ -73,9 +73,13 @@ int ft_graph_bfs(t_graph *graph, int target_id)
 {
 	t_list *queue;
 	t_vertex *current;
+	int i;
 
 	ft_reset_vertex_color(graph);
 	queue = NULL;
+	i = ft_lstdlen(graph->vertex_list);
+	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != 0)
+		graph->vertex_list = graph->vertex_list->next;
 	current = (t_vertex*)graph->vertex_list->content;
 
 	ft_lstd_push_back(&queue, ft_queue_new((t_vertex**)&graph->vertex_list->content));

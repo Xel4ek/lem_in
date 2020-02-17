@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
+CMAKE_SOURCE_DIR = /home/alexey/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/short_test.dir/depend.make
@@ -59,341 +59,354 @@ include CMakeFiles/short_test.dir/flags.make
 
 CMakeFiles/short_test.dir/src/ft_print_matrix.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_print_matrix.c.o: ../src/ft_print_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/short_test.dir/src/ft_print_matrix.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_matrix.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/short_test.dir/src/ft_print_matrix.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_matrix.c.o   -c /home/alexey/projects/lem_in/src/ft_print_matrix.c
 
 CMakeFiles/short_test.dir/src/ft_print_matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_matrix.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_matrix.c > CMakeFiles/short_test.dir/src/ft_print_matrix.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_matrix.c > CMakeFiles/short_test.dir/src/ft_print_matrix.c.i
 
 CMakeFiles/short_test.dir/src/ft_print_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_matrix.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_matrix.c -o CMakeFiles/short_test.dir/src/ft_print_matrix.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_matrix.c -o CMakeFiles/short_test.dir/src/ft_print_matrix.c.s
 
 CMakeFiles/short_test.dir/src/ft_set_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_set_edge.c.o: ../src/ft_set_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/short_test.dir/src/ft_set_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/short_test.dir/src/ft_set_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_set_edge.c
 
 CMakeFiles/short_test.dir/src/ft_set_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_set_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_edge.c > CMakeFiles/short_test.dir/src/ft_set_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_set_edge.c > CMakeFiles/short_test.dir/src/ft_set_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_set_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_set_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_edge.c -o CMakeFiles/short_test.dir/src/ft_set_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_set_edge.c -o CMakeFiles/short_test.dir/src/ft_set_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_new_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_new_edge.c.o: ../src/ft_new_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/short_test.dir/src/ft_new_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_new_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_new_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/short_test.dir/src/ft_new_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_new_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_new_edge.c
 
 CMakeFiles/short_test.dir/src/ft_new_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_new_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_new_edge.c > CMakeFiles/short_test.dir/src/ft_new_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_new_edge.c > CMakeFiles/short_test.dir/src/ft_new_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_new_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_new_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_new_edge.c -o CMakeFiles/short_test.dir/src/ft_new_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_new_edge.c -o CMakeFiles/short_test.dir/src/ft_new_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_new_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_new_vertex.c.o: ../src/ft_new_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/short_test.dir/src/ft_new_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_new_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_new_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/short_test.dir/src/ft_new_vertex.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_new_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_new_vertex.c
 
 CMakeFiles/short_test.dir/src/ft_new_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_new_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_new_vertex.c > CMakeFiles/short_test.dir/src/ft_new_vertex.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_new_vertex.c > CMakeFiles/short_test.dir/src/ft_new_vertex.c.i
 
 CMakeFiles/short_test.dir/src/ft_new_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_new_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_new_vertex.c -o CMakeFiles/short_test.dir/src/ft_new_vertex.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_new_vertex.c -o CMakeFiles/short_test.dir/src/ft_new_vertex.c.s
 
 CMakeFiles/short_test.dir/src/ft_set_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_set_vertex.c.o: ../src/ft_set_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/short_test.dir/src/ft_set_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/short_test.dir/src/ft_set_vertex.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_set_vertex.c
 
 CMakeFiles/short_test.dir/src/ft_set_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_set_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_vertex.c > CMakeFiles/short_test.dir/src/ft_set_vertex.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_set_vertex.c > CMakeFiles/short_test.dir/src/ft_set_vertex.c.i
 
 CMakeFiles/short_test.dir/src/ft_set_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_set_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_vertex.c -o CMakeFiles/short_test.dir/src/ft_set_vertex.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_set_vertex.c -o CMakeFiles/short_test.dir/src/ft_set_vertex.c.s
 
 CMakeFiles/short_test.dir/src/ft_print_tools.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_print_tools.c.o: ../src/ft_print_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/short_test.dir/src/ft_print_tools.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_tools.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/short_test.dir/src/ft_print_tools.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_tools.c.o   -c /home/alexey/projects/lem_in/src/ft_print_tools.c
 
 CMakeFiles/short_test.dir/src/ft_print_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_tools.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_tools.c > CMakeFiles/short_test.dir/src/ft_print_tools.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_tools.c > CMakeFiles/short_test.dir/src/ft_print_tools.c.i
 
 CMakeFiles/short_test.dir/src/ft_print_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_tools.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_tools.c -o CMakeFiles/short_test.dir/src/ft_print_tools.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_tools.c -o CMakeFiles/short_test.dir/src/ft_print_tools.c.s
 
 CMakeFiles/short_test.dir/src/test_graph.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/test_graph.c.o: ../src/test_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/short_test.dir/src/test_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/test_graph.c.o   -c /Users/hwolf/projects/lem_in/src/test_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/short_test.dir/src/test_graph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/test_graph.c.o   -c /home/alexey/projects/lem_in/src/test_graph.c
 
 CMakeFiles/short_test.dir/src/test_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/test_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/test_graph.c > CMakeFiles/short_test.dir/src/test_graph.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/test_graph.c > CMakeFiles/short_test.dir/src/test_graph.c.i
 
 CMakeFiles/short_test.dir/src/test_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/test_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/test_graph.c -o CMakeFiles/short_test.dir/src/test_graph.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/test_graph.c -o CMakeFiles/short_test.dir/src/test_graph.c.s
 
 CMakeFiles/short_test.dir/src/ft_print_graph.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_print_graph.c.o: ../src/ft_print_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/short_test.dir/src/ft_print_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/short_test.dir/src/ft_print_graph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_graph.c.o   -c /home/alexey/projects/lem_in/src/ft_print_graph.c
 
 CMakeFiles/short_test.dir/src/ft_print_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_graph.c > CMakeFiles/short_test.dir/src/ft_print_graph.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_graph.c > CMakeFiles/short_test.dir/src/ft_print_graph.c.i
 
 CMakeFiles/short_test.dir/src/ft_print_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_graph.c -o CMakeFiles/short_test.dir/src/ft_print_graph.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_graph.c -o CMakeFiles/short_test.dir/src/ft_print_graph.c.s
 
 CMakeFiles/short_test.dir/src/ft_add_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_add_edge.c.o: ../src/ft_add_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/short_test.dir/src/ft_add_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/short_test.dir/src/ft_add_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_add_edge.c
 
 CMakeFiles/short_test.dir/src/ft_add_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_add_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_edge.c > CMakeFiles/short_test.dir/src/ft_add_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_add_edge.c > CMakeFiles/short_test.dir/src/ft_add_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_add_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_add_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_edge.c -o CMakeFiles/short_test.dir/src/ft_add_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_add_edge.c -o CMakeFiles/short_test.dir/src/ft_add_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o: ../src/ft_print_egde_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o   -c /home/alexey/projects/lem_in/src/ft_print_egde_list.c
 
 CMakeFiles/short_test.dir/src/ft_print_egde_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_egde_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c > CMakeFiles/short_test.dir/src/ft_print_egde_list.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_egde_list.c > CMakeFiles/short_test.dir/src/ft_print_egde_list.c.i
 
 CMakeFiles/short_test.dir/src/ft_print_egde_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_egde_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c -o CMakeFiles/short_test.dir/src/ft_print_egde_list.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_egde_list.c -o CMakeFiles/short_test.dir/src/ft_print_egde_list.c.s
 
 CMakeFiles/short_test.dir/src/ft_print_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_print_edge.c.o: ../src/ft_print_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/short_test.dir/src/ft_print_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/short_test.dir/src/ft_print_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_print_edge.c
 
 CMakeFiles/short_test.dir/src/ft_print_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_edge.c > CMakeFiles/short_test.dir/src/ft_print_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_edge.c > CMakeFiles/short_test.dir/src/ft_print_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_print_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_edge.c -o CMakeFiles/short_test.dir/src/ft_print_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_edge.c -o CMakeFiles/short_test.dir/src/ft_print_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_add_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_add_vertex.c.o: ../src/ft_add_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/short_test.dir/src/ft_add_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/short_test.dir/src/ft_add_vertex.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_add_vertex.c
 
 CMakeFiles/short_test.dir/src/ft_add_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_add_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_vertex.c > CMakeFiles/short_test.dir/src/ft_add_vertex.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_add_vertex.c > CMakeFiles/short_test.dir/src/ft_add_vertex.c.i
 
 CMakeFiles/short_test.dir/src/ft_add_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_add_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_vertex.c -o CMakeFiles/short_test.dir/src/ft_add_vertex.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_add_vertex.c -o CMakeFiles/short_test.dir/src/ft_add_vertex.c.s
 
 CMakeFiles/short_test.dir/src/ft_split_egde.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_split_egde.c.o: ../src/ft_split_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/short_test.dir/src/ft_split_egde.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_split_egde.c.o   -c /Users/hwolf/projects/lem_in/src/ft_split_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/short_test.dir/src/ft_split_egde.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_split_egde.c.o   -c /home/alexey/projects/lem_in/src/ft_split_egde.c
 
 CMakeFiles/short_test.dir/src/ft_split_egde.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_split_egde.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_split_egde.c > CMakeFiles/short_test.dir/src/ft_split_egde.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_split_egde.c > CMakeFiles/short_test.dir/src/ft_split_egde.c.i
 
 CMakeFiles/short_test.dir/src/ft_split_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_split_egde.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_split_egde.c -o CMakeFiles/short_test.dir/src/ft_split_egde.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_split_egde.c -o CMakeFiles/short_test.dir/src/ft_split_egde.c.s
 
 CMakeFiles/short_test.dir/src/fr_remove_egde.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/fr_remove_egde.c.o: ../src/fr_remove_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/short_test.dir/src/fr_remove_egde.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.o   -c /Users/hwolf/projects/lem_in/src/fr_remove_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/short_test.dir/src/fr_remove_egde.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.o   -c /home/alexey/projects/lem_in/src/fr_remove_egde.c
 
 CMakeFiles/short_test.dir/src/fr_remove_egde.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/fr_remove_egde.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/fr_remove_egde.c > CMakeFiles/short_test.dir/src/fr_remove_egde.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/fr_remove_egde.c > CMakeFiles/short_test.dir/src/fr_remove_egde.c.i
 
 CMakeFiles/short_test.dir/src/fr_remove_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/fr_remove_egde.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/fr_remove_egde.c -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/fr_remove_egde.c -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
 
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.o: ../src/ft_split_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/short_test.dir/src/ft_split_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_split_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_split_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/short_test.dir/src/ft_split_vertex.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_split_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_split_vertex.c
 
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_split_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_split_vertex.c > CMakeFiles/short_test.dir/src/ft_split_vertex.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_split_vertex.c > CMakeFiles/short_test.dir/src/ft_split_vertex.c.i
 
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_split_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_split_vertex.c -o CMakeFiles/short_test.dir/src/ft_split_vertex.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_split_vertex.c -o CMakeFiles/short_test.dir/src/ft_split_vertex.c.s
 
 CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o: ../src/ft_remove_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_remove_vertex.c
 
 CMakeFiles/short_test.dir/src/ft_remove_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_remove_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c > CMakeFiles/short_test.dir/src/ft_remove_vertex.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_remove_vertex.c > CMakeFiles/short_test.dir/src/ft_remove_vertex.c.i
 
 CMakeFiles/short_test.dir/src/ft_remove_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_remove_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c -o CMakeFiles/short_test.dir/src/ft_remove_vertex.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_remove_vertex.c -o CMakeFiles/short_test.dir/src/ft_remove_vertex.c.s
 
 CMakeFiles/short_test.dir/src/ft_move_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_move_edge.c.o: ../src/ft_move_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/short_test.dir/src/ft_move_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_move_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_move_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/short_test.dir/src/ft_move_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_move_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_move_edge.c
 
 CMakeFiles/short_test.dir/src/ft_move_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_move_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_move_edge.c > CMakeFiles/short_test.dir/src/ft_move_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_move_edge.c > CMakeFiles/short_test.dir/src/ft_move_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_move_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_move_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_move_edge.c -o CMakeFiles/short_test.dir/src/ft_move_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_move_edge.c -o CMakeFiles/short_test.dir/src/ft_move_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_convert_graph.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_convert_graph.c.o: ../src/ft_convert_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/short_test.dir/src/ft_convert_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_convert_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_convert_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/short_test.dir/src/ft_convert_graph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_convert_graph.c.o   -c /home/alexey/projects/lem_in/src/ft_convert_graph.c
 
 CMakeFiles/short_test.dir/src/ft_convert_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_convert_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_convert_graph.c > CMakeFiles/short_test.dir/src/ft_convert_graph.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_convert_graph.c > CMakeFiles/short_test.dir/src/ft_convert_graph.c.i
 
 CMakeFiles/short_test.dir/src/ft_convert_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_convert_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_convert_graph.c -o CMakeFiles/short_test.dir/src/ft_convert_graph.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_convert_graph.c -o CMakeFiles/short_test.dir/src/ft_convert_graph.c.s
 
 CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o: ../src/ft_grahp_dfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o   -c /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o   -c /home/alexey/projects/lem_in/src/ft_grahp_dfs.c
 
 CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c > CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_grahp_dfs.c > CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i
 
 CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c -o CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_grahp_dfs.c -o CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s
 
 CMakeFiles/short_test.dir/src/ft_queue_pop.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_queue_pop.c.o: ../src/ft_queue_pop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/short_test.dir/src/ft_queue_pop.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_queue_pop.c.o   -c /Users/hwolf/projects/lem_in/src/ft_queue_pop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/short_test.dir/src/ft_queue_pop.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_queue_pop.c.o   -c /home/alexey/projects/lem_in/src/ft_queue_pop.c
 
 CMakeFiles/short_test.dir/src/ft_queue_pop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_queue_pop.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_queue_pop.c > CMakeFiles/short_test.dir/src/ft_queue_pop.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_queue_pop.c > CMakeFiles/short_test.dir/src/ft_queue_pop.c.i
 
 CMakeFiles/short_test.dir/src/ft_queue_pop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_queue_pop.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_queue_pop.c -o CMakeFiles/short_test.dir/src/ft_queue_pop.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_queue_pop.c -o CMakeFiles/short_test.dir/src/ft_queue_pop.c.s
 
 CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o: ../src/ft_save_as_dot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o   -c /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_save_as_dot.c.o   -c /home/alexey/projects/lem_in/src/ft_save_as_dot.c
 
 CMakeFiles/short_test.dir/src/ft_save_as_dot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_save_as_dot.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c > CMakeFiles/short_test.dir/src/ft_save_as_dot.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_save_as_dot.c > CMakeFiles/short_test.dir/src/ft_save_as_dot.c.i
 
 CMakeFiles/short_test.dir/src/ft_save_as_dot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_save_as_dot.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c -o CMakeFiles/short_test.dir/src/ft_save_as_dot.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_save_as_dot.c -o CMakeFiles/short_test.dir/src/ft_save_as_dot.c.s
 
 CMakeFiles/short_test.dir/src/ft_queue_new.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_queue_new.c.o: ../src/ft_queue_new.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/short_test.dir/src/ft_queue_new.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_queue_new.c.o   -c /Users/hwolf/projects/lem_in/src/ft_queue_new.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/short_test.dir/src/ft_queue_new.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_queue_new.c.o   -c /home/alexey/projects/lem_in/src/ft_queue_new.c
 
 CMakeFiles/short_test.dir/src/ft_queue_new.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_queue_new.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_queue_new.c > CMakeFiles/short_test.dir/src/ft_queue_new.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_queue_new.c > CMakeFiles/short_test.dir/src/ft_queue_new.c.i
 
 CMakeFiles/short_test.dir/src/ft_queue_new.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_queue_new.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_queue_new.c -o CMakeFiles/short_test.dir/src/ft_queue_new.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_queue_new.c -o CMakeFiles/short_test.dir/src/ft_queue_new.c.s
 
 CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o: ../src/ft_spllit_all_graph_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_spllit_all_graph_edge.c
 
 CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c > CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_spllit_all_graph_edge.c > CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c -o CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_spllit_all_graph_edge.c -o CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s
 
 CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o: ../src/ft_reset_edge_oriented.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o   -c /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o   -c /home/alexey/projects/lem_in/src/ft_reset_edge_oriented.c
 
 CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c > CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_reset_edge_oriented.c > CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.i
 
 CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c -o CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_reset_edge_oriented.c -o CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.s
 
 CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o: ../src/ft_reverse_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o   -c /home/alexey/projects/lem_in/src/ft_reverse_edge.c
 
 CMakeFiles/short_test.dir/src/ft_reverse_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_reverse_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c > CMakeFiles/short_test.dir/src/ft_reverse_edge.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_reverse_edge.c > CMakeFiles/short_test.dir/src/ft_reverse_edge.c.i
 
 CMakeFiles/short_test.dir/src/ft_reverse_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_reverse_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c -o CMakeFiles/short_test.dir/src/ft_reverse_edge.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_reverse_edge.c -o CMakeFiles/short_test.dir/src/ft_reverse_edge.c.s
+
+CMakeFiles/short_test.dir/src/read_map.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/read_map.c.o: ../src/read_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/short_test.dir/src/read_map.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/read_map.c.o   -c /home/alexey/projects/lem_in/src/read_map.c
+
+CMakeFiles/short_test.dir/src/read_map.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/read_map.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/read_map.c > CMakeFiles/short_test.dir/src/read_map.c.i
+
+CMakeFiles/short_test.dir/src/read_map.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/read_map.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/read_map.c -o CMakeFiles/short_test.dir/src/read_map.c.s
 
 CMakeFiles/short_test.dir/src/short_test.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/short_test.c.o: ../src/short_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/short_test.c.o   -c /Users/hwolf/projects/lem_in/src/short_test.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/short_test.c.o   -c /home/alexey/projects/lem_in/src/short_test.c
 
 CMakeFiles/short_test.dir/src/short_test.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/short_test.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/short_test.c > CMakeFiles/short_test.dir/src/short_test.c.i
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/short_test.c > CMakeFiles/short_test.dir/src/short_test.c.i
 
 CMakeFiles/short_test.dir/src/short_test.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/short_test.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/short_test.c -o CMakeFiles/short_test.dir/src/short_test.c.s
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/short_test.c -o CMakeFiles/short_test.dir/src/short_test.c.s
 
 # Object files for target short_test
 short_test_OBJECTS = \
@@ -422,6 +435,7 @@ short_test_OBJECTS = \
 "CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o" \
 "CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o" \
 "CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o" \
+"CMakeFiles/short_test.dir/src/read_map.c.o" \
 "CMakeFiles/short_test.dir/src/short_test.c.o"
 
 # External object files for target short_test
@@ -452,11 +466,12 @@ short_test: CMakeFiles/short_test.dir/src/ft_queue_new.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o
+short_test: CMakeFiles/short_test.dir/src/read_map.c.o
 short_test: CMakeFiles/short_test.dir/src/short_test.c.o
 short_test: CMakeFiles/short_test.dir/build.make
 short_test: lib/libft/liblibft.a
 short_test: CMakeFiles/short_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking C executable short_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking C executable short_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/short_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -469,6 +484,6 @@ CMakeFiles/short_test.dir/clean:
 .PHONY : CMakeFiles/short_test.dir/clean
 
 CMakeFiles/short_test.dir/depend:
-	cd /Users/hwolf/projects/lem_in/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hwolf/projects/lem_in /Users/hwolf/projects/lem_in /Users/hwolf/projects/lem_in/cmake-build-debug /Users/hwolf/projects/lem_in/cmake-build-debug /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/short_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alexey/projects/lem_in/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexey/projects/lem_in /home/alexey/projects/lem_in /home/alexey/projects/lem_in/cmake-build-debug /home/alexey/projects/lem_in/cmake-build-debug /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/short_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/short_test.dir/depend
 

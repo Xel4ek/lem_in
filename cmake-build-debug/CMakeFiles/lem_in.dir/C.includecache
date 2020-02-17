@@ -24,9 +24,9 @@ libft_structs.h
 string.h
 -
 
-/Users/hwolf/projects/lem_in/src/test_graph.c
+/home/alexey/projects/lem_in/src/ft_split_vertex.c
 lem_in.h
-/Users/hwolf/projects/lem_in/src/lem_in.h
+/home/alexey/projects/lem_in/src/lem_in.h
 libft.h
-/Users/hwolf/projects/lem_in/src/libft.h
+/home/alexey/projects/lem_in/src/libft.h
 

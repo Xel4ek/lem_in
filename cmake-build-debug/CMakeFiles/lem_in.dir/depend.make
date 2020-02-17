@@ -123,6 +123,11 @@ CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/lem_in.dir/src/read_map.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/read_map.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/read_map.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/read_map.c.o: ../src/read_map.c
+
 CMakeFiles/lem_in.dir/src/test_graph.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/test_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/test_graph.c.o: ../lib/libft/includes/libft_structs.h
