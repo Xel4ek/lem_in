@@ -10,6 +10,7 @@ t_graph *mygraph(void)
 	if(!(graph = (t_graph*)malloc(sizeof(*graph))))
 		return (NULL);
 	graph->vertex_list = NULL;
+	graph->ants_count = 12;
 	vertex = ft_new_verex(0,"zero");
 	ft_add_vertex_back(graph, vertex);
 	vertex = ft_new_verex(2,"one");
@@ -28,10 +29,10 @@ t_graph *mygraph(void)
 	vertex = ft_new_verex(10,"five");
 	ft_add_vertex_back(graph, vertex);
 	ft_add_edge((t_vertex *)graph->vertex_list->next->content, (t_vertex *)graph->vertex_list->prev->content, 0, 0);
-    vertex = ft_new_verex(12,"five");
+    vertex = ft_new_verex(12,"six");
     ft_add_vertex_back(graph, vertex);
     ft_add_edge((t_vertex *)graph->vertex_list->prev->content, (t_vertex *)graph->vertex_list->prev->prev->content, 0, 0);
-    vertex = ft_new_verex(14,"five");
+    vertex = ft_new_verex(-2,"seven");
     ft_add_vertex_back(graph, vertex);
     ft_add_edge((t_vertex *)graph->vertex_list->prev->content, (t_vertex *)graph->vertex_list->prev->prev->content, 0, 0);
     ft_add_edge((t_vertex *)graph->vertex_list->prev->content, (t_vertex *)graph->vertex_list->next->next->content, 0, 0);

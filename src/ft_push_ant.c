@@ -22,12 +22,16 @@ void *ft_push_ant(t_list *path_list, int *id, int max_id)
 		{
 //			ant_id = vertex->ant_id;
 			ft_swap(&ant_id, &vertex->ant_id);
+			if(vertex->ant_id)
+				ft_printf("L%d-%s ",vertex->ant_id, vertex->name);
 			vertex = (*(t_edge**)vertex->edge_in_list->content)->start;
 			vertex = (*(t_edge**)vertex->edge_in_list->content)->start;
-
 		}
-		ft_swap(&ant_id, &vertex->ant_id);
+//		ft_swap(&ant_id, &vertex->ant_id);
+		if(ant_id)
+			ft_printf("L%d-%s ",ant_id, vertex->name);
 		path_list = path_list->next;
-
+//		if (len)
+//			ft_printf(" | ");
 	}
 }

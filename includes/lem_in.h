@@ -96,5 +96,5 @@ void ft_print_path_list(t_list *path_list);
 t_path *ft_find_shortest_path(t_list *path_list);
 void *ft_push_ant(t_list *path_list, int *id, int max_id);
 void ft_add_ant(t_path *path);
-void ft_set_ant_to_pash(int total_ant, t_list *path_list);
+int ft_set_ant_to_pash(int total_ant, t_list *path_list);
 #endif

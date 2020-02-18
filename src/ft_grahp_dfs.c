@@ -92,12 +92,12 @@ int ft_graph_bfs(t_graph *graph, int target_id)
 		{
 			while(current->id)
 			{
-				ft_printf("%d -> ",current->id);
+//				ft_printf("%d -> ",current->id);
 				current->test = 1;
 				ft_reverse_edge_vertex(current->parrent, current);
 				current = current->parrent;
 			}
-			ft_printf("\n");
+//			ft_printf("\n");
 			while (queue)
 				ft_queue_pop(&queue);
 			return 1;

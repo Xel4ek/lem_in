@@ -33,7 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/short_test.dir/src/read_map.c.o"
   "CMakeFiles/short_test.dir/src/short_test.c.o"
   "CMakeFiles/short_test.dir/src/test_graph.c.o"
-  "short_test"
+  "libshort_test.dll.a"
+  "short_test.exe"
   "short_test.pdb"
 )
 

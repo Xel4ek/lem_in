@@ -1,1 +1,1 @@
-/usr/bin/gcc -g   CMakeFiles/test_str_len.dir/test_str_len.c.o  -o test_str_len lib/libft/liblibft.a 
+/usr/bin/cc -g  -Wl,--enable-auto-import CMakeFiles/test_str_len.dir/test_str_len.c.o  -o test_str_len.exe -Wl,--out-implib,libtest_str_len.dll.a -Wl,--major-image-version,0,--minor-image-version,0 lib/libft/liblibft.a 

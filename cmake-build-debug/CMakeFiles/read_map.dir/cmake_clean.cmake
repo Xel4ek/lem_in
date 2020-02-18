@@ -33,7 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/read_map.dir/src/read_map.c.o"
   "CMakeFiles/read_map.dir/src/read_only.c.o"
   "CMakeFiles/read_map.dir/src/test_graph.c.o"
-  "read_map"
+  "libread_map.dll.a"
+  "read_map.exe"
   "read_map.pdb"
 )
 

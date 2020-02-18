@@ -27,7 +27,7 @@ void ft_print_path_list(t_list *path_list)
 	{
 		ft_print_path(path_list->content);
 		if(i)
-			ft_printf(" - ");
+			ft_printf( " | ");
 		path_list = path_list->next;
 	}
 	ft_printf("\n");
