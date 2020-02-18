@@ -24,9 +24,9 @@ libft_structs.h
 string.h
 -
 
-/home/alexey/projects/lem_in/src/ft_split_vertex.c
-lem_in.h
-/home/alexey/projects/lem_in/src/lem_in.h
+/home/alexey/projects/lem_in/src/ft_print_path.c
 libft.h
 /home/alexey/projects/lem_in/src/libft.h
+lem_in.h
+/home/alexey/projects/lem_in/src/lem_in.h
 

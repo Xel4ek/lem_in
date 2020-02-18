@@ -11,6 +11,7 @@ enum e_color{
 	black
 };
 
+
 typedef struct	s_graph
 {
 	t_list*		vertex_list;
@@ -27,6 +28,8 @@ typedef struct	s_vertex
     enum e_color	color;
 	char		*name;
 	int			test;
+	int			ant_id;
+
 }				t_vertex;
 
 typedef struct s_edge
@@ -37,6 +40,13 @@ typedef struct s_edge
 	int 			oriented;
 
 }				t_edge;
+
+typedef struct s_path
+{
+	t_vertex *head;
+	int		price;
+	int		ant_count;
+}			t_path;
 
 
 t_graph *mygraph(void);
@@ -79,4 +89,12 @@ int ft_graph_bfs(t_graph *graph, int target_id);
 void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 
 int ft_get_graph(t_graph **graph, int fd);
+void ft_squeeze_graph(t_graph *graph);
+t_path *ft_new_path(t_vertex *path_head);
+void ft_print_path(t_path *path);
+void ft_print_path_list(t_list *path_list);
+t_path *ft_find_shortest_path(t_list *path_list);
+void *ft_push_ant(t_list *path_list, int *id, int max_id);
+void ft_add_ant(t_path *path);
+void ft_set_ant_to_pash(int total_ant, t_list *path_list);
 #endif

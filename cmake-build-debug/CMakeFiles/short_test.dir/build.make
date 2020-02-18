@@ -395,9 +395,100 @@ CMakeFiles/short_test.dir/src/read_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/read_map.c.s"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/read_map.c -o CMakeFiles/short_test.dir/src/read_map.c.s
 
+CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o: ../src/ft_squeeze_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o   -c /home/alexey/projects/lem_in/src/ft_squeeze_graph.c
+
+CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_squeeze_graph.c > CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.i
+
+CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_squeeze_graph.c -o CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.s
+
+CMakeFiles/short_test.dir/src/ft_set_path.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_set_path.c.o: ../src/ft_set_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/short_test.dir/src/ft_set_path.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_path.c.o   -c /home/alexey/projects/lem_in/src/ft_set_path.c
+
+CMakeFiles/short_test.dir/src/ft_set_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_set_path.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_set_path.c > CMakeFiles/short_test.dir/src/ft_set_path.c.i
+
+CMakeFiles/short_test.dir/src/ft_set_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_set_path.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_set_path.c -o CMakeFiles/short_test.dir/src/ft_set_path.c.s
+
+CMakeFiles/short_test.dir/src/ft_print_path.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_print_path.c.o: ../src/ft_print_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/short_test.dir/src/ft_print_path.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_print_path.c.o   -c /home/alexey/projects/lem_in/src/ft_print_path.c
+
+CMakeFiles/short_test.dir/src/ft_print_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_print_path.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_print_path.c > CMakeFiles/short_test.dir/src/ft_print_path.c.i
+
+CMakeFiles/short_test.dir/src/ft_print_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_path.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_path.c -o CMakeFiles/short_test.dir/src/ft_print_path.c.s
+
+CMakeFiles/short_test.dir/src/ft_push_ant.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_push_ant.c.o: ../src/ft_push_ant.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/short_test.dir/src/ft_push_ant.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_push_ant.c.o   -c /home/alexey/projects/lem_in/src/ft_push_ant.c
+
+CMakeFiles/short_test.dir/src/ft_push_ant.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_push_ant.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_push_ant.c > CMakeFiles/short_test.dir/src/ft_push_ant.c.i
+
+CMakeFiles/short_test.dir/src/ft_push_ant.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_push_ant.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_push_ant.c -o CMakeFiles/short_test.dir/src/ft_push_ant.c.s
+
+CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o: ../src/ft_find_shortest_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o   -c /home/alexey/projects/lem_in/src/ft_find_shortest_path.c
+
+CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_find_shortest_path.c > CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.i
+
+CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_find_shortest_path.c -o CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.s
+
+CMakeFiles/short_test.dir/src/ft_add_ant.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_add_ant.c.o: ../src/ft_add_ant.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/short_test.dir/src/ft_add_ant.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_ant.c.o   -c /home/alexey/projects/lem_in/src/ft_add_ant.c
+
+CMakeFiles/short_test.dir/src/ft_add_ant.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_add_ant.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_add_ant.c > CMakeFiles/short_test.dir/src/ft_add_ant.c.i
+
+CMakeFiles/short_test.dir/src/ft_add_ant.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_add_ant.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_add_ant.c -o CMakeFiles/short_test.dir/src/ft_add_ant.c.s
+
+CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o: ../src/ft_set_ant_to_pash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o   -c /home/alexey/projects/lem_in/src/ft_set_ant_to_pash.c
+
+CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_set_ant_to_pash.c > CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.i
+
+CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_set_ant_to_pash.c -o CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.s
+
 CMakeFiles/short_test.dir/src/short_test.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/short_test.c.o: ../src/short_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
 	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/short_test.c.o   -c /home/alexey/projects/lem_in/src/short_test.c
 
 CMakeFiles/short_test.dir/src/short_test.c.i: cmake_force
@@ -436,6 +527,13 @@ short_test_OBJECTS = \
 "CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o" \
 "CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o" \
 "CMakeFiles/short_test.dir/src/read_map.c.o" \
+"CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o" \
+"CMakeFiles/short_test.dir/src/ft_set_path.c.o" \
+"CMakeFiles/short_test.dir/src/ft_print_path.c.o" \
+"CMakeFiles/short_test.dir/src/ft_push_ant.c.o" \
+"CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o" \
+"CMakeFiles/short_test.dir/src/ft_add_ant.c.o" \
+"CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o" \
 "CMakeFiles/short_test.dir/src/short_test.c.o"
 
 # External object files for target short_test
@@ -467,11 +565,18 @@ short_test: CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o
 short_test: CMakeFiles/short_test.dir/src/read_map.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_set_path.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_print_path.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_push_ant.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_add_ant.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o
 short_test: CMakeFiles/short_test.dir/src/short_test.c.o
 short_test: CMakeFiles/short_test.dir/build.make
 short_test: lib/libft/liblibft.a
 short_test: CMakeFiles/short_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking C executable short_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking C executable short_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/short_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

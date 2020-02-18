@@ -561,6 +561,11 @@
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_ant.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_edge.c">
 			<Option target="read_map"/>
 			<Option target="short_test"/>
@@ -572,6 +577,11 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_convert_graph.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_find_shortest_path.c">
 			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
@@ -616,7 +626,17 @@
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_print_path.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_print_tools.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_push_ant.c">
 			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
@@ -651,7 +671,17 @@
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_set_ant_to_pash.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_set_edge.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_set_path.c">
 			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
@@ -672,6 +702,11 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_spllit_all_graph_edge.c">
+			<Option target="read_map"/>
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_squeeze_graph.c">
 			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>

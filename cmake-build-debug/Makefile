@@ -208,6 +208,39 @@ src/fr_remove_egde.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
 .PHONY : src/fr_remove_egde.c.s
 
+src/ft_add_ant.o: src/ft_add_ant.c.o
+
+.PHONY : src/ft_add_ant.o
+
+# target to build an object file
+src/ft_add_ant.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_add_ant.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_ant.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_ant.c.o
+.PHONY : src/ft_add_ant.c.o
+
+src/ft_add_ant.i: src/ft_add_ant.c.i
+
+.PHONY : src/ft_add_ant.i
+
+# target to preprocess a source file
+src/ft_add_ant.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_add_ant.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_ant.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_ant.c.i
+.PHONY : src/ft_add_ant.c.i
+
+src/ft_add_ant.s: src/ft_add_ant.c.s
+
+.PHONY : src/ft_add_ant.s
+
+# target to generate assembly for a file
+src/ft_add_ant.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_add_ant.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_add_ant.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_ant.c.s
+.PHONY : src/ft_add_ant.c.s
+
 src/ft_add_edge.o: src/ft_add_edge.c.o
 
 .PHONY : src/ft_add_edge.o
@@ -306,6 +339,39 @@ src/ft_convert_graph.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_convert_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.s
 .PHONY : src/ft_convert_graph.c.s
+
+src/ft_find_shortest_path.o: src/ft_find_shortest_path.c.o
+
+.PHONY : src/ft_find_shortest_path.o
+
+# target to build an object file
+src/ft_find_shortest_path.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.o
+.PHONY : src/ft_find_shortest_path.c.o
+
+src/ft_find_shortest_path.i: src/ft_find_shortest_path.c.i
+
+.PHONY : src/ft_find_shortest_path.i
+
+# target to preprocess a source file
+src/ft_find_shortest_path.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.i
+.PHONY : src/ft_find_shortest_path.c.i
+
+src/ft_find_shortest_path.s: src/ft_find_shortest_path.c.s
+
+.PHONY : src/ft_find_shortest_path.s
+
+# target to generate assembly for a file
+src/ft_find_shortest_path.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.s
+.PHONY : src/ft_find_shortest_path.c.s
 
 src/ft_grahp_dfs.o: src/ft_grahp_dfs.c.o
 
@@ -571,6 +637,39 @@ src/ft_print_matrix.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_matrix.c.s
 .PHONY : src/ft_print_matrix.c.s
 
+src/ft_print_path.o: src/ft_print_path.c.o
+
+.PHONY : src/ft_print_path.o
+
+# target to build an object file
+src/ft_print_path.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_print_path.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.o
+.PHONY : src/ft_print_path.c.o
+
+src/ft_print_path.i: src/ft_print_path.c.i
+
+.PHONY : src/ft_print_path.i
+
+# target to preprocess a source file
+src/ft_print_path.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_print_path.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.i
+.PHONY : src/ft_print_path.c.i
+
+src/ft_print_path.s: src/ft_print_path.c.s
+
+.PHONY : src/ft_print_path.s
+
+# target to generate assembly for a file
+src/ft_print_path.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_print_path.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.s
+.PHONY : src/ft_print_path.c.s
+
 src/ft_print_tools.o: src/ft_print_tools.c.o
 
 .PHONY : src/ft_print_tools.o
@@ -603,6 +702,39 @@ src/ft_print_tools.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_tools.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_tools.c.s
 .PHONY : src/ft_print_tools.c.s
+
+src/ft_push_ant.o: src/ft_push_ant.c.o
+
+.PHONY : src/ft_push_ant.o
+
+# target to build an object file
+src/ft_push_ant.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_push_ant.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_push_ant.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_push_ant.c.o
+.PHONY : src/ft_push_ant.c.o
+
+src/ft_push_ant.i: src/ft_push_ant.c.i
+
+.PHONY : src/ft_push_ant.i
+
+# target to preprocess a source file
+src/ft_push_ant.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_push_ant.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_push_ant.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_push_ant.c.i
+.PHONY : src/ft_push_ant.c.i
+
+src/ft_push_ant.s: src/ft_push_ant.c.s
+
+.PHONY : src/ft_push_ant.s
+
+# target to generate assembly for a file
+src/ft_push_ant.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_push_ant.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_push_ant.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_push_ant.c.s
+.PHONY : src/ft_push_ant.c.s
 
 src/ft_queue_new.o: src/ft_queue_new.c.o
 
@@ -802,6 +934,39 @@ src/ft_save_as_dot.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_save_as_dot.c.s
 .PHONY : src/ft_save_as_dot.c.s
 
+src/ft_set_ant_to_pash.o: src/ft_set_ant_to_pash.c.o
+
+.PHONY : src/ft_set_ant_to_pash.o
+
+# target to build an object file
+src/ft_set_ant_to_pash.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_ant_to_pash.c.o
+.PHONY : src/ft_set_ant_to_pash.c.o
+
+src/ft_set_ant_to_pash.i: src/ft_set_ant_to_pash.c.i
+
+.PHONY : src/ft_set_ant_to_pash.i
+
+# target to preprocess a source file
+src/ft_set_ant_to_pash.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_ant_to_pash.c.i
+.PHONY : src/ft_set_ant_to_pash.c.i
+
+src/ft_set_ant_to_pash.s: src/ft_set_ant_to_pash.c.s
+
+.PHONY : src/ft_set_ant_to_pash.s
+
+# target to generate assembly for a file
+src/ft_set_ant_to_pash.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_ant_to_pash.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_ant_to_pash.c.s
+.PHONY : src/ft_set_ant_to_pash.c.s
+
 src/ft_set_edge.o: src/ft_set_edge.c.o
 
 .PHONY : src/ft_set_edge.o
@@ -834,6 +999,39 @@ src/ft_set_edge.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_edge.c.s
 .PHONY : src/ft_set_edge.c.s
+
+src/ft_set_path.o: src/ft_set_path.c.o
+
+.PHONY : src/ft_set_path.o
+
+# target to build an object file
+src/ft_set_path.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_path.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_path.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_path.c.o
+.PHONY : src/ft_set_path.c.o
+
+src/ft_set_path.i: src/ft_set_path.c.i
+
+.PHONY : src/ft_set_path.i
+
+# target to preprocess a source file
+src/ft_set_path.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_path.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_path.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_path.c.i
+.PHONY : src/ft_set_path.c.i
+
+src/ft_set_path.s: src/ft_set_path.c.s
+
+.PHONY : src/ft_set_path.s
+
+# target to generate assembly for a file
+src/ft_set_path.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_set_path.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_set_path.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_set_path.c.s
+.PHONY : src/ft_set_path.c.s
 
 src/ft_set_vertex.o: src/ft_set_vertex.c.o
 
@@ -966,6 +1164,39 @@ src/ft_spllit_all_graph_edge.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_spllit_all_graph_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_spllit_all_graph_edge.c.s
 .PHONY : src/ft_spllit_all_graph_edge.c.s
+
+src/ft_squeeze_graph.o: src/ft_squeeze_graph.c.o
+
+.PHONY : src/ft_squeeze_graph.o
+
+# target to build an object file
+src/ft_squeeze_graph.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o
+.PHONY : src/ft_squeeze_graph.c.o
+
+src/ft_squeeze_graph.i: src/ft_squeeze_graph.c.i
+
+.PHONY : src/ft_squeeze_graph.i
+
+# target to preprocess a source file
+src/ft_squeeze_graph.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.i
+.PHONY : src/ft_squeeze_graph.c.i
+
+src/ft_squeeze_graph.s: src/ft_squeeze_graph.c.s
+
+.PHONY : src/ft_squeeze_graph.s
+
+# target to generate assembly for a file
+src/ft_squeeze_graph.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_squeeze_graph.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.s
+.PHONY : src/ft_squeeze_graph.c.s
 
 src/main.o: src/main.c.o
 
@@ -1157,6 +1388,9 @@ help:
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
 	@echo "... src/fr_remove_egde.s"
+	@echo "... src/ft_add_ant.o"
+	@echo "... src/ft_add_ant.i"
+	@echo "... src/ft_add_ant.s"
 	@echo "... src/ft_add_edge.o"
 	@echo "... src/ft_add_edge.i"
 	@echo "... src/ft_add_edge.s"
@@ -1166,6 +1400,9 @@ help:
 	@echo "... src/ft_convert_graph.o"
 	@echo "... src/ft_convert_graph.i"
 	@echo "... src/ft_convert_graph.s"
+	@echo "... src/ft_find_shortest_path.o"
+	@echo "... src/ft_find_shortest_path.i"
+	@echo "... src/ft_find_shortest_path.s"
 	@echo "... src/ft_grahp_dfs.o"
 	@echo "... src/ft_grahp_dfs.i"
 	@echo "... src/ft_grahp_dfs.s"
@@ -1190,9 +1427,15 @@ help:
 	@echo "... src/ft_print_matrix.o"
 	@echo "... src/ft_print_matrix.i"
 	@echo "... src/ft_print_matrix.s"
+	@echo "... src/ft_print_path.o"
+	@echo "... src/ft_print_path.i"
+	@echo "... src/ft_print_path.s"
 	@echo "... src/ft_print_tools.o"
 	@echo "... src/ft_print_tools.i"
 	@echo "... src/ft_print_tools.s"
+	@echo "... src/ft_push_ant.o"
+	@echo "... src/ft_push_ant.i"
+	@echo "... src/ft_push_ant.s"
 	@echo "... src/ft_queue_new.o"
 	@echo "... src/ft_queue_new.i"
 	@echo "... src/ft_queue_new.s"
@@ -1211,9 +1454,15 @@ help:
 	@echo "... src/ft_save_as_dot.o"
 	@echo "... src/ft_save_as_dot.i"
 	@echo "... src/ft_save_as_dot.s"
+	@echo "... src/ft_set_ant_to_pash.o"
+	@echo "... src/ft_set_ant_to_pash.i"
+	@echo "... src/ft_set_ant_to_pash.s"
 	@echo "... src/ft_set_edge.o"
 	@echo "... src/ft_set_edge.i"
 	@echo "... src/ft_set_edge.s"
+	@echo "... src/ft_set_path.o"
+	@echo "... src/ft_set_path.i"
+	@echo "... src/ft_set_path.s"
 	@echo "... src/ft_set_vertex.o"
 	@echo "... src/ft_set_vertex.i"
 	@echo "... src/ft_set_vertex.s"
@@ -1226,6 +1475,9 @@ help:
 	@echo "... src/ft_spllit_all_graph_edge.o"
 	@echo "... src/ft_spllit_all_graph_edge.i"
 	@echo "... src/ft_spllit_all_graph_edge.s"
+	@echo "... src/ft_squeeze_graph.o"
+	@echo "... src/ft_squeeze_graph.i"
+	@echo "... src/ft_squeeze_graph.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
