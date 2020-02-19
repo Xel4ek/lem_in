@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/e/shcool_42/lem_in/lib/libft
+# Install script for directory: /Users/ayooden/lemin-7/lib/libft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

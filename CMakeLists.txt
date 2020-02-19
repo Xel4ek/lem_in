@@ -26,7 +26,16 @@ set(SRC
         src/ft_save_as_dot.c
         src/ft_queue_new.c
         src/ft_spllit_all_graph_edge.c src/ft_reset_edge_oriented.c src/ft_reverse_edge.c
-        src/read_map.c src/ft_squeeze_graph.c src/ft_set_path.c src/ft_print_path.c src/ft_push_ant.c src/ft_find_shortest_path.c src/ft_add_ant.c src/ft_set_ant_to_pash.c)
+        src/ft_squeeze_graph.c src/ft_set_path.c src/ft_print_path.c src/ft_push_ant.c src/ft_find_shortest_path.c src/ft_add_ant.c src/ft_set_ant_to_pash.c
+        src/ft_char_in_str.c
+        src/ft_count_char.c
+        src/ft_delete_graph.c
+        src/ft_find_vertex.c
+        src/ft_get_ants_count.c
+        src/ft_get_edges.c
+        src/ft_get_graph.c
+        src/ft_get_vertex.c
+        src/ft_str_is_numeric.c)
 
 
 include_directories(lib/libft/includes)

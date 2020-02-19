@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/cygdrive/e/shcool_42/lem_in/test_str_len.c" "/cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles/test_str_len.dir/test_str_len.c.o"
+  "/Users/ayooden/lemin-7/test_str_len.c" "/Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles/test_str_len.dir/test_str_len.c.o"
   )
-set(CMAKE_C_COMPILER_ID "GNU")
+set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/cygdrive/e/shcool_42/lem_in/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/Users/ayooden/lemin-7/cmake-build-debug/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,7 +1,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-void *ft_push_ant(t_list *path_list, int *id, int max_id)
+void ft_push_ant(t_list *path_list, int *id, int max_id)
 {
 	size_t len;
 	t_vertex *vertex;

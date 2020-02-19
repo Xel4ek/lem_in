@@ -1,7 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/test_str_len.dir/test_str_len.c.o"
-  "libtest_str_len.dll.a"
-  "test_str_len.exe"
+  "test_str_len"
   "test_str_len.pdb"
 )
 

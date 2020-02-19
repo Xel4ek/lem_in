@@ -29,6 +29,8 @@ typedef struct	s_vertex
 	char		*name;
 	int			test;
 	int			ant_id;
+	int			x;
+	int			y;
 
 }				t_vertex;
 
@@ -48,6 +50,20 @@ typedef struct s_path
 	int		ant_count;
 }			t_path;
 
+
+# define START "##start"
+# define END "##end"
+
+int			ft_get_graph(t_graph **graph, int fd);
+char 		*ft_get_vertex(t_graph *graph, int fd);
+int			ft_get_edges(t_graph *graph, char *buf, int fd);
+int			ft_get_ants_count(int fd);
+t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name);
+t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id);
+int			ft_str_is_numeric(char *str);
+int			ft_count_char(char *str, char c);
+int			ft_char_in_str(char *str, char c);
+void		ft_delete_graph(t_graph **graph);
 
 t_graph *mygraph(void);
 void ft_print_graph(const t_graph *graph);
@@ -94,7 +110,7 @@ t_path *ft_new_path(t_vertex *path_head);
 void ft_print_path(t_path *path);
 void ft_print_path_list(t_list *path_list);
 t_path *ft_find_shortest_path(t_list *path_list);
-void *ft_push_ant(t_list *path_list, int *id, int max_id);
+void ft_push_ant(t_list *path_list, int *id, int max_id);
 void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
 #endif

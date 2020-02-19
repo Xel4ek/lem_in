@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /cygdrive/c/Users/Admin/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /cygdrive/c/Users/Admin/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/e/shcool_42/lem_in
+CMAKE_SOURCE_DIR = /Users/ayooden/lemin-7
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/e/shcool_42/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ayooden/lemin-7/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/cygdrive/c/Users/Admin/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/cygdrive/c/Users/Admin/.CLion2019.3/system/cygwin_cmake/bin/cmake.exe -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -78,11 +67,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/e/shcool_42/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,19 @@ read_map/fast:
 .PHONY : read_map/fast
 
 #=============================================================================
+# Target rules for targets named test_str_len
+
+# Build rule for target.
+test_str_len: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
+.PHONY : test_str_len
+
+# fast build rule for target.
+test_str_len/fast:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
+.PHONY : test_str_len/fast
+
+#=============================================================================
 # Target rules for targets named short_test
 
 # Build rule for target.
@@ -148,19 +161,6 @@ lem_in: cmake_check_build_system
 lem_in/fast:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
 .PHONY : lem_in/fast
-
-#=============================================================================
-# Target rules for targets named test_str_len
-
-# Build rule for target.
-test_str_len: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
-.PHONY : test_str_len
-
-# fast build rule for target.
-test_str_len/fast:
-	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
-.PHONY : test_str_len/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -307,6 +307,39 @@ src/ft_add_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_add_vertex.c.s
 .PHONY : src/ft_add_vertex.c.s
 
+src/ft_char_in_str.o: src/ft_char_in_str.c.o
+
+.PHONY : src/ft_char_in_str.o
+
+# target to build an object file
+src/ft_char_in_str.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_char_in_str.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_char_in_str.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_char_in_str.c.o
+.PHONY : src/ft_char_in_str.c.o
+
+src/ft_char_in_str.i: src/ft_char_in_str.c.i
+
+.PHONY : src/ft_char_in_str.i
+
+# target to preprocess a source file
+src/ft_char_in_str.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_char_in_str.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_char_in_str.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_char_in_str.c.i
+.PHONY : src/ft_char_in_str.c.i
+
+src/ft_char_in_str.s: src/ft_char_in_str.c.s
+
+.PHONY : src/ft_char_in_str.s
+
+# target to generate assembly for a file
+src/ft_char_in_str.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_char_in_str.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_char_in_str.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_char_in_str.c.s
+.PHONY : src/ft_char_in_str.c.s
+
 src/ft_convert_graph.o: src/ft_convert_graph.c.o
 
 .PHONY : src/ft_convert_graph.o
@@ -340,6 +373,72 @@ src/ft_convert_graph.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_convert_graph.c.s
 .PHONY : src/ft_convert_graph.c.s
 
+src/ft_count_char.o: src/ft_count_char.c.o
+
+.PHONY : src/ft_count_char.o
+
+# target to build an object file
+src/ft_count_char.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_count_char.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_count_char.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_count_char.c.o
+.PHONY : src/ft_count_char.c.o
+
+src/ft_count_char.i: src/ft_count_char.c.i
+
+.PHONY : src/ft_count_char.i
+
+# target to preprocess a source file
+src/ft_count_char.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_count_char.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_count_char.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_count_char.c.i
+.PHONY : src/ft_count_char.c.i
+
+src/ft_count_char.s: src/ft_count_char.c.s
+
+.PHONY : src/ft_count_char.s
+
+# target to generate assembly for a file
+src/ft_count_char.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_count_char.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_count_char.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_count_char.c.s
+.PHONY : src/ft_count_char.c.s
+
+src/ft_delete_graph.o: src/ft_delete_graph.c.o
+
+.PHONY : src/ft_delete_graph.o
+
+# target to build an object file
+src/ft_delete_graph.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_delete_graph.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o
+.PHONY : src/ft_delete_graph.c.o
+
+src/ft_delete_graph.i: src/ft_delete_graph.c.i
+
+.PHONY : src/ft_delete_graph.i
+
+# target to preprocess a source file
+src/ft_delete_graph.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_delete_graph.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.i
+.PHONY : src/ft_delete_graph.c.i
+
+src/ft_delete_graph.s: src/ft_delete_graph.c.s
+
+.PHONY : src/ft_delete_graph.s
+
+# target to generate assembly for a file
+src/ft_delete_graph.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_delete_graph.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.s
+.PHONY : src/ft_delete_graph.c.s
+
 src/ft_find_shortest_path.o: src/ft_find_shortest_path.c.o
 
 .PHONY : src/ft_find_shortest_path.o
@@ -372,6 +471,171 @@ src/ft_find_shortest_path.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_shortest_path.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.s
 .PHONY : src/ft_find_shortest_path.c.s
+
+src/ft_find_vertex.o: src/ft_find_vertex.c.o
+
+.PHONY : src/ft_find_vertex.o
+
+# target to build an object file
+src/ft_find_vertex.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_vertex.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_vertex.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_vertex.c.o
+.PHONY : src/ft_find_vertex.c.o
+
+src/ft_find_vertex.i: src/ft_find_vertex.c.i
+
+.PHONY : src/ft_find_vertex.i
+
+# target to preprocess a source file
+src/ft_find_vertex.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_vertex.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_vertex.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_vertex.c.i
+.PHONY : src/ft_find_vertex.c.i
+
+src/ft_find_vertex.s: src/ft_find_vertex.c.s
+
+.PHONY : src/ft_find_vertex.s
+
+# target to generate assembly for a file
+src/ft_find_vertex.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_find_vertex.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_find_vertex.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_find_vertex.c.s
+.PHONY : src/ft_find_vertex.c.s
+
+src/ft_get_ants_count.o: src/ft_get_ants_count.c.o
+
+.PHONY : src/ft_get_ants_count.o
+
+# target to build an object file
+src/ft_get_ants_count.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_ants_count.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_ants_count.c.o
+.PHONY : src/ft_get_ants_count.c.o
+
+src/ft_get_ants_count.i: src/ft_get_ants_count.c.i
+
+.PHONY : src/ft_get_ants_count.i
+
+# target to preprocess a source file
+src/ft_get_ants_count.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_ants_count.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_ants_count.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_ants_count.c.i
+.PHONY : src/ft_get_ants_count.c.i
+
+src/ft_get_ants_count.s: src/ft_get_ants_count.c.s
+
+.PHONY : src/ft_get_ants_count.s
+
+# target to generate assembly for a file
+src/ft_get_ants_count.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_ants_count.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_ants_count.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_ants_count.c.s
+.PHONY : src/ft_get_ants_count.c.s
+
+src/ft_get_edges.o: src/ft_get_edges.c.o
+
+.PHONY : src/ft_get_edges.o
+
+# target to build an object file
+src/ft_get_edges.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_edges.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_edges.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_edges.c.o
+.PHONY : src/ft_get_edges.c.o
+
+src/ft_get_edges.i: src/ft_get_edges.c.i
+
+.PHONY : src/ft_get_edges.i
+
+# target to preprocess a source file
+src/ft_get_edges.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_edges.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_edges.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_edges.c.i
+.PHONY : src/ft_get_edges.c.i
+
+src/ft_get_edges.s: src/ft_get_edges.c.s
+
+.PHONY : src/ft_get_edges.s
+
+# target to generate assembly for a file
+src/ft_get_edges.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_edges.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_edges.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_edges.c.s
+.PHONY : src/ft_get_edges.c.s
+
+src/ft_get_graph.o: src/ft_get_graph.c.o
+
+.PHONY : src/ft_get_graph.o
+
+# target to build an object file
+src/ft_get_graph.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_graph.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_graph.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_graph.c.o
+.PHONY : src/ft_get_graph.c.o
+
+src/ft_get_graph.i: src/ft_get_graph.c.i
+
+.PHONY : src/ft_get_graph.i
+
+# target to preprocess a source file
+src/ft_get_graph.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_graph.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_graph.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_graph.c.i
+.PHONY : src/ft_get_graph.c.i
+
+src/ft_get_graph.s: src/ft_get_graph.c.s
+
+.PHONY : src/ft_get_graph.s
+
+# target to generate assembly for a file
+src/ft_get_graph.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_graph.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_graph.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_graph.c.s
+.PHONY : src/ft_get_graph.c.s
+
+src/ft_get_vertex.o: src/ft_get_vertex.c.o
+
+.PHONY : src/ft_get_vertex.o
+
+# target to build an object file
+src/ft_get_vertex.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_vertex.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_vertex.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o
+.PHONY : src/ft_get_vertex.c.o
+
+src/ft_get_vertex.i: src/ft_get_vertex.c.i
+
+.PHONY : src/ft_get_vertex.i
+
+# target to preprocess a source file
+src/ft_get_vertex.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_vertex.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_vertex.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_vertex.c.i
+.PHONY : src/ft_get_vertex.c.i
+
+src/ft_get_vertex.s: src/ft_get_vertex.c.s
+
+.PHONY : src/ft_get_vertex.s
+
+# target to generate assembly for a file
+src/ft_get_vertex.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_get_vertex.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_vertex.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_vertex.c.s
+.PHONY : src/ft_get_vertex.c.s
 
 src/ft_grahp_dfs.o: src/ft_grahp_dfs.c.o
 
@@ -1198,6 +1462,39 @@ src/ft_squeeze_graph.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.s
 .PHONY : src/ft_squeeze_graph.c.s
 
+src/ft_str_is_numeric.o: src/ft_str_is_numeric.c.o
+
+.PHONY : src/ft_str_is_numeric.o
+
+# target to build an object file
+src/ft_str_is_numeric.c.o:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_str_is_numeric.c.o
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_str_is_numeric.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_str_is_numeric.c.o
+.PHONY : src/ft_str_is_numeric.c.o
+
+src/ft_str_is_numeric.i: src/ft_str_is_numeric.c.i
+
+.PHONY : src/ft_str_is_numeric.i
+
+# target to preprocess a source file
+src/ft_str_is_numeric.c.i:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_str_is_numeric.c.i
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_str_is_numeric.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_str_is_numeric.c.i
+.PHONY : src/ft_str_is_numeric.c.i
+
+src/ft_str_is_numeric.s: src/ft_str_is_numeric.c.s
+
+.PHONY : src/ft_str_is_numeric.s
+
+# target to generate assembly for a file
+src/ft_str_is_numeric.c.s:
+	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/ft_str_is_numeric.c.s
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_str_is_numeric.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_str_is_numeric.c.s
+.PHONY : src/ft_str_is_numeric.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -1224,39 +1521,6 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/main.c.s
 .PHONY : src/main.c.s
-
-src/read_map.o: src/read_map.c.o
-
-.PHONY : src/read_map.o
-
-# target to build an object file
-src/read_map.c.o:
-	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/read_map.c.o
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/read_map.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_map.c.o
-.PHONY : src/read_map.c.o
-
-src/read_map.i: src/read_map.c.i
-
-.PHONY : src/read_map.i
-
-# target to preprocess a source file
-src/read_map.c.i:
-	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/read_map.c.i
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/read_map.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_map.c.i
-.PHONY : src/read_map.c.i
-
-src/read_map.s: src/read_map.c.s
-
-.PHONY : src/read_map.s
-
-# target to generate assembly for a file
-src/read_map.c.s:
-	$(MAKE) -f CMakeFiles/read_map.dir/build.make CMakeFiles/read_map.dir/src/read_map.c.s
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/read_map.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/read_map.c.s
-.PHONY : src/read_map.c.s
 
 src/read_only.o: src/read_only.c.o
 
@@ -1379,11 +1643,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... read_map"
-	@echo "... short_test"
-	@echo "... edit_cache"
-	@echo "... lem_in"
 	@echo "... rebuild_cache"
 	@echo "... test_str_len"
+	@echo "... edit_cache"
+	@echo "... short_test"
+	@echo "... lem_in"
 	@echo "... libft"
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
@@ -1397,12 +1661,36 @@ help:
 	@echo "... src/ft_add_vertex.o"
 	@echo "... src/ft_add_vertex.i"
 	@echo "... src/ft_add_vertex.s"
+	@echo "... src/ft_char_in_str.o"
+	@echo "... src/ft_char_in_str.i"
+	@echo "... src/ft_char_in_str.s"
 	@echo "... src/ft_convert_graph.o"
 	@echo "... src/ft_convert_graph.i"
 	@echo "... src/ft_convert_graph.s"
+	@echo "... src/ft_count_char.o"
+	@echo "... src/ft_count_char.i"
+	@echo "... src/ft_count_char.s"
+	@echo "... src/ft_delete_graph.o"
+	@echo "... src/ft_delete_graph.i"
+	@echo "... src/ft_delete_graph.s"
 	@echo "... src/ft_find_shortest_path.o"
 	@echo "... src/ft_find_shortest_path.i"
 	@echo "... src/ft_find_shortest_path.s"
+	@echo "... src/ft_find_vertex.o"
+	@echo "... src/ft_find_vertex.i"
+	@echo "... src/ft_find_vertex.s"
+	@echo "... src/ft_get_ants_count.o"
+	@echo "... src/ft_get_ants_count.i"
+	@echo "... src/ft_get_ants_count.s"
+	@echo "... src/ft_get_edges.o"
+	@echo "... src/ft_get_edges.i"
+	@echo "... src/ft_get_edges.s"
+	@echo "... src/ft_get_graph.o"
+	@echo "... src/ft_get_graph.i"
+	@echo "... src/ft_get_graph.s"
+	@echo "... src/ft_get_vertex.o"
+	@echo "... src/ft_get_vertex.i"
+	@echo "... src/ft_get_vertex.s"
 	@echo "... src/ft_grahp_dfs.o"
 	@echo "... src/ft_grahp_dfs.i"
 	@echo "... src/ft_grahp_dfs.s"
@@ -1478,12 +1766,12 @@ help:
 	@echo "... src/ft_squeeze_graph.o"
 	@echo "... src/ft_squeeze_graph.i"
 	@echo "... src/ft_squeeze_graph.s"
+	@echo "... src/ft_str_is_numeric.o"
+	@echo "... src/ft_str_is_numeric.i"
+	@echo "... src/ft_str_is_numeric.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/read_map.o"
-	@echo "... src/read_map.i"
-	@echo "... src/read_map.s"
 	@echo "... src/read_only.o"
 	@echo "... src/read_only.i"
 	@echo "... src/read_only.s"

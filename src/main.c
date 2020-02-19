@@ -14,13 +14,15 @@ int main()
 	int fd;
 	int i;
 	int graph_len;
-	graph = mygraph();
-	fd = open("../input1.txt", O_RDONLY);
-//	fd = 0;
+//	graph = mygraph();
+	//fd = open("../commet", O_RDONLY);
+	fd = 0;
 //	graph = NULL;
-//	if (!ft_get_graph(&graph, fd))
-//		return (write(2, "Error\n", 6));
+	if (!ft_get_graph(&graph, fd))
+		return (write(1, "Error\n", 6));
 	close(fd);
+
+	//ft_printf("ansts count : %d\n", graph->ants_count);
 //	ft_print_graph(graph);
 //	fd = open("../2.gv", O_CREAT | O_WRONLY | O_TRUNC);
 //	ft_save_graph_as_dot(fd, graph);
@@ -58,6 +60,10 @@ int main()
 
 	while(ft_graph_bfs(graph, -2))
 		++temp;
+	if (!temp) {
+		ft_printf_fd(1, "Error\n");
+		return (0);
+	}
 //	temp = ft_graph_dfs(graph, 8);
 
 //	ft_reset_edge_oriented(graph);
@@ -190,7 +196,7 @@ int main()
 	while (tail--)
 	{
 		ft_push_ant(path_list, &id, graph->ants_count);
-		if(tail)
+//		if(tail)
 			ft_printf("\n");
 //		ft_print_path_list(path_list);
 	}
