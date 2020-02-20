@@ -13,6 +13,22 @@
 #include "lem_in.h"
 #include "libft.h"
 
+t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y)
+{
+	t_vertex	*vertex;
+	int			i;
+
+	i = ft_lstdlen(graph->vertex_list);
+	while (i--)
+	{
+		vertex = (t_vertex *)graph->vertex_list->content;
+		if (vertex->x == x && vertex->y == y)
+			return (vertex);
+		graph->vertex_list = graph->vertex_list->next;
+	}
+	return (NULL);
+}
+
 t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id)
 {
 	t_vertex	*vertex;
@@ -38,7 +54,7 @@ t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name)
 	while (i--)
 	{
 		vertex = (t_vertex *)graph->vertex_list->content;
-		if (!ft_strcmp(vertex->name, name))
+		if (! ft_strcmp(vertex->name, name))
 			return (vertex);
 		graph->vertex_list = graph->vertex_list->next;
 	}
