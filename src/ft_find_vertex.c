@@ -15,48 +15,60 @@
 
 t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y)
 {
+	t_list		*list;
+	t_list		*head;
 	t_vertex	*vertex;
-	int			i;
 
-	i = ft_lstdlen(graph->vertex_list);
-	while (i--)
+	list = (t_list *)graph->vertex_list;
+	head = NULL;
+	while (list && list != head)
 	{
-		vertex = (t_vertex *)graph->vertex_list->content;
+		vertex = (t_vertex *)list->content;
 		if (vertex->x == x && vertex->y == y)
 			return (vertex);
-		graph->vertex_list = graph->vertex_list->next;
+		if (!head)
+			head = list;
+		list = list->next;
 	}
 	return (NULL);
 }
 
 t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id)
 {
+	t_list		*list;
+	t_list		*head;
 	t_vertex	*vertex;
-	int			i;
 
-	i = ft_lstdlen(graph->vertex_list);
-	while (i--)
+	list = (t_list *)graph->vertex_list;
+	head = NULL;
+	while (list && list != head)
 	{
-		vertex = (t_vertex *)graph->vertex_list->content;
+		vertex = (t_vertex *)list->content;
 		if (vertex->id == id)
 			return (vertex);
-		graph->vertex_list = graph->vertex_list->next;
+		if (!head)
+			head = list;
+		list = list->next;
 	}
 	return (NULL);
 }
 
 t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name)
 {
+	t_list		*list;
+	t_list		*head;
 	t_vertex	*vertex;
-	int			i;
 
-	i = ft_lstdlen(graph->vertex_list);
-	while (i--)
+	list = (t_list *)graph->vertex_list;
+	head = NULL;
+	while (list && list != head)
 	{
-		vertex = (t_vertex *)graph->vertex_list->content;
-		if (! ft_strcmp(vertex->name, name))
+		vertex = (t_vertex *)list->content;
+		if (!ft_strcmp(vertex->name, name))
 			return (vertex);
-		graph->vertex_list = graph->vertex_list->next;
+		if (!head)
+			head = list;
+		list = list->next;
 	}
 	return (NULL);
 }
