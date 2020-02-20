@@ -54,16 +54,18 @@ typedef struct s_path
 # define START "##start"
 # define END "##end"
 
-int			ft_get_graph(t_graph **graph, int fd);
-char 		*ft_get_vertex(t_graph *graph, int fd);
-int			ft_get_edges(t_graph *graph, char *buf, int fd);
-int			ft_get_ants_count(int fd);
+int			ft_get_graph(t_graph **graph, int fd, char **map);
+char 		*ft_get_vertex(t_graph *graph, int fd, char **map);
+int			ft_get_edges(t_graph *graph, char *buf, int fd, char **map);
+int			ft_get_ants_count(int fd, char **map);
 t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name);
 t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id);
-int			ft_str_is_numeric(char *str);
+t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y);
 int			ft_count_char(char *str, char c);
 int			ft_char_in_str(char *str, char c);
 void		ft_delete_graph(t_graph **graph);
+int			ft_get_valid_nbr(const char *str);
+void		ft_add_line(char **line1, char **line2);
 
 t_graph *mygraph(void);
 void ft_print_graph(const t_graph *graph);
@@ -104,7 +106,6 @@ void ft_reverse_edge(t_edge **edge);
 int ft_graph_bfs(t_graph *graph, int target_id);
 void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 
-int ft_get_graph(t_graph **graph, int fd);
 void ft_squeeze_graph(t_graph *graph);
 t_path *ft_new_path(t_vertex *path_head);
 void ft_print_path(t_path *path);
