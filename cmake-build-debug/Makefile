@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ayooden/lemin-7
+CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ayooden/lemin-7/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ayooden/lemin-7/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,19 +124,6 @@ read_map/fast:
 .PHONY : read_map/fast
 
 #=============================================================================
-# Target rules for targets named test_str_len
-
-# Build rule for target.
-test_str_len: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
-.PHONY : test_str_len
-
-# fast build rule for target.
-test_str_len/fast:
-	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
-.PHONY : test_str_len/fast
-
-#=============================================================================
 # Target rules for targets named short_test
 
 # Build rule for target.
@@ -161,6 +148,19 @@ lem_in: cmake_check_build_system
 lem_in/fast:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
 .PHONY : lem_in/fast
+
+#=============================================================================
+# Target rules for targets named test_str_len
+
+# Build rule for target.
+test_str_len: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
+.PHONY : test_str_len
+
+# fast build rule for target.
+test_str_len/fast:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
+.PHONY : test_str_len/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -1643,11 +1643,11 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... read_map"
+	@echo "... short_test"
+	@echo "... edit_cache"
+	@echo "... lem_in"
 	@echo "... rebuild_cache"
 	@echo "... test_str_len"
-	@echo "... edit_cache"
-	@echo "... short_test"
-	@echo "... lem_in"
 	@echo "... libft"
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"

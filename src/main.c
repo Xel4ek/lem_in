@@ -15,8 +15,8 @@ int main()
 	int i;
 	int graph_len;
 //	graph = mygraph();
-	//fd = open("../commet", O_RDONLY);
-	fd = 0;
+	fd = open("../checker/lemin-tools/maps/valid/big/map_big_2", O_RDONLY);
+//	fd = 0;
 //	graph = NULL;
 	if (!ft_get_graph(&graph, fd))
 		return (write(1, "Error\n", 6));
@@ -24,7 +24,7 @@ int main()
 
 	//ft_printf("ansts count : %d\n", graph->ants_count);
 //	ft_print_graph(graph);
-//	fd = open("../2.gv", O_CREAT | O_WRONLY | O_TRUNC);
+//	fd = open("../1.gv", O_CREAT | O_WRONLY | O_TRUNC);
 //	ft_save_graph_as_dot(fd, graph);
 //	ft_split_edge((t_edge **)((t_vertex *)graph->vertex_list->prev->content)->edge_out_list->content);
 //	ft_printf("--------------------------------\n");
@@ -53,14 +53,20 @@ int main()
 //	vertex = ((t_vertex *)graph->vertex_list->prev->content);
 //	ft_print_graph(graph);
 //
-//	fd = open("../1.gv", O_CREAT | O_WRONLY | O_TRUNC);
+//	fd = open("../2.gv", O_CREAT | O_WRONLY | O_TRUNC);
 //	ft_save_digraph_as_dot(fd, graph);
 //	close(fd);
 	temp = 0;
-
-	while(ft_graph_bfs(graph, -2))
+	int ant_count = graph->ants_count;
+	int temp_len;
+	int start = 0;
+	while((temp_len = ft_graph_bfs(graph, -2)) && ant_count > 0) {
+		if (!start)
+			start = temp_len;
+		ant_count -= (temp_len - start);
+		ft_printf("temp_len %d - ant count %d\n", temp_len, ant_count);
 		++temp;
-	if (!temp) {
+	}if (!temp) {
 		ft_printf_fd(1, "Error\n");
 		return (0);
 	}
@@ -135,7 +141,6 @@ int main()
 
 //	ft_print_graph(graph);
 //	fd = open("../5.gv", O_CREAT | O_WRONLY | O_TRUNC);
-//
 //	ft_save_digraph_as_dot(fd, graph);
 //	close(fd);
 
@@ -156,6 +161,8 @@ int main()
 		ft_lstd_push_front(&path_list, ft_lstdnew(
 				ft_new_path(vertex), sizeof(t_path)));
 		((t_vertex *)graph->vertex_list->content)->edge_in_list = ((t_vertex *)graph->vertex_list->content)->edge_in_list->next;
+		ft_printf("%d road len %d\n", j + 1, ((t_path *)path_list->content)->price);
+
 	}
 //		path = ft_new_path((t_vertex *)graph->vertex_list->content);
 //	int ant_id;
@@ -163,19 +170,27 @@ int main()
 
 //	ant_id = 1;
 //	i = 0;
-//	int pash_count;
 
-//	pash_count = ft_lstdlen(path_list);
 
 	temp = 0;
-	int tail;
-	tail  = ft_set_ant_to_pash(graph->ants_count, path_list) + 1;
-//	while (pash_count--)
-//	{
-//		ft_printf("push %d - count %d\n", temp,((t_path *)path_list->content)->ant_count);
-//		path_list = path_list->next;
-//	}
 
+
+
+	int tail;
+	ft_set_ant_to_pash(graph->ants_count, path_list);
+	tail = 0;
+	int pash_count;
+	int total = 0;
+	pash_count = ft_lstdlen(path_list);
+	while (pash_count--)
+	{
+		ft_printf("push %d - count %d - price - %d\n", ++temp,((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price);
+		if (tail < ((t_path *)path_list->content)->price)
+			tail = ((t_path *)path_list->content)->price;
+		total += ((t_path *)path_list->content)->ant_count;
+		path_list = path_list->next;
+	}
+	ft_printf("total : %d\n",total);
 	int id = 1;
 //	ft_printf("tail :%d\n",tail);
 //	while (temp--)
@@ -185,8 +200,10 @@ int main()
 //		while(ant_id <= graph->ants_count && i--)
 //			ft_add_ant(path, ant_id++);
 //		ft_print_path_list(path_list);
+	temp = 0;
 	while (id < graph->ants_count)
 	{
+		tail--;
 		temp++;
 		ft_push_ant(path_list, &id, graph->ants_count);
 		ft_printf("\n");
@@ -195,12 +212,15 @@ int main()
 //	ft_printf("\n");
 	while (tail--)
 	{
+		temp++;
 		ft_push_ant(path_list, &id, graph->ants_count);
 //		if(tail)
 			ft_printf("\n");
 //		ft_print_path_list(path_list);
 	}
-//		ft_printf("shortest :%d\n", path->price);
+		ft_printf("steps :%d\n", temp);
+
+
 //	}
 //	temp = ft_lstdlen(path_list);
 //	while (temp--)

@@ -28,7 +28,7 @@ void ft_add_implement_verses_in_queue(t_vertex *vertex, t_list **queue)
 			current = (*(t_edge **)vertex->edge_out_list->content)->end;
 			current->color = grey;
 			current->parrent = vertex;
-			ft_lstd_push_front(queue, ft_queue_new(&(*(t_edge **)vertex->edge_out_list->content)->end));
+			ft_lstd_push_back(queue, ft_queue_new(&(*(t_edge **)vertex->edge_out_list->content)->end));
 		}
 		vertex->edge_out_list = vertex->edge_out_list->next;
 	}
@@ -84,7 +84,8 @@ int ft_graph_bfs(t_graph *graph, int target_id)
 
 	ft_lstd_push_back(&queue, ft_queue_new((t_vertex**)&graph->vertex_list->content));
 	current->color = grey;
-	current->test = 1;
+//	current->test = 1;
+	i = 0;
 	while (queue)
 	{
 		current = *((t_vertex**)ft_queue_pop(&queue));
@@ -92,18 +93,19 @@ int ft_graph_bfs(t_graph *graph, int target_id)
 		{
 			while(current->id)
 			{
+				++i;
 //				ft_printf("%d -> ",current->id);
-				current->test = 1;
+//				current->test = 1;
 				ft_reverse_edge_vertex(current->parrent, current);
 				current = current->parrent;
 			}
 //			ft_printf("\n");
 			while (queue)
 				ft_queue_pop(&queue);
-			return 1;
+			return ++i / 2;
 		}
 		current->color = black;
 		ft_add_implement_verses_in_queue(current, &queue);
 	}
-	return 0;
+	return i;
 }
