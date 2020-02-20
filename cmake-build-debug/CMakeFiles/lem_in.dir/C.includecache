@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../includes/lem_in.h
+libft_structs.h
+-
+
 ../lib/libft/includes/libft.h
 string.h
 -
@@ -20,7 +24,9 @@ libft_structs.h
 string.h
 -
 
-/Users/hwolf/projects/lem_in/src/ft_add_line.c
+/Users/hwolf/projects/lem_in/src/ft_get_vertex.c
+lem_in.h
+/Users/hwolf/projects/lem_in/src/lem_in.h
 libft.h
 /Users/hwolf/projects/lem_in/src/libft.h
 

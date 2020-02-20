@@ -33,7 +33,7 @@ static void	ft_add_vertex_by_index(t_graph *graph, t_vertex *vertex, int *index)
 	*index += 2;
 }
 
-int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
+static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
 {
 	char		**v_info;
 	t_vertex	*vertex;
