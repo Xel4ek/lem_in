@@ -18,9 +18,9 @@ int main()
 	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
 //	fd = 0;
 	graph = NULL;
-	char **map;
+	char *map;
 	map = NULL;
-	if (!ft_get_graph(&graph, fd, map))
+	if (!ft_get_graph(&graph, fd, &map))
 		return (write(1, "Error\n", 6));
 	close(fd);
 
