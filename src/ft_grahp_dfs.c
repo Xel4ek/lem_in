@@ -69,7 +69,7 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 	return 0;
 }
 
-int ft_graph_bfs(t_graph *graph, int target_id, int *prev_pash_len, int *path_id)
+int ft_graph_bfs(t_graph *graph, int target_id, int *const prev_pash_len, int *const path_id)
 {
 	t_list *queue;
 	t_vertex *current;
@@ -101,7 +101,20 @@ int ft_graph_bfs(t_graph *graph, int target_id, int *prev_pash_len, int *path_id
 				++i;
 				test = test->parrent;
 			}
-//		   
+
+			int test3;
+			test3 = 0;
+			if (*path_id != 0)
+//				ft_printf("need time %d - ",
+						test3 = *prev_pash_len * *path_id + graph->ants_count * graph->ants_count / (*path_id) ;
+			*prev_pash_len += i;
+			(*path_id)++;
+			int test2;
+
+//				ft_printf("%d \n",
+						test2 = *prev_pash_len * *path_id + graph->ants_count * graph->ants_count / (*path_id);
+			if (test3 && test2 > test3)
+				return 0;
 			while(current->id)
 			{
 

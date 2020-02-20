@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ayooden/lemin-9
+CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ayooden/lemin-9/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/read_map.dir/depend.make
@@ -59,562 +59,562 @@ include CMakeFiles/read_map.dir/flags.make
 
 CMakeFiles/read_map.dir/src/ft_print_matrix.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_matrix.c.o: ../src/ft_print_matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/read_map.dir/src/ft_print_matrix.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_matrix.c.o   -c /Users/ayooden/lemin-9/src/ft_print_matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/read_map.dir/src/ft_print_matrix.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_matrix.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_matrix.c
 
 CMakeFiles/read_map.dir/src/ft_print_matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_matrix.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_matrix.c > CMakeFiles/read_map.dir/src/ft_print_matrix.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_matrix.c > CMakeFiles/read_map.dir/src/ft_print_matrix.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_matrix.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_matrix.c -o CMakeFiles/read_map.dir/src/ft_print_matrix.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_matrix.c -o CMakeFiles/read_map.dir/src/ft_print_matrix.c.s
 
 CMakeFiles/read_map.dir/src/ft_set_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_set_edge.c.o: ../src/ft_set_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/read_map.dir/src/ft_set_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_set_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/read_map.dir/src/ft_set_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_edge.c
 
 CMakeFiles/read_map.dir/src/ft_set_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_set_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_set_edge.c > CMakeFiles/read_map.dir/src/ft_set_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_edge.c > CMakeFiles/read_map.dir/src/ft_set_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_set_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_set_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_set_edge.c -o CMakeFiles/read_map.dir/src/ft_set_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_edge.c -o CMakeFiles/read_map.dir/src/ft_set_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_new_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_new_edge.c.o: ../src/ft_new_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/read_map.dir/src/ft_new_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_new_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_new_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/read_map.dir/src/ft_new_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_new_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_new_edge.c
 
 CMakeFiles/read_map.dir/src/ft_new_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_new_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_new_edge.c > CMakeFiles/read_map.dir/src/ft_new_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_new_edge.c > CMakeFiles/read_map.dir/src/ft_new_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_new_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_new_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_new_edge.c -o CMakeFiles/read_map.dir/src/ft_new_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_new_edge.c -o CMakeFiles/read_map.dir/src/ft_new_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_new_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_new_vertex.c.o: ../src/ft_new_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/read_map.dir/src/ft_new_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_new_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_new_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/read_map.dir/src/ft_new_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_new_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_new_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_new_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_new_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_new_vertex.c > CMakeFiles/read_map.dir/src/ft_new_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_new_vertex.c > CMakeFiles/read_map.dir/src/ft_new_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_new_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_new_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_new_vertex.c -o CMakeFiles/read_map.dir/src/ft_new_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_new_vertex.c -o CMakeFiles/read_map.dir/src/ft_new_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_set_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_set_vertex.c.o: ../src/ft_set_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/read_map.dir/src/ft_set_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_set_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/read_map.dir/src/ft_set_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_set_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_set_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_set_vertex.c > CMakeFiles/read_map.dir/src/ft_set_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_vertex.c > CMakeFiles/read_map.dir/src/ft_set_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_set_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_set_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_set_vertex.c -o CMakeFiles/read_map.dir/src/ft_set_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_vertex.c -o CMakeFiles/read_map.dir/src/ft_set_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_print_tools.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_tools.c.o: ../src/ft_print_tools.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/read_map.dir/src/ft_print_tools.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_tools.c.o   -c /Users/ayooden/lemin-9/src/ft_print_tools.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/read_map.dir/src/ft_print_tools.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_tools.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_tools.c
 
 CMakeFiles/read_map.dir/src/ft_print_tools.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_tools.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_tools.c > CMakeFiles/read_map.dir/src/ft_print_tools.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_tools.c > CMakeFiles/read_map.dir/src/ft_print_tools.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_tools.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_tools.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_tools.c -o CMakeFiles/read_map.dir/src/ft_print_tools.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_tools.c -o CMakeFiles/read_map.dir/src/ft_print_tools.c.s
 
 CMakeFiles/read_map.dir/src/test_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/test_graph.c.o: ../src/test_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/read_map.dir/src/test_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/test_graph.c.o   -c /Users/ayooden/lemin-9/src/test_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/read_map.dir/src/test_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/test_graph.c.o   -c /Users/hwolf/projects/lem_in/src/test_graph.c
 
 CMakeFiles/read_map.dir/src/test_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/test_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/test_graph.c > CMakeFiles/read_map.dir/src/test_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/test_graph.c > CMakeFiles/read_map.dir/src/test_graph.c.i
 
 CMakeFiles/read_map.dir/src/test_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/test_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/test_graph.c -o CMakeFiles/read_map.dir/src/test_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/test_graph.c -o CMakeFiles/read_map.dir/src/test_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_print_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_graph.c.o: ../src/ft_print_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/read_map.dir/src/ft_print_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_graph.c.o   -c /Users/ayooden/lemin-9/src/ft_print_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/read_map.dir/src/ft_print_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_graph.c
 
 CMakeFiles/read_map.dir/src/ft_print_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_graph.c > CMakeFiles/read_map.dir/src/ft_print_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_graph.c > CMakeFiles/read_map.dir/src/ft_print_graph.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_graph.c -o CMakeFiles/read_map.dir/src/ft_print_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_graph.c -o CMakeFiles/read_map.dir/src/ft_print_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_add_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_add_edge.c.o: ../src/ft_add_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/read_map.dir/src/ft_add_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_add_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/read_map.dir/src/ft_add_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_edge.c
 
 CMakeFiles/read_map.dir/src/ft_add_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_add_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_add_edge.c > CMakeFiles/read_map.dir/src/ft_add_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_edge.c > CMakeFiles/read_map.dir/src/ft_add_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_add_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_add_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_add_edge.c -o CMakeFiles/read_map.dir/src/ft_add_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_edge.c -o CMakeFiles/read_map.dir/src/ft_add_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o: ../src/ft_print_egde_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o   -c /Users/ayooden/lemin-9/src/ft_print_egde_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_egde_list.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c
 
 CMakeFiles/read_map.dir/src/ft_print_egde_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_egde_list.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_egde_list.c > CMakeFiles/read_map.dir/src/ft_print_egde_list.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c > CMakeFiles/read_map.dir/src/ft_print_egde_list.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_egde_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_egde_list.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_egde_list.c -o CMakeFiles/read_map.dir/src/ft_print_egde_list.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_egde_list.c -o CMakeFiles/read_map.dir/src/ft_print_egde_list.c.s
 
 CMakeFiles/read_map.dir/src/ft_print_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_edge.c.o: ../src/ft_print_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/read_map.dir/src/ft_print_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_print_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/read_map.dir/src/ft_print_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_edge.c
 
 CMakeFiles/read_map.dir/src/ft_print_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_edge.c > CMakeFiles/read_map.dir/src/ft_print_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_edge.c > CMakeFiles/read_map.dir/src/ft_print_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_edge.c -o CMakeFiles/read_map.dir/src/ft_print_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_edge.c -o CMakeFiles/read_map.dir/src/ft_print_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_add_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_add_vertex.c.o: ../src/ft_add_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/read_map.dir/src/ft_add_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_add_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/read_map.dir/src/ft_add_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_add_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_add_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_add_vertex.c > CMakeFiles/read_map.dir/src/ft_add_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_vertex.c > CMakeFiles/read_map.dir/src/ft_add_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_add_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_add_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_add_vertex.c -o CMakeFiles/read_map.dir/src/ft_add_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_vertex.c -o CMakeFiles/read_map.dir/src/ft_add_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_split_egde.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_split_egde.c.o: ../src/ft_split_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/read_map.dir/src/ft_split_egde.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_split_egde.c.o   -c /Users/ayooden/lemin-9/src/ft_split_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/read_map.dir/src/ft_split_egde.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_split_egde.c.o   -c /Users/hwolf/projects/lem_in/src/ft_split_egde.c
 
 CMakeFiles/read_map.dir/src/ft_split_egde.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_split_egde.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_split_egde.c > CMakeFiles/read_map.dir/src/ft_split_egde.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_split_egde.c > CMakeFiles/read_map.dir/src/ft_split_egde.c.i
 
 CMakeFiles/read_map.dir/src/ft_split_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_split_egde.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_split_egde.c -o CMakeFiles/read_map.dir/src/ft_split_egde.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_split_egde.c -o CMakeFiles/read_map.dir/src/ft_split_egde.c.s
 
 CMakeFiles/read_map.dir/src/fr_remove_egde.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/fr_remove_egde.c.o: ../src/fr_remove_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/read_map.dir/src/fr_remove_egde.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/fr_remove_egde.c.o   -c /Users/ayooden/lemin-9/src/fr_remove_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/read_map.dir/src/fr_remove_egde.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/fr_remove_egde.c.o   -c /Users/hwolf/projects/lem_in/src/fr_remove_egde.c
 
 CMakeFiles/read_map.dir/src/fr_remove_egde.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/fr_remove_egde.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/fr_remove_egde.c > CMakeFiles/read_map.dir/src/fr_remove_egde.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/fr_remove_egde.c > CMakeFiles/read_map.dir/src/fr_remove_egde.c.i
 
 CMakeFiles/read_map.dir/src/fr_remove_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/fr_remove_egde.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/fr_remove_egde.c -o CMakeFiles/read_map.dir/src/fr_remove_egde.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/fr_remove_egde.c -o CMakeFiles/read_map.dir/src/fr_remove_egde.c.s
 
 CMakeFiles/read_map.dir/src/ft_split_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_split_vertex.c.o: ../src/ft_split_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/read_map.dir/src/ft_split_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_split_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_split_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/read_map.dir/src/ft_split_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_split_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_split_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_split_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_split_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_split_vertex.c > CMakeFiles/read_map.dir/src/ft_split_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_split_vertex.c > CMakeFiles/read_map.dir/src/ft_split_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_split_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_split_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_split_vertex.c -o CMakeFiles/read_map.dir/src/ft_split_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_split_vertex.c -o CMakeFiles/read_map.dir/src/ft_split_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o: ../src/ft_remove_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_remove_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_remove_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_remove_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_remove_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_remove_vertex.c > CMakeFiles/read_map.dir/src/ft_remove_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c > CMakeFiles/read_map.dir/src/ft_remove_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_remove_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_remove_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_remove_vertex.c -o CMakeFiles/read_map.dir/src/ft_remove_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_remove_vertex.c -o CMakeFiles/read_map.dir/src/ft_remove_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_move_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_move_edge.c.o: ../src/ft_move_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/read_map.dir/src/ft_move_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_move_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_move_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/read_map.dir/src/ft_move_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_move_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_move_edge.c
 
 CMakeFiles/read_map.dir/src/ft_move_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_move_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_move_edge.c > CMakeFiles/read_map.dir/src/ft_move_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_move_edge.c > CMakeFiles/read_map.dir/src/ft_move_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_move_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_move_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_move_edge.c -o CMakeFiles/read_map.dir/src/ft_move_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_move_edge.c -o CMakeFiles/read_map.dir/src/ft_move_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_convert_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_convert_graph.c.o: ../src/ft_convert_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/read_map.dir/src/ft_convert_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_convert_graph.c.o   -c /Users/ayooden/lemin-9/src/ft_convert_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/read_map.dir/src/ft_convert_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_convert_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_convert_graph.c
 
 CMakeFiles/read_map.dir/src/ft_convert_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_convert_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_convert_graph.c > CMakeFiles/read_map.dir/src/ft_convert_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_convert_graph.c > CMakeFiles/read_map.dir/src/ft_convert_graph.c.i
 
 CMakeFiles/read_map.dir/src/ft_convert_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_convert_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_convert_graph.c -o CMakeFiles/read_map.dir/src/ft_convert_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_convert_graph.c -o CMakeFiles/read_map.dir/src/ft_convert_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o: ../src/ft_grahp_dfs.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o   -c /Users/ayooden/lemin-9/src/ft_grahp_dfs.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.o   -c /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c
 
 CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_grahp_dfs.c > CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c > CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.i
 
 CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_grahp_dfs.c -o CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_grahp_dfs.c -o CMakeFiles/read_map.dir/src/ft_grahp_dfs.c.s
 
 CMakeFiles/read_map.dir/src/ft_queue_pop.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_queue_pop.c.o: ../src/ft_queue_pop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/read_map.dir/src/ft_queue_pop.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_queue_pop.c.o   -c /Users/ayooden/lemin-9/src/ft_queue_pop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/read_map.dir/src/ft_queue_pop.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_queue_pop.c.o   -c /Users/hwolf/projects/lem_in/src/ft_queue_pop.c
 
 CMakeFiles/read_map.dir/src/ft_queue_pop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_queue_pop.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_queue_pop.c > CMakeFiles/read_map.dir/src/ft_queue_pop.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_queue_pop.c > CMakeFiles/read_map.dir/src/ft_queue_pop.c.i
 
 CMakeFiles/read_map.dir/src/ft_queue_pop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_queue_pop.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_queue_pop.c -o CMakeFiles/read_map.dir/src/ft_queue_pop.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_queue_pop.c -o CMakeFiles/read_map.dir/src/ft_queue_pop.c.s
 
 CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o: ../src/ft_save_as_dot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o   -c /Users/ayooden/lemin-9/src/ft_save_as_dot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_save_as_dot.c.o   -c /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c
 
 CMakeFiles/read_map.dir/src/ft_save_as_dot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_save_as_dot.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_save_as_dot.c > CMakeFiles/read_map.dir/src/ft_save_as_dot.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c > CMakeFiles/read_map.dir/src/ft_save_as_dot.c.i
 
 CMakeFiles/read_map.dir/src/ft_save_as_dot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_save_as_dot.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_save_as_dot.c -o CMakeFiles/read_map.dir/src/ft_save_as_dot.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_save_as_dot.c -o CMakeFiles/read_map.dir/src/ft_save_as_dot.c.s
 
 CMakeFiles/read_map.dir/src/ft_queue_new.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_queue_new.c.o: ../src/ft_queue_new.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/read_map.dir/src/ft_queue_new.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_queue_new.c.o   -c /Users/ayooden/lemin-9/src/ft_queue_new.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/read_map.dir/src/ft_queue_new.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_queue_new.c.o   -c /Users/hwolf/projects/lem_in/src/ft_queue_new.c
 
 CMakeFiles/read_map.dir/src/ft_queue_new.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_queue_new.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_queue_new.c > CMakeFiles/read_map.dir/src/ft_queue_new.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_queue_new.c > CMakeFiles/read_map.dir/src/ft_queue_new.c.i
 
 CMakeFiles/read_map.dir/src/ft_queue_new.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_queue_new.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_queue_new.c -o CMakeFiles/read_map.dir/src/ft_queue_new.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_queue_new.c -o CMakeFiles/read_map.dir/src/ft_queue_new.c.s
 
 CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o: ../src/ft_spllit_all_graph_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_spllit_all_graph_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c
 
 CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_spllit_all_graph_edge.c > CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c > CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_spllit_all_graph_edge.c -o CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_spllit_all_graph_edge.c -o CMakeFiles/read_map.dir/src/ft_spllit_all_graph_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o: ../src/ft_reset_edge_oriented.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o   -c /Users/ayooden/lemin-9/src/ft_reset_edge_oriented.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.o   -c /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c
 
 CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_reset_edge_oriented.c > CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c > CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.i
 
 CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_reset_edge_oriented.c -o CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_reset_edge_oriented.c -o CMakeFiles/read_map.dir/src/ft_reset_edge_oriented.c.s
 
 CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o: ../src/ft_reverse_edge.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o   -c /Users/ayooden/lemin-9/src/ft_reverse_edge.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_reverse_edge.c.o   -c /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c
 
 CMakeFiles/read_map.dir/src/ft_reverse_edge.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_reverse_edge.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_reverse_edge.c > CMakeFiles/read_map.dir/src/ft_reverse_edge.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c > CMakeFiles/read_map.dir/src/ft_reverse_edge.c.i
 
 CMakeFiles/read_map.dir/src/ft_reverse_edge.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_reverse_edge.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_reverse_edge.c -o CMakeFiles/read_map.dir/src/ft_reverse_edge.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_reverse_edge.c -o CMakeFiles/read_map.dir/src/ft_reverse_edge.c.s
 
 CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o: ../src/ft_squeeze_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o   -c /Users/ayooden/lemin-9/src/ft_squeeze_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_squeeze_graph.c
 
 CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_squeeze_graph.c > CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_squeeze_graph.c > CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.i
 
 CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_squeeze_graph.c -o CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_squeeze_graph.c -o CMakeFiles/read_map.dir/src/ft_squeeze_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_set_path.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_set_path.c.o: ../src/ft_set_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/read_map.dir/src/ft_set_path.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_path.c.o   -c /Users/ayooden/lemin-9/src/ft_set_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/read_map.dir/src/ft_set_path.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_path.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_path.c
 
 CMakeFiles/read_map.dir/src/ft_set_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_set_path.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_set_path.c > CMakeFiles/read_map.dir/src/ft_set_path.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_path.c > CMakeFiles/read_map.dir/src/ft_set_path.c.i
 
 CMakeFiles/read_map.dir/src/ft_set_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_set_path.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_set_path.c -o CMakeFiles/read_map.dir/src/ft_set_path.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_path.c -o CMakeFiles/read_map.dir/src/ft_set_path.c.s
 
 CMakeFiles/read_map.dir/src/ft_print_path.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_print_path.c.o: ../src/ft_print_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/read_map.dir/src/ft_print_path.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_path.c.o   -c /Users/ayooden/lemin-9/src/ft_print_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/read_map.dir/src/ft_print_path.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_print_path.c.o   -c /Users/hwolf/projects/lem_in/src/ft_print_path.c
 
 CMakeFiles/read_map.dir/src/ft_print_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_print_path.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_print_path.c > CMakeFiles/read_map.dir/src/ft_print_path.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_print_path.c > CMakeFiles/read_map.dir/src/ft_print_path.c.i
 
 CMakeFiles/read_map.dir/src/ft_print_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_print_path.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_print_path.c -o CMakeFiles/read_map.dir/src/ft_print_path.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_print_path.c -o CMakeFiles/read_map.dir/src/ft_print_path.c.s
 
 CMakeFiles/read_map.dir/src/ft_push_ant.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_push_ant.c.o: ../src/ft_push_ant.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/read_map.dir/src/ft_push_ant.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_push_ant.c.o   -c /Users/ayooden/lemin-9/src/ft_push_ant.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/read_map.dir/src/ft_push_ant.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_push_ant.c.o   -c /Users/hwolf/projects/lem_in/src/ft_push_ant.c
 
 CMakeFiles/read_map.dir/src/ft_push_ant.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_push_ant.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_push_ant.c > CMakeFiles/read_map.dir/src/ft_push_ant.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_push_ant.c > CMakeFiles/read_map.dir/src/ft_push_ant.c.i
 
 CMakeFiles/read_map.dir/src/ft_push_ant.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_push_ant.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_push_ant.c -o CMakeFiles/read_map.dir/src/ft_push_ant.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_push_ant.c -o CMakeFiles/read_map.dir/src/ft_push_ant.c.s
 
 CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o: ../src/ft_find_shortest_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o   -c /Users/ayooden/lemin-9/src/ft_find_shortest_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.o   -c /Users/hwolf/projects/lem_in/src/ft_find_shortest_path.c
 
 CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_find_shortest_path.c > CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_find_shortest_path.c > CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.i
 
 CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_find_shortest_path.c -o CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_find_shortest_path.c -o CMakeFiles/read_map.dir/src/ft_find_shortest_path.c.s
 
 CMakeFiles/read_map.dir/src/ft_add_ant.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_add_ant.c.o: ../src/ft_add_ant.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/read_map.dir/src/ft_add_ant.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_ant.c.o   -c /Users/ayooden/lemin-9/src/ft_add_ant.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/read_map.dir/src/ft_add_ant.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_ant.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_ant.c
 
 CMakeFiles/read_map.dir/src/ft_add_ant.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_add_ant.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_add_ant.c > CMakeFiles/read_map.dir/src/ft_add_ant.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_ant.c > CMakeFiles/read_map.dir/src/ft_add_ant.c.i
 
 CMakeFiles/read_map.dir/src/ft_add_ant.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_add_ant.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_add_ant.c -o CMakeFiles/read_map.dir/src/ft_add_ant.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_ant.c -o CMakeFiles/read_map.dir/src/ft_add_ant.c.s
 
 CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o: ../src/ft_set_ant_to_pash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o   -c /Users/ayooden/lemin-9/src/ft_set_ant_to_pash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.o   -c /Users/hwolf/projects/lem_in/src/ft_set_ant_to_pash.c
 
 CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_set_ant_to_pash.c > CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_set_ant_to_pash.c > CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.i
 
 CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_set_ant_to_pash.c -o CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_set_ant_to_pash.c -o CMakeFiles/read_map.dir/src/ft_set_ant_to_pash.c.s
 
 CMakeFiles/read_map.dir/src/ft_char_in_str.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_char_in_str.c.o: ../src/ft_char_in_str.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/read_map.dir/src/ft_char_in_str.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_char_in_str.c.o   -c /Users/ayooden/lemin-9/src/ft_char_in_str.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/read_map.dir/src/ft_char_in_str.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_char_in_str.c.o   -c /Users/hwolf/projects/lem_in/src/ft_char_in_str.c
 
 CMakeFiles/read_map.dir/src/ft_char_in_str.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_char_in_str.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_char_in_str.c > CMakeFiles/read_map.dir/src/ft_char_in_str.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_char_in_str.c > CMakeFiles/read_map.dir/src/ft_char_in_str.c.i
 
 CMakeFiles/read_map.dir/src/ft_char_in_str.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_char_in_str.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_char_in_str.c -o CMakeFiles/read_map.dir/src/ft_char_in_str.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_char_in_str.c -o CMakeFiles/read_map.dir/src/ft_char_in_str.c.s
 
 CMakeFiles/read_map.dir/src/ft_count_char.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_count_char.c.o: ../src/ft_count_char.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/read_map.dir/src/ft_count_char.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_count_char.c.o   -c /Users/ayooden/lemin-9/src/ft_count_char.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/read_map.dir/src/ft_count_char.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_count_char.c.o   -c /Users/hwolf/projects/lem_in/src/ft_count_char.c
 
 CMakeFiles/read_map.dir/src/ft_count_char.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_count_char.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_count_char.c > CMakeFiles/read_map.dir/src/ft_count_char.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_count_char.c > CMakeFiles/read_map.dir/src/ft_count_char.c.i
 
 CMakeFiles/read_map.dir/src/ft_count_char.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_count_char.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_count_char.c -o CMakeFiles/read_map.dir/src/ft_count_char.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_count_char.c -o CMakeFiles/read_map.dir/src/ft_count_char.c.s
 
 CMakeFiles/read_map.dir/src/ft_delete_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_delete_graph.c.o: ../src/ft_delete_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/read_map.dir/src/ft_delete_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_delete_graph.c.o   -c /Users/ayooden/lemin-9/src/ft_delete_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/read_map.dir/src/ft_delete_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_delete_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_delete_graph.c
 
 CMakeFiles/read_map.dir/src/ft_delete_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_delete_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_delete_graph.c > CMakeFiles/read_map.dir/src/ft_delete_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_delete_graph.c > CMakeFiles/read_map.dir/src/ft_delete_graph.c.i
 
 CMakeFiles/read_map.dir/src/ft_delete_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_delete_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_delete_graph.c -o CMakeFiles/read_map.dir/src/ft_delete_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_delete_graph.c -o CMakeFiles/read_map.dir/src/ft_delete_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_find_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_find_vertex.c.o: ../src/ft_find_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/read_map.dir/src/ft_find_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_find_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_find_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/read_map.dir/src/ft_find_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_find_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_find_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_find_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_find_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_find_vertex.c > CMakeFiles/read_map.dir/src/ft_find_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_find_vertex.c > CMakeFiles/read_map.dir/src/ft_find_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_find_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_find_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_find_vertex.c -o CMakeFiles/read_map.dir/src/ft_find_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_find_vertex.c -o CMakeFiles/read_map.dir/src/ft_find_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o: ../src/ft_get_ants_count.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o   -c /Users/ayooden/lemin-9/src/ft_get_ants_count.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_ants_count.c.o   -c /Users/hwolf/projects/lem_in/src/ft_get_ants_count.c
 
 CMakeFiles/read_map.dir/src/ft_get_ants_count.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_get_ants_count.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_get_ants_count.c > CMakeFiles/read_map.dir/src/ft_get_ants_count.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_get_ants_count.c > CMakeFiles/read_map.dir/src/ft_get_ants_count.c.i
 
 CMakeFiles/read_map.dir/src/ft_get_ants_count.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_get_ants_count.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_get_ants_count.c -o CMakeFiles/read_map.dir/src/ft_get_ants_count.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_get_ants_count.c -o CMakeFiles/read_map.dir/src/ft_get_ants_count.c.s
 
 CMakeFiles/read_map.dir/src/ft_get_edges.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_get_edges.c.o: ../src/ft_get_edges.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/read_map.dir/src/ft_get_edges.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_edges.c.o   -c /Users/ayooden/lemin-9/src/ft_get_edges.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/read_map.dir/src/ft_get_edges.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_edges.c.o   -c /Users/hwolf/projects/lem_in/src/ft_get_edges.c
 
 CMakeFiles/read_map.dir/src/ft_get_edges.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_get_edges.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_get_edges.c > CMakeFiles/read_map.dir/src/ft_get_edges.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_get_edges.c > CMakeFiles/read_map.dir/src/ft_get_edges.c.i
 
 CMakeFiles/read_map.dir/src/ft_get_edges.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_get_edges.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_get_edges.c -o CMakeFiles/read_map.dir/src/ft_get_edges.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_get_edges.c -o CMakeFiles/read_map.dir/src/ft_get_edges.c.s
 
 CMakeFiles/read_map.dir/src/ft_get_graph.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_get_graph.c.o: ../src/ft_get_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/read_map.dir/src/ft_get_graph.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_graph.c.o   -c /Users/ayooden/lemin-9/src/ft_get_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/read_map.dir/src/ft_get_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_graph.c.o   -c /Users/hwolf/projects/lem_in/src/ft_get_graph.c
 
 CMakeFiles/read_map.dir/src/ft_get_graph.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_get_graph.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_get_graph.c > CMakeFiles/read_map.dir/src/ft_get_graph.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_get_graph.c > CMakeFiles/read_map.dir/src/ft_get_graph.c.i
 
 CMakeFiles/read_map.dir/src/ft_get_graph.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_get_graph.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_get_graph.c -o CMakeFiles/read_map.dir/src/ft_get_graph.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_get_graph.c -o CMakeFiles/read_map.dir/src/ft_get_graph.c.s
 
 CMakeFiles/read_map.dir/src/ft_get_vertex.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_get_vertex.c.o: ../src/ft_get_vertex.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/read_map.dir/src/ft_get_vertex.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_vertex.c.o   -c /Users/ayooden/lemin-9/src/ft_get_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/read_map.dir/src/ft_get_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_vertex.c.o   -c /Users/hwolf/projects/lem_in/src/ft_get_vertex.c
 
 CMakeFiles/read_map.dir/src/ft_get_vertex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_get_vertex.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_get_vertex.c > CMakeFiles/read_map.dir/src/ft_get_vertex.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_get_vertex.c > CMakeFiles/read_map.dir/src/ft_get_vertex.c.i
 
 CMakeFiles/read_map.dir/src/ft_get_vertex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_get_vertex.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_get_vertex.c -o CMakeFiles/read_map.dir/src/ft_get_vertex.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_get_vertex.c -o CMakeFiles/read_map.dir/src/ft_get_vertex.c.s
 
 CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o: ../src/ft_get_valid_nbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o   -c /Users/ayooden/lemin-9/src/ft_get_valid_nbr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.o   -c /Users/hwolf/projects/lem_in/src/ft_get_valid_nbr.c
 
 CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_get_valid_nbr.c > CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_get_valid_nbr.c > CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.i
 
 CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_get_valid_nbr.c -o CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_get_valid_nbr.c -o CMakeFiles/read_map.dir/src/ft_get_valid_nbr.c.s
 
 CMakeFiles/read_map.dir/src/ft_add_line.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/ft_add_line.c.o: ../src/ft_add_line.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/read_map.dir/src/ft_add_line.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_line.c.o   -c /Users/ayooden/lemin-9/src/ft_add_line.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/read_map.dir/src/ft_add_line.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/ft_add_line.c.o   -c /Users/hwolf/projects/lem_in/src/ft_add_line.c
 
 CMakeFiles/read_map.dir/src/ft_add_line.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/ft_add_line.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/ft_add_line.c > CMakeFiles/read_map.dir/src/ft_add_line.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/ft_add_line.c > CMakeFiles/read_map.dir/src/ft_add_line.c.i
 
 CMakeFiles/read_map.dir/src/ft_add_line.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/ft_add_line.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/ft_add_line.c -o CMakeFiles/read_map.dir/src/ft_add_line.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/ft_add_line.c -o CMakeFiles/read_map.dir/src/ft_add_line.c.s
 
 CMakeFiles/read_map.dir/src/read_only.c.o: CMakeFiles/read_map.dir/flags.make
 CMakeFiles/read_map.dir/src/read_only.c.o: ../src/read_only.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/read_map.dir/src/read_only.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/read_only.c.o   -c /Users/ayooden/lemin-9/src/read_only.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/read_map.dir/src/read_only.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/read_map.dir/src/read_only.c.o   -c /Users/hwolf/projects/lem_in/src/read_only.c
 
 CMakeFiles/read_map.dir/src/read_only.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/read_map.dir/src/read_only.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/ayooden/lemin-9/src/read_only.c > CMakeFiles/read_map.dir/src/read_only.c.i
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/hwolf/projects/lem_in/src/read_only.c > CMakeFiles/read_map.dir/src/read_only.c.i
 
 CMakeFiles/read_map.dir/src/read_only.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/read_map.dir/src/read_only.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/ayooden/lemin-9/src/read_only.c -o CMakeFiles/read_map.dir/src/read_only.c.s
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/hwolf/projects/lem_in/src/read_only.c -o CMakeFiles/read_map.dir/src/read_only.c.s
 
 # Object files for target read_map
 read_map_OBJECTS = \
@@ -711,7 +711,7 @@ read_map: CMakeFiles/read_map.dir/src/read_only.c.o
 read_map: CMakeFiles/read_map.dir/build.make
 read_map: lib/libft/liblibft.a
 read_map: CMakeFiles/read_map.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking C executable read_map"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking C executable read_map"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/read_map.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -724,6 +724,6 @@ CMakeFiles/read_map.dir/clean:
 .PHONY : CMakeFiles/read_map.dir/clean
 
 CMakeFiles/read_map.dir/depend:
-	cd /Users/ayooden/lemin-9/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/ayooden/lemin-9 /Users/ayooden/lemin-9 /Users/ayooden/lemin-9/cmake-build-debug /Users/ayooden/lemin-9/cmake-build-debug /Users/ayooden/lemin-9/cmake-build-debug/CMakeFiles/read_map.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hwolf/projects/lem_in/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hwolf/projects/lem_in /Users/hwolf/projects/lem_in /Users/hwolf/projects/lem_in/cmake-build-debug /Users/hwolf/projects/lem_in/cmake-build-debug /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/read_map.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/read_map.dir/depend
 
