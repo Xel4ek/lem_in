@@ -15,8 +15,8 @@ int main()
 	int i;
 	int graph_len;
 //	graph = mygraph();
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
-//	fd = 0;
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
+	fd = 0;
 	graph = NULL;
 	char *map;
 	map = NULL;
@@ -68,10 +68,13 @@ int main()
 	while((temp_len = ft_graph_bfs(graph, -2, &prev_pash_len, &path_id)) && ant_count > 0) {
 		if (!start)
 			start = temp_len;
-		ant_count -= (temp_len - start);
-		ft_printf("path %d - temp_len %d - ant count %d\n", path_id, temp_len, ant_count);
+//		ant_count -= (temp_len - start);
+//		ft_printf("path %d - temp_len %d - ant count %d\n", path_id, temp_len, ant_count);
 		++temp;
-	}if (!temp) {
+	}
+
+
+	if (!temp) {
 		ft_printf_fd(1, "Error\n");
 		return (0);
 	}
@@ -166,7 +169,7 @@ int main()
 		ft_lstd_push_front(&path_list, ft_lstdnew(
 				ft_new_path(vertex), sizeof(t_path)));
 		((t_vertex *)graph->vertex_list->content)->edge_in_list = ((t_vertex *)graph->vertex_list->content)->edge_in_list->next;
-		ft_printf("%d road len %d\n", j + 1, ((t_path *)path_list->content)->price);
+//		ft_printf("%d road len %d\n", j + 1, ((t_path *)path_list->content)->price);
 
 	}
 //		path = ft_new_path((t_vertex *)graph->vertex_list->content);
@@ -189,13 +192,13 @@ int main()
 	pash_count = ft_lstdlen(path_list);
 	while (pash_count--)
 	{
-		ft_printf("push %d - count %d - price - %d\n", ++temp,((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price);
+//		ft_printf("push %d - count %d - price - %d\n", ++temp,((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price);
 		if (tail < ((t_path *)path_list->content)->price)
 			tail = ((t_path *)path_list->content)->price;
 		total += ((t_path *)path_list->content)->ant_count;
 		path_list = path_list->next;
 	}
-	ft_printf("total : %d\n",total);
+//	ft_printf("total : %d\n",total);
 	int id = 1;
 //	ft_printf("tail :%d\n",tail);
 //	while (temp--)
@@ -206,6 +209,7 @@ int main()
 //			ft_add_ant(path, ant_id++);
 //		ft_print_path_list(path_list);
 	temp = 0;
+	ft_printf("%s", map);
 	while (id < graph->ants_count)
 	{
 		tail--;
@@ -223,7 +227,7 @@ int main()
 			ft_printf("\n");
 //		ft_print_path_list(path_list);
 	}
-		ft_printf("steps :%d\n", temp);
+//		ft_printf("steps :%d\n", temp);
 
 
 //	}
