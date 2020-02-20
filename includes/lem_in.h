@@ -103,7 +103,7 @@ void ft_reset_edge_oriented(t_graph *graph);
 
 void ft_reverse_edge(t_edge **edge);
 
-int ft_graph_bfs(t_graph *graph, int target_id);
+int ft_graph_bfs(t_graph *graph, int target_id, int *prev_pash_len,int *pash_id);
 void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 
 void ft_squeeze_graph(t_graph *graph);
@@ -114,4 +114,6 @@ t_path *ft_find_shortest_path(t_list *path_list);
 void ft_push_ant(t_list *path_list, int *id, int max_id);
 void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
+
+
 #endif

@@ -35,7 +35,10 @@ set(SRC
         src/ft_get_edges.c
         src/ft_get_graph.c
         src/ft_get_vertex.c
-        src/ft_str_is_numeric.c)
+        src/ft_get_valid_nbr.c
+        src/ft_add_line.c
+
+        )
 
 
 include_directories(lib/libft/includes)

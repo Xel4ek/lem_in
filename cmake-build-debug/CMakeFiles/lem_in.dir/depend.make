@@ -16,6 +16,10 @@ CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../src/ft_add_edge.c
 
+CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../src/ft_add_line.c
+
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../lib/libft/includes/libft_structs.h
@@ -59,6 +63,10 @@ CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../src/ft_get_graph.c
+
+CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o: ../src/ft_get_valid_nbr.c
 
 CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o: ../lib/libft/includes/libft.h
@@ -186,8 +194,6 @@ CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../src/ft_squeeze_graph.c
-
-CMakeFiles/lem_in.dir/src/ft_str_is_numeric.c.o: ../src/ft_str_is_numeric.c
 
 CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft.h
