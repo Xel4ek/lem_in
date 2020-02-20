@@ -15,10 +15,12 @@ int main()
 	int i;
 	int graph_len;
 //	graph = mygraph();
-	fd = open("../checker/lemin-tools/maps/valid/big/map_big_2", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
 //	fd = 0;
-//	graph = NULL;
-	if (!ft_get_graph(&graph, fd))
+	graph = NULL;
+	char **map;
+	map = NULL;
+	if (!ft_get_graph(&graph, fd, map))
 		return (write(1, "Error\n", 6));
 	close(fd);
 
@@ -60,11 +62,14 @@ int main()
 	int ant_count = graph->ants_count;
 	int temp_len;
 	int start = 0;
-	while((temp_len = ft_graph_bfs(graph, -2)) && ant_count > 0) {
+	int prev_pash_len = 0;
+	int path_id = 0;
+
+	while((temp_len = ft_graph_bfs(graph, -2, &prev_pash_len, &path_id)) && ant_count > 0) {
 		if (!start)
 			start = temp_len;
 		ant_count -= (temp_len - start);
-		ft_printf("temp_len %d - ant count %d\n", temp_len, ant_count);
+		ft_printf("path %d - temp_len %d - ant count %d\n", path_id, temp_len, ant_count);
 		++temp;
 	}if (!temp) {
 		ft_printf_fd(1, "Error\n");

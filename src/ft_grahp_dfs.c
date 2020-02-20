@@ -69,10 +69,11 @@ int ft_graph_dfs(t_graph *graph, int target_id)
 	return 0;
 }
 
-int ft_graph_bfs(t_graph *graph, int target_id)
+int ft_graph_bfs(t_graph *graph, int target_id, int *prev_pash_len, int *path_id)
 {
 	t_list *queue;
 	t_vertex *current;
+	t_vertex *test;
 	int i;
 
 	ft_reset_vertex_color(graph);
@@ -84,28 +85,36 @@ int ft_graph_bfs(t_graph *graph, int target_id)
 
 	ft_lstd_push_back(&queue, ft_queue_new((t_vertex**)&graph->vertex_list->content));
 	current->color = grey;
-//	current->test = 1;
 	i = 0;
 	while (queue)
 	{
 		current = *((t_vertex**)ft_queue_pop(&queue));
 		if (current->id == target_id)
 		{
+			test = current;
+			while (test->id)
+			{
+				if (((t_vertex*)(*(t_edge**)test->edge_in_list->content)->start) == test)
+					test->edge_in_list = test->edge_in_list->next;
+				if ((*(t_edge**)test->edge_in_list->content)->flow)
+					--i;
+				++i;
+				test = test->parrent;
+			}
+//		   
 			while(current->id)
 			{
-				++i;
-//				ft_printf("%d -> ",current->id);
-//				current->test = 1;
+
 				ft_reverse_edge_vertex(current->parrent, current);
 				current = current->parrent;
 			}
-//			ft_printf("\n");
+
 			while (queue)
 				ft_queue_pop(&queue);
-			return ++i / 2;
+			return ++i/2;
 		}
 		current->color = black;
 		ft_add_implement_verses_in_queue(current, &queue);
 	}
-	return i;
+	return 0;
 }
