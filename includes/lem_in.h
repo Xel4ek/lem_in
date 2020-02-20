@@ -50,6 +50,14 @@ typedef struct s_path
 	int		ant_count;
 }			t_path;
 
+typedef struct	s_gptr
+{
+	t_graph 	*graph;
+	t_vertex	*vertex1;
+	t_vertex 	*vertex2;
+	char 		*name1;
+	char 		*name2;
+}				t_gptr;
 
 # define START "##start"
 # define END "##end"
