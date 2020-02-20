@@ -1,4 +1,7 @@
 project(libft)
+
+set (CMAKE_C_FLAGS_RELEASE "-Wall -O2 ${CMAKE_C_FLAGS_RELEASE}")
+
 set(SRC
         src/ft_atoi_base.c
         src/ft_atoi.c
