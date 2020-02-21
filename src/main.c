@@ -15,8 +15,8 @@ int main()
 	int i;
 	int graph_len;
 //	graph = mygraph();
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
-	fd = 0;
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_4", O_RDONLY);
+//	fd = 0;
 	graph = NULL;
 	char *map;
 	map = NULL;
@@ -65,19 +65,21 @@ int main()
 	int prev_pash_len = 0;
 	int path_id = 0;
 
-	while((temp_len = ft_graph_bfs(graph, -2, &prev_pash_len, &path_id)) && ant_count > 0) {
+	while((temp_len = ft_graph_bfs(graph, -2, &prev_pash_len, &path_id)))
+	{
 		if (!start)
 			start = temp_len;
-//		ant_count -= (temp_len - start);
-//		ft_printf("path %d - temp_len %d - ant count %d\n", path_id, temp_len, ant_count);
+		ft_printf("path %d - temp_len %d - prev_pash_len %d\n",
+				path_id, temp_len, prev_pash_len);
 		++temp;
 	}
 
+//	if (!temp) {
+//		ft_printf_fd(1, "Error\n");
+//		return (0);
+//	}
 
-	if (!temp) {
-		ft_printf_fd(1, "Error\n");
-		return (0);
-	}
+
 //	temp = ft_graph_dfs(graph, 8);
 
 //	ft_reset_edge_oriented(graph);
@@ -156,22 +158,22 @@ int main()
 
 //	t_path  *path;
 	t_list *path_list;
-	path_list = NULL;
+//	path_list = NULL;
 
-
-	i = graph_len;
-	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != 0)
-		graph->vertex_list = graph->vertex_list->next;
-	j = ft_lstdlen(((t_vertex *)graph->vertex_list->content)->edge_in_list);
-	while (j--)
-	{
-		vertex = (*(t_edge**)(((t_vertex *)graph->vertex_list->content)->edge_in_list->content))->start;
-		ft_lstd_push_front(&path_list, ft_lstdnew(
-				ft_new_path(vertex), sizeof(t_path)));
-		((t_vertex *)graph->vertex_list->content)->edge_in_list = ((t_vertex *)graph->vertex_list->content)->edge_in_list->next;
+	path_list =  ft_new_path_list(graph, graph_len);
+//	i = graph_len;
+//	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != 0)
+//		graph->vertex_list = graph->vertex_list->next;
+//	j = ft_lstdlen(((t_vertex *)graph->vertex_list->content)->edge_in_list);
+//	while (j--)
+//	{
+//		vertex = (*(t_edge**)(((t_vertex *)graph->vertex_list->content)->edge_in_list->content))->start;
+//		ft_lstd_push_front(&path_list, ft_lstdnew(
+//				ft_new_path(vertex), sizeof(t_path)));
+//		((t_vertex *)graph->vertex_list->content)->edge_in_list = ((t_vertex *)graph->vertex_list->content)->edge_in_list->next;
 //		ft_printf("%d road len %d\n", j + 1, ((t_path *)path_list->content)->price);
 
-	}
+//	}
 //		path = ft_new_path((t_vertex *)graph->vertex_list->content);
 //	int ant_id;
 
@@ -190,15 +192,20 @@ int main()
 	int pash_count;
 	int total = 0;
 	pash_count = ft_lstdlen(path_list);
+	int temp1;
+	temp1= 0;
 	while (pash_count--)
 	{
-//		ft_printf("push %d - count %d - price - %d\n", ++temp,((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price);
+		ft_printf("push %d - count %d - price - %d diff %d\n", ++temp,
+				((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price,
+				  ((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count);
+		temp1 +=((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count;
 		if (tail < ((t_path *)path_list->content)->price)
 			tail = ((t_path *)path_list->content)->price;
 		total += ((t_path *)path_list->content)->ant_count;
 		path_list = path_list->next;
 	}
-//	ft_printf("total : %d\n",total);
+	ft_printf("total diff : %d\n",temp1);
 	int id = 1;
 //	ft_printf("tail :%d\n",tail);
 //	while (temp--)
@@ -227,7 +234,7 @@ int main()
 			ft_printf("\n");
 //		ft_print_path_list(path_list);
 	}
-//		ft_printf("steps :%d\n", temp);
+		ft_printf("steps :%d\n", temp);
 
 
 //	}

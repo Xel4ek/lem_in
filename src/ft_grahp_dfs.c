@@ -1,3 +1,4 @@
+#include <ft_printf.h>
 #include "libft.h"
 #include "lem_in.h"
 
@@ -73,7 +74,7 @@ int ft_graph_bfs(t_graph *graph, int target_id, int *const prev_pash_len, int *c
 {
 	t_list *queue;
 	t_vertex *current;
-	t_vertex *test;
+	t_vertex *keep;
 	int i;
 
 	ft_reset_vertex_color(graph);
@@ -88,43 +89,33 @@ int ft_graph_bfs(t_graph *graph, int target_id, int *const prev_pash_len, int *c
 	i = 0;
 	while (queue)
 	{
+
 		current = *((t_vertex**)ft_queue_pop(&queue));
 		if (current->id == target_id)
 		{
-			test = current;
-			while (test->id)
-			{
-				if (((t_vertex*)(*(t_edge**)test->edge_in_list->content)->start) == test)
-					test->edge_in_list = test->edge_in_list->next;
-				if ((*(t_edge**)test->edge_in_list->content)->flow)
-					--i;
-				++i;
-				test = test->parrent;
-			}
-
-			int test3;
-			test3 = 0;
-			if (*path_id != 0)
-//				ft_printf("need time %d - ",
-						test3 = *prev_pash_len * *path_id + graph->ants_count * graph->ants_count / (*path_id) ;
-			*prev_pash_len += i;
+			keep = current;
 			(*path_id)++;
-			int test2;
 
-//				ft_printf("%d \n",
-						test2 = *prev_pash_len * *path_id + graph->ants_count * graph->ants_count / (*path_id);
-			if (test3 && test2 > test3)
-				return 0;
 			while(current->id)
 			{
-
 				ft_reverse_edge_vertex(current->parrent, current);
 				current = current->parrent;
 			}
 
-			while (queue)
-				ft_queue_pop(&queue);
-			return ++i/2;
+//			if (ft_accept_new_path(graph, ft_lstdlen(graph->vertex_list), 0) && *path_id <= 8)
+			if(*path_id <= 8)
+			{
+				while (queue)
+					ft_queue_pop(&queue);
+				return --i;
+			}
+			while(keep->id)
+			{
+				ft_reverse_edge_vertex(keep, keep->parrent);
+				keep = keep->parrent;
+			}
+			return (0);
+
 		}
 		current->color = black;
 		ft_add_implement_verses_in_queue(current, &queue);

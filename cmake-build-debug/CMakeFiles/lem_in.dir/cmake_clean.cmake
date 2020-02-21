@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_ant.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_line.c.o"
@@ -18,6 +19,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o"
   "CMakeFiles/lem_in.dir/src/ft_move_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_new_edge.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o"
   "CMakeFiles/lem_in.dir/src/ft_new_vertex.c.o"
   "CMakeFiles/lem_in.dir/src/ft_print_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.o"

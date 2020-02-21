@@ -1,0 +1,5 @@
+comparator.sh: line 167: ../../cmake-build-release/lem_in: cannot execute binary file: Exec format error
+
+real	0m0,003s
+user	0m0,001s
+sys	0m0,000s

@@ -1,24 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/clang -G "CodeBlocks - Unix Makefiles" /Users/hwolf/projects/lem_in
+/snap/clion/103/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/alexey/projects/lem_in
 -- Configuring done
-CMake Error at CMakeLists.txt:47 (add_executable):
-  Cannot find source file:
-
-    src/ft_str_is_numeric.c
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at CMakeLists.txt:47 (add_executable):
-  No SOURCES given to target: read_map
-
-
-CMake Error at CMakeLists.txt:46 (add_executable):
-  No SOURCES given to target: short_test
-
-
-CMake Error at CMakeLists.txt:44 (add_executable):
-  No SOURCES given to target: lem_in
-
-
-CMake Generate step failed.  Build files cannot be regenerated correctly.
+-- Generating done
+-- Build files have been written to: /home/alexey/projects/lem_in/cmake-build-release

@@ -6,5 +6,5 @@ C_FLAGS = -O3 -DNDEBUG   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/hwolf/projects/lem_in/lib/libft/includes -I/Users/hwolf/projects/lem_in/includes -I/Users/hwolf/projects/lem_in/lib/libft 
+C_INCLUDES = -I/home/alexey/projects/lem_in/lib/libft/includes -I/home/alexey/projects/lem_in/includes -I/home/alexey/projects/lem_in/lib/libft 
 

@@ -39,38 +39,27 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hwolf/projects/lem_in
+CMAKE_SOURCE_DIR = /home/alexey/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hwolf/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/103/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,11 +67,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/snap/clion/103/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hwolf/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,19 +124,6 @@ read_map/fast:
 .PHONY : read_map/fast
 
 #=============================================================================
-# Target rules for targets named test_str_len
-
-# Build rule for target.
-test_str_len: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
-.PHONY : test_str_len
-
-# fast build rule for target.
-test_str_len/fast:
-	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
-.PHONY : test_str_len/fast
-
-#=============================================================================
 # Target rules for targets named short_test
 
 # Build rule for target.
@@ -161,6 +148,19 @@ lem_in: cmake_check_build_system
 lem_in/fast:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/build
 .PHONY : lem_in/fast
+
+#=============================================================================
+# Target rules for targets named test_str_len
+
+# Build rule for target.
+test_str_len: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_str_len
+.PHONY : test_str_len
+
+# fast build rule for target.
+test_str_len/fast:
+	$(MAKE) -f CMakeFiles/test_str_len.dir/build.make CMakeFiles/test_str_len.dir/build
+.PHONY : test_str_len/fast
 
 #=============================================================================
 # Target rules for targets named libft
@@ -207,6 +207,33 @@ src/fr_remove_egde.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
 .PHONY : src/fr_remove_egde.c.s
+
+src/ft_accept_new_path.o: src/ft_accept_new_path.c.o
+
+.PHONY : src/ft_accept_new_path.o
+
+# target to build an object file
+src/ft_accept_new_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o
+.PHONY : src/ft_accept_new_path.c.o
+
+src/ft_accept_new_path.i: src/ft_accept_new_path.c.i
+
+.PHONY : src/ft_accept_new_path.i
+
+# target to preprocess a source file
+src/ft_accept_new_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.i
+.PHONY : src/ft_accept_new_path.c.i
+
+src/ft_accept_new_path.s: src/ft_accept_new_path.c.s
+
+.PHONY : src/ft_accept_new_path.s
+
+# target to generate assembly for a file
+src/ft_accept_new_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.s
+.PHONY : src/ft_accept_new_path.c.s
 
 src/ft_add_ant.o: src/ft_add_ant.c.o
 
@@ -801,6 +828,33 @@ src/ft_new_edge.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_edge.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_edge.c.s
 .PHONY : src/ft_new_edge.c.s
+
+src/ft_new_path_list.o: src/ft_new_path_list.c.o
+
+.PHONY : src/ft_new_path_list.o
+
+# target to build an object file
+src/ft_new_path_list.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o
+.PHONY : src/ft_new_path_list.c.o
+
+src/ft_new_path_list.i: src/ft_new_path_list.c.i
+
+.PHONY : src/ft_new_path_list.i
+
+# target to preprocess a source file
+src/ft_new_path_list.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.i
+.PHONY : src/ft_new_path_list.c.i
+
+src/ft_new_path_list.s: src/ft_new_path_list.c.s
+
+.PHONY : src/ft_new_path_list.s
+
+# target to generate assembly for a file
+src/ft_new_path_list.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.s
+.PHONY : src/ft_new_path_list.c.s
 
 src/ft_new_vertex.o: src/ft_new_vertex.c.o
 
@@ -1676,15 +1730,18 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... read_map"
+	@echo "... short_test"
+	@echo "... edit_cache"
+	@echo "... lem_in"
 	@echo "... rebuild_cache"
 	@echo "... test_str_len"
-	@echo "... edit_cache"
-	@echo "... short_test"
-	@echo "... lem_in"
 	@echo "... libft"
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
 	@echo "... src/fr_remove_egde.s"
+	@echo "... src/ft_accept_new_path.o"
+	@echo "... src/ft_accept_new_path.i"
+	@echo "... src/ft_accept_new_path.s"
 	@echo "... src/ft_add_ant.o"
 	@echo "... src/ft_add_ant.i"
 	@echo "... src/ft_add_ant.s"
@@ -1739,6 +1796,9 @@ help:
 	@echo "... src/ft_new_edge.o"
 	@echo "... src/ft_new_edge.i"
 	@echo "... src/ft_new_edge.s"
+	@echo "... src/ft_new_path_list.o"
+	@echo "... src/ft_new_path_list.i"
+	@echo "... src/ft_new_path_list.s"
 	@echo "... src/ft_new_vertex.o"
 	@echo "... src/ft_new_vertex.i"
 	@echo "... src/ft_new_vertex.s"
