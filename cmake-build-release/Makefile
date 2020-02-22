@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/lem_in
+CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-release
+CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-release
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-release
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-release/CMakeFiles /home/alexey/projects/lem_in/cmake-build-release/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-release/CMakeFiles /home/xel/projects/lem_in/cmake-build-release/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-release/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-release/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -208,32 +208,59 @@ src/fr_remove_egde.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
 .PHONY : src/fr_remove_egde.c.s
 
-src/ft_accept_new_push.o: src/ft_accept_new_push.c.o
+src/ft_accepnt_path.o: src/ft_accepnt_path.c.o
 
-.PHONY : src/ft_accept_new_push.o
+.PHONY : src/ft_accepnt_path.o
 
 # target to build an object file
-src/ft_accept_new_push.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_push.c.o
-.PHONY : src/ft_accept_new_push.c.o
+src/ft_accepnt_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o
+.PHONY : src/ft_accepnt_path.c.o
 
-src/ft_accept_new_push.i: src/ft_accept_new_push.c.i
+src/ft_accepnt_path.i: src/ft_accepnt_path.c.i
 
-.PHONY : src/ft_accept_new_push.i
+.PHONY : src/ft_accepnt_path.i
 
 # target to preprocess a source file
-src/ft_accept_new_push.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_push.c.i
-.PHONY : src/ft_accept_new_push.c.i
+src/ft_accepnt_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.i
+.PHONY : src/ft_accepnt_path.c.i
 
-src/ft_accept_new_push.s: src/ft_accept_new_push.c.s
+src/ft_accepnt_path.s: src/ft_accepnt_path.c.s
 
-.PHONY : src/ft_accept_new_push.s
+.PHONY : src/ft_accepnt_path.s
 
 # target to generate assembly for a file
-src/ft_accept_new_push.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_push.c.s
-.PHONY : src/ft_accept_new_push.c.s
+src/ft_accepnt_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.s
+.PHONY : src/ft_accepnt_path.c.s
+
+src/ft_accept_new_path.o: src/ft_accept_new_path.c.o
+
+.PHONY : src/ft_accept_new_path.o
+
+# target to build an object file
+src/ft_accept_new_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o
+.PHONY : src/ft_accept_new_path.c.o
+
+src/ft_accept_new_path.i: src/ft_accept_new_path.c.i
+
+.PHONY : src/ft_accept_new_path.i
+
+# target to preprocess a source file
+src/ft_accept_new_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.i
+.PHONY : src/ft_accept_new_path.c.i
+
+src/ft_accept_new_path.s: src/ft_accept_new_path.c.s
+
+.PHONY : src/ft_accept_new_path.s
+
+# target to generate assembly for a file
+src/ft_accept_new_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.s
+.PHONY : src/ft_accept_new_path.c.s
 
 src/ft_add_ant.o: src/ft_add_ant.c.o
 
@@ -1739,9 +1766,12 @@ help:
 	@echo "... src/fr_remove_egde.o"
 	@echo "... src/fr_remove_egde.i"
 	@echo "... src/fr_remove_egde.s"
-	@echo "... src/ft_accept_new_push.o"
-	@echo "... src/ft_accept_new_push.i"
-	@echo "... src/ft_accept_new_push.s"
+	@echo "... src/ft_accepnt_path.o"
+	@echo "... src/ft_accepnt_path.i"
+	@echo "... src/ft_accepnt_path.s"
+	@echo "... src/ft_accept_new_path.o"
+	@echo "... src/ft_accept_new_path.i"
+	@echo "... src/ft_accept_new_path.s"
 	@echo "... src/ft_add_ant.o"
 	@echo "... src/ft_add_ant.i"
 	@echo "... src/ft_add_ant.s"

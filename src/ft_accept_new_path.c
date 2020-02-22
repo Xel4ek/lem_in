@@ -10,7 +10,7 @@ int ft_accept_new_path(t_graph *graph, int graph_len, int current_cost)
 	int temp1 = 0;
 
 
-	path_list =  ft_new_path_list(graph, graph_len);
+	path_list =  ft_new_path_list(graph);
 	ft_set_ant_to_pash(graph->ants_count, path_list);
 	pash_count = ft_lstdlen(path_list);
 	while (pash_count--)

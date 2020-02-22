@@ -11,13 +11,6 @@ enum e_color{
 	black
 };
 
-
-typedef struct	s_graph
-{
-	t_list*		vertex_list;
-	size_t      ants_count;
-}				t_graph;
-
 typedef struct	s_vertex
 {
 
@@ -40,7 +33,7 @@ typedef struct s_edge
 	t_vertex		*end;
     int				flow;
 	int 			oriented;
-
+//	int 			pash;
 }				t_edge;
 
 typedef struct s_path
@@ -49,6 +42,19 @@ typedef struct s_path
 	int		price;
 	int		ant_count;
 }			t_path;
+
+typedef struct	s_graph
+{
+	t_list*		vertex_list;
+	int 		sink_id;
+	int			source_id;
+	int			pash_count;
+	int			path_lenght;
+	int			vertex_count;
+	t_vertex 	*source;
+	t_vertex 	*sink;
+	size_t      ants_count;
+}				t_graph;
 
 typedef struct	s_gptr
 {
@@ -111,8 +117,8 @@ void ft_reset_edge_oriented(t_graph *graph);
 
 void ft_reverse_edge(t_edge **edge);
 
-int ft_graph_bfs(t_graph *graph, int target_id, int *prev_pash_len,int *pash_id);
-void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
+int ft_graph_bfs(t_graph *graph);
+void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end, int pash_count);
 
 void ft_squeeze_graph(t_graph *graph);
 t_path *ft_new_path(t_vertex *path_head);
@@ -122,6 +128,6 @@ t_path *ft_find_shortest_path(t_list *path_list);
 void ft_push_ant(t_list *path_list, int *id, int max_id);
 void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
-t_list * ft_new_path_list(t_graph *graph, int graph_len);
-int ft_accept_new_path(t_graph *graph, int graph_len, int current_cost);
+t_list * ft_new_path_list(t_graph *graph);
+int ft_accept_path(t_graph *graph);
 #endif

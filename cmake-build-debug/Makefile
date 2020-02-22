@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
+RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexey/projects/lem_in
+CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/103/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -234,6 +234,33 @@ src/ft_accept_new_path.s: src/ft_accept_new_path.c.s
 src/ft_accept_new_path.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.s
 .PHONY : src/ft_accept_new_path.c.s
+
+src/ft_accept_path.o: src/ft_accept_path.c.o
+
+.PHONY : src/ft_accept_path.o
+
+# target to build an object file
+src/ft_accept_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.o
+.PHONY : src/ft_accept_path.c.o
+
+src/ft_accept_path.i: src/ft_accept_path.c.i
+
+.PHONY : src/ft_accept_path.i
+
+# target to preprocess a source file
+src/ft_accept_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.i
+.PHONY : src/ft_accept_path.c.i
+
+src/ft_accept_path.s: src/ft_accept_path.c.s
+
+.PHONY : src/ft_accept_path.s
+
+# target to generate assembly for a file
+src/ft_accept_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.s
+.PHONY : src/ft_accept_path.c.s
 
 src/ft_add_ant.o: src/ft_add_ant.c.o
 
@@ -1742,6 +1769,9 @@ help:
 	@echo "... src/ft_accept_new_path.o"
 	@echo "... src/ft_accept_new_path.i"
 	@echo "... src/ft_accept_new_path.s"
+	@echo "... src/ft_accept_path.o"
+	@echo "... src/ft_accept_path.i"
+	@echo "... src/ft_accept_path.s"
 	@echo "... src/ft_add_ant.o"
 	@echo "... src/ft_add_ant.i"
 	@echo "... src/ft_add_ant.s"

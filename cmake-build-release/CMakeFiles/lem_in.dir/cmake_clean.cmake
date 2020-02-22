@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o"
-  "CMakeFiles/lem_in.dir/src/ft_accept_new_push.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_ant.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_edge.c.o"
   "CMakeFiles/lem_in.dir/src/ft_add_line.c.o"

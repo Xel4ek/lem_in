@@ -21,13 +21,12 @@ void ft_reverse_edge(t_edge **edge)
 	ft_add_edge(edge_ptr->end, edge_ptr->start, edge_ptr->flow, edge_ptr->oriented);
 }
 
-void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end)
+void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end, int pash_count)
 {
-//	t_edge *edge_ptr;
 	size_t  start_len;
 	size_t end_len;
 	size_t i;
-	int test;
+
 	start_len = ft_lstdlen(start->edge_out_list);
 	end_len = ft_lstdlen(end->edge_in_list);
 
@@ -36,22 +35,14 @@ void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end)
 		i = end_len;
 		while (i--)
 		{
-//			test = ((t_vertex*)(*(t_edge**)end->edge_in_list->content)->start)->id;
 			if (((t_vertex*)(*(t_edge**)end->edge_in_list->content)->start) == start) {
 				ft_add_edge(end, start, ((*(t_edge**)end->edge_in_list->content)->flow)^1, (*(t_edge**)end->edge_in_list->content)->oriented);
+//				(*((t_edge**)end->edge_out_list->prev->content))->pash = pash_count;
 				ft_remove_edge((t_edge**)end->edge_in_list->content);
-//				(t_vertex*)graph->vertex_list->next->next->content)->edge_in_list->content
-//				ft_lstd_pop_front(&start->edge_out_list);
-//				ft_lstd_pop_front(&end->edge_in_list);
 				return;
 			}
 			end->edge_in_list = end->edge_in_list->next;
 		}
 		start->edge_out_list = start->edge_out_list->next;
 	}
-//	ft_swap((void*)edge_ptr->start->edge_out_list, (void*)edge_ptr->end->edge_in_list);
-//	ft_swap((void*)edge_ptr->start, (void*)edge_ptr->end);
-//	ft_lstd_pop_front(&edge_ptr->start->edge_out_list);
-//	ft_lstd_pop_front(&edge_ptr->end->edge_in_list);
-//	ft_add_edge(edge_ptr->end, edge_ptr->start, edge_ptr->flow, edge_ptr->oriented);
 }

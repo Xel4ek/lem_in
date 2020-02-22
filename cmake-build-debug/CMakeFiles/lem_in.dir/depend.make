@@ -11,6 +11,11 @@ CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o: ../src/ft_accept_new_path.c
 
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../src/ft_accept_path.c
+
 CMakeFiles/lem_in.dir/src/ft_add_ant.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_add_ant.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_ant.c.o: ../lib/libft/includes/libft_structs.h
@@ -207,6 +212,7 @@ CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../lib/libft/includes/libft_stru
 CMakeFiles/lem_in.dir/src/ft_squeeze_graph.c.o: ../src/ft_squeeze_graph.c
 
 CMakeFiles/lem_in.dir/src/main.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/main.c.o: ../src/main.c

@@ -1,14 +1,14 @@
 #include "lem_in.h"
 #include "libft.h"
 
-t_list * ft_new_path_list(t_graph *graph, int graph_len){
+t_list * ft_new_path_list(t_graph *graph){
 	t_list *path_list;
 	path_list = NULL;
 	t_vertex* vertex;
 
 	int i;
 
-	i = graph_len;
+	i = graph->vertex_count;
 	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != 0)
 		graph->vertex_list = graph->vertex_list->next;
 	i = ft_lstdlen(((t_vertex *)graph->vertex_list->content)->edge_in_list);
