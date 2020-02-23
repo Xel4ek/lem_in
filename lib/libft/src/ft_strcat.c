@@ -14,15 +14,14 @@
 
 char	*ft_strcat(char *dst, const char *src)
 {
-	char *tmp;
+	char *ptr;
 
-	tmp = dst;
-	while (*dst)
-		++dst;
+	ptr = dst;
+	dst += ft_strlen(dst);
 	while (*src)
 		*(dst++) = *(src++);
 	*dst = 0;
-	return (tmp);
+	return (ptr);
 }
 
 char	*ft_strcat_end(char *dst, const char *src)

@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = libft.a
-CC = gcc
+CC = clang
 CFLAGS = -Wall -Wextra -Werror -pipe -O3
 SRC =	ft_abs.c \
 		ft_atoi_base.c \

@@ -33,7 +33,7 @@ typedef struct s_edge
 	t_vertex		*end;
     int				flow;
 	int 			oriented;
-//	int 			pash;
+	int 			pash;
 }				t_edge;
 
 typedef struct s_path
@@ -118,7 +118,7 @@ void ft_reset_edge_oriented(t_graph *graph);
 void ft_reverse_edge(t_edge **edge);
 
 int ft_graph_bfs(t_graph *graph);
-void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end, int pash_count);
+void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 
 void ft_squeeze_graph(t_graph *graph);
 t_path *ft_new_path(t_vertex *path_head);
@@ -130,4 +130,5 @@ void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
 t_list * ft_new_path_list(t_graph *graph);
 int ft_accept_path(t_graph *graph);
+int ft_get_pash_len(const t_graph *const graph, t_vertex *vertex);
 #endif

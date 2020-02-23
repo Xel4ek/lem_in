@@ -12,22 +12,25 @@
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *const dst, const void *src, size_t n)
 {
-	long			*dst_ptr;
-	long			*src_ptr;
+	unsigned long int			*dst_ptr;
+	unsigned long int			*src_ptr;
 	unsigned char	*dst_ptr_char;
 	unsigned char	*src_ptr_char;
 	size_t			long_len;
 
-	dst_ptr = (long*)dst;
-	src_ptr = (long*)src;
-	long_len = sizeof(*dst_ptr);
+	long_len = sizeof(unsigned long int);
 	if ((dst == src) || !n)
 		return (dst);
+	dst_ptr_char = (unsigned char*)dst;
+	while (((unsigned long int) dst_ptr_char & (sizeof(unsigned long int) - 1)) && n--)
+		*dst_ptr_char++ = *(unsigned char*)src++;
+	dst_ptr = (unsigned long int*)dst_ptr_char;
+	src_ptr = (unsigned long int*)src;
 	while (n > long_len - 1)
 	{
-		*(dst_ptr++) = *(src_ptr++);
+		*dst_ptr++ = *src_ptr++;
 		n -= long_len;
 	}
 	if (n)
@@ -35,7 +38,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 		dst_ptr_char = (unsigned char*)dst_ptr;
 		src_ptr_char = (unsigned char*)src_ptr;
 		while (n--)
-			*(dst_ptr_char++) = *(src_ptr_char++);
+			*dst_ptr_char++ = *src_ptr_char++;
 	}
 	return (dst);
 }

@@ -44,13 +44,12 @@ set(SRC
 include_directories(lib/libft/includes)
 include_directories(includes)
 
-add_executable(lem_in ${SRC} src/main.c src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c)
+add_executable(lem_in ${SRC} src/main.c src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c)
 add_executable(test_str_len test_str_len.c)
 add_executable(short_test ${SRC} src/short_test.c)
-add_executable(read_map ${SRC} src/read_only.c)
+
 
 add_subdirectory(lib/libft)
 target_link_libraries(lem_in libft)
 target_link_libraries(test_str_len libft)
 target_link_libraries(short_test libft)
-target_link_libraries(read_map libft)

@@ -642,18 +642,31 @@ CMakeFiles/lem_in.dir/src/ft_new_path_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_new_path_list.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_new_path_list.c -o CMakeFiles/lem_in.dir/src/ft_new_path_list.c.s
 
-CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o: ../src/ft_accepnt_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o   -c /home/xel/projects/lem_in/src/ft_accepnt_path.c
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../src/ft_accept_path.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/lem_in.dir/src/ft_accept_path.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_accept_path.c.o   -c /home/xel/projects/lem_in/src/ft_accept_path.c
 
-CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_accepnt_path.c > CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.i
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_accept_path.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_accept_path.c > CMakeFiles/lem_in.dir/src/ft_accept_path.c.i
 
-CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_accepnt_path.c -o CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.s
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_accept_path.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_accept_path.c -o CMakeFiles/lem_in.dir/src/ft_accept_path.c.s
+
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: ../src/ft_get_pash_len.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o   -c /home/xel/projects/lem_in/src/ft_get_pash_len.c
+
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_get_pash_len.c > CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.i
+
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_get_pash_len.c -o CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s
 
 # Object files for target lem_in
 lem_in_OBJECTS = \
@@ -702,7 +715,8 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/main.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o" \
-"CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o"
+"CMakeFiles/lem_in.dir/src/ft_accept_path.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -752,11 +766,12 @@ lem_in: CMakeFiles/lem_in.dir/src/ft_add_line.c.o
 lem_in: CMakeFiles/lem_in.dir/src/main.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o
-lem_in: CMakeFiles/lem_in.dir/src/ft_accepnt_path.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_accept_path.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: lib/libft/liblibft.a
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -12,6 +12,7 @@ CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o: ../lib/libft/includes/libft_st
 CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o: ../src/ft_accept_new_path.c
 
 CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_accept_path.c.o: ../src/ft_accept_path.c
@@ -73,6 +74,11 @@ CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_get_graph.c.o: ../src/ft_get_graph.c
+
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o: ../src/ft_get_pash_len.c
 
 CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o: ../lib/libft/includes/libft_structs.h

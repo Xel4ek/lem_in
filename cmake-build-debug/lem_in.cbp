@@ -17,50 +17,6 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="read_map">
-				<Option output="/home/xel/projects/lem_in/cmake-build-debug/read_map" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/xel/projects/lem_in/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/xel/projects/lem_in/lib/libft/includes"/>
-					<Add directory="/home/xel/projects/lem_in/includes"/>
-					<Add directory="/home/xel/projects/lem_in/lib/libft"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 read_map"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="read_map/fast">
-				<Option output="/home/xel/projects/lem_in/cmake-build-debug/read_map" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/xel/projects/lem_in/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/xel/projects/lem_in/lib/libft/includes"/>
-					<Add directory="/home/xel/projects/lem_in/includes"/>
-					<Add directory="/home/xel/projects/lem_in/lib/libft"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 read_map/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/xel/projects/lem_in/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
 			<Target title="short_test">
 				<Option output="/home/xel/projects/lem_in/cmake-build-debug/short_test" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/xel/projects/lem_in/cmake-build-debug"/>
@@ -547,7 +503,6 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/fr_remove_egde.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
@@ -558,92 +513,77 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_add_ant.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_add_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_add_line.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_add_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_char_in_str.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_convert_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_count_char.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_delete_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_find_shortest_path.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_find_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_ants_count.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_edges.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/xel/projects/lem_in/src/ft_get_pash_len.c">
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_valid_nbr.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_grahp_dfs.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_move_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_new_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
@@ -651,126 +591,100 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_new_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_egde_list.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_matrix.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_path.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_tools.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_push_ant.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_queue_new.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_queue_pop.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_remove_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_reset_edge_oriented.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_reverse_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_save_as_dot.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_set_ant_to_pash.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_set_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_set_path.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_set_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_split_egde.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_split_vertex.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_spllit_all_graph_edge.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_squeeze_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/main.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/read_only.c">
-			<Option target="read_map"/>
-		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/short_test.c">
 			<Option target="short_test"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/test_graph.c">
-			<Option target="read_map"/>
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>

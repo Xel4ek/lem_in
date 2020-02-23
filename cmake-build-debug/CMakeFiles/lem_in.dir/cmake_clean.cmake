@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_get_ants_count.c.o"
   "CMakeFiles/lem_in.dir/src/ft_get_edges.c.o"
   "CMakeFiles/lem_in.dir/src/ft_get_graph.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o"
   "CMakeFiles/lem_in.dir/src/ft_get_valid_nbr.c.o"
   "CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o"
   "CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o"

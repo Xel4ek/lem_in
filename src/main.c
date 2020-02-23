@@ -24,7 +24,8 @@ int main()
 	total_t = clock();
 	open_t = clock();
 
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_2", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_30", O_RDONLY);
+//	fd = open("../10K.map", O_RDONLY);
 //	fd = 0;
 	graph = NULL;
 	char *map;
@@ -36,6 +37,7 @@ int main()
 	close(fd);
 	graph->sink_id = -2;
 	graph->source_id = 0;
+
 	read_t = clock() - read_t;
 	calc_t = clock();
 
@@ -43,6 +45,7 @@ int main()
 
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
+	graph->path_lenght = graph->vertex_count;
 	i = graph->vertex_count;
 	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != graph->source_id)
 		graph->vertex_list = graph->vertex_list->next;
@@ -53,7 +56,8 @@ int main()
 	graph->sink = (t_vertex*)graph->vertex_list->content;
 
 	while (ft_graph_bfs(graph))
-		ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
+		;
+//		ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_printf(RED"Error\n"RESET);
 		return (0);
@@ -98,17 +102,17 @@ int main()
 	temp1= 0;
 	while (pash_count--)
 	{
-		ft_printf("push %d - count %d - price - %d diff %d\n", ++temp,
-				((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price,
-				  ((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count);
-		temp1 +=((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count;
+//		ft_printf("push %d - count %d - price - %d diff %d\n", ++temp,
+//				((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price,
+//				  ((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count);
+//		temp1 +=((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count;
 		if (tail < ((t_path *)path_list->content)->price && tail < ((t_path *)path_list->content)->ant_count)
 			tail = ((t_path *)path_list->content)->price;
-		total += ((t_path *)path_list->content)->ant_count;
-		total_price += ((t_path *)path_list->content)->price;
+//		total += ((t_path *)path_list->content)->ant_count;
+//		total_price += ((t_path *)path_list->content)->price;
 		path_list = path_list->next;
 	}
-	ft_printf("total diff : %d - price %d\n",temp1, total_price);
+//	ft_printf("total diff : %d - price %d\n",temp1, total_price);
 	int id = 1;
 	calc_t = clock() - calc_t;
 	print_t = clock();
@@ -123,14 +127,14 @@ int main()
 
 	ft_printf("steps :%d\n", temp);
 	ft_printf("vertex: %d\n", (graph->vertex_count + 2)/2);
-	ft_printf("open: \t%.10f s\n", (double) open_t / (double )CLOCKS_PER_SEC);
-	ft_printf("read: \t%.10f s\n", (double) read_t /  (double )CLOCKS_PER_SEC);
-	ft_printf("calc: \t%.10f s\n", (double) calc_t /  (double )CLOCKS_PER_SEC);
+	ft_printf("open: \t%f s\n", (double) open_t / (double )CLOCKS_PER_SEC);
+	ft_printf("read: \t%f s\n", (double) read_t /  (double )CLOCKS_PER_SEC);
+	ft_printf("calc: \t%f s\n", (double) calc_t /  (double )CLOCKS_PER_SEC);
 	print_t = clock() - print_t;
-	ft_printf("print: \t%.10f s\n", (double) print_t /  (double )CLOCKS_PER_SEC);
+	ft_printf("print: \t%f s\n", (double) print_t /  (double )CLOCKS_PER_SEC);
 	total_t = clock() - total_t;
-	ft_printf(GREEN"total: \t%.10f s\n"RESET,(double) total_t /  (double )CLOCKS_PER_SEC);
-	printf("diff: \t%.6e s\n",(double)(total_t - print_t -calc_t -read_t -open_t)/ (double)CLOCKS_PER_SEC);
+	ft_printf(GREEN"total: \t%f s\n"RESET,(double) total_t /  (double )CLOCKS_PER_SEC);
+	ft_printf("diff: \t%f s\n",(double)(total_t - print_t -calc_t -read_t -open_t)/ (double)CLOCKS_PER_SEC);
 
 	ft_printf(GREEN"\n\tDone\n"RESET);
 	return 0;
