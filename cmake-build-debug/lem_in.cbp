@@ -503,9 +503,11 @@
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_accept_new_path.c">
+			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_accept_path.c">
+			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_add_ant.c">
@@ -537,9 +539,6 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_del_graph.c">
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/ft_delete_graph.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
@@ -564,6 +563,7 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_pash_len.c">
+			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_get_valid_nbr.c">
@@ -574,11 +574,7 @@
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/ft_grahp_dfs.c">
-			<Option target="short_test"/>
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/ft_move_edge.c">
+		<Unit filename="/home/xel/projects/lem_in/src/ft_min_cost_flow.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
@@ -587,6 +583,7 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_new_path_list.c">
+			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_new_vertex.c">
@@ -606,10 +603,6 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_print_matrix.c">
-			<Option target="short_test"/>
-			<Option target="lem_in"/>
-		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/ft_print_path.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>

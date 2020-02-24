@@ -36,23 +36,11 @@ libft_structs.h
 string.h
 -
 
-/home/xel/projects/lem_in/src/main.c
+/home/xel/projects/lem_in/src/ft_min_cost_flow.c
+ft_printf.h
+-
 libft.h
 /home/xel/projects/lem_in/src/libft.h
 lem_in.h
 /home/xel/projects/lem_in/src/lem_in.h
-sys/types.h
--
-sys/stat.h
--
-fcntl.h
--
-unistd.h
--
-time.h
--
-stdio.h
--
-ft_printf.h
--
 

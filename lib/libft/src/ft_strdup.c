@@ -22,8 +22,5 @@ char	*ft_strdup(const char *src)
 	if (!(ptr = (char*)malloc(sizeof(*src) * (len + 1))))
 		return (NULL);
 	ft_memcpy(ptr, src, len + 1);
-	//	ptr[len] = 0;
-//	while (len--)
-//		ptr[len] = src[len];
 	return (ptr);
 }

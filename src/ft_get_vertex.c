@@ -55,7 +55,6 @@ static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
 	vertex->x = x;
 	vertex->y = y;
 	ft_add_vertex_by_index(graph, vertex, index);
-//	ft_memdel((void**)&vertex->name);
 	ft_memdel((void**)&vertex);
 
 	return (ft_free_tab(v_info, 3, 0));

@@ -7,7 +7,6 @@ int ft_set_ant_to_pash(int total_ant, t_list *path_list)
 	int min_path;
 
 	min_path = -1;
-
 	while (total_ant--)
 	{
 		path = ft_find_shortest_path(path_list);

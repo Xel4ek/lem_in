@@ -21,17 +21,19 @@ size_t	ft_strlen(const char *str)
 	unsigned long int		lomagic;
 
 	char_ptr = str;
-	while ((unsigned long int) char_ptr & (sizeof(unsigned long int) - 1))
+	while ((unsigned long int) char_ptr & (sizeof(longword) - 1))
 		if (*char_ptr++ == '\0')
 			return (char_ptr - str - 1);
 	longword_ptr = (unsigned long int*)char_ptr;
 	himagic = 0x8080808080808080L;
 	lomagic = 0x0101010101010101L;
+	himagic =(himagic << 32u) | himagic;
+	lomagic =(lomagic << 32u) | himagic;
 	longword = *longword_ptr++;
 	while (((longword - lomagic) & ~longword & himagic) == 0)
 		longword = *longword_ptr++;
-	char_ptr = (const char *) (longword_ptr - 1) - 1;
-	while (*(++char_ptr))
+	char_ptr = (const char *) (longword_ptr - 1);
+	while (*(char_ptr++))
 		;
-	return (char_ptr - str);
+	return (char_ptr - str - 1);
 }

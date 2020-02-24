@@ -25,16 +25,16 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_6", O_RDONLY);
-	fd = open("../lem-in_generator/19102_map", O_RDONLY);
-//	fd = 0;
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+//	fd = open("../lem-in_generator/19102_map", O_RDONLY);
+	fd = 0;
 	graph = NULL;
 	char *map;
 	map = NULL;
 	open_t = clock() - open_t;
 	read_t = clock();
 	if (!ft_get_graph(&graph, fd, &map))
-		return (ft_printf(RED "Error\n"RESET));
+		return (ft_printf(RED"Error"RESET"\n"));
 	close(fd);
 	graph->sink_id = -2;
 	graph->source_id = 0;
@@ -56,12 +56,12 @@ int main()
 		graph->vertex_list = graph->vertex_list->next;
 	graph->sink = (t_vertex*)graph->vertex_list->content;
 
-	while (ft_graph_bfs(graph))
+	while (ft_min_cost_flow(graph))
 		;
 
 //	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
-		ft_printf(RED"Error\n"RESET);
+		ft_printf(RED"Error"RESET"\n");
 		return (0);
 	}
 	int j;
@@ -141,7 +141,7 @@ int main()
 	print_t = clock() - print_t;
 	ft_printf("print: \t%f s\n", (double) print_t /  (double )CLOCKS_PER_SEC);
 	total_t = clock() - total_t;
-	ft_printf(GREEN"total: \t%f s\n"RESET,(double) total_t /  (double )CLOCKS_PER_SEC);
+	ft_printf(GREEN"total: \t%f s"RESET"\n",(double) total_t /  (double )CLOCKS_PER_SEC);
 	ft_printf("diff: \t%f s\n",(double)(total_t - print_t -calc_t -read_t -open_t)/ (double)CLOCKS_PER_SEC);
 	ft_del_graph(&graph);
 	ft_lstd_del(&path_list);

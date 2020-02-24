@@ -168,6 +168,7 @@ src/ft_accept_new_path.o: src/ft_accept_new_path.c.o
 
 # target to build an object file
 src/ft_accept_new_path.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o
 .PHONY : src/ft_accept_new_path.c.o
 
@@ -177,6 +178,7 @@ src/ft_accept_new_path.i: src/ft_accept_new_path.c.i
 
 # target to preprocess a source file
 src/ft_accept_new_path.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_new_path.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.i
 .PHONY : src/ft_accept_new_path.c.i
 
@@ -186,6 +188,7 @@ src/ft_accept_new_path.s: src/ft_accept_new_path.c.s
 
 # target to generate assembly for a file
 src/ft_accept_new_path.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_new_path.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.s
 .PHONY : src/ft_accept_new_path.c.s
 
@@ -195,6 +198,7 @@ src/ft_accept_path.o: src/ft_accept_path.c.o
 
 # target to build an object file
 src/ft_accept_path.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_path.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.o
 .PHONY : src/ft_accept_path.c.o
 
@@ -204,6 +208,7 @@ src/ft_accept_path.i: src/ft_accept_path.c.i
 
 # target to preprocess a source file
 src/ft_accept_path.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_path.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.i
 .PHONY : src/ft_accept_path.c.i
 
@@ -213,6 +218,7 @@ src/ft_accept_path.s: src/ft_accept_path.c.s
 
 # target to generate assembly for a file
 src/ft_accept_path.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_accept_path.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_accept_path.c.s
 .PHONY : src/ft_accept_path.c.s
 
@@ -432,6 +438,7 @@ src/ft_del_graph.o: src/ft_del_graph.c.o
 
 # target to build an object file
 src/ft_del_graph.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_del_graph.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.o
 .PHONY : src/ft_del_graph.c.o
 
@@ -441,6 +448,7 @@ src/ft_del_graph.i: src/ft_del_graph.c.i
 
 # target to preprocess a source file
 src/ft_del_graph.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_del_graph.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.i
 .PHONY : src/ft_del_graph.c.i
 
@@ -450,38 +458,9 @@ src/ft_del_graph.s: src/ft_del_graph.c.s
 
 # target to generate assembly for a file
 src/ft_del_graph.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_del_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.s
 .PHONY : src/ft_del_graph.c.s
-
-src/ft_delete_graph.o: src/ft_delete_graph.c.o
-
-.PHONY : src/ft_delete_graph.o
-
-# target to build an object file
-src/ft_delete_graph.c.o:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o
-.PHONY : src/ft_delete_graph.c.o
-
-src/ft_delete_graph.i: src/ft_delete_graph.c.i
-
-.PHONY : src/ft_delete_graph.i
-
-# target to preprocess a source file
-src/ft_delete_graph.c.i:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.i
-.PHONY : src/ft_delete_graph.c.i
-
-src/ft_delete_graph.s: src/ft_delete_graph.c.s
-
-.PHONY : src/ft_delete_graph.s
-
-# target to generate assembly for a file
-src/ft_delete_graph.c.s:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_delete_graph.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_delete_graph.c.s
-.PHONY : src/ft_delete_graph.c.s
 
 src/ft_find_shortest_path.o: src/ft_find_shortest_path.c.o
 
@@ -639,6 +618,7 @@ src/ft_get_pash_len.o: src/ft_get_pash_len.c.o
 
 # target to build an object file
 src/ft_get_pash_len.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o
 .PHONY : src/ft_get_pash_len.c.o
 
@@ -648,6 +628,7 @@ src/ft_get_pash_len.i: src/ft_get_pash_len.c.i
 
 # target to preprocess a source file
 src/ft_get_pash_len.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_pash_len.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.i
 .PHONY : src/ft_get_pash_len.c.i
 
@@ -657,6 +638,7 @@ src/ft_get_pash_len.s: src/ft_get_pash_len.c.s
 
 # target to generate assembly for a file
 src/ft_get_pash_len.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_get_pash_len.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s
 .PHONY : src/ft_get_pash_len.c.s
 
@@ -720,65 +702,35 @@ src/ft_get_vertex.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_vertex.c.s
 .PHONY : src/ft_get_vertex.c.s
 
-src/ft_grahp_dfs.o: src/ft_grahp_dfs.c.o
+src/ft_min_cost_flow.o: src/ft_min_cost_flow.c.o
 
-.PHONY : src/ft_grahp_dfs.o
-
-# target to build an object file
-src/ft_grahp_dfs.c.o:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o
-.PHONY : src/ft_grahp_dfs.c.o
-
-src/ft_grahp_dfs.i: src/ft_grahp_dfs.c.i
-
-.PHONY : src/ft_grahp_dfs.i
-
-# target to preprocess a source file
-src/ft_grahp_dfs.c.i:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.i
-.PHONY : src/ft_grahp_dfs.c.i
-
-src/ft_grahp_dfs.s: src/ft_grahp_dfs.c.s
-
-.PHONY : src/ft_grahp_dfs.s
-
-# target to generate assembly for a file
-src/ft_grahp_dfs.c.s:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_grahp_dfs.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.s
-.PHONY : src/ft_grahp_dfs.c.s
-
-src/ft_move_edge.o: src/ft_move_edge.c.o
-
-.PHONY : src/ft_move_edge.o
+.PHONY : src/ft_min_cost_flow.o
 
 # target to build an object file
-src/ft_move_edge.c.o:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.o
-.PHONY : src/ft_move_edge.c.o
+src/ft_min_cost_flow.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_min_cost_flow.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o
+.PHONY : src/ft_min_cost_flow.c.o
 
-src/ft_move_edge.i: src/ft_move_edge.c.i
+src/ft_min_cost_flow.i: src/ft_min_cost_flow.c.i
 
-.PHONY : src/ft_move_edge.i
+.PHONY : src/ft_min_cost_flow.i
 
 # target to preprocess a source file
-src/ft_move_edge.c.i:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.i
-.PHONY : src/ft_move_edge.c.i
+src/ft_min_cost_flow.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_min_cost_flow.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.i
+.PHONY : src/ft_min_cost_flow.c.i
 
-src/ft_move_edge.s: src/ft_move_edge.c.s
+src/ft_min_cost_flow.s: src/ft_min_cost_flow.c.s
 
-.PHONY : src/ft_move_edge.s
+.PHONY : src/ft_min_cost_flow.s
 
 # target to generate assembly for a file
-src/ft_move_edge.c.s:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_move_edge.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_move_edge.c.s
-.PHONY : src/ft_move_edge.c.s
+src/ft_min_cost_flow.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_min_cost_flow.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.s
+.PHONY : src/ft_min_cost_flow.c.s
 
 src/ft_new_edge.o: src/ft_new_edge.c.o
 
@@ -816,6 +768,7 @@ src/ft_new_path_list.o: src/ft_new_path_list.c.o
 
 # target to build an object file
 src/ft_new_path_list.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_path_list.c.o
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o
 .PHONY : src/ft_new_path_list.c.o
 
@@ -825,6 +778,7 @@ src/ft_new_path_list.i: src/ft_new_path_list.c.i
 
 # target to preprocess a source file
 src/ft_new_path_list.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_path_list.c.i
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.i
 .PHONY : src/ft_new_path_list.c.i
 
@@ -834,6 +788,7 @@ src/ft_new_path_list.s: src/ft_new_path_list.c.s
 
 # target to generate assembly for a file
 src/ft_new_path_list.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_new_path_list.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_new_path_list.c.s
 .PHONY : src/ft_new_path_list.c.s
 
@@ -986,36 +941,6 @@ src/ft_print_matrix.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_matrix.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_matrix.c.s
 .PHONY : src/ft_print_matrix.c.s
-
-src/ft_print_path.o: src/ft_print_path.c.o
-
-.PHONY : src/ft_print_path.o
-
-# target to build an object file
-src/ft_print_path.c.o:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.o
-.PHONY : src/ft_print_path.c.o
-
-src/ft_print_path.i: src/ft_print_path.c.i
-
-.PHONY : src/ft_print_path.i
-
-# target to preprocess a source file
-src/ft_print_path.c.i:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.i
-.PHONY : src/ft_print_path.c.i
-
-src/ft_print_path.s: src/ft_print_path.c.s
-
-.PHONY : src/ft_print_path.s
-
-# target to generate assembly for a file
-src/ft_print_path.c.s:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_path.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_path.c.s
-.PHONY : src/ft_print_path.c.s
 
 src/ft_print_tools.o: src/ft_print_tools.c.o
 
@@ -1680,9 +1605,6 @@ help:
 	@echo "... src/ft_del_graph.o"
 	@echo "... src/ft_del_graph.i"
 	@echo "... src/ft_del_graph.s"
-	@echo "... src/ft_delete_graph.o"
-	@echo "... src/ft_delete_graph.i"
-	@echo "... src/ft_delete_graph.s"
 	@echo "... src/ft_find_shortest_path.o"
 	@echo "... src/ft_find_shortest_path.i"
 	@echo "... src/ft_find_shortest_path.s"
@@ -1707,12 +1629,9 @@ help:
 	@echo "... src/ft_get_vertex.o"
 	@echo "... src/ft_get_vertex.i"
 	@echo "... src/ft_get_vertex.s"
-	@echo "... src/ft_grahp_dfs.o"
-	@echo "... src/ft_grahp_dfs.i"
-	@echo "... src/ft_grahp_dfs.s"
-	@echo "... src/ft_move_edge.o"
-	@echo "... src/ft_move_edge.i"
-	@echo "... src/ft_move_edge.s"
+	@echo "... src/ft_min_cost_flow.o"
+	@echo "... src/ft_min_cost_flow.i"
+	@echo "... src/ft_min_cost_flow.s"
 	@echo "... src/ft_new_edge.o"
 	@echo "... src/ft_new_edge.i"
 	@echo "... src/ft_new_edge.s"
@@ -1734,9 +1653,6 @@ help:
 	@echo "... src/ft_print_matrix.o"
 	@echo "... src/ft_print_matrix.i"
 	@echo "... src/ft_print_matrix.s"
-	@echo "... src/ft_print_path.o"
-	@echo "... src/ft_print_path.i"
-	@echo "... src/ft_print_path.s"
 	@echo "... src/ft_print_tools.o"
 	@echo "... src/ft_print_tools.i"
 	@echo "... src/ft_print_tools.s"

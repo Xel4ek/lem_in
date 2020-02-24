@@ -17,13 +17,13 @@ typedef struct	s_vertex
 	t_list		*edge_in_list;
 	t_list		*edge_out_list;
 	struct s_vertex *parrent;
-    int			id;
-    enum e_color	color;
 	char		*name;
-	int			test;
+    int			id;
+	enum e_color	color;
 	int			ant_id;
 	int			x;
 	int			y;
+	int			test;
 
 }				t_vertex;
 
@@ -33,7 +33,7 @@ typedef struct s_edge
 	t_vertex		*end;
     int				flow;
 	int 			oriented;
-	int 			pash;
+//	int 			pash;
 }				t_edge;
 
 typedef struct s_path
@@ -45,15 +45,15 @@ typedef struct s_path
 
 typedef struct	s_graph
 {
-	t_list*		vertex_list;
-	int 		sink_id;
-	int			source_id;
-	int			pash_count;
-	int			path_lenght;
-	int			vertex_count;
+	t_list		*vertex_list;
 	t_vertex 	*source;
 	t_vertex 	*sink;
+	int			vertex_count;
+	int 		sink_id;
+	int			source_id;
 	size_t      ants_count;
+	int			pash_count;
+	int			path_lenght;
 }				t_graph;
 
 typedef struct	s_gptr
@@ -119,13 +119,11 @@ void ft_reset_edge_oriented(t_graph *graph);
 
 void ft_reverse_edge(t_edge **edge);
 
-int ft_graph_bfs(t_graph *graph);
+int ft_min_cost_flow(t_graph *graph);
 void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 
 void ft_squeeze_graph(t_graph *graph);
 t_path *ft_new_path(t_vertex *path_head);
-void ft_print_path(t_path *path);
-void ft_print_path_list(t_list *path_list);
 t_path *ft_find_shortest_path(t_list *path_list);
 void ft_push_ant(t_list *path_list, int *id, int max_id);
 void ft_add_ant(t_path *path);

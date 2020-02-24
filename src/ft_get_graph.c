@@ -16,6 +16,7 @@
 static int ft_free_str(char **str)
 {
 	ft_memdel((void **)str);
+	*str = NULL;
 	return (0);
 }
 

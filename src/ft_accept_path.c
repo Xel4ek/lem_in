@@ -26,20 +26,24 @@ int ft_accept_path(t_graph *graph)
 	int count;
 	int index;
 	int steps;
-	t_list *temp;
+	t_list *list;
 
 	index = 0;
-	temp = graph->sink->edge_out_list;
+	list = graph->sink->edge_out_list;
 	count = ft_lstdlen(graph->sink->edge_out_list);
 	while (count--)
 	{
-		if ((*(t_edge **) temp->content)->flow)
+		if ((*(t_edge **) list->content)->flow)
 			len[index++] = ft_get_pash_len(graph,
-				 (t_vertex *) (*(t_edge **) temp->content)->end) / 2;
-		temp = temp->next;
+				 (t_vertex *) (*(t_edge **) list->content)->end) / 2;
+		list = list->next;
 	}
 	ft_quick_sort(len, len + graph->pash_count - 1);
 	steps = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
+//	ft_printf("%d for pash: ",steps);
+//	for(int i = 0; i < graph->pash_count; i++)
+//		ft_printf("% d",len[i]);
+//	ft_printf("\n");
 	if (steps > graph->path_lenght)
 		return (0);
 	graph->path_lenght = steps;

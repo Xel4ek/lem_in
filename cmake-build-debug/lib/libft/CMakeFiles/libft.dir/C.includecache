@@ -20,9 +20,7 @@ libft_structs.h
 string.h
 -
 
-/home/xel/projects/lem_in/lib/libft/src/ft_strjoin.c
+/home/xel/projects/lem_in/lib/libft/src/ft_strlen.c
 libft.h
 /home/xel/projects/lem_in/lib/libft/src/libft.h
-stdlib.h
--
 

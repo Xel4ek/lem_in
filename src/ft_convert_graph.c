@@ -13,7 +13,6 @@ void ft_convert_graph_to_oriented(t_graph **graph)
 		ft_split_all_edges((t_vertex *)(*graph)->vertex_list->content);
 		(*graph)->vertex_list = (*graph)->vertex_list->next;
 	}
-
 	vertex_count = len;
 	while (vertex_count--) {
 		ft_split_vertex(*graph);

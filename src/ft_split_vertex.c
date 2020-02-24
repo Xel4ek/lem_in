@@ -1,7 +1,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-void ft_split_vertex(t_graph *graph)//, t_vertex **vertex)
+void ft_split_vertex(t_graph *graph)
 {
 	t_vertex *new_vertex_out;
 	t_vertex *current;

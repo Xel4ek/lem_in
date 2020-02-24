@@ -44,11 +44,6 @@ CMakeFiles/lem_in.dir/src/ft_del_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_del_graph.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_del_graph.c.o: ../src/ft_del_graph.c
 
-CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o: ../includes/lem_in.h
-CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/lem_in.dir/src/ft_delete_graph.c.o: ../src/ft_delete_graph.c
-
 CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_find_shortest_path.c.o: ../lib/libft/includes/libft_structs.h
@@ -88,13 +83,11 @@ CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_get_vertex.c.o: ../src/ft_get_vertex.c
 
-CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../includes/lem_in.h
-CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../lib/libft/includes/ft_printf.h
-CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/lem_in.dir/src/ft_grahp_dfs.c.o: ../src/ft_grahp_dfs.c
-
-CMakeFiles/lem_in.dir/src/ft_move_edge.c.o: ../src/ft_move_edge.c
+CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o: ../lib/libft/includes/ft_printf.h
+CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_min_cost_flow.c.o: ../src/ft_min_cost_flow.c
 
 CMakeFiles/lem_in.dir/src/ft_new_edge.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_new_edge.c.o: ../lib/libft/includes/libft.h
@@ -131,11 +124,6 @@ CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../src/ft_print_matrix.c
-
-CMakeFiles/lem_in.dir/src/ft_print_path.c.o: ../includes/lem_in.h
-CMakeFiles/lem_in.dir/src/ft_print_path.c.o: ../lib/libft/includes/libft.h
-CMakeFiles/lem_in.dir/src/ft_print_path.c.o: ../lib/libft/includes/libft_structs.h
-CMakeFiles/lem_in.dir/src/ft_print_path.c.o: ../src/ft_print_path.c
 
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_print_tools.c.o: ../lib/libft/includes/libft.h
