@@ -22,5 +22,6 @@ int	ft_get_ants_count(int fd, char **map)
 		return (-1);
 	nbr = ft_get_valid_nbr(buf);
 	ft_add_line(map, &buf);
+	ft_memdel((void**)&buf);
 	return ((nbr <= 0) ? -1 : nbr);
 }

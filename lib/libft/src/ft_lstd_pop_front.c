@@ -33,3 +33,24 @@ void	ft_lstd_pop_front(t_list **head)
 		(*head) = ptr;
 	}
 }
+
+void	ft_lstd_pop_front_head_only(t_list **head)
+{
+	t_list *ptr;
+
+	if (head && *head)
+	{
+		ptr = *head;
+		if (ptr != (*head)->next)
+			ptr = (*head)->next;
+		else
+			ptr = NULL;
+		if (ptr != NULL)
+		{
+			ptr->prev = ptr->prev->prev;
+			ptr->prev->next = ptr;
+		}
+		ft_memdel((void**)head);
+		(*head) = ptr;
+	}
+}

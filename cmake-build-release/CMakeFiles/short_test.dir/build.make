@@ -226,18 +226,18 @@ CMakeFiles/short_test.dir/src/ft_split_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_split_egde.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_split_egde.c -o CMakeFiles/short_test.dir/src/ft_split_egde.c.s
 
-CMakeFiles/short_test.dir/src/fr_remove_egde.c.o: CMakeFiles/short_test.dir/flags.make
-CMakeFiles/short_test.dir/src/fr_remove_egde.c.o: ../src/fr_remove_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/short_test.dir/src/fr_remove_egde.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.o   -c /home/xel/projects/lem_in/src/fr_remove_egde.c
+CMakeFiles/short_test.dir/src/ft_remove_egde.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_remove_egde.c.o: ../src/ft_remove_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/short_test.dir/src/ft_remove_egde.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_remove_egde.c.o   -c /home/xel/projects/lem_in/src/ft_remove_egde.c
 
-CMakeFiles/short_test.dir/src/fr_remove_egde.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/fr_remove_egde.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/fr_remove_egde.c > CMakeFiles/short_test.dir/src/fr_remove_egde.c.i
+CMakeFiles/short_test.dir/src/ft_remove_egde.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_remove_egde.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_remove_egde.c > CMakeFiles/short_test.dir/src/ft_remove_egde.c.i
 
-CMakeFiles/short_test.dir/src/fr_remove_egde.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/fr_remove_egde.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/fr_remove_egde.c -o CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
+CMakeFiles/short_test.dir/src/ft_remove_egde.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_remove_egde.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_remove_egde.c -o CMakeFiles/short_test.dir/src/ft_remove_egde.c.s
 
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_split_vertex.c.o: ../src/ft_split_vertex.c
@@ -631,7 +631,7 @@ short_test_OBJECTS = \
 "CMakeFiles/short_test.dir/src/ft_print_edge.c.o" \
 "CMakeFiles/short_test.dir/src/ft_add_vertex.c.o" \
 "CMakeFiles/short_test.dir/src/ft_split_egde.c.o" \
-"CMakeFiles/short_test.dir/src/fr_remove_egde.c.o" \
+"CMakeFiles/short_test.dir/src/ft_remove_egde.c.o" \
 "CMakeFiles/short_test.dir/src/ft_split_vertex.c.o" \
 "CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o" \
 "CMakeFiles/short_test.dir/src/ft_move_edge.c.o" \
@@ -678,7 +678,7 @@ short_test: CMakeFiles/short_test.dir/src/ft_print_egde_list.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_print_edge.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_add_vertex.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_split_egde.c.o
-short_test: CMakeFiles/short_test.dir/src/fr_remove_egde.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_remove_egde.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_split_vertex.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_move_edge.c.o

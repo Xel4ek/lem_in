@@ -16,6 +16,7 @@
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
+	char	*temp_ptr;
 	size_t	len;
 
 	if (s1 && s2)
@@ -23,8 +24,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		len = ft_strlen(s2) + ft_strlen(s1);
 		if (!(ptr = (char*)malloc((1 + len) * sizeof(*s1))))
 			return (NULL);
-		ft_strcpy(ptr, s1);
-		ft_strcat(ptr, s2);
+		temp_ptr = ft_strcpy_end(ptr, s1);
+		ft_strcpy(temp_ptr, s2);
 		return (ptr);
 	}
 	return (NULL);
@@ -33,15 +34,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 char	*ft_strjoin_free_first(char **s1, char const *s2)
 {
 	char	*ptr;
-	int		len;
+	char	*temp_ptr;
+	size_t		len;
 
 	if (s1 && s2 && *s1)
 	{
 		len = ft_strlen(s2) + ft_strlen(*s1);
 		if (!(ptr = (char*)malloc((1 + len) * sizeof(*ptr))))
 			return (NULL);
-		ft_strcpy(ptr, *s1);
-		ft_strcat(ptr, s2);
+		temp_ptr = ft_strcpy_end(ptr, *s1);
+		ft_strcpy(temp_ptr, s2);
 		ft_memdel((void**)s1);
 		return (ptr);
 	}
@@ -51,15 +53,16 @@ char	*ft_strjoin_free_first(char **s1, char const *s2)
 char	*ft_strjoin_free_second(char const *s1, char **s2)
 {
 	char	*ptr;
-	int		len;
+	char	*temp_ptr;
+	size_t		len;
 
 	if (s1 && s2 && *s2)
 	{
 		len = ft_strlen(*s2) + ft_strlen(s1);
 		if (!(ptr = (char*)malloc((1 + len) * sizeof(*ptr))))
 			return (NULL);
-		ft_strcpy(ptr, s1);
-		ft_strcat(ptr, *s2);
+		temp_ptr = ft_strcpy_end(ptr, s1);
+		ft_strcpy(temp_ptr, *s2);
 		ft_memdel((void**)s2);
 		return (ptr);
 	}

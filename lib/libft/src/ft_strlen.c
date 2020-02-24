@@ -21,7 +21,7 @@ size_t	ft_strlen(const char *str)
 	unsigned long int		lomagic;
 
 	char_ptr = str;
-	while ((unsigned long int) char_ptr & (sizeof(longword) - 1))
+	while ((unsigned long int) char_ptr & (sizeof(unsigned long int) - 1))
 		if (*char_ptr++ == '\0')
 			return (char_ptr - str - 1);
 	longword_ptr = (unsigned long int*)char_ptr;

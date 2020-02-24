@@ -162,36 +162,6 @@ libft/fast:
 	$(MAKE) -f lib/libft/CMakeFiles/libft.dir/build.make lib/libft/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
 
-src/fr_remove_egde.o: src/fr_remove_egde.c.o
-
-.PHONY : src/fr_remove_egde.o
-
-# target to build an object file
-src/fr_remove_egde.c.o:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.o
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o
-.PHONY : src/fr_remove_egde.c.o
-
-src/fr_remove_egde.i: src/fr_remove_egde.c.i
-
-.PHONY : src/fr_remove_egde.i
-
-# target to preprocess a source file
-src/fr_remove_egde.c.i:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.i
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i
-.PHONY : src/fr_remove_egde.c.i
-
-src/fr_remove_egde.s: src/fr_remove_egde.c.s
-
-.PHONY : src/fr_remove_egde.s
-
-# target to generate assembly for a file
-src/fr_remove_egde.c.s:
-	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/fr_remove_egde.c.s
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
-.PHONY : src/fr_remove_egde.c.s
-
 src/ft_accept_new_path.o: src/ft_accept_new_path.c.o
 
 .PHONY : src/ft_accept_new_path.o
@@ -455,6 +425,33 @@ src/ft_count_char.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_count_char.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_count_char.c.s
 .PHONY : src/ft_count_char.c.s
+
+src/ft_del_graph.o: src/ft_del_graph.c.o
+
+.PHONY : src/ft_del_graph.o
+
+# target to build an object file
+src/ft_del_graph.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.o
+.PHONY : src/ft_del_graph.c.o
+
+src/ft_del_graph.i: src/ft_del_graph.c.i
+
+.PHONY : src/ft_del_graph.i
+
+# target to preprocess a source file
+src/ft_del_graph.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.i
+.PHONY : src/ft_del_graph.c.i
+
+src/ft_del_graph.s: src/ft_del_graph.c.s
+
+.PHONY : src/ft_del_graph.s
+
+# target to generate assembly for a file
+src/ft_del_graph.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_del_graph.c.s
+.PHONY : src/ft_del_graph.c.s
 
 src/ft_delete_graph.o: src/ft_delete_graph.c.o
 
@@ -1140,6 +1137,36 @@ src/ft_queue_pop.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_queue_pop.c.s
 .PHONY : src/ft_queue_pop.c.s
 
+src/ft_remove_egde.o: src/ft_remove_egde.c.o
+
+.PHONY : src/ft_remove_egde.o
+
+# target to build an object file
+src/ft_remove_egde.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_egde.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o
+.PHONY : src/ft_remove_egde.c.o
+
+src/ft_remove_egde.i: src/ft_remove_egde.c.i
+
+.PHONY : src/ft_remove_egde.i
+
+# target to preprocess a source file
+src/ft_remove_egde.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_egde.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_egde.c.i
+.PHONY : src/ft_remove_egde.c.i
+
+src/ft_remove_egde.s: src/ft_remove_egde.c.s
+
+.PHONY : src/ft_remove_egde.s
+
+# target to generate assembly for a file
+src/ft_remove_egde.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_remove_egde.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_remove_egde.c.s
+.PHONY : src/ft_remove_egde.c.s
+
 src/ft_remove_vertex.o: src/ft_remove_vertex.c.o
 
 .PHONY : src/ft_remove_vertex.o
@@ -1623,9 +1650,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test_str_len"
 	@echo "... libft"
-	@echo "... src/fr_remove_egde.o"
-	@echo "... src/fr_remove_egde.i"
-	@echo "... src/fr_remove_egde.s"
 	@echo "... src/ft_accept_new_path.o"
 	@echo "... src/ft_accept_new_path.i"
 	@echo "... src/ft_accept_new_path.s"
@@ -1653,6 +1677,9 @@ help:
 	@echo "... src/ft_count_char.o"
 	@echo "... src/ft_count_char.i"
 	@echo "... src/ft_count_char.s"
+	@echo "... src/ft_del_graph.o"
+	@echo "... src/ft_del_graph.i"
+	@echo "... src/ft_del_graph.s"
 	@echo "... src/ft_delete_graph.o"
 	@echo "... src/ft_delete_graph.i"
 	@echo "... src/ft_delete_graph.s"
@@ -1722,6 +1749,9 @@ help:
 	@echo "... src/ft_queue_pop.o"
 	@echo "... src/ft_queue_pop.i"
 	@echo "... src/ft_queue_pop.s"
+	@echo "... src/ft_remove_egde.o"
+	@echo "... src/ft_remove_egde.i"
+	@echo "... src/ft_remove_egde.s"
 	@echo "... src/ft_remove_vertex.o"
 	@echo "... src/ft_remove_vertex.i"
 	@echo "... src/ft_remove_vertex.s"

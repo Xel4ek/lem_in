@@ -98,7 +98,7 @@ void ft_remove_edge(t_edge **edge);
 void ft_split_edge(t_edge **edge);
 void ft_remove_vertex(t_graph **graph, t_vertex **vertex);
 void ft_convert_graph_to_oriented(t_graph **graph);
-void ft_split_vertex(t_graph **graph, t_vertex **vertex);
+void ft_split_vertex(t_graph *graph);//, t_vertex **vertex);
 void ft_split_all_edges(t_vertex *vertex);
 int ft_graph_dfs(t_graph *graph, int target_id);
 void	*ft_queue_pop(t_list **queue);
@@ -106,8 +106,10 @@ void	*ft_queue_pop(t_list **queue);
 void ft_print_egde_fd(int fd, t_edge *edge);
 void ft_print_egde_list_dot(int fd, t_list *egde_list);
 void ft_save_digraph_as_dot(int fd, const t_graph *graph);
+void ft_save_digraph_as_dot2(int fd, const t_graph *graph);
 void ft_print_vertex_dot(int fd, t_vertex *vertex);
 void ft_save_graph_as_dot(int fd, const t_graph *graph);
+
 void ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
 void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
 t_list			*ft_queue_new(void *content);
@@ -130,5 +132,6 @@ void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
 t_list * ft_new_path_list(t_graph *graph);
 int ft_accept_path(t_graph *graph);
-int ft_get_pash_len(const t_graph *const graph, t_vertex *vertex);
+int ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
+void ft_del_graph(t_graph **graph);
 #endif

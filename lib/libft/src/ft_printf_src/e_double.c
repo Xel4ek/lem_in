@@ -88,7 +88,7 @@ void	ft_dtoa_e_helper(t_param *param, int max_len, uintmax_t mantissa,
 	int			i;
 	char		str[max_len + 1];
 	int			shift;
-	intmax_t	zero;
+	uintmax_t	zero;
 
 	i = max_len + 1;
 	zero = mantissa;
@@ -115,7 +115,7 @@ int		ft_dtoa_e(long double nbr, t_param *param)
 	intmax_t	exponent;
 
 	if (param->precision < 0)
-		param->precision = DEFAULT_PRECISION;
+		param->precision = DEFAULT_PRECISION - 4;
 	ft_memcpy(&mantissa, &nbr, sizeof(mantissa));
 	ft_memcpy(&exponent, (void *)(&nbr) + sizeof(mantissa), sizeof(exponent));
 	param->sign = (char)(((uintmax_t)exponent & 0x8000u) >> 15u);

@@ -16,7 +16,7 @@ set(SRC
         src/ft_print_edge.c
         src/ft_add_vertex.c
         src/ft_split_egde.c
-        src/fr_remove_egde.c
+        src/ft_remove_egde.c
         src/ft_split_vertex.c
         src/ft_remove_vertex.c
         src/ft_move_edge.c
@@ -44,7 +44,7 @@ set(SRC
 include_directories(lib/libft/includes)
 include_directories(includes)
 
-add_executable(lem_in ${SRC} src/main.c src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c)
+add_executable(lem_in ${SRC} src/main.c src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c src/ft_del_graph.c)
 add_executable(test_str_len test_str_len.c)
 add_executable(short_test ${SRC} src/short_test.c)
 

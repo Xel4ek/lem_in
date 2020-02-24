@@ -24,8 +24,9 @@ int main()
 	total_t = clock();
 	open_t = clock();
 
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_30", O_RDONLY);
-//	fd = open("../10K.map", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_6", O_RDONLY);
+	fd = open("../lem-in_generator/19102_map", O_RDONLY);
 //	fd = 0;
 	graph = NULL;
 	char *map;
@@ -57,13 +58,15 @@ int main()
 
 	while (ft_graph_bfs(graph))
 		;
-//		ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
+
+//	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_printf(RED"Error\n"RESET);
 		return (0);
 	}
 	int j;
 	i = graph->vertex_count;
+
 	while (i--)
 	{
 		j = ft_lstdlen(
@@ -81,11 +84,12 @@ int main()
 	i = graph->vertex_count;
 	while (i--)
 	{
-		if (((t_vertex *)graph->vertex_list->content)->edge_out_list == NULL && ((t_vertex *)graph->vertex_list->content)->edge_in_list == NULL)
-			ft_remove_vertex(&graph,(t_vertex**)&graph->vertex_list->content);
+		if(((t_vertex*)graph->vertex_list->content)->edge_out_list == NULL && ((t_vertex*)graph->vertex_list->content)->edge_in_list == NULL)
+			ft_remove_vertex(&graph, (t_vertex**)&graph->vertex_list->content );
 		else
 			graph->vertex_list = graph->vertex_list->next;
 	}
+
 
 	t_list *path_list;
 	path_list =  ft_new_path_list(graph);
@@ -116,8 +120,12 @@ int main()
 	int id = 1;
 	calc_t = clock() - calc_t;
 	print_t = clock();
-	temp = 0;
+//	temp = 0;
 	ft_printf("%s", map);
+	ft_memdel((void**)&map);
+	i = ft_lstdlen(graph->vertex_list);
+
+
 	while (tail--)
 	{
 		temp++;
@@ -135,7 +143,8 @@ int main()
 	total_t = clock() - total_t;
 	ft_printf(GREEN"total: \t%f s\n"RESET,(double) total_t /  (double )CLOCKS_PER_SEC);
 	ft_printf("diff: \t%f s\n",(double)(total_t - print_t -calc_t -read_t -open_t)/ (double)CLOCKS_PER_SEC);
-
+	ft_del_graph(&graph);
+	ft_lstd_del(&path_list);
 	ft_printf(GREEN"\n\tDone\n"RESET);
 	return 0;
 }

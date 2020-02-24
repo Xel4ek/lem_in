@@ -502,10 +502,6 @@
 		<Unit filename="/home/xel/projects/lem_in/lib/libft/src/get_next_line.c">
 			<Option target="libft"/>
 		</Unit>
-		<Unit filename="/home/xel/projects/lem_in/src/fr_remove_egde.c">
-			<Option target="short_test"/>
-			<Option target="lem_in"/>
-		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_accept_new_path.c">
 			<Option target="lem_in"/>
 		</Unit>
@@ -538,6 +534,9 @@
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_count_char.c">
 			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/xel/projects/lem_in/src/ft_del_graph.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_delete_graph.c">
@@ -627,6 +626,10 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/xel/projects/lem_in/src/ft_queue_pop.c">
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/xel/projects/lem_in/src/ft_remove_egde.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>

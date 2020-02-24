@@ -129,4 +129,6 @@ void			ft_hash_del(t_list **hash_table, unsigned size);
 size_t			ft_max(size_t first, size_t second);
 int				ft_abs(int digit);
 int				ft_min(int first_digit, int second_digit);
+void			ft_lstd_pop_front_head_only(t_list **head);
+char			*ft_strcpy_end(char *dst, const char *src);
 #endif

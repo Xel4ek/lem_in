@@ -4,17 +4,19 @@
 void ft_convert_graph_to_oriented(t_graph **graph)
 {
 	size_t vertex_count;
+	size_t len;
 
-	vertex_count = ft_lstdlen((*graph)->vertex_list);
+	len = ft_lstdlen((*graph)->vertex_list);
+	vertex_count = len;
 	while (vertex_count--)
 	{
 		ft_split_all_edges((t_vertex *)(*graph)->vertex_list->content);
 		(*graph)->vertex_list = (*graph)->vertex_list->next;
 	}
 
-	vertex_count = ft_lstdlen((*graph)->vertex_list);
+	vertex_count = len;
 	while (vertex_count--) {
-		ft_split_vertex(graph, (t_vertex **) &(*graph)->vertex_list->content);
+		ft_split_vertex(*graph);
 		(*graph)->vertex_list = (*graph)->vertex_list->next;
 	}
 }

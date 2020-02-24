@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/short_test.dir/src/fr_remove_egde.c.o"
   "CMakeFiles/short_test.dir/src/ft_add_ant.c.o"
   "CMakeFiles/short_test.dir/src/ft_add_edge.c.o"
   "CMakeFiles/short_test.dir/src/ft_add_line.c.o"
@@ -28,6 +27,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/short_test.dir/src/ft_push_ant.c.o"
   "CMakeFiles/short_test.dir/src/ft_queue_new.c.o"
   "CMakeFiles/short_test.dir/src/ft_queue_pop.c.o"
+  "CMakeFiles/short_test.dir/src/ft_remove_egde.c.o"
   "CMakeFiles/short_test.dir/src/ft_remove_vertex.c.o"
   "CMakeFiles/short_test.dir/src/ft_reset_edge_oriented.c.o"
   "CMakeFiles/short_test.dir/src/ft_reverse_edge.c.o"

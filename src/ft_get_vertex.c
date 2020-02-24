@@ -55,6 +55,9 @@ static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
 	vertex->x = x;
 	vertex->y = y;
 	ft_add_vertex_by_index(graph, vertex, index);
+//	ft_memdel((void**)&vertex->name);
+	ft_memdel((void**)&vertex);
+
 	return (ft_free_tab(v_info, 3, 0));
 }
 
@@ -84,6 +87,7 @@ char		*ft_get_vertex(t_graph *graph, int fd, char **map)
 	int		err;
 
 	next_index = 2;
+	buf = NULL;
 	err = 0;
 	while (get_next_line(fd, &buf) && \
 			ft_strlen(buf) && (buf[0] == '#' || ft_strchr(buf, ' ')))

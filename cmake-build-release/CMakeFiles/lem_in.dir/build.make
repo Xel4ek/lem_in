@@ -226,18 +226,18 @@ CMakeFiles/lem_in.dir/src/ft_split_egde.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_split_egde.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_split_egde.c -o CMakeFiles/lem_in.dir/src/ft_split_egde.c.s
 
-CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o: ../src/fr_remove_egde.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o   -c /home/xel/projects/lem_in/src/fr_remove_egde.c
+CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o: ../src/ft_remove_egde.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o   -c /home/xel/projects/lem_in/src/ft_remove_egde.c
 
-CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/fr_remove_egde.c > CMakeFiles/lem_in.dir/src/fr_remove_egde.c.i
+CMakeFiles/lem_in.dir/src/ft_remove_egde.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_remove_egde.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_remove_egde.c > CMakeFiles/lem_in.dir/src/ft_remove_egde.c.i
 
-CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s"
-	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/fr_remove_egde.c -o CMakeFiles/lem_in.dir/src/fr_remove_egde.c.s
+CMakeFiles/lem_in.dir/src/ft_remove_egde.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_remove_egde.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_remove_egde.c -o CMakeFiles/lem_in.dir/src/ft_remove_egde.c.s
 
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: CMakeFiles/lem_in.dir/flags.make
 CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o: ../src/ft_split_vertex.c
@@ -668,6 +668,19 @@ CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_get_pash_len.c -o CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.s
 
+CMakeFiles/lem_in.dir/src/ft_del_graph.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_del_graph.c.o: ../src/ft_del_graph.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/lem_in.dir/src/ft_del_graph.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_del_graph.c.o   -c /home/xel/projects/lem_in/src/ft_del_graph.c
+
+CMakeFiles/lem_in.dir/src/ft_del_graph.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_del_graph.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/xel/projects/lem_in/src/ft_del_graph.c > CMakeFiles/lem_in.dir/src/ft_del_graph.c.i
+
+CMakeFiles/lem_in.dir/src/ft_del_graph.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_del_graph.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/xel/projects/lem_in/src/ft_del_graph.c -o CMakeFiles/lem_in.dir/src/ft_del_graph.c.s
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o" \
@@ -683,7 +696,7 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/ft_print_edge.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_split_egde.c.o" \
-"CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_move_edge.c.o" \
@@ -716,7 +729,8 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_accept_path.c.o" \
-"CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o"
+"CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_del_graph.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -734,7 +748,7 @@ lem_in: CMakeFiles/lem_in.dir/src/ft_print_egde_list.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_print_edge.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_split_egde.c.o
-lem_in: CMakeFiles/lem_in.dir/src/fr_remove_egde.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_remove_egde.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_split_vertex.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_remove_vertex.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_move_edge.c.o
@@ -768,10 +782,11 @@ lem_in: CMakeFiles/lem_in.dir/src/ft_accept_new_path.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_new_path_list.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_accept_path.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_get_pash_len.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_del_graph.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: lib/libft/liblibft.a
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/xel/projects/lem_in/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

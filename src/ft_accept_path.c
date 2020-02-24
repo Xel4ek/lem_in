@@ -1,4 +1,3 @@
-#include <ft_printf.h>
 #include "lem_in.h"
 #include "libft.h"
 

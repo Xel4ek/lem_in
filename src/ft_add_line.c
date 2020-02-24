@@ -2,6 +2,7 @@
 
 void	ft_add_line(char **line1, char **line2)
 {
+
 	if (!(*line1) && (*line2))
 	{
 		*line1 = ft_strdup(*line2);

@@ -16,7 +16,7 @@ void	calculate_number(char *str, int max_len, intmax_t exponent)
 {
 	int i;
 
-	i = (int)(exponent) - (int)(1 << 14) - 62;
+	i = (int)(exponent) - (int)(1u << 14u) - 62;
 	if (i < 0)
 		while (i++)
 			division_two(str, max_len, i);
@@ -62,15 +62,15 @@ void	ft_dtoa_helper(t_param *param, int max_len, uintmax_t mantissa,
 	int		power;
 	char	str[max_len + 1];
 
-	i = (int)(exponent) - (int)(1 << 14) - 62;
+	i = (int)(exponent) - (int)(1u << 14u) - 62;
 	power = BASE_NBR_LEN + ft_ceil(((double)i) * LOG2) - 6;
 	i = 0;
-	while (i < max_len)
+	while (i < max_len + 1)
 		str[i++] = 0;
 	i = BASE_NBR_LEN + (power > 0 ? power : 0);
 	while (i--)
 	{
-		str[i] = mantissa % 10;
+		str[i] = (char) (mantissa % 10);
 		mantissa /= 10;
 	}
 	calculate_number(str, max_len, exponent);
@@ -89,9 +89,9 @@ int		ft_dtoa(long double nbr, t_param *param)
 		param->precision = DEFAULT_PRECISION;
 	ft_memcpy(&mantissa, &nbr, sizeof(mantissa));
 	ft_memcpy(&exponent, (void *)(&nbr) + sizeof(mantissa), sizeof(exponent));
-	param->sign = (exponent & 0x8000) >> 15;
-	exponent &= 0x7fff;
-	i = (int)(exponent) - (int)(1 << 14) - 62;
+	param->sign = (char) (((unsigned)exponent & 0x8000u) >> 15u);
+	exponent &= 0x7fffu;
+	i = (int)(exponent) - (int)(1u << 14u) - 62;
 	power = BASE_NBR_LEN + ft_ceil(((double)i) * LOG2) - 6;
 	max_len = param->precision + (power > 0 ? power : 0) + BASE_NBR_LEN + 1;
 	ft_dtoa_helper(param, max_len, mantissa, exponent);
@@ -103,17 +103,18 @@ void	division_two(char *str, int max_len, int i)
 	int j;
 
 	j = max_len;
-	while (j--)
-	{
-		str[j + 1] += (str[j] % 2) * 5;
-		str[j] /= 2;
-		if (str[j + 1] > 9)
+	if (str)
+		while (j--)
 		{
-			str[j + 1] %= 10;
-			str[j] += 1;
+			str[j + 1] += (str[j] % 2) * 5;
+			str[j] /= 2;
+			if (str[j + 1] > 9)
+			{
+				str[j + 1] %= 10;
+				str[j] += 1;
+			}
+			if (i == 0 && j == max_len - 2)
+				if (str[j + 1] > 5)
+					str[j]++;
 		}
-		if (i == 0 && j == max_len - 2)
-			if (str[j + 1] > 5)
-				str[j]++;
-	}
 }

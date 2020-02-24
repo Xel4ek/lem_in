@@ -21,10 +21,10 @@ void	*ft_memcpy(void *const dst, const void *src, size_t n)
 	size_t			long_len;
 
 	long_len = sizeof(unsigned long int);
-	if ((dst == src) || !n)
+	if (!(n++) || dst == src)
 		return (dst);
 	dst_ptr_char = (unsigned char*)dst;
-	while (((unsigned long int) dst_ptr_char & (sizeof(unsigned long int) - 1)) && n--)
+	while (--n && ((unsigned long int) dst_ptr_char & (sizeof(unsigned long int) - 1)))
 		*dst_ptr_char++ = *(unsigned char*)src++;
 	dst_ptr = (unsigned long int*)dst_ptr_char;
 	src_ptr = (unsigned long int*)src;

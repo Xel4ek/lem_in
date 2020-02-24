@@ -16,6 +16,7 @@ t_vertex *ft_new_verex(const int vertex_id, char* name){
 	new_vertex->color = 0;
 	new_vertex->parrent = 0;
 	new_vertex->test = 0;
-	ft_set_vertex(new_vertex, vertex_id, name);
+	new_vertex->id = vertex_id;
+	ft_strcpy(new_vertex->name, name);
 	return (new_vertex);
 }
