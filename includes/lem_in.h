@@ -54,6 +54,7 @@ typedef struct	s_graph
 	size_t      ants_count;
 	int			pash_count;
 	int			path_lenght;
+
 }				t_graph;
 
 typedef struct	s_gptr

@@ -36,6 +36,12 @@ libft_structs.h
 string.h
 -
 
+/home/xel/projects/lem_in/src/ft_accept_path.c
+lem_in.h
+/home/xel/projects/lem_in/src/lem_in.h
+libft.h
+/home/xel/projects/lem_in/src/libft.h
+
 /home/xel/projects/lem_in/src/ft_min_cost_flow.c
 ft_printf.h
 -

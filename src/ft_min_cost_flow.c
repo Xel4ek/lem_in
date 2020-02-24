@@ -28,7 +28,11 @@ void ft_add_implement_verses_in_queue(t_vertex *vertex, t_list **queue)
 			current = (*(t_edge **) vertex->edge_out_list->content)->end;
 			current->color = grey;
 			current->parrent = vertex;
-			ft_lstd_push_back(queue, ft_queue_new(
+			if ((*(t_edge **) vertex->edge_out_list->content)->flow)
+				ft_lstd_push_front(queue, ft_queue_new(
+						&(*(t_edge **) vertex->edge_out_list->content)->end));
+			else
+				ft_lstd_push_back(queue, ft_queue_new(
 					&(*(t_edge **) vertex->edge_out_list->content)->end));
 		}
 		vertex->edge_out_list = vertex->edge_out_list->prev;

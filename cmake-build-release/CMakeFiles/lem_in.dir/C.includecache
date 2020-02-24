@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../includes/lem_in.h
+libft_structs.h
+-
+
+../lib/libft/includes/ft_printf.h
+stdarg.h
+-
+stdlib.h
+-
+stdint.h
+-
+string.h
+-
+libft.h
+../lib/libft/includes/libft.h
+
+../lib/libft/includes/libft.h
+string.h
+-
+stdint.h
+-
+stdlib.h
+-
+libft_structs.h
+../lib/libft/includes/libft_structs.h
+
+../lib/libft/includes/libft_structs.h
+string.h
+-
+
+/home/xel/projects/lem_in/src/ft_min_cost_flow.c
+ft_printf.h
+-
+libft.h
+/home/xel/projects/lem_in/src/libft.h
+lem_in.h
+/home/xel/projects/lem_in/src/lem_in.h
+
