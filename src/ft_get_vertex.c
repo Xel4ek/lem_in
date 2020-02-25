@@ -55,12 +55,10 @@ static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
 	vertex->x = x;
 	vertex->y = y;
 	ft_add_vertex_by_index(graph, vertex, index);
-	ft_memdel((void**)&vertex);
-
 	return (ft_free_tab(v_info, 3, 0));
 }
 
-static int	ft_get_start_end(t_graph *graph, char **buf, int fd, char **map)
+static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map)
 {
 	int			status;
 
@@ -72,39 +70,39 @@ static int	ft_get_start_end(t_graph *graph, char **buf, int fd, char **map)
 		return (1);
 	if (status == -2 && ft_find_vertex_by_id(graph, -2))
 		return (1);
-	ft_add_line(map, buf);
-	if (!get_next_line(fd, buf) || !ft_strlen(*buf))
+	ft_add_to_map(map, buf, ft_strlen(*buf));
+	if (!get_next_line(map->fd, buf) || !ft_strlen(*buf))
 		return (1);
 	status = ft_get_new_vertex(graph, *buf, &status);
 	return (status);
 }
 
-char		*ft_get_vertex(t_graph *graph, int fd, char **map)
+char		*ft_get_vertex(t_graph *graph, t_map *map)
 {
-	char	*buf;
+	char 	*buf;
 	int		next_index;
 	int		err;
+	int 	len;
 
 	next_index = 2;
-	buf = NULL;
 	err = 0;
-	while (get_next_line(fd, &buf) && \
-			ft_strlen(buf) && (buf[0] == '#' || ft_strchr(buf, ' ')))
+	while (get_next_line(map->fd, &buf) && (len = ft_strlen(buf)) && \
+			(buf[0] == '#' || ft_strchr(buf, ' ')))
 	{
 		if (buf[0] != '#')
 			err = ft_get_new_vertex(graph, buf, &next_index);
 		else if (buf[0] == '#' && buf[1] != '#')
 		{
-			ft_add_line(map, &buf);
+			ft_add_to_map(map, &buf, len);
 			continue;
 		}
 		else
-			err = ft_get_start_end(graph, &buf, fd, map);
-		ft_add_line(map, &buf);
+			err = ft_get_start_end(graph, &buf, map);
+		ft_add_to_map(map, &buf, ft_strlen(buf));
 		if (err)
 			return (NULL);
 	}
-	if (!ft_find_vertex_by_id(graph, 0) || !ft_find_vertex_by_id(graph, -2))
-		return (NULL);
 	return (buf);
 }
+
+

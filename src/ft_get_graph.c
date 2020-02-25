@@ -13,27 +13,28 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int ft_free_str(char **str)
+static int	ft_free_map(t_map *map)
 {
-	ft_memdel((void **)str);
-	*str = NULL;
+	ft_lstd_del(&(map->map));
 	return (0);
 }
 
-int	ft_get_graph(t_graph **graph, int fd, char **map)
+int			ft_get_graph(t_graph **graph, t_map *map)
 {
-	char *buf;
+	char 		*buf;
 
 	if (!(*graph = (t_graph *)malloc(sizeof(t_graph))))
 		return (0);
 	(*graph)->vertex_list = NULL;
-	if (((*graph)->ants_count = ft_get_ants_count(fd, map)) == -1)
-		return (ft_free_str(map));
-	if (!(buf = ft_get_vertex(*graph, fd, map)))
-		return (ft_free_str(map));
+	if (((*graph)->ants_count = ft_get_ants_count(map)) == -1)
+		return (ft_free_map(map));
+	if (!(buf = ft_get_vertex(*graph, map)))
+		return (ft_free_map(map));
+	if (!ft_find_vertex_by_id(*graph, 0) || !ft_find_vertex_by_id(*graph, -2))
+		return (ft_free_map(map));
 	if (!ft_strlen(buf))
-		return (ft_free_str(&buf));
-	if (!ft_get_edges(*graph, buf, fd, map))
-		return (ft_free_str(map));
+		return (ft_free_map(map));
+	if (!ft_get_edges(*graph, buf, map))
+		return (ft_free_map(map));
 	return (1);
 }

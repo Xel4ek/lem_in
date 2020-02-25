@@ -1,17 +1,18 @@
 #include "libft.h"
+#include "lem_in.h"
 
-void	ft_add_line(char **line1, char **line2)
+void	ft_add_to_map(t_map *map, char **line, int size)
 {
+	t_list	*new;
 
-	if (!(*line1) && (*line2))
-	{
-		*line1 = ft_strdup(*line2);
-		*line1 = ft_strjoin_free_first(line1, "\n");
+	if (!(*line))
 		return ;
-	}
-	if (!(*line2))
-		return ;
-	*line1 = ft_strjoin_free_first(line1, *line2);
-	*line1 = ft_strjoin_free_first(line1, "\n");
-	ft_memdel((void **)line2);
+	new = ft_lstdnew(*line, size);
+	if (!map->map)
+		map->map = new;
+	else
+		ft_lstd_push_back(&map->map, new);
+	map->size += size;
+	map->size += 1;
+	ft_memdel((void **)line);
 }

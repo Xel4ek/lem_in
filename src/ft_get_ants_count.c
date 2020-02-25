@@ -13,15 +13,15 @@
 #include "lem_in.h"
 #include "libft.h"
 
-int	ft_get_ants_count(int fd, char **map)
+int	ft_get_ants_count(t_map *map)
 {
 	int		nbr;
 	char	*buf;
 
-	if (!get_next_line(fd, &buf))
+	if (!get_next_line(map->fd, &buf))
 		return (-1);
 	nbr = ft_get_valid_nbr(buf);
-	ft_add_line(map, &buf);
-	ft_memdel((void**)&buf);
+	if (nbr > 0)
+		ft_add_to_map(map, &buf, ft_strlen(buf));
 	return ((nbr <= 0) ? -1 : nbr);
 }

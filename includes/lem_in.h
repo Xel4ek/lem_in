@@ -66,13 +66,23 @@ typedef struct	s_gptr
 	char 		*name2;
 }				t_gptr;
 
+typedef struct	s_map
+{
+	int 		fd;
+	int			size;
+	t_list 		*map;
+}				t_map;
+
 # define START "##start"
 # define END "##end"
+# define HASHTAB_SIZE 1024
 
-int			ft_get_graph(t_graph **graph, int fd, char **map);
-char 		*ft_get_vertex(t_graph *graph, int fd, char **map);
-int			ft_get_edges(t_graph *graph, char *buf, int fd, char **map);
-int			ft_get_ants_count(int fd, char **map);
+int			ft_get_graph(t_graph **graph, t_map *map);
+char 		*ft_get_vertex(t_graph *graph, t_map *map);
+int			ft_get_edges(t_graph *graph, char *buf,t_map *map);
+int			ft_check_n_add_edge(char **name1, char **name2, t_list **list, \
+			t_graph *graph);
+int			ft_get_ants_count(t_map *map);
 t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name);
 t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id);
 t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y);
@@ -80,7 +90,8 @@ int			ft_count_char(char *str, char c);
 int			ft_char_in_str(char *str, char c);
 void		ft_delete_graph(t_graph **graph);
 int			ft_get_valid_nbr(const char *str);
-void		ft_add_line(char **line1, char **line2);
+void		ft_add_to_map(t_map *map, char **line, int size);
+void		ft_print_map(t_map *map);
 
 t_graph *mygraph(void);
 void ft_print_graph(const t_graph *graph);

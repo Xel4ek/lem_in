@@ -25,15 +25,22 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+//	fd = open("../four_ways", O_RDONLY); //segfault
+//	fd = open("../three_ways", O_RDONLY); //segfault
+//	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
+//	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../lem-in_generator/19102_map", O_RDONLY);
-	fd = 0;
+//	fd = 0;
 	graph = NULL;
-	char *map;
-	map = NULL;
+	t_map 	map;
+	t_list	*maphead;
+	map.map = NULL;
+	map.size = 0;
+	map.fd = fd;
 	open_t = clock() - open_t;
 	read_t = clock();
-	if (!ft_get_graph(&graph, fd, &map))
+	if (!ft_get_graph(&graph, &map))
 		return (ft_printf(RED"Error"RESET"\n"));
 	close(fd);
 	graph->sink_id = -2;
@@ -121,8 +128,7 @@ int main()
 	calc_t = clock() - calc_t;
 	print_t = clock();
 //	temp = 0;
-	ft_printf("%s", map);
-	ft_memdel((void**)&map);
+	ft_print_map(&map);
 	i = ft_lstdlen(graph->vertex_list);
 
 

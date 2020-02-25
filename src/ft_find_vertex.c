@@ -64,8 +64,11 @@ t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name)
 	while (list && list != head)
 	{
 		vertex = (t_vertex *)list->content;
-		if (!ft_strcmp(vertex->name, name))
-			return (vertex);
+		if ((vertex->name)[0] == name[0] && (vertex->name)[1] == name[1])
+		{
+			if (!ft_strcmp(vertex->name, name))
+				return (vertex);
+		}
 		if (!head)
 			head = list;
 		list = list->next;
