@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-int			ft_get_edges(t_graph *graph, char *buf, t_map *map)
+int			ft_get_edges(t_graph *graph, char *buf, t_map *map, t_hash **hashtab)
 {
 	char	*name1;
 	char	*name2;
@@ -30,7 +30,7 @@ int			ft_get_edges(t_graph *graph, char *buf, t_map *map)
 			name1 = ft_strsub(buf, 0, ft_char_in_str(buf, '-'));
 			name2 = ft_strsub(buf, ft_char_in_str(buf, '-') + 1, \
 					ft_strlen(ft_strchr(buf, '-')));
-			if (!ft_check_n_add_edge(&name1, &name2, &edge_list, graph))
+			if (!ft_check_n_add_edge(&name1, &name2, &edge_list, graph, hashtab))
 				return (0);
 		}
 		ft_add_to_map(map, &buf, len);

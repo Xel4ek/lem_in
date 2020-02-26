@@ -13,6 +13,30 @@
 #include "lem_in.h"
 #include "libft.h"
 
+int			ft_check_start_end(t_graph *graph)
+{
+	t_list		*list;
+	t_list		*head;
+	t_vertex	*vertex;
+
+	list = (t_list *)graph->vertex_list;
+	head = NULL;
+	while (list && list != head && !(graph->sink && graph->source))
+	{
+		vertex = (t_vertex *)list->content;
+		if (vertex->id == 0)
+			graph->source = vertex;
+		if (vertex->id == -2)
+			graph->sink = vertex;
+		if (!head)
+			head = list;
+		list = list->next;
+	}
+	if (!graph->sink || !graph->source)
+		return (0);
+	return (1);
+}
+
 t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y)
 {
 	t_list		*list;

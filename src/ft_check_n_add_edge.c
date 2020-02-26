@@ -61,7 +61,7 @@ static int 	ft_clear_names(char **name1, char **name2, int res)
 }
 
 int			ft_check_n_add_edge(char **name1, char **name2, t_list **list, \
-			t_graph *graph)
+			t_graph *graph, t_hash **hashtab)
 {
 	t_vertex	*vertex1;
 	t_vertex	*vertex2;
@@ -69,11 +69,14 @@ int			ft_check_n_add_edge(char **name1, char **name2, t_list **list, \
 
 	if (!ft_strcmp(*name1, *name2))
 		return (ft_clear_names(name1, name2, 1));
-
-	if (!(vertex1 = ft_find_vertex_by_name(graph, *name1)))
+	if (!(vertex1 = ft_find_in_hash(hashtab, *name1)))
+		return (ft_clear_names(name1, name2, 0));
+	if (!(vertex2 = ft_find_in_hash(hashtab, *name2)))
+		return (ft_clear_names(name1, name2, 0));
+	/*if (!(vertex1 = ft_find_vertex_by_name(graph, *name1)))
 		return (ft_clear_names(name1, name2, 0));
 	if (!(vertex2 = ft_find_vertex_by_name(graph, *name2)))
-		return (ft_clear_names(name1, name2, 0));
+		return (ft_clear_names(name1, name2, 0));*/
 	if (ft_check_repeat(list, vertex1, vertex2))
 		return (ft_clear_names(name1, name2, 1));
 	ft_add_edge(vertex1, vertex2, 0, 0);

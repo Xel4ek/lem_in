@@ -24,16 +24,19 @@ static int	ft_free_tab(char **tab, int i, int res)
 	return (res);
 }
 
-static void	ft_add_vertex_by_index(t_graph *graph, t_vertex *vertex, int *index)
+static t_vertex	*ft_add_vertex_by_index(t_graph *graph, t_vertex **vertex, int *index)
 {
+	t_vertex	*new_vertex;
+
 	if (*index == -2 || *index == 0)
-		ft_add_vertex_back(graph, vertex);
+		new_vertex = ft_add_and_return_vertex_back(graph, vertex);
 	else
-		ft_add_vertex_front(graph, vertex);
+		new_vertex = ft_add_and_return_vertex_front(graph, vertex);
 	*index += 2;
+	return (new_vertex);
 }
 
-static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
+static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **hashtab)
 {
 	char		**v_info;
 	t_vertex	*vertex;
@@ -49,16 +52,17 @@ static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index)
 		return (ft_free_tab(v_info, 3, 1));
 	if (ft_find_vertex_by_coo(graph, x, y))
 		return (ft_free_tab(v_info, 3, 1));
-	if (ft_find_vertex_by_name(graph, v_info[0]))
+	if (ft_find_in_hash(hashtab, v_info[0]))
 		return (ft_free_tab(v_info, 3, 1));
 	vertex = ft_new_verex(index[0], v_info[0]);
 	vertex->x = x;
 	vertex->y = y;
-	ft_add_vertex_by_index(graph, vertex, index);
+	vertex = ft_add_vertex_by_index(graph, &vertex, index);
+	ft_add_to_hash(hashtab, vertex);
 	return (ft_free_tab(v_info, 3, 0));
 }
 
-static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map)
+static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **hashtab)
 {
 	int			status;
 
@@ -73,11 +77,11 @@ static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map)
 	ft_add_to_map(map, buf, ft_strlen(*buf));
 	if (!get_next_line(map->fd, buf) || !ft_strlen(*buf))
 		return (1);
-	status = ft_get_new_vertex(graph, *buf, &status);
+	status = ft_get_new_vertex(graph, *buf, &status, hashtab);
 	return (status);
 }
 
-char		*ft_get_vertex(t_graph *graph, t_map *map)
+char		*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab)
 {
 	char 	*buf;
 	int		next_index;
@@ -90,14 +94,14 @@ char		*ft_get_vertex(t_graph *graph, t_map *map)
 			(buf[0] == '#' || ft_strchr(buf, ' ')))
 	{
 		if (buf[0] != '#')
-			err = ft_get_new_vertex(graph, buf, &next_index);
+			err = ft_get_new_vertex(graph, buf, &next_index, hashtab);
 		else if (buf[0] == '#' && buf[1] != '#')
 		{
 			ft_add_to_map(map, &buf, len);
 			continue;
 		}
 		else
-			err = ft_get_start_end(graph, &buf, map);
+			err = ft_get_start_end(graph, &buf, map, hashtab);
 		ft_add_to_map(map, &buf, ft_strlen(buf));
 		if (err)
 			return (NULL);

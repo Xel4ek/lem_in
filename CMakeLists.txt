@@ -37,6 +37,9 @@ set(SRC
         src/ft_get_vertex.c
         src/ft_get_valid_nbr.c
         src/ft_print_map.c
+        src/ft_add_to_hash.c
+        src/ft_find_in_hash.c
+        src/ft_add_and_return_vertex.c
         src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c src/ft_del_graph.c
         )
 
