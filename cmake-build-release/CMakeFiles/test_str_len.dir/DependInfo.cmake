@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/xel/projects/lem_in/test_str_len.c" "/home/xel/projects/lem_in/cmake-build-release/CMakeFiles/test_str_len.dir/test_str_len.c.o"
+  "/home/alexey/projects/lem_in/test_str_len.c" "/home/alexey/projects/lem_in/cmake-build-release/CMakeFiles/test_str_len.dir/test_str_len.c.o"
   )
 set(CMAKE_C_COMPILER_ID "Clang")
 
@@ -17,7 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/xel/projects/lem_in/cmake-build-release/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/home/alexey/projects/lem_in/cmake-build-release/lib/libft/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

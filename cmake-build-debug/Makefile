@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/103/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/103/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xel/projects/lem_in
+CMAKE_SOURCE_DIR = /home/alexey/projects/lem_in
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /home/alexey/projects/lem_in/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/xel/projects/lem_in/cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/103/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/opt/clion-2019.3.3/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/103/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xel/projects/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -371,6 +371,36 @@ src/ft_char_in_str.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_char_in_str.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_char_in_str.c.s
 .PHONY : src/ft_char_in_str.c.s
+
+src/ft_check_n_add_edge.o: src/ft_check_n_add_edge.c.o
+
+.PHONY : src/ft_check_n_add_edge.o
+
+# target to build an object file
+src/ft_check_n_add_edge.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_check_n_add_edge.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.o
+.PHONY : src/ft_check_n_add_edge.c.o
+
+src/ft_check_n_add_edge.i: src/ft_check_n_add_edge.c.i
+
+.PHONY : src/ft_check_n_add_edge.i
+
+# target to preprocess a source file
+src/ft_check_n_add_edge.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_check_n_add_edge.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.i
+.PHONY : src/ft_check_n_add_edge.c.i
+
+src/ft_check_n_add_edge.s: src/ft_check_n_add_edge.c.s
+
+.PHONY : src/ft_check_n_add_edge.s
+
+# target to generate assembly for a file
+src/ft_check_n_add_edge.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_check_n_add_edge.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.s
+.PHONY : src/ft_check_n_add_edge.c.s
 
 src/ft_convert_graph.o: src/ft_convert_graph.c.o
 
@@ -911,6 +941,36 @@ src/ft_print_graph.c.s:
 	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_graph.c.s
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_graph.c.s
 .PHONY : src/ft_print_graph.c.s
+
+src/ft_print_map.o: src/ft_print_map.c.o
+
+.PHONY : src/ft_print_map.o
+
+# target to build an object file
+src/ft_print_map.c.o:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_map.c.o
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_map.c.o
+.PHONY : src/ft_print_map.c.o
+
+src/ft_print_map.i: src/ft_print_map.c.i
+
+.PHONY : src/ft_print_map.i
+
+# target to preprocess a source file
+src/ft_print_map.c.i:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_map.c.i
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_map.c.i
+.PHONY : src/ft_print_map.c.i
+
+src/ft_print_map.s: src/ft_print_map.c.s
+
+.PHONY : src/ft_print_map.s
+
+# target to generate assembly for a file
+src/ft_print_map.c.s:
+	$(MAKE) -f CMakeFiles/short_test.dir/build.make CMakeFiles/short_test.dir/src/ft_print_map.c.s
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_print_map.c.s
+.PHONY : src/ft_print_map.c.s
 
 src/ft_print_matrix.o: src/ft_print_matrix.c.o
 
@@ -1596,6 +1656,9 @@ help:
 	@echo "... src/ft_char_in_str.o"
 	@echo "... src/ft_char_in_str.i"
 	@echo "... src/ft_char_in_str.s"
+	@echo "... src/ft_check_n_add_edge.o"
+	@echo "... src/ft_check_n_add_edge.i"
+	@echo "... src/ft_check_n_add_edge.s"
 	@echo "... src/ft_convert_graph.o"
 	@echo "... src/ft_convert_graph.i"
 	@echo "... src/ft_convert_graph.s"
@@ -1650,6 +1713,9 @@ help:
 	@echo "... src/ft_print_graph.o"
 	@echo "... src/ft_print_graph.i"
 	@echo "... src/ft_print_graph.s"
+	@echo "... src/ft_print_map.o"
+	@echo "... src/ft_print_map.i"
+	@echo "... src/ft_print_map.s"
 	@echo "... src/ft_print_matrix.o"
 	@echo "... src/ft_print_matrix.i"
 	@echo "... src/ft_print_matrix.s"

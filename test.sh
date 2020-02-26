@@ -17,4 +17,4 @@ while IFS= read -r -d '' file
   else
       printf "\e[32m -- Succes [%d] --\e[00m\n" ${dif}
   fi
-done < <(find /home/xel/projects/lem_in/checker/lemin-tools/maps/valid/big/ -type f -name "map*" -print0)
+done < <(find checker/lemin-tools/maps/valid/big_sup/ -type f -name "map*" -print0)

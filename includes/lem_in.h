@@ -51,7 +51,7 @@ typedef struct	s_graph
 	int			vertex_count;
 	int 		sink_id;
 	int			source_id;
-	size_t      ants_count;
+	int			ants_count;
 	int			pash_count;
 	int			path_lenght;
 

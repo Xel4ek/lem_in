@@ -25,13 +25,13 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
-//	fd = open("../four_ways", O_RDONLY); //segfault
-//	fd = open("../three_ways", O_RDONLY); //segfault
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_17", O_RDONLY);
+//	fd = open("../four_ways", O_RDONLY); //segfault //FIX
+//	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
-//	fd = open("../lem-in_generator/19102_map", O_RDONLY);
-//	fd = 0;
+//	fd = open("../10k_432", O_RDONLY);
+	fd = 0;
 	graph = NULL;
 	t_map 	map;
 	t_list	*maphead;
@@ -48,12 +48,16 @@ int main()
 
 	read_t = clock() - read_t;
 	calc_t = clock();
-
+//		fd = open("../1.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_graph_as_dot(fd, graph);
+//		close(fd);
 	ft_convert_graph_to_oriented(&graph);
-
+//		fd = open("../2.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_digraph_as_dot(fd, graph);
+//		close(fd);
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
-	graph->path_lenght = graph->vertex_count;
+	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
 	i = graph->vertex_count;
 	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != graph->source_id)
 		graph->vertex_list = graph->vertex_list->next;
@@ -66,6 +70,13 @@ int main()
 	while (ft_min_cost_flow(graph))
 		;
 
+//		fd = open("../3.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_digraph_as_dot(fd, graph);
+//		close(fd);
+
+//		fd = open("../3.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_digraph_as_dot2(fd, graph);
+//		close(fd);
 //	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_printf(RED"Error"RESET"\n");
@@ -97,6 +108,9 @@ int main()
 			graph->vertex_list = graph->vertex_list->next;
 	}
 
+//		fd = open("../4.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_digraph_as_dot(fd, graph);
+//		close(fd);
 
 	t_list *path_list;
 	path_list =  ft_new_path_list(graph);

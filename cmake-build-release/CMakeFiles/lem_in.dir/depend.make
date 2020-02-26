@@ -21,6 +21,7 @@ CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_add_edge.c.o: ../src/ft_add_edge.c
 
+CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_add_line.c.o: ../src/ft_add_line.c
@@ -31,6 +32,11 @@ CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../lib/libft/includes/libft_structs
 CMakeFiles/lem_in.dir/src/ft_add_vertex.c.o: ../src/ft_add_vertex.c
 
 CMakeFiles/lem_in.dir/src/ft_char_in_str.c.o: ../src/ft_char_in_str.c
+
+CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_check_n_add_edge.c.o: ../src/ft_check_n_add_edge.c
 
 CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_convert_graph.c.o: ../lib/libft/includes/libft.h
@@ -119,6 +125,11 @@ CMakeFiles/lem_in.dir/src/ft_print_graph.c.o: ../lib/libft/includes/ft_printf.h
 CMakeFiles/lem_in.dir/src/ft_print_graph.c.o: ../lib/libft/includes/libft.h
 CMakeFiles/lem_in.dir/src/ft_print_graph.c.o: ../lib/libft/includes/libft_structs.h
 CMakeFiles/lem_in.dir/src/ft_print_graph.c.o: ../src/ft_print_graph.c
+
+CMakeFiles/lem_in.dir/src/ft_print_map.c.o: ../includes/lem_in.h
+CMakeFiles/lem_in.dir/src/ft_print_map.c.o: ../lib/libft/includes/libft.h
+CMakeFiles/lem_in.dir/src/ft_print_map.c.o: ../lib/libft/includes/libft_structs.h
+CMakeFiles/lem_in.dir/src/ft_print_map.c.o: ../src/ft_print_map.c
 
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../includes/lem_in.h
 CMakeFiles/lem_in.dir/src/ft_print_matrix.c.o: ../lib/libft/includes/libft.h
