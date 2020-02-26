@@ -1,7 +1,11 @@
 #!/bin/zsh
+
+SUCCES_COUNT=0
+TOTAL_DIFF_S=0
+
 while IFS= read -r -d '' file
  do
-    printf "\n\e[35m---------------%s---------------\e[00m\n" "$(basename "${file}")"
+    printf "\n\e[35m--------------- %s ---------------\e[00m\n" "$(basename "${file}")"
   while read -r str;
   do
     if [[ ${str} =~ "#" ]]; then
@@ -14,7 +18,11 @@ while IFS= read -r -d '' file
   dif=$(( num_calc - num_need))
   if [[ dif -gt 0 ]]; then
     printf "\e[31m -- Fail [%d] --\e[00m\n" ${dif}
+    FAIL_COUNT=$(( FAIL_COUNT + 1 ))
   else
-      printf "\e[32m -- Succes [%d] --\e[00m\n" ${dif}
+    SUCCES_COUNT=$(( SUCCES_COUNT + 1))
+     printf "\e[32m -- Succes [%d] --\e[00m\n" ${dif}
   fi
-done < <(find checker/lemin-tools/maps/valid/big_sup/ -type f -name "map*" -print0)
+done < <(find checker/lemin-tools/maps/valid/b*/ -type f -name "map*" -print0)
+printf "\n -- \e[32m[%d]\e[00m -- \e[31m[%d]\e[00m --\n"  ${SUCCES_COUNT} ${FAIL_COUNT}
+

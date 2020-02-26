@@ -137,7 +137,7 @@ void ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
 void ft_squeeze_graph(t_graph *graph);
 t_path *ft_new_path(t_vertex *path_head);
 t_path *ft_find_shortest_path(t_list *path_list);
-void ft_push_ant(t_list *path_list, int *id, int max_id);
+void ft_push_ant(t_list *path_list, t_graph *graph, int *id);
 void ft_add_ant(t_path *path);
 int ft_set_ant_to_pash(int total_ant, t_list *path_list);
 t_list * ft_new_path_list(t_graph *graph);

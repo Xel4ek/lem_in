@@ -9,16 +9,16 @@ t_list *ft_new_path_list(t_graph *graph)
 	int i;
 
 	path_list = NULL;
-	i = ft_lstdlen(graph->source->edge_in_list);
+	i = ft_lstdlen(graph->sink->edge_out_list);
 	while (i--)
 	{
-		vertex = (*(t_edge **) (graph->source->edge_in_list->content))->start;
+		vertex = (*(t_edge **) (graph->sink->edge_out_list->content))->end;
 		new_path = ft_new_path(vertex);
 		ft_lstd_push_front(&path_list, ft_lstdnew(
 				new_path, sizeof(t_path)));
 		ft_memdel((void **) &new_path);
-		graph->source->edge_in_list =
-				graph->source->edge_in_list->next;
+		graph->sink->edge_out_list =
+				graph->sink->edge_out_list->next;
 	}
 	return path_list;
 }

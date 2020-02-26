@@ -10,18 +10,6 @@
 libft_structs.h
 -
 
-../lib/libft/includes/ft_printf.h
-stdarg.h
--
-stdlib.h
--
-stdint.h
--
-string.h
--
-libft.h
-../lib/libft/includes/libft.h
-
 ../lib/libft/includes/libft.h
 string.h
 -
@@ -36,23 +24,9 @@ libft_structs.h
 string.h
 -
 
-/home/alexey/projects/lem_in/src/main.c
-libft.h
-/home/alexey/projects/lem_in/src/libft.h
+/home/alexey/projects/lem_in/src/ft_push_ant.c
 lem_in.h
 /home/alexey/projects/lem_in/src/lem_in.h
-sys/types.h
--
-sys/stat.h
--
-fcntl.h
--
-unistd.h
--
-time.h
--
-stdio.h
--
-ft_printf.h
--
+libft.h
+/home/alexey/projects/lem_in/src/libft.h
 

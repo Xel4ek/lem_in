@@ -69,14 +69,6 @@ int main()
 
 	while (ft_min_cost_flow(graph))
 		;
-
-//		fd = open("../3.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_digraph_as_dot(fd, graph);
-//		close(fd);
-
-//		fd = open("../3.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_digraph_as_dot2(fd, graph);
-//		close(fd);
 //	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_printf(RED"Error"RESET"\n");
@@ -108,10 +100,6 @@ int main()
 			graph->vertex_list = graph->vertex_list->next;
 	}
 
-//		fd = open("../4.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_digraph_as_dot(fd, graph);
-//		close(fd);
-
 	t_list *path_list;
 	path_list =  ft_new_path_list(graph);
 
@@ -138,19 +126,17 @@ int main()
 		path_list = path_list->next;
 	}
 //	ft_printf("total diff : %d - price %d\n",temp1, total_price);
-	int id = 1;
+	int id = 0;
 	calc_t = clock() - calc_t;
 	print_t = clock();
 //	temp = 0;
 	ft_print_map(&map);
-	i = ft_lstdlen(graph->vertex_list);
-
 
 	while (tail--)
 	{
 		temp++;
-		ft_push_ant(path_list, &id, graph->ants_count);
-			ft_printf("\n");
+		ft_push_ant(path_list, graph, &id);
+		ft_printf("\n");
 	}
 
 	ft_printf("steps :%d\n", temp);

@@ -71,6 +71,7 @@ int ft_min_cost_flow(t_graph *graph)
 					ft_reverse_edge_vertex(current, current->parrent);
 					current = current->parrent;
 				}
+				--(graph->pash_count);
 				return 0;
 			}
 			return graph->pash_count;
