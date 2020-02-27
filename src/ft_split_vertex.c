@@ -16,13 +16,13 @@ void ft_split_vertex(t_graph *graph)
 		current->edge_out_list = NULL;
 		len = ft_lstdlen(new_vertex_out->edge_out_list);
 		ft_add_vertex_back(graph, new_vertex_out);
-		ft_memdel((void **) &new_vertex_out);
 		new_vertex_out = (t_vertex*)graph->vertex_list->prev->content;
 		while (len--)
 		{
 			(*(t_edge **) (new_vertex_out)->edge_out_list->content)->start = new_vertex_out;
 			new_vertex_out->edge_out_list = new_vertex_out->edge_out_list->next;
 		}
-		ft_add_edge(current, new_vertex_out, 0,1);
+
+		ft_add_edge(current, new_vertex_out, 0,1, 0);
 	}
 }

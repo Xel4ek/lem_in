@@ -133,4 +133,5 @@ int				ft_abs(int digit);
 int				ft_min(int first_digit, int second_digit);
 void			ft_lstd_pop_front_head_only(t_list **head);
 char			*ft_strcpy_end(char *dst, const char *src);
+t_list			*ft_lstd_wrap(void *const content, size_t content_size);
 #endif

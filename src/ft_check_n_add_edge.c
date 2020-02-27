@@ -6,13 +6,12 @@ void		ft_add_to_end(t_list **list, void **content, size_t size)
 	t_list	*temp;
 
 	if (!(*list))
-		*list = ft_lstdnew(*content, size);
+		*list = ft_lstd_wrap(*content, size);
 	else
 	{
-		temp = ft_lstdnew(*content, size);
+		temp = ft_lstd_wrap(*content, size);
 		ft_lstd_push_back(list, temp);
 	}
-	ft_memdel((void **)content);
 }
 
 static int ft_vertex_cmp(char *str1, char *str2, int id1, int id2)
@@ -79,7 +78,7 @@ int			ft_check_n_add_edge(char **name1, char **name2, t_list **list, \
 		return (ft_clear_names(name1, name2, 0));*/
 	if (ft_check_repeat(list, vertex1, vertex2))
 		return (ft_clear_names(name1, name2, 1));
-	ft_add_edge(vertex1, vertex2, 0, 0);
+	ft_add_edge(vertex1, vertex2, 0, 0,1);
 
 //	concat = ft_strjoin(*name2, *name1);
 //	ft_add_to_end(list, (void **)&concat, ft_strlen(concat));

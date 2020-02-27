@@ -14,9 +14,8 @@ t_list *ft_new_path_list(t_graph *graph)
 	{
 		vertex = (*(t_edge **) (graph->sink->edge_out_list->content))->end;
 		new_path = ft_new_path(vertex);
-		ft_lstd_push_front(&path_list, ft_lstdnew(
+		ft_lstd_push_front(&path_list, ft_lstd_wrap(
 				new_path, sizeof(t_path)));
-		ft_memdel((void **) &new_path);
 		graph->sink->edge_out_list =
 				graph->sink->edge_out_list->next;
 	}

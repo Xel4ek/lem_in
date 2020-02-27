@@ -25,7 +25,7 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_17", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
@@ -58,9 +58,12 @@ int main()
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
 	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
-
+	ft_ford_bellman(graph);
 	while (ft_min_cost_flow(graph))
 		;
+//		fd = open("../2.gv", O_CREAT | O_RDWR | O_TRUNC );
+//		ft_save_digraph_as_dot(fd, graph);
+//		close(fd);
 //	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_printf(RED"Error"RESET"\n");

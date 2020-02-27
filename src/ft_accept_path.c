@@ -15,6 +15,7 @@ static int ft_test_push_ants(const int *len, int size, int ant_count)
 		sended_ants += (len[i] - len[i - 1]) * i;
 		price += (len[i] - len[i - 1]);
 	}
+//	ft_printf("%d, send : %d\n",ant_count, sended_ants);
 	price += ft_ceil((double) (ant_count - sended_ants) / (double) i);
 	price += len[0];
 	return (price);
@@ -40,10 +41,10 @@ int ft_accept_path(t_graph *graph)
 	}
 	ft_quick_sort(len, len + graph->pash_count - 1);
 	steps = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
-//	ft_printf("%d for pash: ",steps);
-//	for(int i = 0; i < graph->pash_count; i++)
-//		ft_printf("% d",len[i]);
-//	ft_printf("\n");
+	ft_printf("%d for pash: ",steps);
+	for(int i = 0; i < graph->pash_count; i++)
+		ft_printf("% d",len[i]);
+	ft_printf("\n");
 	if (steps > graph->path_lenght)
 		return (0);
 	graph->path_lenght = steps;

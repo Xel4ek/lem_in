@@ -60,3 +60,16 @@ t_list			*ft_lstdnew(void const *content, size_t content_size)
 	ptr->prev = ptr;
 	return (ptr);
 }
+
+t_list			*ft_lstd_wrap(void *const content, size_t content_size)
+{
+	t_list *ptr;
+
+	if (!(ptr = (t_list*)malloc(sizeof(*ptr))))
+		return (NULL);
+	ptr->content = content;
+	ptr->content_size = content_size;
+	ptr->next = ptr;
+	ptr->prev = ptr;
+	return (ptr);
+}

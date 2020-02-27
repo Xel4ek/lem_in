@@ -1,12 +1,12 @@
 #include "lem_in.h"
 #include "libft.h"
 
-int ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented)
+int ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented, int cost)
 {
 	t_edge *new_edge;
 	t_list *new;
 
-	if (!(new_edge = ft_new_edge(start, end, flow, oriented)))
+	if (!(new_edge = ft_new_edge(start, end, flow, oriented, cost)))
 		return (0);
 	new = ft_lstdnew(&new_edge, sizeof(t_edge *));
 	if (start->edge_out_list)
