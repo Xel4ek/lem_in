@@ -25,13 +25,13 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_17", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_17", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../10k_432", O_RDONLY);
-	fd = 0;
+//	fd = 0;
 	graph = NULL;
 	t_map 	map;
 	t_list	*maphead;
@@ -58,14 +58,6 @@ int main()
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
 	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
-	i = graph->vertex_count;
-	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != graph->source_id)
-		graph->vertex_list = graph->vertex_list->next;
-	graph->source = (t_vertex*)graph->vertex_list->content;
-	i = graph->vertex_count;
-	while (i-- && ((t_vertex*)graph->vertex_list->content)->id != graph->sink_id)
-		graph->vertex_list = graph->vertex_list->next;
-	graph->sink = (t_vertex*)graph->vertex_list->content;
 
 	while (ft_min_cost_flow(graph))
 		;

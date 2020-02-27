@@ -20,13 +20,23 @@ static int	ft_free_map(t_map *map)
 	return (0);
 }
 
+static void ft_init_hash(t_hash **hashtab)
+{
+	int len;
+
+	len = HASHTAB_SIZE;
+	while (len--)
+		hashtab[len] = NULL;
+}
+
 int			ft_get_graph(t_graph **graph, t_map *map)
 {
 	char 		*buf;
 	t_hash		**hashtab;
 
-	if (!(hashtab = (t_hash **)malloc(sizeof(t_hash *) * HASHTAB_SIZE)))
+	if (!(hashtab = (t_hash **)malloc(sizeof(t_hash *) * HASHTAB_SIZE )))
 		return (0);
+	ft_init_hash(hashtab);
 	if (!(*graph = (t_graph *)malloc(sizeof(t_graph))))
 		return (0);
 	(*graph)->vertex_list = NULL;

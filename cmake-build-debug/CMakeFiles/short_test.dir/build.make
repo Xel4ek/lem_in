@@ -590,9 +590,48 @@ CMakeFiles/short_test.dir/src/ft_print_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_print_map.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_print_map.c -o CMakeFiles/short_test.dir/src/ft_print_map.c.s
 
+CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o: ../src/ft_add_to_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o   -c /home/alexey/projects/lem_in/src/ft_add_to_hash.c
+
+CMakeFiles/short_test.dir/src/ft_add_to_hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_add_to_hash.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_add_to_hash.c > CMakeFiles/short_test.dir/src/ft_add_to_hash.c.i
+
+CMakeFiles/short_test.dir/src/ft_add_to_hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_add_to_hash.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_add_to_hash.c -o CMakeFiles/short_test.dir/src/ft_add_to_hash.c.s
+
+CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o: ../src/ft_find_in_hash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o   -c /home/alexey/projects/lem_in/src/ft_find_in_hash.c
+
+CMakeFiles/short_test.dir/src/ft_find_in_hash.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_find_in_hash.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_find_in_hash.c > CMakeFiles/short_test.dir/src/ft_find_in_hash.c.i
+
+CMakeFiles/short_test.dir/src/ft_find_in_hash.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_find_in_hash.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_find_in_hash.c -o CMakeFiles/short_test.dir/src/ft_find_in_hash.c.s
+
+CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o: CMakeFiles/short_test.dir/flags.make
+CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o: ../src/ft_add_and_return_vertex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o   -c /home/alexey/projects/lem_in/src/ft_add_and_return_vertex.c
+
+CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/alexey/projects/lem_in/src/ft_add_and_return_vertex.c > CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.i
+
+CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/alexey/projects/lem_in/src/ft_add_and_return_vertex.c -o CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.s
+
 CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o: ../src/ft_accept_new_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o   -c /home/alexey/projects/lem_in/src/ft_accept_new_path.c
 
 CMakeFiles/short_test.dir/src/ft_accept_new_path.c.i: cmake_force
@@ -605,7 +644,7 @@ CMakeFiles/short_test.dir/src/ft_accept_new_path.c.s: cmake_force
 
 CMakeFiles/short_test.dir/src/ft_new_path_list.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_new_path_list.c.o: ../src/ft_new_path_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/short_test.dir/src/ft_new_path_list.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/short_test.dir/src/ft_new_path_list.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_new_path_list.c.o   -c /home/alexey/projects/lem_in/src/ft_new_path_list.c
 
 CMakeFiles/short_test.dir/src/ft_new_path_list.c.i: cmake_force
@@ -618,7 +657,7 @@ CMakeFiles/short_test.dir/src/ft_new_path_list.c.s: cmake_force
 
 CMakeFiles/short_test.dir/src/ft_accept_path.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_accept_path.c.o: ../src/ft_accept_path.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/short_test.dir/src/ft_accept_path.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/short_test.dir/src/ft_accept_path.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_accept_path.c.o   -c /home/alexey/projects/lem_in/src/ft_accept_path.c
 
 CMakeFiles/short_test.dir/src/ft_accept_path.c.i: cmake_force
@@ -631,7 +670,7 @@ CMakeFiles/short_test.dir/src/ft_accept_path.c.s: cmake_force
 
 CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o: ../src/ft_get_pash_len.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_get_pash_len.c.o   -c /home/alexey/projects/lem_in/src/ft_get_pash_len.c
 
 CMakeFiles/short_test.dir/src/ft_get_pash_len.c.i: cmake_force
@@ -644,7 +683,7 @@ CMakeFiles/short_test.dir/src/ft_get_pash_len.c.s: cmake_force
 
 CMakeFiles/short_test.dir/src/ft_del_graph.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/ft_del_graph.c.o: ../src/ft_del_graph.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/short_test.dir/src/ft_del_graph.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/short_test.dir/src/ft_del_graph.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/ft_del_graph.c.o   -c /home/alexey/projects/lem_in/src/ft_del_graph.c
 
 CMakeFiles/short_test.dir/src/ft_del_graph.c.i: cmake_force
@@ -657,7 +696,7 @@ CMakeFiles/short_test.dir/src/ft_del_graph.c.s: cmake_force
 
 CMakeFiles/short_test.dir/src/short_test.c.o: CMakeFiles/short_test.dir/flags.make
 CMakeFiles/short_test.dir/src/short_test.c.o: ../src/short_test.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/short_test.dir/src/short_test.c.o"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/short_test.dir/src/short_test.c.o   -c /home/alexey/projects/lem_in/src/short_test.c
 
 CMakeFiles/short_test.dir/src/short_test.c.i: cmake_force
@@ -711,6 +750,9 @@ short_test_OBJECTS = \
 "CMakeFiles/short_test.dir/src/ft_get_vertex.c.o" \
 "CMakeFiles/short_test.dir/src/ft_get_valid_nbr.c.o" \
 "CMakeFiles/short_test.dir/src/ft_print_map.c.o" \
+"CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o" \
+"CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o" \
+"CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o" \
 "CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o" \
 "CMakeFiles/short_test.dir/src/ft_new_path_list.c.o" \
 "CMakeFiles/short_test.dir/src/ft_accept_path.c.o" \
@@ -762,6 +804,9 @@ short_test: CMakeFiles/short_test.dir/src/ft_get_graph.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_get_vertex.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_get_valid_nbr.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_print_map.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_add_to_hash.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_find_in_hash.c.o
+short_test: CMakeFiles/short_test.dir/src/ft_add_and_return_vertex.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_accept_new_path.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_new_path_list.c.o
 short_test: CMakeFiles/short_test.dir/src/ft_accept_path.c.o
@@ -771,7 +816,7 @@ short_test: CMakeFiles/short_test.dir/src/short_test.c.o
 short_test: CMakeFiles/short_test.dir/build.make
 short_test: lib/libft/liblibft.a
 short_test: CMakeFiles/short_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking C executable short_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alexey/projects/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Linking C executable short_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/short_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

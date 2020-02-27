@@ -510,6 +510,10 @@
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_and_return_vertex.c">
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_ant.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
@@ -519,6 +523,10 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_line.c">
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_add_to_hash.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>
@@ -543,6 +551,10 @@
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/home/alexey/projects/lem_in/src/ft_del_graph.c">
+			<Option target="short_test"/>
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/home/alexey/projects/lem_in/src/ft_find_in_hash.c">
 			<Option target="short_test"/>
 			<Option target="lem_in"/>
 		</Unit>

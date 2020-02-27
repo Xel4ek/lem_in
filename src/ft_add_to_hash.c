@@ -10,7 +10,7 @@ void		ft_add_to_hash(t_hash **hashtab, t_vertex *vertex)
 	hash = ft_hash(vertex->name, HASHTAB_SIZE);
 	i = hash;// % HASHTAB_SIZE;
 	temp = hashtab[i];
-	if (!hashtab[i])
+	if (hashtab[i] == NULL)
 	{
 		hashtab[i] = (t_hash *) malloc(sizeof(t_hash));
 		hashtab[i]->next = NULL;

@@ -36,15 +36,9 @@ string.h
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
 
-/home/alexey/projects/lem_in/lib/libft/src/ft_atoi.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_atoi_base.c
-
 /home/alexey/projects/lem_in/lib/libft/src/ft_bzero.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_ceil.c
 
 /home/alexey/projects/lem_in/lib/libft/src/ft_hash.c
 libft.h
@@ -57,22 +51,6 @@ libft.h
 /home/alexey/projects/lem_in/lib/libft/src/ft_isalnum.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_isalpha.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_isascii.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_isdigit.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_isprint.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_itoa.c
-stdlib.h
--
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_itoa_base.c
-stdlib.h
--
 
 /home/alexey/projects/lem_in/lib/libft/src/ft_lstadd.c
 libft.h
@@ -184,8 +162,6 @@ libft.h
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
 
-/home/alexey/projects/lem_in/lib/libft/src/ft_min.c
-
 /home/alexey/projects/lem_in/lib/libft/src/ft_nbrlen.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
@@ -243,10 +219,6 @@ ft_printf.h
 /home/alexey/projects/lem_in/lib/libft/src/ft_putchar.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
-unistd.h
--
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_putchar_fd.c
 unistd.h
 -
 
@@ -328,10 +300,6 @@ stdlib.h
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
 
-/home/alexey/projects/lem_in/lib/libft/src/ft_striter.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_striteri.c
-
 /home/alexey/projects/lem_in/lib/libft/src/ft_strjoin.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
@@ -405,10 +373,6 @@ libft.h
 /home/alexey/projects/lem_in/lib/libft/src/ft_swap.c
 libft.h
 /home/alexey/projects/lem_in/lib/libft/src/libft.h
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_tolower.c
-
-/home/alexey/projects/lem_in/lib/libft/src/ft_toupper.c
 
 /home/alexey/projects/lem_in/lib/libft/src/ft_tree_new.c
 libft.h
