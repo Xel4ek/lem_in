@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int	ft_free_tab(char **tab, int i, int res)
+static int		ft_free_tab(char **tab, int i, int res)
 {
 	while (i)
 	{
@@ -36,7 +36,7 @@ static t_vertex	*ft_add_vertex_by_index(t_graph *graph, t_vertex **vertex, int *
 	return (new_vertex);
 }
 
-static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **hashtab)
+static int		ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **hashtab)
 {
 	char		**v_info;
 	t_vertex	*vertex;
@@ -52,17 +52,17 @@ static int	ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **has
 		return (ft_free_tab(v_info, 3, 1));
 	if (ft_find_vertex_by_coo(graph, x, y))
 		return (ft_free_tab(v_info, 3, 1));
-	if (ft_find_in_hash(hashtab, v_info[0]))
+	if (ft_find_vertex_in_hash(hashtab, v_info[0]))
 		return (ft_free_tab(v_info, 3, 1));
 	vertex = ft_new_verex(index[0], v_info[0]);
 	vertex->x = x;
 	vertex->y = y;
 	vertex = ft_add_vertex_by_index(graph, &vertex, index);
-	ft_add_to_hash(hashtab, vertex);
+	ft_add_to_hash(hashtab, (void *)vertex, vertex->name);
 	return (ft_free_tab(v_info, 3, 0));
 }
 
-static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **hashtab)
+static int		ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **hashtab)
 {
 	int			status;
 
@@ -81,7 +81,7 @@ static int	ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **has
 	return (status);
 }
 
-char		*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab)
+char			*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab)
 {
 	char 	*buf;
 	int		next_index;
