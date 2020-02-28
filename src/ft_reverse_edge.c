@@ -38,10 +38,19 @@ void ft_reverse_edge_vertex(t_vertex *start, t_vertex *end)
 			if (((t_vertex *) (*(t_edge **) end->edge_in_list->content)->start) ==
 				start)
 			{
+//				int temp;
+//				if ((*(t_edge **) end->edge_in_list->content)->cost == 2)
+//					temp = 0;
+//			if ((*(t_edge **) end->edge_in_list->content)->cost == 0)
+//					temp = 2;
+//			if ((*(t_edge **) end->edge_in_list->content)->cost == 1)
+//					temp = 1;
+
 				ft_add_edge(end, start,
-							(((*(t_edge**)end->edge_in_list->content)->flow)  + 1) % 2,
+							(((*(t_edge**)end->edge_in_list->content)->flow) + 1) % 2,
 							(*(t_edge **) end->edge_in_list->content)->oriented,
-							(*(t_edge **) end->edge_in_list->content)->cost);
+//							temp);
+							-(*(t_edge **) end->edge_in_list->content)->cost);
 				ft_remove_edge(((t_edge**)end->edge_in_list->content));
 				return;
 			}

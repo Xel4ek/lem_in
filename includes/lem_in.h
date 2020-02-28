@@ -19,6 +19,8 @@ typedef struct	s_vertex
 	struct s_vertex *parrent;
 	char		*name;
 	int			weight;
+	int			potecial;
+	int			new_potecial;
     int			id;
 	enum e_color	color;
 	int			ant_id;
@@ -158,4 +160,5 @@ int ft_accept_path(t_graph *graph);
 int ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void ft_del_graph(t_graph **graph);
 void ft_ford_bellman(t_graph *graph);
+void	*ft_queue_min_pop(t_list **queue);
 #endif

@@ -25,13 +25,13 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../10k_432", O_RDONLY);
-//	fd = 0;
+	fd = 0;
 	graph = NULL;
 	t_map 	map;
 	t_list	*maphead;
@@ -45,7 +45,6 @@ int main()
 	close(fd);
 	graph->sink_id = -2;
 	graph->source_id = 0;
-
 	read_t = clock() - read_t;
 	calc_t = clock();
 //		fd = open("../1.gv", O_CREAT | O_RDWR | O_TRUNC );
@@ -70,6 +69,20 @@ int main()
 		return (0);
 	}
 	int j;
+	i = graph->vertex_count;
+	int id_temp;
+	int wigth;
+//	while (i--)
+//	{
+//		id_temp = (*(t_vertex**)&graph->vertex_list->content)->id;
+//		wigth = (*(t_vertex**)&graph->vertex_list->content)->weight;
+//		if (wigth == 0)
+//			ft_printf(RED"id %d potecial %d\n"RESET,id_temp ,wigth);
+//		else
+//			ft_printf("id %d potecial %d\n",id_temp ,wigth);
+//
+//		graph->vertex_list = graph->vertex_list->next;
+//	}
 	i = graph->vertex_count;
 
 	while (i--)
@@ -133,7 +146,6 @@ int main()
 		ft_push_ant(path_list, graph, &id);
 		ft_printf("\n");
 	}
-
 	ft_printf("steps :%d\n", temp);
 	ft_printf("vertex: %d\n", (graph->vertex_count + 2)/2);
 	ft_printf("open: \t%f s\n", (double) open_t / (double )CLOCKS_PER_SEC);

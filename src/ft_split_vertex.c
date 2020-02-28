@@ -22,7 +22,6 @@ void ft_split_vertex(t_graph *graph)
 			(*(t_edge **) (new_vertex_out)->edge_out_list->content)->start = new_vertex_out;
 			new_vertex_out->edge_out_list = new_vertex_out->edge_out_list->next;
 		}
-
 		ft_add_edge(current, new_vertex_out, 0,1, 0);
 	}
 }
