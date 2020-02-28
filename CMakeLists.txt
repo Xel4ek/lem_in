@@ -30,7 +30,6 @@ set(SRC
         src/ft_count_char.c
         src/ft_find_vertex.c
         src/ft_get_ants_count.c
-        src/ft_check_n_add_edge.c
         src/ft_add_line.c
         src/ft_get_edges.c
         src/ft_get_graph.c
@@ -40,6 +39,9 @@ set(SRC
         src/ft_add_to_hash.c
         src/ft_find_in_hash.c
         src/ft_add_and_return_vertex.c
+        src/ft_delete_hash.c
+        src/ft_check_n_add_edge.c
+        src/ft_init_hash.c
         src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c src/ft_del_graph.c
         )
 

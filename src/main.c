@@ -31,6 +31,11 @@ int main()
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../10k_432", O_RDONLY);
+<<<<<<< HEAD
+=======
+//	fd = open("../checker/lemin-tools/maps/invalid/end_before_nb_ants", O_RDONLY); //GNL leaks?
+//	fd = open()
+>>>>>>> refs/remotes/origin/master
 	fd = 0;
 	graph = NULL;
 	t_map 	map;
@@ -40,8 +45,10 @@ int main()
 	map.fd = fd;
 	open_t = clock() - open_t;
 	read_t = clock();
-	if (!ft_get_graph(&graph, &map))
+	if (!ft_get_graph(&graph, &map)){
+		ft_del_graph(&graph);
 		return (ft_printf(RED"Error"RESET"\n"));
+	}
 	close(fd);
 	graph->sink_id = -2;
 	graph->source_id = 0;
@@ -65,6 +72,8 @@ int main()
 //		close(fd);
 //	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
+		ft_lstd_del(&(map.map));
+		ft_del_graph(&graph);
 		ft_printf(RED"Error"RESET"\n");
 		return (0);
 	}

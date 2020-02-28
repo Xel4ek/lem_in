@@ -81,9 +81,16 @@ typedef struct 		s_hash
 {
 	int 			hash;
 	char 			*name;
-	t_vertex 		*vertex;
+	void 			*content;
 	struct	s_hash	*next;
 }					t_hash;
+
+typedef	struct		s_edgename
+{
+	char 			*name1;
+	char 			*name2;
+}					t_edgename;
+
 
 # define START "##start"
 # define END "##end"
@@ -92,7 +99,7 @@ typedef struct 		s_hash
 int			ft_get_graph(t_graph **graph, t_map *map);
 char 		*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab);
 int			ft_get_edges(t_graph *graph, char *buf,t_map *map, t_hash **hashtab);
-int			ft_check_n_add_edge(char **name1, char **name2, t_list **list, \
+int			ft_check_n_add_edge(t_edgename *e_names, t_hash **edge_hash, \
 			t_graph *graph, t_hash **hashtab);
 int			ft_get_ants_count(t_map *map);
 t_vertex	*ft_find_vertex_by_name(t_graph *graph, char *name);
@@ -104,10 +111,14 @@ int			ft_get_valid_nbr(const char *str);
 void		ft_add_to_map(t_map *map, char **line, int size);
 void		ft_print_map(t_map *map);
 int			ft_check_start_end(t_graph *graph);
-void		ft_add_to_hash(t_hash **hashtab, t_vertex *vertex);
-t_vertex	*ft_find_in_hash(t_hash **hashtab, char *name);
+void		ft_add_to_hash(t_hash **hashtab, void *content, char *name);
+t_vertex	*ft_find_vertex_in_hash(t_hash **hashtab, char *name);
 t_vertex 	*ft_add_and_return_vertex_front(t_graph *graph, t_vertex **vertex);
 t_vertex 	*ft_add_and_return_vertex_back(t_graph *graph, t_vertex **vertex);
+int			ft_find_edge_in_hash(t_hash **hash, char *name);
+int 		ft_delete_edge_hash(t_hash **edge_hash, int res);
+int 		ft_delete_hashtab(t_hash **hashtab, int res);
+t_hash		**ft_init_hash(int size);
 
 t_graph *mygraph(void);
 void ft_print_graph(const t_graph *graph);

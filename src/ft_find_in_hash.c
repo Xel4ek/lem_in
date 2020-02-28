@@ -1,30 +1,46 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_find_in_hash(t_hash **hashtab, char *name)
+t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name)
 {
-	//t_vertex	*vertex;
-	int 		hash;
 	int 		i;
 	t_hash 		*temp;
+	t_vertex	*vertex;
 
-	hash = ft_hash(name, HASHTAB_SIZE);
-	i = hash;// % HASHTAB_SIZE;
+	i = ft_hash(name, HASHTAB_SIZE);
 	if (!hashtab[i])
 		return (NULL);
-	/*if (!(hashtab[hash]->next))
-		return (hashtab[hash]->vertex);*/
 	temp = hashtab[i];
 	while (temp)
 	{
-		//if (temp->hash == hash)
-		//{
-			if (!ft_strcmp(temp->name, name))
-				break ;
-		//}
+		vertex = (t_vertex *)temp->content;
+		if (!ft_strcmp(vertex->name, name))
+			break ;
 		temp = temp->next;
 	}
 	if (temp)
-		return (temp->vertex);
+		return (vertex);
 	return (NULL);
+}
+
+int		ft_find_edge_in_hash(t_hash **hash, char *name)
+{
+	int 		i;
+	t_hash 		*temp;
+	char 		*str;
+
+	i = ft_hash(name, HASHTAB_SIZE);
+	if (!hash[i])
+		return (0);
+	temp = hash[i];
+	while (temp)
+	{
+		str = (char *)temp->content;
+		if (!ft_strcmp(str, name))
+			break ;
+		temp = temp->next;
+	}
+	if (temp)
+		return (1);
+	return (0);
 }
