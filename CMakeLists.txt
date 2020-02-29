@@ -43,15 +43,15 @@ set(SRC
         src/ft_check_n_add_edge.c
         src/ft_init_hash.c
         src/ft_accept_new_path.c src/ft_new_path_list.c src/ft_accept_path.c src/ft_get_pash_len.c src/ft_del_graph.c
-        )
+        src/ft_remove_zero_flow.c)
 
 
 include_directories(lib/libft/includes)
 include_directories(includes)
 
 add_executable(lem_in ${SRC} src/main.c)
-add_executable(test_str_len test_str_len.c)
-add_executable(short_test ${SRC} src/short_test.c)
+add_executable(test_str_len  test_str_len.c)
+add_executable(short_test  ${SRC} src/short_test.c)
 
 
 add_subdirectory(lib/libft)

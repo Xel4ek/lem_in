@@ -42,12 +42,9 @@ void	*ft_queue_min_pop(t_list **queue)
 		while (i--)
 		{
 			(*queue) = (*queue)->next;
-			temp =  (*((t_vertex **) (*queue)->content))->weight;
-			if ( (*((t_vertex **)min->content))->weight > temp)
-			{
+			temp = (*((t_vertex **) (*queue)->content))->weight;
+			if ((*((t_vertex **) min->content))->weight > temp)
 				min = *queue;
-			}
-
 		}
 		*queue = min;
 		ptr = *queue;

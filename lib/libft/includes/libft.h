@@ -41,10 +41,8 @@ size_t			ft_strlen(const char *str);
 char			*ft_strdup(const char *src);
 char			*ft_strcpy(char *dst, const char *src);
 char			*ft_strncpy (char *dst, const char *src, size_t len);
-char			*ft_strcat(char *dst, const char *src);
 char			*ft_strncat(char *dst, const char *src, size_t n);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
-void			*ft_memmove(void *dst, const void *src, size_t len);
 char			*ft_strchr(const char *str, int c);
 char			*ft_strrchr(const char *str, int c);
 char			*ft_strstr(const char *str1, const char *str2);
@@ -53,10 +51,7 @@ char			*ft_strnstr(const char *big, const char *little,\
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_atoi(const char *str);
 int				ft_isalpha(int ch);
-int				ft_isdigit(int ch);
 int				ft_isalnum(int ch);
-int				ft_isascii(int ch);
-int				ft_isprint(int ch);
 int				ft_toupper(int ch);
 int				ft_tolower(int ch);
 void			ft_swap(int *a, int *b);
@@ -64,8 +59,6 @@ void			*ft_memalloc(size_t size);
 void			ft_memdel(void **ap);
 char			*ft_strnew(size_t size);
 void			ft_strdel(char **as);
-void			ft_strclr(char *s);
-void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strmap(char const *s, char (*f)(char));
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -93,8 +86,6 @@ void			ft_lstiter(t_forward_list *lst,
 					void (*f)(t_forward_list *elem));
 t_forward_list	*ft_lstmap(t_forward_list *lst,
 					t_forward_list *(*f)(t_forward_list *elem));
-void			ft_lstiter(t_forward_list *lst,
-					void (*f)(t_forward_list *elem));
 void			ft_putendl_fd(char const *s, int fd);
 char			*ft_itoa_base(int nbr, int base);
 int				ft_atoi_base(const char *str, int base);
@@ -133,5 +124,9 @@ int				ft_abs(int digit);
 int				ft_min(int first_digit, int second_digit);
 void			ft_lstd_pop_front_head_only(t_list **head);
 char			*ft_strcpy_end(char *dst, const char *src);
-t_list			*ft_lstd_wrap(void *const content, size_t content_size);
+t_list			*ft_lstd_wrap(void *content, size_t content_size);
+t_heap			*ft_heap_merge(t_heap *first, t_heap *second);
+t_heap			*ft_wrap_heap(int key, void *value);
+void			*ft_pop_min_heap(t_heap **heap);
+t_heap *ft_heap_add(t_heap *heap, t_heap *new_item);
 #endif

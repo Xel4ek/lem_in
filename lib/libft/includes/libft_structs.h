@@ -17,23 +17,34 @@
 typedef struct				s_tree
 {
 	void					*content;
-	size_t					content_size;
 	struct s_tree			*left;
 	struct s_tree			*right;
+	size_t					content_size;
 
 }							t_tree;
 
 typedef struct				s_forward_list
-{	void					*content;
-	size_t					content_size;
+{
+	void					*content;
 	struct s_forward_list	*next;
+	size_t					content_size;
 }							t_forward_list;
 
 typedef struct				s_list
-{	void					*content;
-	size_t					content_size;
+{
+	void					*content;
 	struct s_list			*next;
 	struct s_list			*prev;
+	size_t					content_size;
 }							t_list;
 
+typedef struct 				s_heap
+{
+	int 					key;
+	unsigned int			dist;
+	struct s_heap			*left;
+	struct s_heap			*right;
+	void					*value;
+	size_t 					content_size;
+}							t_heap;
 #endif

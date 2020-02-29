@@ -3,20 +3,25 @@
 
 void ft_print_vertex(t_vertex *vertex)
 {
+	if (!vertex)
+	{
+		ft_printf("No vertex");
+		return;
+	}
 	if (vertex->parrent)
-		ft_printf("{%d, %s, parent: %d, color: %d, test: %d}\n",
+		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
 				  vertex->id,
 				  vertex->name,
 				  vertex->parrent->id,
 				  vertex->color,
-				  vertex->test);
+				  vertex->weight);
 	else
-		ft_printf("{%d, %s, parent: %d, color: %d, test: %d}\n",
+		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
 				  vertex->id,
 				  vertex->name,
 				  0,
 				  vertex->color,
-				  vertex->test);
+				  vertex->weight);
 
 }
 

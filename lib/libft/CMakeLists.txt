@@ -94,7 +94,7 @@ set(SRC
         src/ft_printf_src/parse_tool.c
         src/ft_printf_src/print_tool.c
         src/ft_printf_src/string_tool.c
-        src/ft_printf_src/tools.c)
+        src/ft_printf_src/tools.c src/ft_new_heap.c src/ft_heap_add.c src/ft_shift_down_heap.c src/ft_shift_up_heap.c src/ft_pop_min_heap.c src/ft_heap_merge.c)
 set(HEADERS
         includes/libft.h
         includes/ft_printf.h)

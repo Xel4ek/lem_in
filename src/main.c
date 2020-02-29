@@ -25,21 +25,18 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../10k_432", O_RDONLY);
-<<<<<<< HEAD
-=======
 //	fd = open("../checker/lemin-tools/maps/invalid/end_before_nb_ants", O_RDONLY); //GNL leaks?
 //	fd = open()
->>>>>>> refs/remotes/origin/master
-	fd = 0;
+
+//	fd = 0;
 	graph = NULL;
 	t_map 	map;
-	t_list	*maphead;
 	map.map = NULL;
 	map.size = 0;
 	map.fd = fd;
@@ -64,7 +61,7 @@ int main()
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
 	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
-	ft_ford_bellman(graph);
+//	ft_ford_bellman(graph);
 	while (ft_min_cost_flow(graph))
 		;
 //		fd = open("../2.gv", O_CREAT | O_RDWR | O_TRUNC );
@@ -75,48 +72,9 @@ int main()
 		ft_lstd_del(&(map.map));
 		ft_del_graph(&graph);
 		ft_printf(RED"Error"RESET"\n");
-		return (0);
+		exit (0);
 	}
-	int j;
-	i = graph->vertex_count;
-	int id_temp;
-	int wigth;
-//	while (i--)
-//	{
-//		id_temp = (*(t_vertex**)&graph->vertex_list->content)->id;
-//		wigth = (*(t_vertex**)&graph->vertex_list->content)->weight;
-//		if (wigth == 0)
-//			ft_printf(RED"id %d potecial %d\n"RESET,id_temp ,wigth);
-//		else
-//			ft_printf("id %d potecial %d\n",id_temp ,wigth);
-//
-//		graph->vertex_list = graph->vertex_list->next;
-//	}
-	i = graph->vertex_count;
-
-	while (i--)
-	{
-		j = ft_lstdlen(
-				((t_vertex *) graph->vertex_list->content)->edge_out_list);
-		while (j--)
-		{
-			if((*((t_edge**)((t_vertex *) graph->vertex_list->content)->edge_out_list->content))->flow == 0)
-				ft_remove_edge(((t_edge**)((t_vertex *) graph->vertex_list->content)->edge_out_list->content));
-			else
-				((t_vertex *) graph->vertex_list->content)->edge_out_list = ((t_vertex *) graph->vertex_list->content)->edge_out_list->next;
-
-		}
-		graph->vertex_list = graph->vertex_list->next;
-	}
-	i = graph->vertex_count;
-	while (i--)
-	{
-		if(((t_vertex*)graph->vertex_list->content)->edge_out_list == NULL && ((t_vertex*)graph->vertex_list->content)->edge_in_list == NULL)
-			ft_remove_vertex(&graph, (t_vertex**)&graph->vertex_list->content );
-		else
-			graph->vertex_list = graph->vertex_list->next;
-	}
-
+	ft_remove_zero_flow(graph);
 	t_list *path_list;
 	path_list =  ft_new_path_list(graph);
 

@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 SUCCES_COUNT=0
-TOTAL_DIFF_S=0
+FAIL_COUNT=0
 
 while IFS= read -r -d '' file
  do
@@ -13,7 +13,7 @@ while IFS= read -r -d '' file
     elif [[ ${str} =~ "step" ]]; then
       num_calc=${str//[^0-9]/}
     fi
-    printf "%s\n" ${str}
+    printf "%s\n" "${str}"
   done < <(./cmake-build-release/lem_in < "${file}" | grep "steps\|number of lines\|total\|calc\|Error\|vertex" | uniq)
   dif=$(( num_calc - num_need))
   if [[ dif -gt 0 ]]; then
@@ -21,8 +21,11 @@ while IFS= read -r -d '' file
     FAIL_COUNT=$(( FAIL_COUNT + 1 ))
   else
     SUCCES_COUNT=$(( SUCCES_COUNT + 1))
-     printf "\e[32m -- Succes [%d] --\e[00m\n" ${dif}
+     printf "\e[32m -- Success [%d] --\e[00m\n" ${dif}
   fi
 done < <(find checker/lemin-tools/maps/valid/b*/ -type f -name "map*" -print0)
-printf "\n -- \e[32m[%d]\e[00m -- \e[31m[%d]\e[00m --\n"  ${SUCCES_COUNT} ${FAIL_COUNT}
-
+  if [ "$FAIL_COUNT" -ne  "0" ]; then
+    printf "\n -- \e[32m[%d]\e[00m -- \e[31m[%d]\e[00m --\n"  ${SUCCES_COUNT} ${FAIL_COUNT}
+  else
+    printf "\n \e[32m---== SUCCESS ==---\e[00m\n"
+  fi

@@ -3,25 +3,47 @@
 #include <stdio.h>
 int main()
 {
-    t_vertex *vertex;
+	int len;
+    t_vertex **vertex;
     t_graph *graph;
     t_edge *edge;
+    t_heap *queue;
+    queue = NULL;
+	t_vertex *test;
+    graph = mygraph();
+	len = ft_lstdlen(graph->vertex_list);
+	while (len--)
+	{
+		ft_print_vertex((t_vertex *) graph->vertex_list->content);
+		graph->vertex_list = graph->vertex_list->next;
+	}
+	len = ft_lstdlen(graph->vertex_list);
+	while (len--)
+	{
+		vertex = (t_vertex**)&graph->vertex_list->content;
+		queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
+		graph->vertex_list = graph->vertex_list->prev;
+	}
 
-    graph = NULL;
+//	vertex = (t_vertex**)&graph->vertex_list->next->content;
+//	queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
+//	vertex = (t_vertex**)&graph->vertex_list->prev->content;
+//	queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
 
-//    vertex = ft_new_verex(1, "123");
-//    graph = ft_add_vertex_back(graph, vertex);
-//    ft_add_edge(vertex, vertex);
-	printf("test %zu\n", ft_strlen(""));
-	printf("test %zu - \n", strlen(""));
 
-	printf("test %zu\n", ft_strlen("111923"));
-	printf("test %zu - \n", strlen("111923"));
-	printf("test %zu\n", ft_strlen("1119238120381238128301928najksandkiasndandoqnoiandpwPNDNDpDNPANDAINDAODNWOAD3"));
-	printf("test %zu - \n", strlen("1119238120381238128301928najksandkiasndandoqnoiandpwPNDNDpDNPANDAINDAODNWOAD3"));
-    ft_printf("graph : %d\n", sizeof(t_vertex));
-    ft_printf("vertex : %d\n", sizeof(t_graph));
-    ft_printf("edge : %d\n", sizeof(t_edge));
-    ft_printf("path : %d\n", sizeof(t_path));
-    ft_printf("gptr : %d\n", sizeof(t_gptr));
+
+	ft_printf("---------------------\n");
+	while (queue)
+	{
+
+		test = *((t_vertex**)ft_pop_min_heap(&queue));
+		ft_print_vertex(test);
+	}
+//	test = *((t_vertex**)ft_pop_min_heap(&queue));
+//	ft_print_vertex(test);
+//	test = *((t_vertex**)ft_pop_min_heap(&queue));
+//	ft_print_vertex(test);
+//    ft_printf("vertex : %d\n", te);
+//    ft_printf("size_t : %d\n", sizeof(size_t));
+//    ft_printf(" int : %d\n", sizeof(int));
 }
