@@ -1,12 +1,10 @@
 #include "libft.h"
 #include "lem_in.h"
 
-#include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <time.h>
-#include <stdio.h>
 #include <ft_printf.h>
 
 int main()
@@ -14,7 +12,6 @@ int main()
 	t_graph *graph;
 	int temp;
 	int fd;
-	int i;
 
 	time_t total_t;
 	time_t open_t;
@@ -25,7 +22,8 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_27", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
@@ -51,23 +49,12 @@ int main()
 	graph->source_id = 0;
 	read_t = clock() - read_t;
 	calc_t = clock();
-//		fd = open("../1.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_graph_as_dot(fd, graph);
-//		close(fd);
 	ft_convert_graph_to_oriented(&graph);
-//		fd = open("../2.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_digraph_as_dot(fd, graph);
-//		close(fd);
 	graph->pash_count = 0;
 	graph->vertex_count = ft_lstdlen(graph->vertex_list);
 	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
-//	ft_ford_bellman(graph);
 	while (ft_min_cost_flow(graph))
 		;
-//		fd = open("../2.gv", O_CREAT | O_RDWR | O_TRUNC );
-//		ft_save_digraph_as_dot(fd, graph);
-//		close(fd);
-//	ft_printf("path %d - path_length : %d\n",graph->pash_count, graph->path_lenght);
 	if (!graph->pash_count) {
 		ft_lstd_del(&(map.map));
 		ft_del_graph(&graph);
@@ -83,33 +70,20 @@ int main()
 	ft_set_ant_to_pash(graph->ants_count, path_list);
 	tail = 0;
 	int pash_count;
-	int total = 0;
-	int total_price = 0;
 	pash_count = ft_lstdlen(path_list);
-	int temp1;
-	temp1= 0;
 	while (pash_count--)
 	{
-//		ft_printf("push %d - count %d - price - %d diff %d\n", ++temp,
-//				((t_path *)path_list->content)->ant_count, ((t_path *)path_list->content)->price,
-//				  ((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count);
-//		temp1 +=((t_path *)path_list->content)->price - ((t_path *)path_list->content)->ant_count;
 		if (tail < ((t_path *)path_list->content)->price && tail < ((t_path *)path_list->content)->ant_count)
 			tail = ((t_path *)path_list->content)->price;
-//		total += ((t_path *)path_list->content)->ant_count;
-//		total_price += ((t_path *)path_list->content)->price;
 		path_list = path_list->next;
 	}
-//	ft_printf("total diff : %d - price %d\n",temp1, total_price);
 	int id = 0;
 	calc_t = clock() - calc_t;
 	print_t = clock();
-//	temp = 0;
 	ft_print_map(&map);
-
+	temp = tail;
 	while (tail--)
 	{
-		temp++;
 		ft_push_ant(path_list, graph, &id);
 		ft_printf("\n");
 	}

@@ -3,7 +3,7 @@
 
 void	ft_add_to_hash(t_hash **hashtab, void *content, char *name)
 {
-	int i;
+	unsigned int i;
 	t_hash *temp;
 
 	i = ft_hash(name, HASHTAB_SIZE);
@@ -22,7 +22,7 @@ void	ft_add_to_hash(t_hash **hashtab, void *content, char *name)
 		hashtab[i]->next = NULL;
 	}
 	hashtab[i]->name = name;
-	hashtab[i]->hash = i;
+	hashtab[i]->hash = (int)i;
 	hashtab[i]->content = content;
 	if (temp)
 		hashtab[i] = temp;

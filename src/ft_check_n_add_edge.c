@@ -10,10 +10,10 @@ static int 	ft_check_repeat(t_hash **edge_hash, t_vertex *v1, t_vertex *v2)
 	str1 = ft_strjoin(v1->name, v2->name);
 	str2 = ft_strjoin(v2->name, v1->name);
 	res = 0;
-	if (ft_find_edge_in_hash(edge_hash, str1) && \
+	if (ft_find_edge_in_hash(edge_hash, str1) &&
 		!((v1->id == 0 && v2->id == -2) || (v1->id == -2 && v2->id == 0)))
 		res = 1;
-	if (ft_find_edge_in_hash(edge_hash, str2) && \
+	if (ft_find_edge_in_hash(edge_hash, str2) &&
 		!((v1->id == 0 && v2->id == -2) || (v1->id == -2 && v2->id == 0)))
 		res = 1;
 	ft_memdel((void **)&str2);

@@ -1,6 +1,5 @@
 #include "libft.h"
 
-
 t_list			*ft_queue_new(void *content)
 {
 	t_list *ptr;

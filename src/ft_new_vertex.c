@@ -15,7 +15,6 @@ t_vertex *ft_new_verex(const int vertex_id, char* name){
 	new_vertex->edge_out_list = NULL;
 	new_vertex->color = white;
 	new_vertex->parrent = 0;
-	new_vertex->test = 0;
 	new_vertex->weight = 0;
 	new_vertex->potecial = 0;
 	new_vertex->id = vertex_id;

@@ -45,9 +45,9 @@ t_vertex	*ft_find_vertex_by_coo(t_graph *graph, int x, int y)
 
 	list = (t_list *)graph->vertex_list;
 	head = NULL;
-	while (list && list != head)
+	while (list != head)
 	{
-		vertex = (t_vertex *)list->content;
+		vertex = ((t_vertex *)list->content);
 		if (vertex->x == x && vertex->y == y)
 			return (vertex);
 		if (!head)

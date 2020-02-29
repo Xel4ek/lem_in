@@ -1,5 +1,5 @@
 #include "lem_in.h"
-#include "libft.h"
+
 
 int ft_set_ant_to_pash(int total_ant, t_list *path_list)
 {

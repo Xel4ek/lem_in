@@ -1,26 +1,20 @@
 #include "libft.h"
 
 
-static void ft_heap_swap(t_heap **first, t_heap **second){
-	int key;
-	unsigned int dist;
-	int *value;
-	key = (*first)->key;
-	dist = (*first)->dist;
-	value = (*first)->value;
-	(*first)->key = (*second)->key;
-	(*first)->dist = (*second)->dist;
-	(*first)->value = (*second)->value;
-	(*first)->content_size = (*second)->content_size;
-	(*second)->key = key;
-	(*second)->dist = dist;
-	(*second)->value = value;
-//	(*second)->content_size = temp->content_size;
-
-}
-static int ft_head_get_dist(t_heap *heap)
+static void ft_heap_swap(t_heap **first, t_heap **second)
 {
-	return 0;
+	void *temp;
+	temp = *first;
+	*first = *second;
+	*second = temp;
+}
+
+static void ft_heap_swap_chield(t_heap *heap)
+{
+	void *temp;
+	temp = heap->right;
+	heap->right = heap->left;
+	heap->left = temp;
 }
 
 t_heap *ft_heap_merge(t_heap *first, t_heap *second)
@@ -34,7 +28,7 @@ t_heap *ft_heap_merge(t_heap *first, t_heap *second)
 	first->right = ft_heap_merge(first->right, second);
 	if(first->right && first->left)
 		if (first->right->dist > first->left->dist)
-			ft_heap_swap(&first->left, &first->right);
+			ft_heap_swap_chield(first);
 	first->dist++;
 	return first;
 

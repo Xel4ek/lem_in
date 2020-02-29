@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int		ft_free_tab(char **tab, int i, int res)
+static int ft_free_tab(char **tab, int i, int res)
 {
 	while (i)
 	{
@@ -24,9 +24,10 @@ static int		ft_free_tab(char **tab, int i, int res)
 	return (res);
 }
 
-static t_vertex	*ft_add_vertex_by_index(t_graph *graph, t_vertex **vertex, int *index)
+static t_vertex *
+ft_add_vertex_by_index(t_graph *graph, t_vertex **vertex, int *index)
 {
-	t_vertex	*new_vertex;
+	t_vertex *new_vertex;
 
 	if (*index == -2 || *index == 0)
 		new_vertex = ft_add_and_return_vertex_back(graph, vertex);
@@ -36,18 +37,19 @@ static t_vertex	*ft_add_vertex_by_index(t_graph *graph, t_vertex **vertex, int *
 	return (new_vertex);
 }
 
-static int		ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **hashtab)
+static int
+ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **hashtab)
 {
-	char		**v_info;
-	t_vertex	*vertex;
-	int 		x;
-	int 		y;
+	char **v_info;
+	t_vertex *vertex;
+	int x;
+	int y;
 
 	if (buf[0] == 'L' || ft_count_char(buf, ' ') != 2)
 		return (1);
 	if (!(v_info = ft_strsplit(buf, ' ')))
 		return (1);
-	if (((x = ft_get_valid_nbr(v_info[1])) < 0) || \
+	if (((x = ft_get_valid_nbr(v_info[1])) < 0) ||
 		((y = ft_get_valid_nbr(v_info[2])) < 0))
 		return (ft_free_tab(v_info, 3, 1));
 	if (ft_find_vertex_by_coo(graph, x, y))
@@ -58,13 +60,14 @@ static int		ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hash **ha
 	vertex->x = x;
 	vertex->y = y;
 	vertex = ft_add_vertex_by_index(graph, &vertex, index);
-	ft_add_to_hash(hashtab, (void *)vertex, vertex->name);
+	ft_add_to_hash(hashtab, (void *) vertex, vertex->name);
 	return (ft_free_tab(v_info, 3, 0));
 }
 
-static int		ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **hashtab)
+static int
+ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **hashtab)
 {
-	int			status;
+	int status;
 
 	status = !(ft_strcmp(*buf, START)) ? 0 : 1;
 	status = !(ft_strcmp(*buf, END)) ? -2 : status;
@@ -75,23 +78,22 @@ static int		ft_get_start_end(t_graph *graph, char **buf, t_map *map, t_hash **ha
 	if (status == -2 && ft_find_vertex_by_id(graph, -2))
 		return (1);
 	ft_add_to_map(map, buf, ft_strlen(*buf));
-	if (!get_next_line(map->fd, buf) || !ft_strlen(*buf))
+	if (!(get_next_line(map->fd, buf) && **buf))
 		return (1);
 	status = ft_get_new_vertex(graph, *buf, &status, hashtab);
 	return (status);
 }
 
-char			*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab)
+char *ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab)
 {
-	char 	*buf;
-	int		next_index;
-	int		err;
-	int 	len;
+	char *buf;
+	int next_index;
+	int err;
+	int len;
 
 	next_index = 2;
-	err = 0;
 	while (get_next_line(map->fd, &buf) && (len = ft_strlen(buf)) && \
-			(buf[0] == '#' || ft_strchr(buf, ' ')))
+            (buf[0] == '#' || ft_strchr(buf, ' ')))
 	{
 		if (buf[0] != '#')
 			err = ft_get_new_vertex(graph, buf, &next_index, hashtab);

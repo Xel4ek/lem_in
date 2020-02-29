@@ -3,10 +3,11 @@
 
 t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name)
 {
-	int 		i;
+	unsigned int 		i;
 	t_hash 		*temp;
 	t_vertex	*vertex;
 
+	vertex = NULL;
 	i = ft_hash(name, HASHTAB_SIZE);
 	if (!hashtab[i])
 		return (NULL);
@@ -25,7 +26,7 @@ t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name)
 
 int		ft_find_edge_in_hash(t_hash **hash, char *name)
 {
-	int 		i;
+	unsigned int 		i;
 	t_hash 		*temp;
 	char 		*str;
 

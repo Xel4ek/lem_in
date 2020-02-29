@@ -31,7 +31,9 @@ int main()
 //	queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
 
 
-
+	((t_vertex*)graph->vertex_list->content)->weight = -1000;
+	vertex = (t_vertex**)&graph->vertex_list->prev->content;
+	queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
 	ft_printf("---------------------\n");
 	while (queue)
 	{
