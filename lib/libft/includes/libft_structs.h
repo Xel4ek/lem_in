@@ -41,7 +41,7 @@ typedef struct				s_list
 typedef struct 				s_heap
 {
 	int 					key;
-	unsigned int			dist;
+	int						dist;
 	struct s_heap			*left;
 	struct s_heap			*right;
 	void					*value;

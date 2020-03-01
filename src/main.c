@@ -23,16 +23,17 @@ int main()
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
 //	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
 //	fd = open("../10K.map", O_RDONLY);
 //	fd = open("../10k_432", O_RDONLY);
+//	fd = open("../50k_5543", O_RDONLY);
 //	fd = open("../checker/lemin-tools/maps/invalid/end_before_nb_ants", O_RDONLY); //GNL leaks?
 //	fd = open()
 
-//	fd = 0;
+	fd = 0;
 	graph = NULL;
 	t_map 	map;
 	map.map = NULL;

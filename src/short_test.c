@@ -35,10 +35,11 @@ int main()
 	vertex = (t_vertex**)&graph->vertex_list->prev->content;
 	queue = ft_heap_add(queue, ft_wrap_heap((*vertex)->weight, vertex));
 	ft_printf("---------------------\n");
+	int key;
 	while (queue)
 	{
 
-		test = *((t_vertex**)ft_pop_min_heap(&queue));
+		test = *((t_vertex**)ft_pop_min_heap(&queue, &key));
 		ft_print_vertex(test);
 	}
 //	test = *((t_vertex**)ft_pop_min_heap(&queue));
