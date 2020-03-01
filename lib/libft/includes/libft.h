@@ -19,7 +19,7 @@
 # define HIMAGIC	0x8080808080808080L
 # define LOMAGIC	0x0101010101010101L
 # define MAX_FD 1024
-# define BUFF_SIZE 256
+# define BUFF_SIZE 1024
 
 int				ft_printf(const char *format, ...);
 int				ft_printf_fd(const int fd, const char *format, ...);
@@ -129,4 +129,5 @@ t_heap			*ft_heap_merge(t_heap *first, t_heap *second);
 t_heap			*ft_wrap_heap(int key, void *value);
 void			*ft_pop_min_heap(t_heap **heap, int *key);
 t_heap *ft_heap_add(t_heap *heap, t_heap *new_item);
+int				fast_get_next_line(const int fd, char **line, t_mem *const memory);
 #endif

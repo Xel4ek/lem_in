@@ -47,4 +47,15 @@ typedef struct 				s_heap
 	void					*value;
 	size_t 					content_size;
 }							t_heap;
+
+typedef struct				s_mem
+{
+	size_t 					size;
+	char					*current;
+	char 					*end;
+	char 					*endl;
+	char					*head;
+	struct s_mem			*next;
+}							t_mem;
+
 #endif

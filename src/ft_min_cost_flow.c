@@ -1,4 +1,3 @@
-#include <ft_printf.h>
 #include "libft.h"
 #include "lem_in.h"
 
@@ -49,28 +48,25 @@ void ft_add_implement_verses_in_queue( t_list **queue, t_vertex *vertex)
 	}
 }
 
-void ft_add_implement_verses_in_queue_heap( t_heap **queue, t_vertex *vertex)
+static void ft_add_implement_verses_in_queue_heap( t_heap **queue, t_vertex *vertex)
 {
-	size_t edge_count;
+	int edge_count;
 	t_vertex *current;
 	int weight;
 
 	edge_count = ft_lstdlen(vertex->edge_out_list);
 	while (edge_count--)
 	{
-
 		current = (*(t_edge **) vertex->edge_out_list->content)->end;
-		if(current->color != black)
+		if (current->color != black)
 		{
-			weight =  + vertex->potecial - current->potecial +
+			weight =  vertex->potecial - current->potecial +
 					  vertex->weight + (*(t_edge **) vertex->edge_out_list->content)->cost;
 			if (current->weight > weight)
 			{
 				current->weight = weight;
 				current->parrent = vertex;
 				*queue = ft_heap_add(*queue, ft_wrap_heap(current->weight, &(*(t_edge **) vertex->edge_out_list->content)->end));
-//				ft_lstd_push_front(queue,
-//								   ft_queue_new(&(*(t_edge **) vertex->edge_out_list->content)->end));
 			}
 		}
 		vertex->edge_out_list = vertex->edge_out_list->next;

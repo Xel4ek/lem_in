@@ -23,7 +23,7 @@ int main()
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
 //	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
@@ -33,7 +33,7 @@ int main()
 //	fd = open("../checker/lemin-tools/maps/invalid/end_before_nb_ants", O_RDONLY); //GNL leaks?
 //	fd = open()
 
-	fd = 0;
+//	fd = 0;
 	graph = NULL;
 	t_map 	map;
 	map.map = NULL;
@@ -43,7 +43,7 @@ int main()
 	read_t = clock();
 	if (!ft_get_graph(&graph, &map)){
 		ft_del_graph(&graph);
-		return (ft_printf(RED"Error"RESET"\n"));
+		return (ft_printf_fd(2,"ERROR\n"));
 	}
 	close(fd);
 	graph->sink_id = -2;
@@ -59,7 +59,7 @@ int main()
 	if (!graph->pash_count) {
 		ft_lstd_del(&(map.map));
 		ft_del_graph(&graph);
-		ft_printf(RED"Error"RESET"\n");
+		ft_printf_fd(2,"ERROR\n");
 		exit (0);
 	}
 	ft_remove_zero_flow(graph);
