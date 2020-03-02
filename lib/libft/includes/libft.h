@@ -130,4 +130,5 @@ t_heap			*ft_wrap_heap(int key, void *value);
 void			*ft_pop_min_heap(t_heap **heap, int *key);
 t_heap *ft_heap_add(t_heap *heap, t_heap *new_item);
 int				fast_get_next_line(const int fd, char **line, t_mem *const memory);
+int				fast_read_in_memory(const int fd, t_mem *const memory);
 #endif

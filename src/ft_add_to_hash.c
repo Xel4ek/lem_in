@@ -1,7 +1,7 @@
 #include "libft.h"
 #include "lem_in.h"
 
-void	ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, int hash)
+void	ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, unsigned int hash)
 {
 	unsigned int i;
 	t_hash *temp;

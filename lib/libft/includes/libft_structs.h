@@ -50,11 +50,11 @@ typedef struct 				s_heap
 
 typedef struct				s_mem
 {
-	size_t 					size;
 	char					*current;
 	char 					*end;
 	char 					*endl;
 	char					*head;
+	size_t 					size;
 }							t_mem;
 
 #endif

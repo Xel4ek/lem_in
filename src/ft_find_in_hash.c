@@ -1,7 +1,7 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, int hash)
+t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, unsigned int hash)
 {
 	unsigned int	i;
 	t_hash			*temp;
@@ -24,7 +24,7 @@ t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, int hash)
 	return (NULL);
 }
 
-int		ft_find_edge_in_hash(t_hash **hashtab, char *name, int hash)
+int		ft_find_edge_in_hash(t_hash **hashtab, char *name, unsigned int hash)
 {
 	unsigned int	i;
 	t_hash			*temp;

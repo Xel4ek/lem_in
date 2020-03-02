@@ -33,7 +33,7 @@ static int 	ft_clear_names(char **name1, char **name2, int res)
 }
 
 int			ft_check_n_add_edge(t_edgename *enames, t_hash **edge_hash, \
-			t_graph *graph, t_hash **hashtab)
+			t_hash **hashtab)
 {
 	t_vertex	*vertex1;
 	t_vertex	*vertex2;

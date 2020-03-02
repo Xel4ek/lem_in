@@ -13,32 +13,18 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int ft_clear_buf(char **buf)
-{
-	ft_memdel((void **)buf);
-	return (-1);
-}
-
-int	ft_get_ants_count(t_map *map)
+int	ft_get_ants_count(t_mem *mem)
 {
 	int		nbr;
-	char	*buf;
 
-	buf = NULL;
-	while (get_next_line(map->fd, &buf) > 0 && buf[0] == '#')
+	while (ft_get_next_pointer(mem) && mem->current[0] == '#')
 	{
-		if  (!ft_strcmp(START, buf) || !ft_strcmp(END, buf))
-			return (ft_clear_buf(&buf));
-		ft_memdel((void **) &buf);
+		if  (!ft_strcmp(START, mem->current) || !ft_strcmp(END, mem->current))
+			return (-1);
+		ft_get_next_pointer(mem);
 	}
-	if (!buf)
+	if (!(mem->current[0]))
 		return (-1);
-	if (!ft_strlen(buf))
-		return (ft_clear_buf(&buf));
-	nbr = ft_get_valid_nbr(buf);
-	if (nbr > 0)
-		ft_add_to_map(map, &buf, ft_strlen(buf));
-	else
-		ft_memdel((void **)&buf);
+	nbr = ft_get_valid_nbr(mem->current);
 	return ((nbr <= 0) ? -1 : nbr);
 }

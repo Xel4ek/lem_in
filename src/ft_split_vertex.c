@@ -8,7 +8,7 @@ void ft_split_vertex(t_graph *graph)
 	size_t len;
 
 	current = (t_vertex*)graph->vertex_list->content;
-	if (current->id != graph->source_id && current->id != graph->sink_id)
+	if (current != graph->source && current != graph->sink)
 	{
 		new_vertex_out = ft_new_verex(current->id + 1, current->name);
 		new_vertex_out->edge_out_list = current->edge_out_list;

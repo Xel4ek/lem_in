@@ -22,7 +22,7 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
 //	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
@@ -33,61 +33,60 @@ int main()
 //	fd = open("../checker/lemin-tools/maps/invalid/end_before_nb_ants", O_RDONLY); //GNL leaks?
 //	fd = open()
 
-//	fd = 0;
+	fd = 0;
 	graph = NULL;
-	t_map 	map;
-	map.map = NULL;
-	map.size = 0;
-	map.fd = fd;
 	open_t = clock() - open_t;
 	read_t = clock();
-	if (!ft_get_graph(&graph, &map)){
+	t_mem	*memory;
+
+	if (!(memory = ft_init_memory()))
+		return (0);
+	if (!ft_get_graph(&graph, memory, fd)){
+		ft_memdel((void **)&memory->head);
+		ft_memdel((void **)&memory);
 		ft_del_graph(&graph);
 		return (ft_printf_fd(2,"ERROR\n"));
 	}
 	close(fd);
-	graph->sink_id = -2;
-	graph->source_id = 0;
 	read_t = clock() - read_t;
 	calc_t = clock();
 	ft_convert_graph_to_oriented(&graph);
-	graph->pash_count = 0;
-	graph->vertex_count = ft_lstdlen(graph->vertex_list);
-	graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
+			graph->vertex_count = ft_lstdlen(graph->vertex_list);
+			graph->path_lenght = graph->vertex_count + graph->ants_count + 1;
 	while (ft_min_cost_flow(graph))
 		;
 	if (!graph->pash_count) {
-		ft_lstd_del(&(map.map));
 		ft_del_graph(&graph);
+		ft_memdel((void **)&memory->head);
+		ft_memdel((void **)&memory);
 		ft_printf_fd(2,"ERROR\n");
 		exit (0);
 	}
 	ft_remove_zero_flow(graph);
-	t_list *path_list;
-	path_list =  ft_new_path_list(graph);
+				t_list *path_list;
+				path_list =  ft_new_path_list(graph);
 
-	temp = 0;
-	int tail;
-	ft_set_ant_to_pash(graph->ants_count, path_list);
-	tail = 0;
-	int pash_count;
-	pash_count = ft_lstdlen(path_list);
-	while (pash_count--)
-	{
-		if (tail < ((t_path *)path_list->content)->price && tail < ((t_path *)path_list->content)->ant_count)
-			tail = ((t_path *)path_list->content)->price;
-		path_list = path_list->next;
-	}
-	int id = 0;
-	calc_t = clock() - calc_t;
-	print_t = clock();
-	ft_print_map(&map);
-	temp = tail;
-	while (tail--)
-	{
-		ft_push_ant(path_list, graph, &id);
-		ft_printf("\n");
-	}
+				int tail;
+				ft_set_ant_to_pash(graph->ants_count, path_list);
+				tail = 0;
+				int pash_count;
+				pash_count = ft_lstdlen(path_list);
+				while (pash_count--)
+				{
+					if (tail < ((t_path *)path_list->content)->price && tail < ((t_path *)path_list->content)->ant_count)
+						tail = ((t_path *)path_list->content)->price;
+					path_list = path_list->next;
+				}
+				int id = 0;
+				calc_t = clock() - calc_t;
+				print_t = clock();
+				ft_print_mem(&memory);
+				temp = tail;
+				while (tail--)
+				{
+					ft_push_ant(path_list, graph, &id);
+					ft_printf("\n");
+				}
 	ft_printf("steps :%d\n", temp);
 	ft_printf("vertex: %d\n", (graph->vertex_count + 2)/2);
 	ft_printf("open: \t%f s\n", (double) open_t / (double )CLOCKS_PER_SEC);

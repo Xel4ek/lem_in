@@ -73,3 +73,28 @@ int				fast_get_next_line(const int fd, char **line, t_mem *const memory)
 	*line = NULL;
 	return  (0);
 }
+
+int				fast_read_in_memory(const int fd, t_mem *const memory)
+{
+	char		buf[BUFF_SIZE + 1];
+	int			ret;
+
+	if (fd < 0 || read(fd, buf, 0) < 0)
+		return (-1);
+	while ((ret = read(fd, buf, BUFF_SIZE)))
+	{
+		buf[ret] = 0;
+		ft_strjoin_mem(memory, buf);
+//		if (!(memory->endl = ft_strch(memory->current, '\n')))
+//			break ;
+	}
+//	memory->endl = ft_strch(memory->current, '\n');
+//	if (memory->endl)
+//	{
+//		*(memory->endl) = 0;
+//		memory->current = memory->endl + 1;
+//		memory->endl = ft_strchr(memory->current, '\n');
+//		return (1);
+//	}
+	return  (0);
+}
