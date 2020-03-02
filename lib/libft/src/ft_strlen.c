@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static inline long long int	ft_result(const char *char_ptr, const char *str)
 {
@@ -36,15 +37,15 @@ static inline long long int	ft_result(const char *char_ptr, const char *str)
 size_t ft_strlen(const char *str)
 {
 	const char *char_ptr;
-	const unsigned long int *longword_ptr;
-	unsigned long int longword;
+	const unsigned long long int *longword_ptr;
+	unsigned long long int longword;
 	long long int temp;
 
 	char_ptr = str;
-	while ((unsigned long int) char_ptr & (sizeof(longword) - 1))
-		if (*char_ptr++ == '\0')
+	while (((unsigned long long int) char_ptr) & (sizeof(longword) - 1) )
+		if (*char_ptr++ == 0)
 			return (char_ptr - str - 1);
-	longword_ptr = (unsigned long int *) char_ptr;
+	longword_ptr = (unsigned long long int *) char_ptr;
 	while (1)
 	{
 		longword = *longword_ptr++;
@@ -55,5 +56,6 @@ size_t ft_strlen(const char *str)
 			if (temp != -1)
 				return temp;
 		}
+
 	}
 }

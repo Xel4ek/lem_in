@@ -17,37 +17,6 @@ void ft_reset_vertex_color(t_graph *graph)
 	}
 }
 
-void ft_add_implement_verses_in_queue( t_list **queue, t_vertex *vertex)
-{
-	size_t edge_count;
-	t_vertex *current;
-	int weight;
-
-	edge_count = ft_lstdlen(vertex->edge_out_list);
-	while (edge_count--)
-	{
-
-		current = (*(t_edge **) vertex->edge_out_list->content)->end;
-		if(current->color != black)
-		{
-			weight =  + vertex->potecial - current->potecial +
-					vertex->weight + (*(t_edge **) vertex->edge_out_list->content)->cost;
-			if (current->weight > weight)
-			{
-				current->weight = weight;
-				current->parrent = vertex;
-			}
-			if (current->color == white)
-			{
-				current->color = grey;
-				ft_lstd_push_front(queue,
-						ft_queue_new(&(*(t_edge **) vertex->edge_out_list->content)->end));
-			}
-		}
-		vertex->edge_out_list = vertex->edge_out_list->next;
-	}
-}
-
 static void ft_add_implement_verses_in_queue_heap( t_heap **queue, t_vertex *vertex)
 {
 	int edge_count;
@@ -75,7 +44,6 @@ static void ft_add_implement_verses_in_queue_heap( t_heap **queue, t_vertex *ver
 
 int ft_min_cost_flow(t_graph *graph)
 {
-//	t_list *queue;
 	t_heap *queue;
 	t_vertex *current;
 	ft_reset_vertex_color(graph);
@@ -85,15 +53,12 @@ int ft_min_cost_flow(t_graph *graph)
 	current->color = grey;
 	current->weight = 0;
 	queue = ft_heap_add(queue, ft_wrap_heap(current->weight, (t_vertex **) &current));
-//	ft_lstd_push_back(&queue, ft_queue_new((t_vertex **) &current));
 	while (queue)
 	{
-//		current = *((t_vertex **) ft_queue_min_pop(&queue));
 		current = *((t_vertex **) ft_pop_min_heap(&queue, &key));
 		if (key == current->weight)
 		{
 			current->color = black;
-//		ft_add_implement_verses_in_queue(&queue, current);
 			ft_add_implement_verses_in_queue_heap(&queue, current);
 		}
 	}

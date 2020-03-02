@@ -22,8 +22,8 @@ int main()
 	open_t = clock();
 
 //	fd = open("../checker/lemin-tools/maps/valid/map_jk_weird", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
-	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
+//	fd = open("../checker/lemin-tools/maps/valid/big/map_big_8", O_RDONLY);
 //	fd = open("../four_ways", O_RDONLY); //segfault //FIX
 //	fd = open("../three_ways", O_RDONLY); //segfault // FIX
 //	fd = open("../checker/lemin-tools/maps/valid/map_loop", O_RDONLY); //strange output
