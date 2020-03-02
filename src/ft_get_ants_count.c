@@ -25,7 +25,7 @@ int	ft_get_ants_count(t_map *map)
 	char	*buf;
 
 	buf = NULL;
-	while (get_next_line(map->fd, &buf) && buf[0] == '#')
+	while (get_next_line(map->fd, &buf) > 0 && buf[0] == '#')
 	{
 		if  (!ft_strcmp(START, buf) || !ft_strcmp(END, buf))
 			return (ft_clear_buf(&buf));

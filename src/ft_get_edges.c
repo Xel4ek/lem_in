@@ -37,7 +37,7 @@ int			ft_get_edges(t_graph *graph, char *buf, t_map *map, t_hash **htab)
 	int 		len;
 	t_hash		**ehash;
 
-	if (!(ehash = ft_init_hash(HASHTAB_SIZE)))
+	if (!(ehash = ft_init_hash(HASH_SIZE)))
 		return (0);
 	while (buf && (len = ft_strlen(buf)))
 	{

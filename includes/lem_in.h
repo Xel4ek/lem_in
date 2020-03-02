@@ -78,8 +78,7 @@ typedef struct	s_map
 
 typedef struct 		s_hash
 {
-	int 			hash;
-	char 			*name;
+	void 			*cmp_ptr;
 	void 			*content;
 	struct	s_hash	*next;
 }					t_hash;
@@ -90,13 +89,24 @@ typedef	struct		s_edgename
 	char 			*name2;
 }					t_edgename;
 
+typedef	struct		s_coord
+{
+	int 			x;
+	int 			y;
+}					t_coord;
+
+typedef struct		s_hptrs
+{
+	t_hash 			**vhash;
+	t_hash 			**chash;
+}					t_hptrs;
 
 # define START "##start"
 # define END "##end"
-# define HASHTAB_SIZE 1024
+# define HASH_SIZE 1024
 
 int			ft_get_graph(t_graph **graph, t_map *map);
-char 		*ft_get_vertex(t_graph *graph, t_map *map, t_hash **hashtab);
+char 		*ft_get_vertex(t_graph *graph, t_map *map, t_hptrs *hptrs);
 int			ft_get_edges(t_graph *graph, char *buf,t_map *map, t_hash **hashtab);
 int			ft_check_n_add_edge(t_edgename *e_names, t_hash **edge_hash, \
 			t_graph *graph, t_hash **hashtab);
@@ -110,13 +120,14 @@ int			ft_get_valid_nbr(const char *str);
 void		ft_add_to_map(t_map *map, char **line, int size);
 void		ft_print_map(t_map *map);
 int			ft_check_start_end(t_graph *graph);
-void		ft_add_to_hash(t_hash **hashtab, void *content, char *name);
-t_vertex	*ft_find_vertex_in_hash(t_hash **hashtab, char *name);
-t_vertex 	*ft_add_and_return_vertex_front(t_graph *graph, t_vertex **vertex);
-t_vertex 	*ft_add_and_return_vertex_back(t_graph *graph, t_vertex **vertex);
-int			ft_find_edge_in_hash(t_hash **hash, char *name);
+void		ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, int hash);
+void		ft_add_to_coord_hash(t_hash **hashtab, t_vertex *vertex, t_coord *coord);
+t_vertex	*ft_find_vertex_in_hash(t_hash **hashtab, char *name, int hash);
+int			ft_find_edge_in_hash(t_hash **hashtab, char *name, int hash);
+int			ft_find_coord_in_hash(t_hash **hashtab, t_coord *coord);
 int 		ft_delete_edge_hash(t_hash **edge_hash, int res);
 int 		ft_delete_hashtab(t_hash **hashtab, int res);
+int			ft_delete_coord_hash(t_hash **hashtab, int res);
 t_hash		**ft_init_hash(int size);
 
 t_graph *mygraph(void);
@@ -131,7 +142,7 @@ void ft_set_vertex(t_vertex *vertex, int vertex_id, const char *name);
 int ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented, int cost);
 void ft_print_egde(t_edge *edge);
 void ft_print_egde_list(t_list *egde_list);
-void ft_add_vertex_back(t_graph *graph, t_vertex *vertex);
+t_vertex *ft_add_vertex_back(t_graph *graph, t_vertex *vertex);
 void ft_remove_edge(t_edge **edge);
 void ft_split_edge(t_edge **edge);
 void ft_remove_vertex(t_graph **graph, t_vertex **vertex);

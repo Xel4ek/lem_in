@@ -38,7 +38,6 @@ set(SRC
         src/ft_print_map.c
         src/ft_add_to_hash.c
         src/ft_find_in_hash.c
-        src/ft_add_and_return_vertex.c
         src/ft_delete_hash.c
         src/ft_check_n_add_edge.c
         src/ft_init_hash.c

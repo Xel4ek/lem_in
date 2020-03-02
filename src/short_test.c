@@ -17,27 +17,27 @@ int main()
 		return 0;
 	if(!(memory->head = (char*)malloc(sizeof(char) * (size + 1))))
 		return 0;
-	memory->next = NULL;
 	memory->current = memory->head;
 	memory->end = memory->current;
 	memory->size = size;
 	(*memory->current) = 0;
-	fd = open("../50k_5543", O_RDONLY);
-	fast_get_next_line(fd, &line, memory);
-	printf("%s\n", line );
-	fast_get_next_line(fd, &line, memory);
-	printf("%s\n", line );
-	fast_get_next_line(fd, &line, memory);
-	printf("%s\n", line );
-	fast_get_next_line(fd, &line, memory);
-	printf("%s\n", line );
-	fast_get_next_line(fd, &line, memory);
-
-//	while (get_next_line(fd, &line) > 0)
-//	{
-//		printf("%s\n", line);
-//	}
-
+	fd = open("../four_ways", O_RDONLY);
+//	fast_get_next_line(fd, &line, memory);
+//	printf("%s\n", line );
+//	fast_get_next_line(fd, &line, memory);
+//	printf("%s\n", line );
+//	fast_get_next_line(fd, &line, memory);
+//	printf("%s\n", line );
+//	fast_get_next_line(fd, &line, memory);
+//	printf("%s\n", line );
+//	fast_get_next_line(fd, &line, memory);
+int temp;
+temp  = 0;
+	while (fast_get_next_line(fd, &line, memory) > 0)
+	{
+		temp += printf("%s\n", line);
+	}
+	write(1, memory->head, temp);
 //	int len;
 //    t_vertex **vertex;
 //    t_graph *graph;

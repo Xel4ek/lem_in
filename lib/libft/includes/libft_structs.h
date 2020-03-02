@@ -55,7 +55,6 @@ typedef struct				s_mem
 	char 					*end;
 	char 					*endl;
 	char					*head;
-	struct s_mem			*next;
 }							t_mem;
 
 #endif

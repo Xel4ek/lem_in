@@ -1,14 +1,14 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name)
+t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, int hash)
 {
-	unsigned int 		i;
-	t_hash 		*temp;
-	t_vertex	*vertex;
+	unsigned int	i;
+	t_hash			*temp;
+	t_vertex		*vertex;
 
 	vertex = NULL;
-	i = ft_hash(name, HASHTAB_SIZE);
+	i = hash;
 	if (!hashtab[i])
 		return (NULL);
 	temp = hashtab[i];
@@ -24,20 +24,42 @@ t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name)
 	return (NULL);
 }
 
-int		ft_find_edge_in_hash(t_hash **hash, char *name)
+int		ft_find_edge_in_hash(t_hash **hashtab, char *name, int hash)
 {
-	unsigned int 		i;
-	t_hash 		*temp;
-	char 		*str;
+	unsigned int	i;
+	t_hash			*temp;
+	char			*str;
 
-	i = ft_hash(name, HASHTAB_SIZE);
-	if (!hash[i])
+	i = hash;
+	if (!hashtab[i])
 		return (0);
-	temp = hash[i];
+	temp = hashtab[i];
 	while (temp)
 	{
 		str = (char *)temp->content;
 		if (!ft_strcmp(str, name))
+			break ;
+		temp = temp->next;
+	}
+	if (temp)
+		return (1);
+	return (0);
+}
+
+int		ft_find_coord_in_hash(t_hash **hashtab, t_coord *coord)
+{
+	unsigned int	i;
+	t_hash			*temp;
+	t_coord			*hashcoord;
+
+	i = (coord->x + coord->y) % HASH_SIZE;
+	if (!hashtab[i])
+		return (0);
+	temp = hashtab[i];
+	while (temp)
+	{
+		hashcoord = (t_coord *)temp->cmp_ptr;
+		if (hashcoord->x == coord->x && hashcoord->y == coord->y)
 			break ;
 		temp = temp->next;
 	}
