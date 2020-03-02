@@ -28,7 +28,6 @@ set(SRC
         src/ft_squeeze_graph.c src/ft_set_path.c src/ft_push_ant.c src/ft_find_shortest_path.c src/ft_add_ant.c src/ft_set_ant_to_pash.c
         src/ft_char_in_str.c
         src/ft_count_char.c
-        src/ft_find_vertex.c
         src/ft_get_ants_count.c
         src/ft_get_edges.c
         src/ft_get_graph.c

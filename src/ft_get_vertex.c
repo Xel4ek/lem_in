@@ -25,7 +25,7 @@ static int ft_free_tab(char **tab, int i, int res)
 }
 
 static int
-ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hptrs *hptrs)
+ft_get_new_vertex(t_graph *graph, char *buf, int index, t_hptrs *hptrs)
 {
 	char		**vi;
 	t_vertex	*vertex;
@@ -42,13 +42,15 @@ ft_get_new_vertex(t_graph *graph, char *buf, int *index, t_hptrs *hptrs)
 		return (ft_free_tab(vi, 3, 1));
 	if (ft_find_vertex_in_hash(hptrs->vhash, vi[0], ft_hash(vi[0], HASH_SIZE)))
 		return (ft_free_tab(vi, 3, 1));
-	vertex = ft_new_verex(index[0], vi[0]);
+	vertex = ft_new_verex(index, vi[0]);
 	vertex->x = coord.x;
 	vertex->y = coord.y;
 	vertex = ft_add_vertex_back(graph, vertex);
 	ft_add_to_hash(hptrs->vhash, (void *)vertex, (void *)vertex->name, \
 	ft_hash(vertex->name, HASH_SIZE));
 	ft_add_to_coord_hash(hptrs->chash, (void *)vertex, &coord);
+	graph->source = (vertex->id == 0) ? vertex : graph->source;
+	graph->sink = (vertex->id == -2) ? vertex : graph->sink;
 	return (ft_free_tab(vi, 3, 0));
 }
 
@@ -61,13 +63,13 @@ ft_get_start_end(t_graph *graph, t_mem *mem, t_hptrs *hptrs)
 	status = !(ft_strcmp(mem->current, END)) ? -2 : status;
 	if (status == 1)
 		return (0);
-	if (status == 0 && ft_find_vertex_by_id(graph, 0))
+	if (status == 0 && graph->source)
 		return (1);
-	if (status == -2 && ft_find_vertex_by_id(graph, -2))
+	if (status == -2 && graph->sink)
 		return (1);
 	if (!ft_get_next_pointer(mem))
 		return (1);
-	status = ft_get_new_vertex(graph, mem->current, &status, hptrs);
+	status = ft_get_new_vertex(graph, mem->current, status, hptrs);
 	return (status);
 }
 
@@ -84,7 +86,10 @@ int	ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs)
             (mem->current[0] == '#' || ft_strchr(mem->current, ' ')))
 	{
 		if (mem->current[0] != '#')
-			err = ft_get_new_vertex(graph, mem->current, &next_index, hptrs);
+		{
+			err = ft_get_new_vertex(graph, mem->current, next_index, hptrs);
+			next_index += 2;
+		}
 		else if (mem->current[1] == '#')
 			err = ft_get_start_end(graph, mem, hptrs);
 		if (err)

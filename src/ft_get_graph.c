@@ -36,11 +36,9 @@ int			ft_get_graph(t_graph **graph, t_mem *mem, int fd)
 		return (ft_clear_all(hptrs.vhash, 0));
 	if (ft_get_vertex(*graph, mem, &hptrs))
 		return (ft_clear_all(hptrs.vhash, 0));
-	((*graph)->source) = NULL;
-	((*graph)->sink) = NULL;
 	if (!(mem->current[0]))
 		return (ft_clear_all(hptrs.vhash, 0));
-	if (!ft_check_start_end(*graph))
+	if (!((*graph)->sink) || !((*graph)->source))
 		return (ft_clear_all(hptrs.vhash, 0));
 	if (!ft_get_edges(*graph, mem, hptrs.vhash))
 		return (ft_clear_all(hptrs.vhash,  0));

@@ -92,11 +92,9 @@ int			ft_get_edges(t_graph *graph, t_mem *mem, t_hash **hashtab);
 int			ft_check_n_add_edge(t_edgename *e_names, t_hash **edge_hash, \
 			t_hash **hashtab);
 int			ft_get_ants_count(t_mem *mem);
-t_vertex	*ft_find_vertex_by_id(t_graph *graph, int id);
 int			ft_count_char(char *str, char c);
 int			ft_char_in_str(char *str, char c);
 int			ft_get_valid_nbr(const char *str);
-int			ft_check_start_end(t_graph *graph);
 void		ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, unsigned int hash);
 void		ft_add_to_coord_hash(t_hash **hashtab, t_vertex *vertex, t_coord *coord);
 t_vertex	*ft_find_vertex_in_hash(t_hash **hashtab, char *name, unsigned int hash);
