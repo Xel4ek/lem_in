@@ -6,7 +6,7 @@
 /*   By: ayooden <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/18 18:42:54 by ayooden           #+#    #+#             */
-/*   Updated: 2020/02/18 19:03:44 by ayooden          ###   ########.fr       */
+/*   Updated: 2020/03/03 18:44:29 by ayooden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int			ft_get_graph(t_graph **graph, t_mem *mem, int fd)
 	hptrs.chash = NULL;
 	if ((res = ft_get_ants_count(mem)) < 0)
 		return (ft_clear_all(hptrs.vhash, res));
-	(*graph)->ants_count = res;
+	(*graph)->ants_count = (long int)res;
 	if ((res = ft_get_vertex(*graph, mem, &hptrs)) <= 0)
 		return (ft_clear_all(hptrs.vhash, res));
 	if (!(mem->current[0]))

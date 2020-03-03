@@ -52,7 +52,7 @@ typedef struct		s_graph
 	t_vertex		*source;
 	t_vertex		*sink;
 	int				vertex_count;
-	int				ants_count;
+	long int		ants_count;
 	int				pash_count;
 	int				path_lenght;
 

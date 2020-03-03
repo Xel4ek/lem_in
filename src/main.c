@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/03 18:54:36 by hwolf             #+#    #+#             */
+/*   Updated: 2020/03/03 18:54:55 by ayooden          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 #include "lem_in.h"
 #include "ft_printf.h"
@@ -8,8 +20,8 @@ static void	ft_clear_all(t_mem **mem, t_graph **graph)
 {
 	if (!mem && !(*mem))
 	{
-		ft_memdel((void **) &(*mem)->head);
-		ft_memdel((void **) mem);
+		ft_memdel((void **)&(*mem)->head);
+		ft_memdel((void **)mem);
 	}
 	if (!graph && !*graph)
 		ft_del_graph(graph);
@@ -30,26 +42,29 @@ static int	ft_find_path(t_graph *graph, t_list **path_list)
 	int	pash_count;
 
 	ft_remove_zero_flow(graph);
-	*path_list =  ft_new_path_list(graph);
+	*path_list = ft_new_path_list(graph);
 	ft_set_ant_to_pash(graph->ants_count, *path_list);
 	tail = 0;
 	pash_count = ft_lstdlen(*path_list);
 	while (pash_count--)
 	{
-		if (tail < ((t_path *)(*path_list)->content)->price && tail < ((t_path *)(*path_list)->content)->ant_count)
+		if (tail < ((t_path *)(*path_list)->content)->price && \
+			tail < ((t_path *)(*path_list)->content)->ant_count)
 			tail = ((t_path *)(*path_list)->content)->price;
 		*path_list = (*path_list)->next;
 	}
 	return (tail);
 }
 
-static void	ft_print_path(t_list *path_list, t_graph *graph, int tail)
+static void	ft_print_path(t_list *path_list, t_graph *graph, int tail, \
+			t_mem **mem)
 {
 	int	temp;
 	int	id;
 
 	id = 0;
 	temp = tail;
+	ft_print_mem(mem);
 	while (temp--)
 	{
 		ft_push_ant(path_list, graph, &id);
@@ -57,7 +72,7 @@ static void	ft_print_path(t_list *path_list, t_graph *graph, int tail)
 	}
 }
 
-int			main()
+int			main(void)
 {
 	t_graph	*graph;
 	t_list	*path_list;
@@ -65,7 +80,7 @@ int			main()
 	t_mem	*memory;
 	int		res;
 
-	fd = 0;//open("../max_int", O_RDONLY);
+	fd = 0;
 	if (!(memory = ft_init_memory()))
 		return (0);
 	if ((res = ft_get_graph(&graph, memory, fd)) <= 0)
@@ -73,7 +88,6 @@ int			main()
 		ft_clear_all(&memory, &graph);
 		return (ft_print_error(res));
 	}
-	//close(fd);
 	ft_convert_graph(&graph);
 	if (!graph->pash_count)
 	{
@@ -81,8 +95,7 @@ int			main()
 		return (ft_print_error(-13));
 	}
 	res = ft_find_path(graph, &path_list);
-	ft_print_mem(&memory);
-	ft_print_path(path_list, graph, res);
+	ft_print_path(path_list, graph, res, &memory);
 	ft_del_graph(&graph);
 	ft_lstd_del(&path_list);
 	return (0);

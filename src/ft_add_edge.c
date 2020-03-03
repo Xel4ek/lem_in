@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_add_edge.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/03 18:39:42 by hwolf             #+#    #+#             */
+/*   Updated: 2020/03/03 18:40:22 by ayooden          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "lem_in.h"
 #include "libft.h"
 
-int ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented, int cost)
+int	ft_add_edge(t_vertex *start, t_vertex *end, int flow, int oriented, int cost)
 {
 	t_edge *new_edge;
 	t_list *new;
