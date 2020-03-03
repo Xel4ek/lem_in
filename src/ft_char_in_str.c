@@ -20,5 +20,5 @@ int	ft_char_in_str(char *str, char c)
 	while (str[++i])
 		if (str[i] == c)
 			return (i);
-	return (0);
+	return (-1);
 }

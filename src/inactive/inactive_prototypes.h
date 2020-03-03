@@ -1,0 +1,26 @@
+//t_graph *mygraph(void);
+//void ft_print_graph(const t_graph *graph);
+//void ft_print_matrix(t_edge ***matrix, int size);
+//void ft_print_vertex_all(t_vertex **vertex_list_link, int size);
+//void ft_set_vertex(t_vertex *vertex, int vertex_id, const char *name);
+//void	*ft_queue_pop(t_list **queue);
+//void ft_save_digraph_as_dot(int fd, const t_graph *graph);
+//void ft_save_digraph_as_dot2(int fd, const t_graph *graph);
+//void ft_save_graph_as_dot(int fd, const t_graph *graph);
+//t_list			*ft_queue_new(void *content);
+//void ft_add_vertex_front(t_graph *graph, t_vertex *vertex);
+//void ft_split_all_graph_edge(t_graph *graph);
+//void ft_reset_edge_oriented(t_graph *graph);
+
+//void ft_reverse_edge(t_edge **edge);
+//void ft_squeeze_graph(t_graph *graph);
+//void ft_ford_bellman(t_graph *graph);
+//void	*ft_queue_min_pop(t_list **queue);
+//t_graph *mygraph(void);
+void ft_print_egde_list(t_list *egde_list);
+void ft_print_egde_list_dot(int fd, t_list *egde_list);
+void ft_print_vertex_dot(int fd, t_vertex *vertex);
+void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
+//void				ft_print_egde_fd(int fd, t_edge *edge);
+//void				ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
+//void				ft_print_egde(t_edge *edge);

@@ -26,7 +26,6 @@ void ft_print_egde_list_dot(int fd, t_list *egde_list)
 	while (len--)
 	{
 		ft_print_egde_fd(fd, *(t_edge**)edge_ptr->content);
-//		ft_printf_fd(fd, "\n");
 		edge_ptr = edge_ptr->next;
 	}
 }
@@ -41,7 +40,6 @@ void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list)
 	while (len--)
 	{
 		ft_print_not_oriented_egde_fd(fd, *(t_edge**)edge_ptr->content);
-//		ft_printf_fd(fd, "\n");
 		edge_ptr = edge_ptr->next;
 	}
 }

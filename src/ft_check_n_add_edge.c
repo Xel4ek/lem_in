@@ -42,10 +42,10 @@ int			ft_check_n_add_edge(t_edgename *enames, t_hash **edge_hash, \
 		return (ft_clear_names(&(enames->name1), &(enames->name2), 1));
 	if (!(vertex1 = ft_find_vertex_in_hash(hashtab, (void *)enames->name1, \
 	ft_hash(enames->name1, HASH_SIZE))))
-		return (ft_clear_names(&(enames->name1), &(enames->name2), 0));
+		return (ft_clear_names(&(enames->name1), &(enames->name2), -12));
 	if (!(vertex2 = ft_find_vertex_in_hash(hashtab, (void *)enames->name2, \
 	ft_hash(enames->name2, HASH_SIZE))))
-		return (ft_clear_names(&(enames->name1), &(enames->name2), 0));
+		return (ft_clear_names(&(enames->name1), &(enames->name2), -12));
 	if (ft_check_repeat(edge_hash, vertex1, vertex2))
 		return (ft_clear_names(&(enames->name1), &(enames->name2), 1));
 	ft_add_edge(vertex1, vertex2, 0, 0,1);

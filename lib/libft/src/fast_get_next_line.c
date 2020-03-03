@@ -85,16 +85,7 @@ int				fast_read_in_memory(const int fd, t_mem *const memory)
 	{
 		buf[ret] = 0;
 		ft_strjoin_mem(memory, buf);
-//		if (!(memory->endl = ft_strch(memory->current, '\n')))
-//			break ;
 	}
-//	memory->endl = ft_strch(memory->current, '\n');
-//	if (memory->endl)
-//	{
-//		*(memory->endl) = 0;
-//		memory->current = memory->endl + 1;
-//		memory->endl = ft_strchr(memory->current, '\n');
-//		return (1);
-//	}
+	memory->current = NULL;
 	return  (0);
 }
