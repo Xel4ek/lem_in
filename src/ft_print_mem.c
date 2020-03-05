@@ -11,12 +11,13 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+#include "stdio.h"
 
 void	ft_print_mem(t_mem **mem)
 {
 	int	i;
 	int	len;
-	ft_printf("%s\n", (*mem)->head);
+	printf("%s\n", (*mem)->head);
 
 //	(*mem)->current = (*mem)->head;
 //	i = ft_strlen((*mem)->current);
@@ -29,6 +30,6 @@ void	ft_print_mem(t_mem **mem)
 //		i = ft_strlen((*mem)->current);
 //	}
 //	ft_printf ("%s\n", (*mem)->head);
-	ft_memdel((void **)&(*mem)->head);
-	ft_memdel((void **)mem);
+//	ft_memdel((void **)&(*mem)->head);
+//	ft_memdel((void **)mem);
 }

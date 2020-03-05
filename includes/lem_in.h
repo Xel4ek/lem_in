@@ -42,8 +42,8 @@ typedef struct 		s_edge
 typedef struct 		s_path
 {
 	t_vertex		*head;
-	int				price;
-	int				ant_count;
+	long int		price;
+	long int		ant_count;
 }					t_path;
 
 typedef struct		s_graph
@@ -52,9 +52,10 @@ typedef struct		s_graph
 	t_vertex		*source;
 	t_vertex		*sink;
 	int				vertex_count;
-	long int		ants_count;
+	int				ants_count;
+	size_t			path_lenght;
 	int				pash_count;
-	int				path_lenght;
+
 
 }					t_graph;
 
@@ -82,6 +83,7 @@ typedef struct		s_hptrs
 	t_hash_old 			**vhash;
 	t_hash_old 			**chash;
 }					t_hptrs;
+
 
 int					ft_get_graph(t_graph **graph, t_mem *mem, int fd);
 int					ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs);
@@ -126,12 +128,13 @@ void				ft_split_vertex(t_graph *graph);
 void				ft_split_all_edges(t_vertex *vertex);
 int					ft_min_cost_flow(t_graph *graph);
 void				ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
-t_path				*ft_new_path(t_vertex *path_head);
+t_path				ft_new_path(t_vertex *path_head);
 t_path				*ft_find_shortest_path(t_list *path_list);
-void				ft_push_ant(t_list *path_list, t_graph *graph, int *id);
+void				ft_push_ant(t_path *path_list, t_graph *graph, int *id);
 void				ft_add_ant(t_path *path);
-int					ft_set_ant_to_pash(int total_ant, t_list *path_list);
-t_list				*ft_new_path_list(t_graph *graph);
+long int 			ft_set_ant_to_pash(size_t total_ant, t_path *path_list, int pash_count);
+t_path *ft_new_path_list(t_graph *graph);
+//t_list				*ft_new_path_list(t_graph *graph);
 int					ft_accept_path(t_graph *graph);
 int					ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void				ft_del_graph(t_graph **graph);

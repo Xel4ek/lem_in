@@ -102,7 +102,7 @@ int	ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs)
 	return (err);
 }
 
-static int ft_vertex_validate(char *src,char **name, char **point)
+static int ft_vertex_validate(char *src, char **name, char **point)
 {
 	int vlen;
 	char *x;

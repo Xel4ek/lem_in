@@ -18,3 +18,12 @@ int	ft_ceil(long double nbr)
 		return (inbr + 1);
 	return (inbr);
 }
+
+long long int	ft_ceil_ll(long double nbr)
+{
+	long long int inbr;
+
+	if (nbr - (inbr = (long long int)nbr) > .0)
+		return (inbr + 1);
+	return (inbr);
+}
