@@ -36,7 +36,6 @@ static t_set *ft_set_cpy(t_set *src, t_set *dst)
 {
 	int i;
 	t_hash hash;
-	t_hash *item;
 	i = src->capacity;
 	while(i--)
 	{
@@ -62,6 +61,7 @@ t_set *ft_set_update(t_set *set)
 	if(!(newset = ft_init_set(set->capacity * 2)))
 		return (NULL);
 	ft_set_cpy(set, newset);
+	ft_set_destroy(&set);
 	return newset;
 }
 
@@ -84,10 +84,10 @@ int ft_set_insert(t_set **set, char *name)
 
 void ft_set_destroy(t_set **set)
 {
-//	if (set && *set)
-//	{
-//		ft_hash_destroy(&(*set)->hashtab, (*set)->capacity);
-//		ft_memdel((void**)set);
-//	}
+	if (set && *set)
+	{
+		ft_hash_destroy(&(*set)->hashtab, (*set)->capacity);
+		ft_memdel((void**)set);
+	}
 
 }

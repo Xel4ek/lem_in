@@ -68,15 +68,15 @@ void ft_hash_destroy(t_hash **hashtab, size_t size)
 	t_hash *keep;
 	while(size--)
 	{
-		hash = (*hashtab)[size].next;
+		hash = ((*hashtab) + size)->next;
 		while (hash)
 		{
 			keep = hash->next;
-			ft_memdel((void**)hash);
+			ft_memdel((void**)&hash);
 			hash = keep;
 		}
 	}
-
+	ft_memdel((void**)hashtab);
 }
 
 unsigned int	ft_hash_int(const int *tab,

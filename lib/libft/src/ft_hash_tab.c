@@ -14,7 +14,10 @@ t_hash *ft_hash_init(size_t size)
 
 	i = 0;
 	while(i < size)
-		(hash_tab)[i++].value = NULL;
+	{
+		(hash_tab)[i].value = NULL;
+		(hash_tab)[i++].next = NULL;
+	}
 	return (hash_tab);
 }
 
