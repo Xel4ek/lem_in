@@ -82,9 +82,9 @@ int			main(void)
 	t_mem	*memory;
 	int		res;
 
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_4", O_RDONLY);
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
 //	fd = open("../50k_5543", O_RDONLY);
-	fd = 0;
+//	fd = 0;
 	if (!(memory = ft_init_memory()))
 		return (0);
 	if ((res = ft_get_graph_2(&graph, memory, fd)) <= 0)
@@ -102,7 +102,7 @@ int			main(void)
 	long int tail;
 	tail = ft_find_path(graph, &path_list);
 	ft_print_path(path_list, graph, tail, &memory);
-//	ft_del_graph(&graph);
-//	ft_lstd_del(&path_list);
+	ft_del_graph(&graph);
+	ft_memdel((void**)&path_list);
 	return (0);
 }

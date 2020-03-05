@@ -23,7 +23,7 @@ static void ft_pswap(t_path *first, t_path *second)
 
 
 static void	ft_psort_helper(t_path **pivot_left,
-							   t_path **pivot_right, long int pivot)
+							   t_path **pivot_right,long int pivot)
 {
 	while (*pivot_left < *pivot_right)
 	{
@@ -33,7 +33,7 @@ static void	ft_psort_helper(t_path **pivot_left,
 			--(*pivot_right);
 		if (*pivot_left <= *pivot_right)
 		{
-			if ((**pivot_left).price > (**pivot_right).price)
+			if ((*pivot_left)->price > (*pivot_right)->price)
 				ft_pswap(*pivot_left, *pivot_right);
 			++(*pivot_left);
 			--(*pivot_right);
@@ -49,13 +49,13 @@ static void		ft_psort(t_path *start, t_path *finish)
 
 	pivot_left = start;
 	pivot_right = finish;
-	if (pivot_left->price < pivot_right->price)
+	if (pivot_left < pivot_right)
 	{
-		pivot = (start + (finish - start) / 2)->price;
+		pivot = (start->price + finish->price) / 2;
 		ft_psort_helper(&pivot_left, &pivot_right, pivot);
-		if (pivot_left->price < finish->price)
+		if (pivot_left < finish)
 			ft_psort(pivot_left, finish);
-		if (start->price < pivot_right->price)
+		if (start < pivot_right)
 			ft_psort(start, pivot_right);
 	}
 }
