@@ -60,6 +60,6 @@ int			ft_check_n_add_edge(t_edgename *enames, t_hash_old **edge_hash, \
 		return (ft_clear_names(&(enames->name1), &(enames->name2), -12));
 	if (ft_check_repeat(edge_hash, vertex1, vertex2))
 		return (ft_clear_names(&(enames->name1), &(enames->name2), 1));
-	ft_add_edge(vertex1, vertex2, 0, 0,1);
+	ft_add_edge(vertex1, vertex2, 8);
 	return (ft_clear_names(&(enames->name1), &(enames->name2), 1));
 }

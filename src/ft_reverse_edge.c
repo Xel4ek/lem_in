@@ -26,13 +26,11 @@ void ft_reverse_edge_vertex(t_vertex *start, t_vertex *end)
 		i = end_len;
 		while (i--)
 		{
-			if (((t_vertex *) (*(t_edge **) end->edge_in_list->content)->start) ==
+			if (((t_vertex*)(*(t_edge**)end->edge_in_list->content)->start) ==
 				start)
 			{
 				ft_add_edge(end, start,
-							(((*(t_edge**)end->edge_in_list->content)->flow) + 1) % 2,
-							(*(t_edge **) end->edge_in_list->content)->oriented,
-							-(*(t_edge **) end->edge_in_list->content)->cost);
+					(((*(t_edge**)end->edge_in_list->content)->param ^ 9u)));
 				ft_remove_edge(((t_edge**)end->edge_in_list->content));
 				return;
 			}

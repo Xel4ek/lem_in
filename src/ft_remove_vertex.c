@@ -24,5 +24,6 @@ void ft_remove_vertex(t_graph **graph, t_vertex **vertex){
 			(*graph)->vertex_list = (*graph)->vertex_list->next;
 		ft_memdel((void**)&(*vertex)->name);
 		ft_lstd_pop_front(&(*graph)->vertex_list);
+		(*graph)->vertex_count--;
 	}
 }

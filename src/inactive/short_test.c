@@ -32,24 +32,67 @@ void ft_print_vertex(t_vertex *vertex)
 int main()
 {
 
-	t_set *set;
-	set = NULL;
-	t_vertex *vertex;
-	char str[]="0";
-	char str2[]="mi";
-	vertex = ft_new_verex(12, "0 ");
+	unsigned int param;
+	int flow;
+	int cost;
+	int oprient;
+	int nflow;
+	int ncost;
+	int noprient;
+	param = 8;
+	/*
+	*	| param | flow |orient|  cost  |
+	*	|-------|------|------|--------|
+	*	|   0   | 0(1) | 0(0) | -1( 0) |
+	|*	|   1   | 1(1) | 0(0) | -1( 0) |
+	|*	|   2   | 0(1) | 1(1) | -1( 0) |
+	|*	|   3   | 1(1) | 1(1) | -1( 0) |
+	|*	|   4   | 0(1) | 0(0) |  0( 0) |
+	|*	|   5   | 1(1) | 0(0) |  0( 0) |
+	|*	|   6   | 0(1) | 1(1) |  0( 0) |
+	|*	|   7   | 1(1) | 1(1) |  0( 0) |
+	|*	|   8   | 0(1) | 0(0) |  1(-1) |
+	|*	|   9   | 1(1) | 0(0) |  1(-1) |
+	|*	|  10   | 0(1) | 1(1) |  1(-1) |
+	|*	|  11   | 1(1) | 1(1) |  1(-1) |
+	|*	|  12   | 0(1) | 0(0) | -1(-1) |
+	|*	|  13   | 1(1) | 0(0) | -1(-1) |
+	|*	|  14   | 0(1) | 1(1) | -1(-1) |
+	|*	|  15   | 1(1) | 1(1) | -1(-1) |
+	|*	|-------|------|------|--------|
+	*/
+	flow = (int)(param & 1u);
+	oprient = (int)((param >> 1u) & 1u);
+	cost = (int)((param >> 1u) & 3u);
 
-	ft_printf("%d ",ft_set_insert_vertex(&set, vertex));
-	ft_printf("size %d\n", set->size);
-	vertex = ft_new_verex(13, "1");
-	ft_print_vertex(ft_set_get_value(set, "0"));
+	printf("*\t| param | flow |orient|  cost  |\n");
+	printf("*\t|-------|------|------|--------|\n");
+	int i;
+	i = 0;
+	while (i < 16)
+	{
+		param = i++;
+		printf("*\t| %3d   |", param);
+		flow = (int) (param & 1u);
+		oprient = (int) ((param >> 1u) & 1u);
+		cost = ((int) ((param >> 2u) & 3u) - 1)  % 2;
+		param ^= 9u;
+//		param = param ^ (1 << 3);
+////		param-=5;
+		nflow = (int) (param  & 1u);
+		noprient = (int) ((param >> 1u) & 1u);
+		ncost = ((int) ((param >> 2u) & 3u) - 1)  % 2;
 
-	ft_printf("%d ",ft_set_insert_vertex(&set, vertex));
-	ft_printf("size %d\n", set->size);
-	ft_print_vertex(ft_set_get_value(set, "1"));
-	ft_printf("%d ",ft_set_insert(&set, str2));
-	ft_printf("size %d\n", set->size);
-	ft_printf("value %s\n", ft_set_get_value(set, str2));
+		printf(" %d(%d) |", flow, nflow);
+		printf(" %d(%d) |", oprient, noprient);
+//		printf(" %d%d(%d%d) |\n|", (cost>>1) &1 ,cost &1, (ncost>>1) &1,ncost &1 );
+		printf(" %2d(%2d) |\n|", cost ,ncost );
+	}
+	printf("*\t|-------|------|------|--------|\n");
+
+//	printf(" %d", flow);
+//	printf(" %d", flow);
+//	printf(" %d", flow);
 
 //	int fd;
 //	char *line;

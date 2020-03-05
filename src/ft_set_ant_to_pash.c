@@ -35,10 +35,7 @@ long int ft_set_ant_to_pash(size_t total_ant, t_path *path_list, int pash_count)
 		path_list[i].ant_count = price - path_list[i].price;
 		sended_ants += path_list[i].ant_count;
 	}
-	while (sended_ants != total_ant)
-	{
+	while (sended_ants-- != total_ant)
 		path_list[++i].ant_count--;
-		--sended_ants;
-	}
 	return (price);
 }

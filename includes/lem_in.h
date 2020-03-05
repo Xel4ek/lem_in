@@ -4,7 +4,6 @@
 # include <libft_structs.h>
 # define START "##start"
 # define END "##end"
-# define HASH_SIZE 1024
 # define START_MEMORY_SIZE 1024
 
 enum				e_color
@@ -16,7 +15,6 @@ enum				e_color
 
 typedef struct		s_vertex
 {
-
 	t_list			*edge_in_list;
 	t_list			*edge_out_list;
 	struct s_vertex	*parrent;
@@ -26,16 +24,15 @@ typedef struct		s_vertex
     int				id;
 	enum e_color	color;
 	int				ant_id;
-	int 			x;
-	int 			y;
 }					t_vertex;
 
 typedef struct 		s_edge
 {
 	t_vertex		*start;
 	t_vertex		*end;
-    int				flow;
+	int				flow;
     int				cost;
+	unsigned int 	param;
 	int 			oriented;
 }					t_edge;
 
@@ -55,70 +52,21 @@ typedef struct		s_graph
 	int				ants_count;
 	size_t			path_lenght;
 	int				pash_count;
-
-
 }					t_graph;
 
-typedef struct 		s_hash_old
-{
-	void 			*cmp_ptr;
-	void 			*content;
-	struct	s_hash_old	*next;
-}					t_hash_old;
-
-typedef	struct		s_edgename
-{
-	char 			*name1;
-	char 			*name2;
-}					t_edgename;
-
-typedef	struct		s_coord
-{
-	int 			x;
-	int 			y;
-}					t_coord;
-
-typedef struct		s_hptrs
-{
-	t_hash_old 			**vhash;
-	t_hash_old 			**chash;
-}					t_hptrs;
-
-
-int					ft_get_graph(t_graph **graph, t_mem *mem, int fd);
-int					ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs);
-int					ft_get_edges(t_graph *graph, t_mem *mem, t_hash_old **hashtab);
-int					ft_check_n_add_edge(t_edgename *e_names, \
-					t_hash_old **edge_hash, t_hash_old **hashtab);
 int					ft_get_ants_count(t_mem *mem);
 int					ft_count_char(char *str, char c);
 int					ft_char_in_str(char *str, char c);
 int					ft_get_valid_nbr(const char *str);
-void				ft_add_to_hash(t_hash_old **hashtab, void *content, \
-					void *cmp_ptr, unsigned int hash);
-void				ft_add_to_coord_hash(t_hash_old **hashtab, t_vertex *vertex, \
-					t_coord *coord);
-t_vertex			*ft_find_vertex_in_hash(t_hash_old **hashtab, char *name, \
-					unsigned int hash);
-int					ft_find_edge_in_hash(t_hash_old **hashtab, char *name, \
-					unsigned int hash);
-int					ft_find_coord_in_hash(t_hash_old **hashtab, t_coord *coord);
-int					ft_delete_edge_hash(t_hash_old **edge_hash, int res);
-int					ft_delete_hashtab(t_hash_old **hashtab, int res);
-int					ft_delete_coord_hash(t_hash_old **hashtab, int res);
-t_hash_old				**ft_init_hash(int size);
 int					ft_get_next_pointer(t_mem *mem);
 void				ft_print_mem(t_mem **mem);
 t_graph				*ft_init_graph(void);
 t_mem				*ft_init_memory(void);
-int					ft_print_error(int error_code);
-void				ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, \
-					int flow, int oriented, int cost);
-t_edge				*ft_new_edge(t_vertex *start, t_vertex *end, int flow, \
-					int oriented, int cost);
+int					ft_print_error(long int error_code);
+void				ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, unsigned int param);
+t_edge				*ft_new_edge(t_vertex *start, t_vertex *end, unsigned int param);
 t_vertex 			*ft_new_verex(int vertex_id, char* name);
-int					ft_add_edge(t_vertex *start, t_vertex *end, int flow, \
-					int oriented, int cost);
+int					ft_add_edge(t_vertex *start, t_vertex *end, unsigned int param);
 t_vertex			*ft_add_vertex_back(t_graph *graph, t_vertex *vertex);
 void				ft_remove_edge(t_edge **edge);
 void				ft_split_edge(t_edge **edge);
@@ -128,13 +76,10 @@ void				ft_split_vertex(t_graph *graph);
 void				ft_split_all_edges(t_vertex *vertex);
 int					ft_min_cost_flow(t_graph *graph);
 void				ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
-t_path				ft_new_path(t_vertex *path_head);
-t_path				*ft_find_shortest_path(t_list *path_list);
+t_path				ft_new_path(t_vertex *path_head, t_vertex *source);
 void				ft_push_ant(t_path *path_list, t_graph *graph, int *id);
-void				ft_add_ant(t_path *path);
 long int 			ft_set_ant_to_pash(size_t total_ant, t_path *path_list, int pash_count);
-t_path *ft_new_path_list(t_graph *graph);
-//t_list				*ft_new_path_list(t_graph *graph);
+t_path 				*ft_new_path_list(t_graph *graph);
 int					ft_accept_path(t_graph *graph);
 int					ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void				ft_del_graph(t_graph **graph);

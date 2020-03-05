@@ -27,9 +27,9 @@ static void	ft_psort_helper(t_path **pivot_left,
 {
 	while (*pivot_left < *pivot_right)
 	{
-		while ((**pivot_left).price < pivot)
+		while ((*pivot_left)->price < pivot)
 			++(*pivot_left);
-		while (pivot < (**pivot_right).price)
+		while (pivot < (*pivot_right)->price)
 			--(*pivot_right);
 		if (*pivot_left <= *pivot_right)
 		{
@@ -72,7 +72,7 @@ t_path *ft_new_path_list(t_graph *graph)
 	while (i--)
 	{
 		vertex = (*(t_edge **) (graph->sink->edge_out_list->content))->end;
-		path_list[i] = ft_new_path(vertex);
+		path_list[i] = ft_new_path(vertex, graph->source);
 		graph->sink->edge_out_list =
 				graph->sink->edge_out_list->next;
 	}

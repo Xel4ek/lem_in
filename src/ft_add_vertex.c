@@ -19,5 +19,6 @@ t_vertex *ft_add_vertex_back(t_graph *graph, t_vertex *vertex)
 
 	new_vertex = ft_lstd_wrap(vertex, sizeof(*vertex));
 	ft_lstd_push_back((t_list**)&graph->vertex_list, new_vertex);
+	graph->vertex_count++;
 	return ((t_vertex *)new_vertex->content);
 }

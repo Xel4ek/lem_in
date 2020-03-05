@@ -30,8 +30,6 @@ static void	ft_clear_all(t_mem **mem, t_graph **graph)
 static void	ft_convert_graph(t_graph **graph)
 {
 	ft_convert_graph_to_oriented(graph);
-	(*graph)->vertex_count = ft_lstdlen((*graph)->vertex_list);
-	(*graph)->path_lenght = INT64_MAX;
 	while (ft_min_cost_flow((*graph)))
 		;
 }
@@ -42,32 +40,18 @@ static long int	ft_find_path(t_graph *graph, t_path **path_list)
 
 	ft_remove_zero_flow(graph);
 	*path_list = ft_new_path_list(graph);
-//	temp = graph->pash_count;
-//	while(temp--)
-//		ft_printf("%d ", (*path_list)[temp].price);
 	tail = ft_set_ant_to_pash(graph->ants_count, *path_list, graph->pash_count);
-//	tail = 0;
-//	pash_count = ft_lstdlen(*path_list);
-//	while (pash_count--)
-//	{
-//		if (tail < ((t_path *)(*path_list)->content)->price && \
-//			tail < ((t_path *)(*path_list)->content)->ant_count)
-//			tail = ((t_path *)(*path_list)->content)->price;
-//		*path_list = (*path_list)->next;
-//	}
 	return (tail);
 }
 
 static void	ft_print_path(t_path *path_list, t_graph *graph, long int  tail, \
 			t_mem **mem)
 {
-	long int	temp;
 	int	id;
 
 	id = 0;
-	temp = tail;
 	ft_print_mem(mem);
-	while (temp--)
+	while (tail--)
 	{
 		ft_push_ant(path_list, graph, &id);
 		ft_printf("\n");
@@ -80,9 +64,11 @@ int			main(void)
 	t_path	*path_list;
 	int		fd;
 	t_mem	*memory;
-	int		res;
+	long int		res;
 
-	fd = 0;
+//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
+//	fd = open("../50k_5543", O_RDONLY);
+	fd = STDIN_FILENO;
 
 	if (!(memory = ft_init_memory()))
 		return (0);
@@ -97,10 +83,8 @@ int			main(void)
 		ft_clear_all(&memory, &graph);
 		return (ft_print_error(-13));
 	}
-//	res = ft_find_path(graph, &path_list);
-	long int tail;
-	tail = ft_find_path(graph, &path_list);
-	ft_print_path(path_list, graph, tail, &memory);
+	res = ft_find_path(graph, &path_list);
+	ft_print_path(path_list, graph, res, &memory);
 	ft_del_graph(&graph);
 	ft_memdel((void**)&path_list);
 	return (0);

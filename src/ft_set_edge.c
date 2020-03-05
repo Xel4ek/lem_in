@@ -12,10 +12,37 @@
 
 #include "lem_in.h"
 
-void	ft_set_edge(t_edge *const edge, t_vertex *const start, t_vertex *const end, int flow, int oriented, int cost){
+/*
+ *  after 	param ^= 9u;
+ *	| param | flow |orient|  cost  |
+ *	|-------|------|------|--------|
+ *	|   0   | 0(1) | 0(0) | -1( 1) |
+ *	|   1   | 1(0) | 0(0) | -1( 1) |
+ *	|   2   | 0(1) | 1(1) | -1( 1) |
+ *	|   3   | 1(0) | 1(1) | -1( 1) |
+ *	|   4   | 0(1) | 0(0) |  0( 2) |
+ *	|   5   | 1(0) | 0(0) |  0( 2) |
+ *	|   6   | 0(1) | 1(1) |  0( 2) |
+ *	|   7   | 1(0) | 1(1) |  0( 2) |
+ *	|   8   | 0(1) | 0(0) |  1(-1) |
+ *	|   9   | 1(0) | 0(0) |  1(-1) |
+ *	|  10   | 0(1) | 1(1) |  1(-1) |
+ *	|  11   | 1(0) | 1(1) |  1(-1) |
+ *	|  12   | 0(1) | 0(0) |  2( 0) |
+ *	|  13   | 1(0) | 0(0) |  2( 0) |
+ *	|  14   | 0(1) | 1(1) |  2( 0) |
+ *	|  15   | 1(0) | 1(1) |  2( 0) |
+ *	|-------|------|------|--------|
+ */
+
+
+void	ft_set_edge(t_edge *const edge, t_vertex *const start,
+		t_vertex *const end,  unsigned int param)
+{
 	edge->start = start;
 	edge->end = end;
-	edge->flow = flow;
-	edge->cost = cost;
-	edge->oriented = oriented;
+	edge->param = param;
+	edge->flow = (int) (param & 1u);
+	edge->oriented  = (int)((param >> 1u) & 1u);
+	edge->cost = ((int) ((param >> 2u) & 3u) - 1)  % 2;
 }

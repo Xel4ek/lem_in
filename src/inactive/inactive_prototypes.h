@@ -17,10 +17,10 @@
 //void ft_ford_bellman(t_graph *graph);
 //void	*ft_queue_min_pop(t_list **queue);
 //t_graph *mygraph(void);
-void ft_print_egde_list(t_list *egde_list);
-void ft_print_egde_list_dot(int fd, t_list *egde_list);
-void ft_print_vertex_dot(int fd, t_vertex *vertex);
-void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
+//void ft_print_egde_list(t_list *egde_list);
+//void ft_print_egde_list_dot(int fd, t_list *egde_list);
+//void ft_print_vertex_dot(int fd, t_vertex *vertex);
+//void ft_print_not_oriented_egde_list_dot(int fd, t_list *egde_list);
 //void				ft_print_egde_fd(int fd, t_edge *edge);
 //void				ft_print_not_oriented_egde_fd(int fd, t_edge *edge);
 //void				ft_print_egde(t_edge *edge);

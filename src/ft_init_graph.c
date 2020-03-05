@@ -24,7 +24,7 @@ t_graph	*ft_init_graph(void)
 	graph->vertex_list = NULL;
 	graph->ants_count = 0;
 	graph->pash_count = 0;
-	graph->path_lenght = 0;
+	graph->path_lenght = INT64_MAX;
 	graph->vertex_count = 0;
 	return (graph);
 }

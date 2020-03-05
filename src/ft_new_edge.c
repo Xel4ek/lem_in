@@ -13,11 +13,11 @@
 #include "lem_in.h"
 #include "libft.h"
 
-t_edge	*ft_new_edge(t_vertex *start, t_vertex *end, int flow, int oriented,int cost){
+t_edge	*ft_new_edge(t_vertex *start, t_vertex *end, unsigned int param){
 	t_edge *ptr;
 
 	if(!(ptr = (t_edge*)ft_memalloc(sizeof(t_edge))))
 		return (NULL);
-	ft_set_edge(ptr, start, end, flow, oriented, cost);
+	ft_set_edge(ptr, start, end, param);
 	return ptr;
 }

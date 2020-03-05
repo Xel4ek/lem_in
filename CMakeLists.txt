@@ -4,7 +4,7 @@ project(lem_in C)
 set(CMAKE_C_STANDARD 99)
 set(SRC
         src/ft_add_edge.c
-        src/ft_print_edge.c
+#        src/inactive/ft_print_edge.c
         src/ft_add_vertex.c
         src/ft_split_egde.c
         src/ft_remove_egde.c
@@ -18,8 +18,7 @@ set(SRC
         src/ft_reverse_edge.c
         src/ft_set_path.c
         src/ft_push_ant.c
-        src/ft_find_shortest_path.c
-        src/ft_add_ant.c
+#        src/inactive/ft_find_shortest_path.c
         src/ft_set_ant_to_pash.c
         src/ft_char_in_str.c
         src/ft_count_char.c
@@ -28,11 +27,11 @@ set(SRC
         src/ft_get_graph.c
         src/ft_get_vertex.c
         src/ft_get_valid_nbr.c
-        src/ft_add_to_hash.c
-        src/ft_find_in_hash.c
-        src/ft_delete_hash.c
-        src/ft_check_n_add_edge.c
-        src/ft_init_hash.c
+#        src/inactive/ft_add_to_hash.c
+#        src/inactive/ft_find_in_hash.c
+#        src/inactive/ft_delete_hash.c
+#        src/inactive/ft_check_n_add_edge.c
+#        src/inactive/ft_init_hash.c
         src/ft_get_next_pointer.c
         src/ft_print_mem.c
         src/ft_init_graph.c

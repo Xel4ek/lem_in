@@ -3,7 +3,7 @@
 
 t_vertex *ft_set_get_vertex(t_set *set, char *value)
 {
-	return ((t_vertex *)ft_set_isexist(set, ft_hash(value, set->capacity).key));
+	return ((t_vertex*)ft_set_isexist(set, ft_hash(value, set->capacity).key));
 }
 
 int ft_set_insert_vertex(t_set **set, t_vertex *vertex)

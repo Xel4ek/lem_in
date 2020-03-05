@@ -45,7 +45,6 @@ int						ft_get_valid_nbr(const char *str)
 	long long int	nbr;
 
 	i = -1;
-
 	if (!str)
 		return (-1);
 	if (!str[0])

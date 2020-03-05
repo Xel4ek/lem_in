@@ -18,7 +18,7 @@ void ft_split_edge(t_edge **edge)
 	if (*edge && !(*edge)->oriented)
 	{
 		(*edge)->oriented = 1;
-		ft_add_edge((*edge)->end, (*edge)->start, (*edge)->flow, 1, 1);
+		ft_add_edge((*edge)->end, (*edge)->start, 10);
 
 	}
 }
