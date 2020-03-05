@@ -139,9 +139,9 @@ int					ft_accept_path(t_graph *graph);
 int					ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void				ft_del_graph(t_graph **graph);
 void				ft_remove_zero_flow(t_graph *graph);
-int	ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset);
-int			ft_get_edges_2(t_mem *mem, t_set *vset);
-int ft_set_insert_vertex(t_set **set, t_vertex *vertex);
-t_vertex *ft_set_get_vertex(t_set *set, char *value);
-int			ft_get_graph_2(t_graph **graph, t_mem *mem, int fd);
+int					ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset);
+int					ft_get_edges_2(t_mem *mem, t_set *vset);
+int					ft_set_insert_vertex(t_set **set, t_vertex *vertex);
+t_vertex			*ft_set_get_vertex(t_set *set, char *value);
+int					ft_get_graph_2(t_graph **graph, t_mem *mem, int fd);
 #endif

@@ -48,6 +48,8 @@ int						ft_get_valid_nbr(const char *str)
 
 	if (!str)
 		return (-1);
+	if (!str[0])
+		return (-1);
 	if (str[0] == '+')
 		i++;
 	while (str[i + 1] == '0')
