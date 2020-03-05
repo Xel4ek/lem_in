@@ -102,7 +102,7 @@ set(SRC
         src/ft_pop_min_heap.c
         src/ft_heap_merge.c
         src/fast_get_next_line.c
-        )
+        src/ft_hash_tab.c src/ft_set.c)
 set(HEADERS
         includes/libft.h
         includes/ft_printf.h)

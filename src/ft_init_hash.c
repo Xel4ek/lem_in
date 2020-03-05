@@ -13,11 +13,11 @@
 #include "lem_in.h"
 #include <stdlib.h>
 
-t_hash	**ft_init_hash(int size)
+t_hash_old	**ft_init_hash(int size)
 {
-	t_hash	**hashtab;
+	t_hash_old	**hashtab;
 
-	if (!(hashtab = (t_hash **)malloc(sizeof(t_hash *) * size)))
+	if (!(hashtab = (t_hash_old **)malloc(sizeof(t_hash_old *) * size)))
 		return (NULL);
 	while (size--)
 		hashtab[size] = NULL;

@@ -14,7 +14,7 @@
 #include "libft.h"
 #include <unistd.h>
 
-static int ft_clear_all(t_hash **hashtab, int res)
+static int ft_clear_all(t_hash_old **hashtab, int res)
 {
 	ft_delete_hashtab(hashtab, res);
 	return (res);
@@ -47,3 +47,31 @@ int			ft_get_graph(t_graph **graph, t_mem *mem, int fd)
 		return (ft_clear_all(hptrs.vhash,  res));
 	return (ft_clear_all(hptrs.vhash, 1));
 }
+
+int			ft_get_graph_2(t_graph **graph, t_mem *mem, int fd)
+{
+	t_set *vset;
+
+	vset = NULL;
+	if (fast_read_in_memory(fd, mem) < 0 )
+		return (-3);
+	if (mem->head[0] == 0)
+		return (-14);
+	if (!(*graph = ft_init_graph()))
+		return (0);
+	if (((*graph)->ants_count = (long int)ft_get_ants_count(mem)) < 0)
+		return (-1);
+	if(!ft_get_vertex_2(*graph, mem, &vset))
+		return (-1);
+	if (!(mem->current[0]))
+		return (-1);
+	if (!((*graph)->sink && (*graph)->source))
+		return (-10);
+	if ((ft_get_edges_2(mem, vset)) <= 0)
+		return (-13);
+	return (1);
+//	if ((res = ft_get_vertex(*graph, mem, &hptrs)) <= 0)
+//		return (ft_clear_all(hptrs.vhash, res));
+
+}
+

@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hash.c                                          :+:      :+:    :+:   */
+/*   ft_hash_old.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,15 +12,71 @@
 
 #include "libft.h"
 
-unsigned int	ft_hash(const char *string, unsigned int size)
+unsigned int	ft_hash_old(const char *string, unsigned int size)
 {
-	unsigned int hash;
+	unsigned long int hash;
 
 	hash = 0;
 	if (string)
 		while (*string)
-			hash = hash * 13 + *string++ - 32 + 1;
+			hash = hash * 53 + *string++ - 31;
 	return (hash % size);
+}
+
+t_hash ft_hash(const char *string, unsigned int size)
+{
+	t_hash hash;
+	unsigned long int key;
+
+	key = 0;
+	hash.value = (void*)string;
+	if (string)
+		while (*string)
+			key = key * 53 + *string++ - 31;
+	hash.key = key;
+	hash.index = key % size;
+	hash.next = NULL;
+	return hash;
+}
+
+
+//static t_set *ft_set_cpy(t_set *src, t_set *dst)
+//{
+//	int i;
+//	t_hash hash;
+//	t_hash *item;
+//	i = src->capacity;
+//	while(i--)
+//	{
+//		hash = src->hashtab[i];
+//		while (hash.value)
+//		{
+//			hash.index = hash.key % dst->capacity;
+//			ft_hash_insert(dst->hashtab, hash);
+//			dst->size++;
+//			if (hash.next)
+//				hash = *(hash.next);
+//			else
+//				break;
+//		}
+//	}
+//	return (dst);
+//}
+void ft_hash_destroy(t_hash **hashtab, size_t size)
+{
+	t_hash *hash;
+	t_hash *keep;
+	while(size--)
+	{
+		hash = (*hashtab)[size].next;
+		while (hash)
+		{
+			keep = hash->next;
+			ft_memdel((void**)hash);
+			hash = keep;
+		}
+	}
+
 }
 
 unsigned int	ft_hash_int(const int *tab,

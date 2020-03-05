@@ -18,6 +18,8 @@
 # include "libft_structs.h"
 # define HIMAGIC	0x8080808080808080L
 # define LOMAGIC	0x0101010101010101L
+# define HASHSIZE	12037
+# define INITHASHSIZE 16
 # define MAX_FD 1024
 # define BUFF_SIZE 1024
 
@@ -117,7 +119,7 @@ void			ft_str_to_lstd(char *string, t_list **list1, t_list **list2);
 void			ft_lstditer_two(t_list *list1, t_list *list2,
 					void (*f)(t_list *elem));
 void			ft_quick_sort(int *start, int *finish);
-unsigned int	ft_hash(const char *string, unsigned int size);
+unsigned int	ft_hash_old(const char *string, unsigned int size);
 void			ft_hash_del(t_list **hash_table, unsigned size);
 size_t			ft_max(size_t first, size_t second);
 int				ft_abs(int digit);
@@ -131,4 +133,13 @@ void			*ft_pop_min_heap(t_heap **heap, int *key);
 t_heap *ft_heap_add(t_heap *heap, t_heap *new_item);
 int				fast_get_next_line(const int fd, char **line, t_mem *const memory);
 int				fast_read_in_memory(const int fd, t_mem *const memory);
+t_hash *ft_hash_init(size_t size);
+int ft_hash_insert(t_hash *hash_tab, t_hash new);
+t_hash ft_hash(const char *string, unsigned int size);
+int ft_set_insert(t_set **set, char *content);
+void *ft_set_isexist(t_set *set, size_t key);
+t_set *ft_init_set(size_t size);
+void *ft_set_get_value(t_set *set, char *value);
+t_set *ft_set_update(t_set *set);
+void ft_hash_destroy(t_hash **hashtab, size_t size);
 #endif

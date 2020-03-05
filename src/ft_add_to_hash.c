@@ -13,23 +13,23 @@
 #include "libft.h"
 #include "lem_in.h"
 
-void	ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, unsigned int hash)
+void	ft_add_to_hash(t_hash_old **hashtab, void *content, void *cmp_ptr, unsigned int hash)
 {
 	unsigned int i;
-	t_hash *temp;
+	t_hash_old *temp;
 
 	i = hash;
 	temp = hashtab[i];
 	if (hashtab[i] == NULL)
 	{
-		hashtab[i] = (t_hash *) malloc(sizeof(t_hash));
+		hashtab[i] = (t_hash_old *) malloc(sizeof(t_hash_old));
 		hashtab[i]->next = NULL;
 	}
 	else
 	{
 		while (hashtab[i]->next)
 			hashtab[i] = hashtab[i]->next;
-		hashtab[i]->next = (t_hash *) malloc(sizeof(t_hash));
+		hashtab[i]->next = (t_hash_old *) malloc(sizeof(t_hash_old));
 		hashtab[i] = hashtab[i]->next;
 		hashtab[i]->next = NULL;
 	}
@@ -39,23 +39,23 @@ void	ft_add_to_hash(t_hash **hashtab, void *content, void *cmp_ptr, unsigned int
 		hashtab[i] = temp;
 }
 
-void	ft_add_to_coord_hash(t_hash **hashtab, t_vertex *vertex, t_coord *coord)
+void	ft_add_to_coord_hash(t_hash_old **hashtab, t_vertex *vertex, t_coord *coord)
 {
 	unsigned int i;
-	t_hash *temp;
+	t_hash_old *temp;
 
 	i = (coord->x + coord->y) % HASH_SIZE;
 	temp = hashtab[i];
 	if (hashtab[i] == NULL)
 	{
-		hashtab[i] = (t_hash *) malloc(sizeof(t_hash));
+		hashtab[i] = (t_hash_old *) malloc(sizeof(t_hash_old));
 		hashtab[i]->next = NULL;
 	}
 	else
 	{
 		while (hashtab[i]->next)
 			hashtab[i] = hashtab[i]->next;
-		hashtab[i]->next = (t_hash *) malloc(sizeof(t_hash));
+		hashtab[i]->next = (t_hash_old *) malloc(sizeof(t_hash_old));
 		hashtab[i] = hashtab[i]->next;
 		hashtab[i]->next = NULL;
 	}

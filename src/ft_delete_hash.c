@@ -13,11 +13,11 @@
 #include "libft.h"
 #include "lem_in.h"
 
-int 	ft_delete_edge_hash(t_hash **edge_hash, int res)
+int 	ft_delete_edge_hash(t_hash_old **edge_hash, int res)
 {
 	int i;
-	t_hash	*temp;
-	t_hash	*ptr;
+	t_hash_old	*temp;
+	t_hash_old	*ptr;
 
 	i = HASH_SIZE;
 	while (i)
@@ -35,11 +35,11 @@ int 	ft_delete_edge_hash(t_hash **edge_hash, int res)
 	return (res);
 }
 
-int 	ft_delete_hashtab(t_hash **hashtab, int res)
+int 	ft_delete_hashtab(t_hash_old **hashtab, int res)
 {
 	int i;
-	t_hash	*temp;
-	t_hash	*ptr;
+	t_hash_old	*temp;
+	t_hash_old	*ptr;
 
 	i = HASH_SIZE;
 	while (i)
@@ -57,11 +57,11 @@ int 	ft_delete_hashtab(t_hash **hashtab, int res)
 	return (res);
 }
 
-int 	ft_delete_coord_hash(t_hash **hashtab, int res)
+int 	ft_delete_coord_hash(t_hash_old **hashtab, int res)
 {
 	int i;
-	t_hash	*temp;
-	t_hash	*ptr;
+	t_hash_old	*temp;
+	t_hash_old	*ptr;
 
 	i = HASH_SIZE;
 	while (i)

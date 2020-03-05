@@ -26,7 +26,7 @@ static long long int	ft_atoi_ll(const char *str)
 		i++;
 	if (str[i] == '-' || str[i] == '+')
 		ng = 44 - (int)str[i++];
-	while (str[i] != '\0' && str[i] >= '0' && str[i] <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
 		if ((nb * 10) / 10 != nb)
 		{

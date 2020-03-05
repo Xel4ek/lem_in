@@ -5,7 +5,7 @@
 # define START "##start"
 # define END "##end"
 # define HASH_SIZE 1024
-# define START_MEMORY_SIZE 256
+# define START_MEMORY_SIZE 1024
 
 enum				e_color
 {
@@ -58,12 +58,12 @@ typedef struct		s_graph
 
 }					t_graph;
 
-typedef struct 		s_hash
+typedef struct 		s_hash_old
 {
 	void 			*cmp_ptr;
 	void 			*content;
-	struct	s_hash	*next;
-}					t_hash;
+	struct	s_hash_old	*next;
+}					t_hash_old;
 
 typedef	struct		s_edgename
 {
@@ -79,32 +79,32 @@ typedef	struct		s_coord
 
 typedef struct		s_hptrs
 {
-	t_hash 			**vhash;
-	t_hash 			**chash;
+	t_hash_old 			**vhash;
+	t_hash_old 			**chash;
 }					t_hptrs;
 
 int					ft_get_graph(t_graph **graph, t_mem *mem, int fd);
 int					ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs);
-int					ft_get_edges(t_graph *graph, t_mem *mem, t_hash **hashtab);
+int					ft_get_edges(t_graph *graph, t_mem *mem, t_hash_old **hashtab);
 int					ft_check_n_add_edge(t_edgename *e_names, \
-					t_hash **edge_hash, t_hash **hashtab);
+					t_hash_old **edge_hash, t_hash_old **hashtab);
 int					ft_get_ants_count(t_mem *mem);
 int					ft_count_char(char *str, char c);
 int					ft_char_in_str(char *str, char c);
 int					ft_get_valid_nbr(const char *str);
-void				ft_add_to_hash(t_hash **hashtab, void *content, \
+void				ft_add_to_hash(t_hash_old **hashtab, void *content, \
 					void *cmp_ptr, unsigned int hash);
-void				ft_add_to_coord_hash(t_hash **hashtab, t_vertex *vertex, \
+void				ft_add_to_coord_hash(t_hash_old **hashtab, t_vertex *vertex, \
 					t_coord *coord);
-t_vertex			*ft_find_vertex_in_hash(t_hash **hashtab, char *name, \
+t_vertex			*ft_find_vertex_in_hash(t_hash_old **hashtab, char *name, \
 					unsigned int hash);
-int					ft_find_edge_in_hash(t_hash **hashtab, char *name, \
+int					ft_find_edge_in_hash(t_hash_old **hashtab, char *name, \
 					unsigned int hash);
-int					ft_find_coord_in_hash(t_hash **hashtab, t_coord *coord);
-int					ft_delete_edge_hash(t_hash **edge_hash, int res);
-int					ft_delete_hashtab(t_hash **hashtab, int res);
-int					ft_delete_coord_hash(t_hash **hashtab, int res);
-t_hash				**ft_init_hash(int size);
+int					ft_find_coord_in_hash(t_hash_old **hashtab, t_coord *coord);
+int					ft_delete_edge_hash(t_hash_old **edge_hash, int res);
+int					ft_delete_hashtab(t_hash_old **hashtab, int res);
+int					ft_delete_coord_hash(t_hash_old **hashtab, int res);
+t_hash_old				**ft_init_hash(int size);
 int					ft_get_next_pointer(t_mem *mem);
 void				ft_print_mem(t_mem **mem);
 t_graph				*ft_init_graph(void);
@@ -136,4 +136,9 @@ int					ft_accept_path(t_graph *graph);
 int					ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void				ft_del_graph(t_graph **graph);
 void				ft_remove_zero_flow(t_graph *graph);
+int	ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset);
+int			ft_get_edges_2(t_mem *mem, t_set *vset);
+int ft_set_insert_vertex(t_set **set, t_vertex *vertex);
+t_vertex *ft_set_get_vertex(t_set *set, char *value);
+int			ft_get_graph_2(t_graph **graph, t_mem *mem, int fd);
 #endif

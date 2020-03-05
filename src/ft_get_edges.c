@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int ft_clear_all(t_hash **edge_hash, int res)
+static int ft_clear_all(t_hash_old **edge_hash, int res)
 {
 	ft_delete_edge_hash(edge_hash, res);
 	return (res);
@@ -35,13 +35,13 @@ t_edgename ft_get_names(char *buf)
 	return (e_names);
 }
 
-int			ft_get_edges(t_graph *graph, t_mem *mem, t_hash **htab)
+int			ft_get_edges(t_graph *graph, t_mem *mem, t_hash_old **htab)
 {
 	t_edgename	e_names;
-	t_hash		**ehash;
+	t_hash_old		**ehash;
+
 	int 		res;
 
-	res = 0;
 	if (!(ehash = ft_init_hash(HASH_SIZE)))
 		return (0);
 	while (mem->current[0])
@@ -62,4 +62,36 @@ int			ft_get_edges(t_graph *graph, t_mem *mem, t_hash **htab)
 		ft_get_next_pointer(mem);
 	}
 	return (ft_delete_edge_hash(ehash, 1));
+}
+
+
+int			ft_get_edges_2(t_mem *mem, t_set *vset)
+{
+	t_vertex *vertex1;
+	t_vertex *vertex2;
+	char *second_name;
+	char *first_name;
+
+	while (mem->current[0])
+	{
+		if (mem->current[0] != '#')
+		{
+			if (ft_count_char(mem->current, '-') != 1 || \
+				ft_count_char(mem->current, ' ') > 0)
+				return (-11);
+			second_name = ft_strchr(mem->current, '-');
+			*second_name++ = 0;
+			first_name = mem->current;
+			vertex1 = ft_set_get_vertex(vset, first_name);
+			vertex2 = ft_set_get_vertex(vset, second_name);
+			if (vertex1 == NULL || vertex2 == NULL)
+				return (-42); //no_vertex
+			if (vertex1 == vertex2)
+				return (-34);//loop_edge
+			ft_add_edge(vertex1, vertex2, 0, 0, 1);
+			*(--second_name) = '-';
+		}
+		ft_get_next_pointer(mem);
+	}
+	return (1);
 }

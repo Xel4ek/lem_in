@@ -42,7 +42,7 @@ set(SRC
         src/ft_accept_path.c
         src/ft_get_pash_len.c
         src/ft_del_graph.c
-        src/ft_remove_zero_flow.c)
+        src/ft_remove_zero_flow.c src/ft_set_insert_vertex.c)
 
 
 include_directories(lib/libft/includes)

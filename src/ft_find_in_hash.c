@@ -13,10 +13,10 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, unsigned int hash)
+t_vertex *ft_find_vertex_in_hash(t_hash_old **hashtab, char *name, unsigned int hash)
 {
 	unsigned int	i;
-	t_hash			*temp;
+	t_hash_old			*temp;
 	t_vertex		*vertex;
 
 	vertex = NULL;
@@ -24,6 +24,7 @@ t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, unsigned int hash
 	if (!hashtab[i])
 		return (NULL);
 	temp = hashtab[i];
+
 	while (temp)
 	{
 		vertex = (t_vertex *)temp->content;
@@ -36,10 +37,10 @@ t_vertex *ft_find_vertex_in_hash(t_hash **hashtab, char *name, unsigned int hash
 	return (NULL);
 }
 
-int		ft_find_edge_in_hash(t_hash **hashtab, char *name, unsigned int hash)
+int		ft_find_edge_in_hash(t_hash_old **hashtab, char *name, unsigned int hash)
 {
 	unsigned int	i;
-	t_hash			*temp;
+	t_hash_old			*temp;
 	char			*str;
 
 	i = hash;
@@ -58,10 +59,10 @@ int		ft_find_edge_in_hash(t_hash **hashtab, char *name, unsigned int hash)
 	return (0);
 }
 
-int		ft_find_coord_in_hash(t_hash **hashtab, t_coord *coord)
+int		ft_find_coord_in_hash(t_hash_old **hashtab, t_coord *coord)
 {
 	unsigned int	i;
-	t_hash			*temp;
+	t_hash_old			*temp;
 	t_coord			*hashcoord;
 
 	i = (coord->x + coord->y) % HASH_SIZE;

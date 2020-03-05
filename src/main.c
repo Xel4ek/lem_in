@@ -80,10 +80,12 @@ int			main(void)
 	t_mem	*memory;
 	int		res;
 
-	fd = 0;
+	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_6", O_RDONLY);
+//	fd = open("../50k_5543", O_RDONLY);
+//	fd = 0;
 	if (!(memory = ft_init_memory()))
 		return (0);
-	if ((res = ft_get_graph(&graph, memory, fd)) <= 0)
+	if ((res = ft_get_graph_2(&graph, memory, fd)) <= 0)
 	{
 		ft_clear_all(&memory, &graph);
 		return (ft_print_error(res));
