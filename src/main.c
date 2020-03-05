@@ -18,12 +18,12 @@
 
 static void	ft_clear_all(t_mem **mem, t_graph **graph)
 {
-	if (!mem && !(*mem))
+	if (mem && (*mem))
 	{
 		ft_memdel((void **)&(*mem)->head);
 		ft_memdel((void **)mem);
 	}
-	if (!graph && !*graph)
+	if (graph && *graph)
 		ft_del_graph(graph);
 }
 
@@ -80,9 +80,7 @@ int			main(void)
 	t_mem	*memory;
 	int		res;
 
-	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_6", O_RDONLY);
-//	fd = open("../50k_5543", O_RDONLY);
-//	fd = 0;
+	fd = 0;
 	if (!(memory = ft_init_memory()))
 		return (0);
 	if ((res = ft_get_graph_2(&graph, memory, fd)) <= 0)

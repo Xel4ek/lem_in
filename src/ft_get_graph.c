@@ -50,28 +50,29 @@ int			ft_get_graph(t_graph **graph, t_mem *mem, int fd)
 
 int			ft_get_graph_2(t_graph **graph, t_mem *mem, int fd)
 {
-	t_set *vset;
+	t_set	*vset;
+	int 	res;
 
 	vset = NULL;
-	if (fast_read_in_memory(fd, mem) < 0 )
+	res = 1;
+	if (fast_read_in_memory(fd, mem) < 0)
 		return (-3);
 	if (mem->head[0] == 0)
 		return (-14);
 	if (!(*graph = ft_init_graph()))
-		return (0);
-	if (((*graph)->ants_count = (long int)ft_get_ants_count(mem)) < 0)
-		return (-1);
-	if(!ft_get_vertex_2(*graph, mem, &vset))
-		return (-1);
-	if (!(mem->current[0]))
-		return (-1);
-	if (!((*graph)->sink && (*graph)->source))
-		return (-10);
-	if ((ft_get_edges_2(mem, vset)) <= 0)
-		return (-13);
-	return (1);
-//	if ((res = ft_get_vertex(*graph, mem, &hptrs)) <= 0)
-//		return (ft_clear_all(hptrs.vhash, res));
-
+		res = 0;
+	if (res > 0)
+		res = ft_get_ants_count(mem);
+	(*graph)->ants_count = (long int)res;
+	if (res > 0)
+		res = ft_get_vertex_2(*graph, mem, &vset);
+	if (!((*graph)->sink && (*graph)->source) && res > 0)
+		res = -10;
+	if (!(mem->current[0]) && res > 0)
+		res = -9;
+	if (res > 0)
+		res = ft_get_edges_2(mem, vset);
+	ft_set_destroy(&vset);
+	return (res);
 }
 

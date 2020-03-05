@@ -102,13 +102,13 @@ int	ft_get_vertex(t_graph *graph, t_mem *mem, t_hptrs *hptrs)
 	return (err);
 }
 
-static int ft_vertex_validate(char *src,char **name, char **point)
+static int ft_vertex_validate(char *src, char **name, char **point)
 {
-	int vlen;
-	char *x;
-	char *y;
+	int		vlen;
+	char	*x;
+	char	*y;
 
-	if (*src == 'L')
+	if (*src == 'L' || *src == '#' || !*src || ft_strchr(src, '-'))
 		return (-2);
 	vlen = ft_char_in_str(src, ' ');
 	*name = ft_strnew(vlen + 1);
@@ -128,26 +128,31 @@ static int
 ft_get_new_vertex_2(t_graph *graph, char *src, int id, t_set **vset, t_set **coords)
 {
 	t_vertex	*vertex;
-	char *name;
-	char *point;
+	char		*name;
+	char		*point;
+	int 		res;
 
-	if (ft_vertex_validate(src,&name, &point) != 1)
-		return (-3); //invalid input data
+	res = 1;
+	if (ft_vertex_validate(src, &name, &point) != 1)
+		return (-2);
 	vertex = ft_new_verex(id, name);
 	vertex = ft_add_vertex_back(graph, vertex);
 	if (!ft_set_insert_vertex(vset, vertex))
-		return (-1);
-	if (!ft_set_insert(coords, point))
-		return (-2);
-	graph->source = (vertex->id == 0) ? vertex : graph->source;
-	graph->sink = (vertex->id == -2) ? vertex : graph->sink;
+		res = -6;
+	if (res > 0 && !ft_set_insert(coords, point))
+		res = -5;
+	if (res > 0)
+	{
+		graph->source = (vertex->id == 0) ? vertex : graph->source;
+		graph->sink = (vertex->id == -2) ? vertex : graph->sink;
+	}
 	ft_memdel((void**)&name);
 	ft_memdel((void**)&point);
-	return (1);
+	return (res);
 }
 
 static int
-ft_get_start_end_2(t_graph *graph, t_mem *mem,  t_set **vset, t_set **coords)
+ft_get_start_end_2(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
 {
 	int status;
 
@@ -189,7 +194,7 @@ int	ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset)
 		if (err <= 0)
 			break ;
 	}
-//	ft_delete_coord_hash(hptrs->chash, 0);
+	ft_set_destroy(&coords);
 	return (err);
 }
 
