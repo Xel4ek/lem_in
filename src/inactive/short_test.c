@@ -4,29 +4,29 @@
 #include <fcntl.h>
 #include <unistd.h>
 
-void ft_print_vertex(t_vertex *vertex)
-{
-	if (!vertex)
-	{
-		ft_printf("No vertex");
-		return;
-	}
-	if (vertex->parrent)
-		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
-				  vertex->id,
-				  vertex->name,
-				  vertex->parrent->id,
-				  vertex->color,
-				  vertex->weight);
-	else
-		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
-				  vertex->id,
-				  vertex->name,
-				  0,
-				  vertex->color,
-				  vertex->weight);
-
-}
+//void ft_print_vertex(t_vertex *vertex)
+//{
+//	if (!vertex)
+//	{
+//		ft_printf("No vertex");
+//		return;
+//	}
+//	if (vertex->parrent)
+//		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
+//				  vertex->id,
+//				  vertex->name,
+//				  vertex->parrent->id,
+//				  vertex->color,
+//				  vertex->weight);
+//	else
+//		ft_printf("{%d, %s, parent: %d, color: %d, weight: %d}\n",
+//				  vertex->id,
+//				  vertex->name,
+//				  0,
+//				  vertex->color,
+//				  vertex->weight);
+//
+//}
 
 
 int main()
@@ -89,7 +89,7 @@ int main()
 		printf(" %2d(%2d) |\n", cost ,ncost );
 	}
 	printf("*\t|-------|------|------|--------|\n");
-
+	printf("%lu\n", sizeof(size_t));
 //	printf(" %d", flow);
 //	printf(" %d", flow);
 //	printf(" %d", flow);

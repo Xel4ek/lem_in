@@ -66,14 +66,14 @@ DEPS			=	includes/lem_in.h
 .PHONY: all clean fclean re
 
 all: $(NAME)
-
+	@$(MAKE) -C $(LIBFTDIR)
 %.o:%.c $(DEPS)
 	            gcc $(CFLAG) $(INCL) -c $< -o $@
 
 $(LFT):
 				@$(MAKE) -C $(LIBFTDIR)
 
-$(NAME): $(LFT) $(OBJ)
+$(NAME): $(LFT) $(OBJ) lib/libft/libft.a
 				gcc $(CFLAGS) $(OBJ) $(INCL) $(LFTFLAG) -o $(NAME)
 
 clean:

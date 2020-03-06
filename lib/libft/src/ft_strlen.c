@@ -15,47 +15,46 @@
 
 static inline long long int	ft_result(const char *char_ptr, const char *str)
 {
-		if (char_ptr[0] == 0)
-			return (char_ptr - str);
-		if (char_ptr[1] == 0)
-			return (char_ptr - str + 1);
-		if (char_ptr[2] == 0)
-			return (char_ptr - str + 2);
-		if (char_ptr[3] == 0)
-			return (char_ptr - str + 3);
-		if (char_ptr[4] == 0)
-			return (char_ptr - str + 4);
-		if (char_ptr[5] == 0)
-			return (char_ptr - str + 5);
-		if (char_ptr[6] == 0)
-			return (char_ptr - str + 6);
-		if (char_ptr[7] == 0)
-			return (char_ptr - str + 7);
+	if (char_ptr[0] == 0)
+		return (char_ptr - str);
+	if (char_ptr[1] == 0)
+		return (char_ptr - str + 1);
+	if (char_ptr[2] == 0)
+		return (char_ptr - str + 2);
+	if (char_ptr[3] == 0)
+		return (char_ptr - str + 3);
+	if (char_ptr[4] == 0)
+		return (char_ptr - str + 4);
+	if (char_ptr[5] == 0)
+		return (char_ptr - str + 5);
+	if (char_ptr[6] == 0)
+		return (char_ptr - str + 6);
+	if (char_ptr[7] == 0)
+		return (char_ptr - str + 7);
 	return (-1);
 }
 
-size_t ft_strlen(const char *str)
+size_t						ft_strlen(const char *str)
 {
-	const char *char_ptr;
-	const unsigned long long int *longword_ptr;
-	unsigned long long int longword;
-	long long int temp;
+	const char						*char_ptr;
+	const unsigned long long int	*longword_ptr;
+	unsigned long long int			longword;
+	long long int					temp;
 
 	char_ptr = str;
-	while (((unsigned long long int) char_ptr) & (sizeof(longword) - 1) )
+	while (((unsigned long long int)char_ptr) & (sizeof(longword) - 1))
 		if (*char_ptr++ == 0)
 			return (char_ptr - str - 1);
-	longword_ptr = (unsigned long long int *) char_ptr;
+	longword_ptr = (unsigned long long int *)char_ptr;
 	while (1)
 	{
 		longword = *longword_ptr++;
 		if (((longword - LOMAGIC) & ~longword & HIMAGIC) != 0)
 		{
-			char_ptr = (const char *) (longword_ptr - 1);
+			char_ptr = (const char *)(longword_ptr - 1);
 			temp = ft_result(char_ptr, str);
 			if (temp != -1)
-				return temp;
+				return (temp);
 		}
-
 	}
 }

@@ -27,7 +27,7 @@ void	ft_hash_del_2(t_hash **hash_tab, size_t size)
 		item = (*hash_tab)[size].next;
 		while (item)
 		{
-			ft_memdel((void **) &item);
+			ft_memdel((void **)&item);
 			item = item->next;
 		}
 	}

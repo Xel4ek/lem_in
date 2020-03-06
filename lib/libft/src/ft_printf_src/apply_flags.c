@@ -106,7 +106,7 @@ void	apply_width(t_param *param, char *prefix, int len)
 
 int		apply_flags(t_param *param)
 {
-	size_t		len;
+	size_t	len;
 	char	*temp;
 	char	prefix[3];
 

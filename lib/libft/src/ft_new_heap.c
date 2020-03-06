@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_new_heap.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hwolf <marvin@42.fr>                       +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2019/06/10 15:44:46 by hwolf             #+#    #+#             */
+/*   Updated: 2019/06/11 19:01:26 by hwolf            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 t_heap	*ft_new_heap(void const *value, size_t key, size_t content_size)
@@ -8,7 +20,6 @@ t_heap	*ft_new_heap(void const *value, size_t key, size_t content_size)
 		return (NULL);
 	if (value)
 	{
-
 		if (!(new_heap->value = malloc(content_size)))
 		{
 			ft_memdel((void**)&new_heap);

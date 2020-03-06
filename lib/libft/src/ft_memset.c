@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *dst, int c, size_t n)
 {
-	unsigned long			*dst_ptr;
-	unsigned long			cccc;
+	unsigned long	*dst_ptr;
+	unsigned long	cccc;
 	unsigned char	*dst_ptr_char;
 	size_t			long_len;
 
@@ -33,7 +33,6 @@ void	*ft_memset(void *dst, int c, size_t n)
 	if (n)
 	{
 		dst_ptr_char = (unsigned char*)dst_ptr;
-
 		while (n--)
 			*(dst_ptr_char++) = c;
 	}

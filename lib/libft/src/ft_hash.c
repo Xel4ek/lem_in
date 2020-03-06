@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hash_old.c                                          :+:      :+:    :+:   */
+/*   ft_hash.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,9 +12,10 @@
 
 #include "libft.h"
 
-unsigned int	ft_hash_old(const char *string, unsigned int size)
+unsigned int	ft_hash_old(const char *string, \
+				unsigned int size)
 {
-	unsigned long int hash;
+	unsigned long int	hash;
 
 	hash = 0;
 	if (string)
@@ -23,10 +24,10 @@ unsigned int	ft_hash_old(const char *string, unsigned int size)
 	return (hash % size);
 }
 
-t_hash ft_hash(const char *string, unsigned int size)
+t_hash			ft_hash(const char *string, unsigned int size)
 {
-	t_hash hash;
-	unsigned long int key;
+	t_hash				hash;
+	unsigned long int	key;
 
 	key = 0;
 	hash.value = (void*)string;
@@ -36,37 +37,15 @@ t_hash ft_hash(const char *string, unsigned int size)
 	hash.key = key;
 	hash.index = key % size;
 	hash.next = NULL;
-	return hash;
+	return (hash);
 }
 
-
-//static t_set *ft_set_cpy(t_set *src, t_set *dst)
-//{
-//	int i;
-//	t_hash hash;
-//	t_hash *item;
-//	i = src->capacity;
-//	while(i--)
-//	{
-//		hash = src->hashtab[i];
-//		while (hash.value)
-//		{
-//			hash.index = hash.key % dst->capacity;
-//			ft_hash_insert(dst->hashtab, hash);
-//			dst->size++;
-//			if (hash.next)
-//				hash = *(hash.next);
-//			else
-//				break;
-//		}
-//	}
-//	return (dst);
-//}
-void ft_hash_destroy(t_hash **hashtab, size_t size)
+void			ft_hash_destroy(t_hash **hashtab, size_t size)
 {
-	t_hash *hash;
-	t_hash *keep;
-	while(size--)
+	t_hash	*hash;
+	t_hash	*keep;
+
+	while (size--)
 	{
 		hash = ((*hashtab) + size)->next;
 		while (hash)
@@ -82,7 +61,7 @@ void ft_hash_destroy(t_hash **hashtab, size_t size)
 unsigned int	ft_hash_int(const int *tab,
 			unsigned int len, const unsigned int size)
 {
-	unsigned int hash;
+	unsigned int	hash;
 
 	hash = 0;
 	if (tab)

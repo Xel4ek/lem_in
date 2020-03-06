@@ -113,7 +113,8 @@ SRC =	ft_atoi_base.c \
         ft_heap_merge.c \
         fast_get_next_line.c \
         ft_hash_tab.c \
-        ft_set.c
+        ft_set.c \
+        ft_set_2.c
 
 
 SRCDIR = src

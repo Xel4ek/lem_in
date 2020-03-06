@@ -77,7 +77,8 @@ int			main(void)
 	int		fd;
 	int		res;
 
-	fd = STDIN_FILENO;
+	fd = open("../50k_5543", O_RDONLY);
+	//fd = STDIN_FILENO;
 	if (!(ft_init(&memory, &graph)))
 		return (0);
 	if ((res = ft_get_graph(graph, memory, fd)) <= 0)

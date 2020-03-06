@@ -14,30 +14,33 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-static t_mem *ft_realloc_mem(t_mem *memory, size_t dif)
+static t_mem	*ft_realloc_mem(t_mem *memory, size_t dif)
 {
-	char *new_memory;
-	if(!(new_memory = (char*)malloc(((memory->size + dif) * 2  + 1) * sizeof(char))))
-		return NULL;
+	char	*new_memory;
+
+	if (!(new_memory = (char*)malloc(((memory->size + dif) * 2 + 1) * \
+	sizeof(char))))
+		return (NULL);
 	new_memory = ft_memcpy(new_memory, memory->head, memory->size + 1);
 	memory->size = (memory->size + dif) * 2;
 	memory->current = (memory->current - memory->head) + new_memory;
-	memory->end = (memory->end - memory->head)  + new_memory;
-	memory->endl = (memory->endl - memory->head)  + new_memory;
+	memory->end = (memory->end - memory->head) + new_memory;
+	memory->endl = (memory->endl - memory->head) + new_memory;
 	ft_memdel((void**)&(memory->head));
 	memory->head = new_memory;
 	return (memory);
 }
 
-static char	*ft_strjoin_mem(t_mem *const memory, char *const string)
+static char		*ft_strjoin_mem(t_mem *const memory, char *const string)
 {
-	long long int dif;
-	size_t	len;
+	long long int	dif;
+	size_t			len;
 
 	if (memory && string)
 	{
 		len = ft_strlen(string);
-		dif = (long long int) (((memory->end - memory->head) + len) - memory->size);
+		dif = (long long int)(((memory->end - memory->head) + len) - \
+		memory->size);
 		if (dif > 0)
 			if (!ft_realloc_mem(memory, dif))
 				return (0);
@@ -48,10 +51,11 @@ static char	*ft_strjoin_mem(t_mem *const memory, char *const string)
 	return (NULL);
 }
 
-int				fast_get_next_line(const int fd, char **line, t_mem *const memory)
+int				fast_get_next_line(const int fd, char **line, \
+				t_mem *const memory)
 {
-	char		buf[BUFF_SIZE + 1];
-	int			ret;
+	char	buf[BUFF_SIZE + 1];
+	int		ret;
 
 	if (fd < 0 || line == NULL || read(fd, buf, 0) < 0)
 		return (-1);
@@ -71,13 +75,13 @@ int				fast_get_next_line(const int fd, char **line, t_mem *const memory)
 		return (1);
 	}
 	*line = NULL;
-	return  (0);
+	return (0);
 }
 
 int				fast_read_in_memory(const int fd, t_mem *const memory)
 {
-	char		buf[BUFF_SIZE + 1];
-	int			ret;
+	char	buf[BUFF_SIZE + 1];
+	int		ret;
 
 	if (fd < 0 || read(fd, buf, 0) < 0)
 		return (-1);
@@ -87,5 +91,5 @@ int				fast_read_in_memory(const int fd, t_mem *const memory)
 		ft_strjoin_mem(memory, buf);
 	}
 	memory->current = NULL;
-	return  (0);
+	return (0);
 }
