@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d85affb-f298-4c54-80bd-59b65d29d31b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YcXAlal8pXUbScXTj39xvQFuil" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="vis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="vis" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/vis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.vis" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d85affb-f298-4c54-80bd-59b65d29d31b" name="Default Changelist" comment="" />
+      <created>1583242716157</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583242716157</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="279" y="28" key="#Notifications" timestamp="1583246080365">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="279" y="28" key="#Notifications/0.0.1366.732@0.0.1366.732" timestamp="1583246080365" />
+    <state x="142" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583245417497">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="142" y="24" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.732@0.0.1366.732" timestamp="1583245417497" />
+    <state width="1343" height="161" key="GridCell.Tab.0.bottom" timestamp="1583489494791">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="161" key="GridCell.Tab.0.bottom/0.0.1366.732@0.0.1366.732" timestamp="1583489494791" />
+    <state width="1343" height="161" key="GridCell.Tab.0.center" timestamp="1583489494785">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="161" key="GridCell.Tab.0.center/0.0.1366.732@0.0.1366.732" timestamp="1583489494785" />
+    <state width="1343" height="161" key="GridCell.Tab.0.left" timestamp="1583489494783">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="161" key="GridCell.Tab.0.left/0.0.1366.732@0.0.1366.732" timestamp="1583489494783" />
+    <state width="1343" height="161" key="GridCell.Tab.0.right" timestamp="1583489494788">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="161" key="GridCell.Tab.0.right/0.0.1366.732@0.0.1366.732" timestamp="1583489494788" />
+    <state width="1343" height="267" key="GridCell.Tab.1.bottom" timestamp="1583315714781">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="267" key="GridCell.Tab.1.bottom/0.0.1366.732@0.0.1366.732" timestamp="1583315714781" />
+    <state width="1343" height="267" key="GridCell.Tab.1.center" timestamp="1583315714760">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="267" key="GridCell.Tab.1.center/0.0.1366.732@0.0.1366.732" timestamp="1583315714760" />
+    <state width="1343" height="267" key="GridCell.Tab.1.left" timestamp="1583315714735">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="267" key="GridCell.Tab.1.left/0.0.1366.732@0.0.1366.732" timestamp="1583315714735" />
+    <state width="1343" height="267" key="GridCell.Tab.1.right" timestamp="1583315714763">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="1343" height="267" key="GridCell.Tab.1.right/0.0.1366.732@0.0.1366.732" timestamp="1583315714763" />
+    <state width="683" height="366" key="XDebugger.FullValuePopup" timestamp="1583254405940">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state width="683" height="366" key="XDebugger.FullValuePopup/0.0.1366.732@0.0.1366.732" timestamp="1583254405940" />
+    <state x="364" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1583487315550">
+      <screen x="0" y="0" width="1366" height="732" />
+    </state>
+    <state x="364" y="192" key="com.intellij.ide.util.TipDialog/0.0.1366.732@0.0.1366.732" timestamp="1583487315550" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/venv/vis.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
