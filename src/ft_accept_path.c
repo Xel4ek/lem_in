@@ -34,13 +34,14 @@ static size_t	ft_test_push_ants(const int *len, int size, int ant_count)
 
 int				ft_accept_path(t_graph *graph)
 {
-	int		len[graph->pash_count];
+	int		*len;
 	int		count;
-	int		index;
-	size_t	steps;
+	size_t	index;
 	t_list	*list;
 
 	index = 0;
+	if(!(len = (int*)malloc(sizeof(*len) * graph->pash_count)))
+		return (0);
 	list = graph->sink->edge_out_list;
 	count = ft_lstdlen(graph->sink->edge_out_list);
 	while (count--)
@@ -51,9 +52,10 @@ int				ft_accept_path(t_graph *graph)
 		list = list->next;
 	}
 	ft_quick_sort(len, len + graph->pash_count - 1);
-	steps = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
-	if (steps > graph->path_lenght)
+	index = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
+	ft_memdel((void**)&len);
+	if (index > graph->path_lenght)
 		return (0);
-	graph->path_lenght = steps;
+	graph->path_lenght = index;
 	return (1);
 }
