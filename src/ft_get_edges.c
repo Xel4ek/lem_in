@@ -13,57 +13,6 @@
 #include "lem_in.h"
 #include "libft.h"
 
-//static int ft_free_alloceted(t_hash_old **edge_hash, int res)
-//{
-//	ft_delete_edge_hash(edge_hash, res);
-//	return (res);
-//}
-
-//t_edgename ft_get_names(char *buf)
-//{
-//	t_edgename	e_names;
-//	int 		i;
-//
-//	i = ft_char_in_str(buf, '-');
-//	e_names.name1 = NULL;
-//	e_names.name2 = NULL;
-//	if (i >= 0)
-//	{
-//		e_names.name1 = ft_strsub(buf, 0, i);
-//		e_names.name2 = ft_strsub(buf, i + 1, ft_strlen(buf + i));
-//	}
-//	return (e_names);
-//}
-
-//int			ft_get_edges(t_graph *graph, t_mem *mem, t_hash_old **htab)
-//{
-//	t_edgename	e_names;
-//	t_hash_old		**ehash;
-//
-//	int 		res;
-//
-//	if (!(ehash = ft_init_hash(HASH_SIZE)))
-//		return (0);
-//	while (mem->current[0])
-//	{
-//		if (mem->current[0] != '#')
-//		{
-//			if (ft_count_char(mem->current, '-') != 1 || \
-//				ft_count_char(mem->current, ' ') > 0)
-//				return (ft_free_alloceted(ehash, -11));
-//			e_names = ft_get_names(mem->current);
-//			if ((res = ft_check_n_add_edge(&e_names, ehash, htab)) <= 0)
-//				return (ft_free_alloceted(ehash, res));
-//		}
-//		else if (mem->current[1] != '#')
-//			;
-//		else if (!ft_strcmp(START, mem->current) || !ft_strcmp(END, mem->current))
-//			return (ft_free_alloceted(ehash, -8));
-//		ft_get_next_pointer(mem);
-//	}
-//	return (ft_delete_edge_hash(ehash, 1));
-//}
-
 static int 		ft_get_new_edge(t_mem *mem, t_set *vset)
 {
 	t_vertex	*vertex1;
@@ -90,7 +39,6 @@ static int 		ft_get_new_edge(t_mem *mem, t_set *vset)
 	*(--second_name) = '-';
 	return (1);
 }
-
 
 int				ft_get_edges(t_mem *mem, t_set *vset)
 {

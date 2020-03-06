@@ -14,40 +14,6 @@
 #include "libft.h"
 #include <unistd.h>
 
-//static int ft_free_alloceted(t_hash_old **hashtab, int res)
-//{
-//	ft_delete_hashtab(hashtab, res);
-//	return (res);
-//}
-//
-//int			ft_get_graph(t_graph **graph, t_mem *mem, int fd)
-//{
-//	t_hptrs		hptrs;
-//	int 		res;
-//
-//	if (fast_read_in_memory(fd, mem) < 0 )
-//		return (-3);
-//	if (mem->head[0] == 0)
-//		return (-14);
-//	if (!(hptrs.vhash = ft_init_hash(HASH_SIZE)))
-//		return (0);
-//	if (!(*graph = ft_init_graph()))
-//		return (ft_delete_hashtab(hptrs.vhash, 0));
-//	hptrs.chash = NULL;
-//	if ((res = ft_get_ants_count(mem)) < 0)
-//		return (ft_free_alloceted(hptrs.vhash, res));
-//	(*graph)->ants_count = (long int)res;
-//	if ((res = ft_get_vertex(*graph, mem, &hptrs)) <= 0)
-//		return (ft_free_alloceted(hptrs.vhash, res));
-//	if (!(mem->current[0]))
-//		return (ft_free_alloceted(hptrs.vhash, -9));
-//	if (!((*graph)->sink) || !((*graph)->source))
-//		return (ft_free_alloceted(hptrs.vhash, -10));
-//	if ((res = ft_get_edges(*graph, mem, hptrs.vhash)) <= 0)
-//		return (ft_free_alloceted(hptrs.vhash,  res));
-//	return (ft_free_alloceted(hptrs.vhash, 1));
-//}
-
 int			ft_get_graph(t_graph *graph, t_mem *mem, int fd)
 {
 	t_set	*vset;
