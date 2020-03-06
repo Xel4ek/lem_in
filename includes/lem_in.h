@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   lem_in.h                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2020/03/03 18:54:36 by hwolf             #+#    #+#             */
+/*   Updated: 2020/03/03 18:54:55 by ayooden          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LEM_IN_H
 # define LEM_IN_H
 
@@ -8,9 +20,9 @@
 
 enum				e_color
 {
-					white,
-					grey,
-					black
+	white,
+	grey,
+	black
 };
 
 typedef struct		s_vertex
@@ -25,17 +37,17 @@ typedef struct		s_vertex
 	int				ant_id;
 }					t_vertex;
 
-typedef struct 		s_edge
+typedef struct		s_edge
 {
 	t_vertex		*start;
 	t_vertex		*end;
 	int				flow;
-    int				cost;
-	unsigned int 	param;
-	int 			oriented;
+	int				cost;
+	unsigned int	param;
+	int				oriented;
 }					t_edge;
 
-typedef struct 		s_path
+typedef struct		s_path
 {
 	t_vertex		*head;
 	long int		price;
@@ -61,10 +73,13 @@ int					ft_get_next_pointer(t_mem *mem);
 t_graph				*ft_init_graph(void);
 t_mem				*ft_init_memory(void);
 int					ft_print_error(long int error_code);
-void				ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, unsigned int param);
-t_edge				*ft_new_edge(t_vertex *start, t_vertex *end, unsigned int param);
-t_vertex 			*ft_new_verex(char* name);
-int					ft_add_edge(t_vertex *start, t_vertex *end, unsigned int param);
+void				ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, \
+					unsigned int param);
+t_edge				*ft_new_edge(t_vertex *start, t_vertex *end, \
+					unsigned int param);
+t_vertex			*ft_new_verex(char *name);
+int					ft_add_edge(t_vertex *start, t_vertex *end, \
+					unsigned int param);
 t_vertex			*ft_add_vertex_back(t_graph *graph, t_vertex *vertex);
 void				ft_remove_edge(t_edge **edge);
 void				ft_split_edge(t_edge **edge);
@@ -73,11 +88,12 @@ void				ft_convert_graph_to_oriented(t_graph *graph);
 void				ft_split_vertex(t_graph *graph);
 void				ft_split_all_edges(t_vertex *vertex);
 int					ft_min_cost_flow(t_graph *graph);
-void				ft_reverse_edge_vertex(t_vertex *start,  t_vertex *end);
+void				ft_reverse_edge_vertex(t_vertex *start, t_vertex *end);
 t_path				ft_new_path(t_vertex *path_head, t_vertex *source);
 void				ft_push_ant(t_path *path_list, t_graph *graph, int *id);
-long int 			ft_set_ant_to_pash(size_t total_ant, t_path *path_list, int pash_count);
-t_path 				*ft_new_path_list(t_graph *graph);
+long int			ft_set_ant_to_pash(size_t total_ant, t_path *path_list, \
+					int pash_count);
+t_path				*ft_new_path_list(t_graph *graph);
 int					ft_accept_path(t_graph *graph);
 int					ft_get_pash_len(const t_graph *graph, t_vertex *vertex);
 void				ft_del_graph(t_graph **graph);

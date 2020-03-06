@@ -13,13 +13,13 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_new_verex(char* name)
+t_vertex	*ft_new_verex(char *name)
 {
-	t_vertex *new_vertex;
+	t_vertex	*new_vertex;
 
-	if(!(new_vertex = (t_vertex*)ft_memalloc(sizeof(t_vertex))))
+	if (!(new_vertex = (t_vertex*)ft_memalloc(sizeof(t_vertex))))
 		return (NULL);
-	if(!(new_vertex->name = (char*)ft_memalloc(ft_strlen(name) + 1)))
+	if (!(new_vertex->name = (char*)ft_memalloc(ft_strlen(name) + 1)))
 	{
 		ft_memdel((void**)&new_vertex);
 		return (NULL);

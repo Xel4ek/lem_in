@@ -40,7 +40,7 @@ int				ft_accept_path(t_graph *graph)
 	t_list	*list;
 
 	index = 0;
-	if(!(len = (int*)malloc(sizeof(*len) * graph->pash_count)))
+	if (!(len = (int*)malloc(sizeof(*len) * graph->pash_count)))
 		return (0);
 	list = graph->sink->edge_out_list;
 	count = ft_lstdlen(graph->sink->edge_out_list);

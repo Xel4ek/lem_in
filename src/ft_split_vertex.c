@@ -13,13 +13,13 @@
 #include "lem_in.h"
 #include "libft.h"
 
-void ft_split_vertex(t_graph *graph)
+void	ft_split_vertex(t_graph *graph)
 {
-	t_vertex *new_vertex;
-	t_vertex *current;
-	size_t len;
+	t_vertex	*new_vertex;
+	t_vertex	*current;
+	size_t		len;
 
-	current = (t_vertex *) graph->vertex_list->content;
+	current = (t_vertex *)graph->vertex_list->content;
 	if (current != graph->source && current != graph->sink)
 	{
 		new_vertex = ft_new_verex(current->name);
@@ -28,10 +28,10 @@ void ft_split_vertex(t_graph *graph)
 		current->edge_out_list = NULL;
 		len = ft_lstdlen(new_vertex->edge_out_list);
 		ft_add_vertex_back(graph, new_vertex);
-		new_vertex = (t_vertex *) graph->vertex_list->prev->content;
+		new_vertex = (t_vertex *)graph->vertex_list->prev->content;
 		while (len--)
 		{
-			(*(t_edge **) new_vertex->edge_out_list->content)->start =
+			(*(t_edge **)new_vertex->edge_out_list->content)->start =
 					new_vertex;
 			new_vertex->edge_out_list = new_vertex->edge_out_list->next;
 		}

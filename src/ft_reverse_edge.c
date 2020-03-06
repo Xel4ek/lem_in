@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "lem_in.h"
 
-void ft_reverse_edge_vertex(t_vertex *start, t_vertex *end)
+void	ft_reverse_edge_vertex(t_vertex *start, t_vertex *end)
 {
 	size_t start_len;
 	size_t end_len;
@@ -32,7 +32,7 @@ void ft_reverse_edge_vertex(t_vertex *start, t_vertex *end)
 				ft_add_edge(end, start,
 					(((*(t_edge**)end->edge_in_list->content)->param ^ 9u)));
 				ft_remove_edge(((t_edge**)end->edge_in_list->content));
-				return;
+				return ;
 			}
 			end->edge_in_list = end->edge_in_list->next;
 		}

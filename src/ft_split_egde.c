@@ -13,17 +13,16 @@
 #include "libft.h"
 #include "lem_in.h"
 
-void ft_split_edge(t_edge **edge)
+void	ft_split_edge(t_edge **edge)
 {
 	if (*edge && !(*edge)->oriented)
 	{
 		(*edge)->oriented = 1;
 		ft_add_edge((*edge)->end, (*edge)->start, 10);
-
 	}
 }
 
-void ft_split_all_edges(t_vertex *vertex)
+void	ft_split_all_edges(t_vertex *vertex)
 {
 	size_t edge_count;
 

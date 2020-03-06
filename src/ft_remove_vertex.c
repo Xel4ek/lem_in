@@ -13,8 +13,9 @@
 #include "libft.h"
 #include "lem_in.h"
 
-void ft_remove_vertex(t_graph **graph, t_vertex **vertex){
-	if(vertex && *vertex)
+void	ft_remove_vertex(t_graph **graph, t_vertex **vertex)
+{
+	if (vertex && *vertex)
 	{
 		while ((*vertex)->edge_in_list)
 			ft_remove_edge((t_edge**)(*vertex)->edge_in_list->content);

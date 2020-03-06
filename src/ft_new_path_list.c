@@ -12,18 +12,18 @@
 
 #include "lem_in.h"
 #include "libft.h"
-static void ft_pswap(t_path *first, t_path *second)
+
+static void	ft_pswap(t_path *first, t_path *second)
 {
-	t_path temp;
+	t_path	temp;
 
 	temp = *second;
 	*second = *first;
 	*first = temp;
 }
 
-
-static void	ft_psort_helper(t_path **pivot_left,
-							   t_path **pivot_right,long int pivot)
+static void	ft_psort_helper(t_path **pivot_left, \
+			t_path **pivot_right, long int pivot)
 {
 	while (*pivot_left < *pivot_right)
 	{
@@ -41,11 +41,11 @@ static void	ft_psort_helper(t_path **pivot_left,
 	}
 }
 
-static void		ft_psort(t_path *start, t_path *finish)
+static void	ft_psort(t_path *start, t_path *finish)
 {
-	t_path *pivot_left;
-	t_path *pivot_right;
-	long int pivot;
+	t_path		*pivot_left;
+	t_path		*pivot_right;
+	long int	pivot;
 
 	pivot_left = start;
 	pivot_right = finish;
@@ -60,22 +60,22 @@ static void		ft_psort(t_path *start, t_path *finish)
 	}
 }
 
-t_path *ft_new_path_list(t_graph *graph)
+t_path		*ft_new_path_list(t_graph *graph)
 {
-	t_path *path_list;
-	t_vertex *vertex;
-	int i;
+	t_path		*path_list;
+	t_vertex	*vertex;
+	int			i;
 
 	if (!(path_list = (t_path*)malloc(graph->pash_count * sizeof(*path_list))))
 		return (NULL);
 	i = graph->pash_count;
 	while (i--)
 	{
-		vertex = (*(t_edge **) (graph->sink->edge_out_list->content))->end;
+		vertex = (*(t_edge **)(graph->sink->edge_out_list->content))->end;
 		path_list[i] = ft_new_path(vertex, graph->source);
 		graph->sink->edge_out_list =
 				graph->sink->edge_out_list->next;
 	}
 	ft_psort(path_list, path_list + graph->pash_count - 1);
-	return path_list;
+	return (path_list);
 }

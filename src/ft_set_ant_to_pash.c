@@ -13,11 +13,12 @@
 #include <ft_printf.h>
 #include "lem_in.h"
 
-long int ft_set_ant_to_pash(size_t total_ant, t_path *path_list, int pash_count)
+long int	ft_set_ant_to_pash(size_t total_ant, t_path *path_list, \
+			int pash_count)
 {
-	int	i;
-	long int price;
-	size_t	sended_ants;
+	int			i;
+	long int	price;
+	size_t		sended_ants;
 
 	price = 0;
 	sended_ants = 0;
