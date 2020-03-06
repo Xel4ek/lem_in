@@ -38,37 +38,37 @@ typedef struct				s_list
 	size_t					content_size;
 }							t_list;
 
-typedef struct 				s_heap
+typedef struct				s_heap
 {
-	int 					key;
+	int						key;
 	int						dist;
 	struct s_heap			*left;
 	struct s_heap			*right;
 	void					*value;
-	size_t 					content_size;
+	size_t					content_size;
 }							t_heap;
 
 typedef struct				s_mem
 {
 	char					*current;
-	char 					*end;
-	char 					*endl;
+	char					*end;
+	char					*endl;
 	char					*head;
-	size_t 					size;
+	size_t					size;
 }							t_mem;
 
 typedef struct				s_hash
 {
 	size_t					key;
 	size_t					index;
-	void	 				*value;
+	void					*value;
 	struct s_hash			*next;
 }							t_hash;
 
-typedef struct 				s_set
+typedef struct				s_set
 {
 	t_hash					*hashtab;
-	size_t 					size;
+	size_t					size;
 	size_t					capacity;
 }							t_set;
 #endif
