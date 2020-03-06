@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int 		ft_get_new_edge(t_mem *mem, t_set *vset)
+static int		ft_get_new_edge(t_mem *mem, t_set *vset)
 {
 	t_vertex	*vertex1;
 	t_vertex	*vertex2;

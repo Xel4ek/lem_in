@@ -17,7 +17,7 @@
 int			ft_get_graph(t_graph *graph, t_mem *mem, int fd)
 {
 	t_set	*vset;
-	int 	res;
+	int		res;
 
 	vset = NULL;
 	res = 1;
@@ -39,4 +39,3 @@ int			ft_get_graph(t_graph *graph, t_mem *mem, int fd)
 	ft_set_destroy(&vset);
 	return (res);
 }
-

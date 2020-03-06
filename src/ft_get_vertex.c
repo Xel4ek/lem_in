@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int ft_vertex_validate(char *src, char **name, char **point)
+static int	ft_vertex_validate(char *src, char **name, char **point)
 {
 	int		vlen;
 	char	*x;
@@ -22,11 +22,15 @@ static int ft_vertex_validate(char *src, char **name, char **point)
 	if (*src == 'L' || *src == '#' || !*src || ft_strchr(src, '-'))
 		return (-2);
 	vlen = ft_char_in_str(src, ' ');
+	if (vlen < 0)
+		return (-2);
 	*name = src;
 	(*name)[vlen] = 0;
 	*point = src + vlen + 1;
 	x = *point;
 	y = ft_strchr(*point, ' ');
+	if (!y)
+		return (-2);
 	*y++ = 0;
 	if (((ft_get_valid_nbr(x)) < 0) || ((ft_get_valid_nbr(y)) < 0))
 		return (-1);
@@ -34,18 +38,18 @@ static int ft_vertex_validate(char *src, char **name, char **point)
 	return (1);
 }
 
-static int
-ft_get_new_vertex(t_graph *graph, t_mem *mem, int id, t_set **vset, t_set **coords)
+static int	ft_get_new_vertex(t_graph *graph, t_mem *mem, \
+			t_set **vset, t_set **coords)
 {
 	t_vertex	*vertex;
 	char		*name;
 	char		*point;
-	int 		res;
+	int			res;
 
 	res = 1;
 	if (ft_vertex_validate(mem->current, &name, &point) != 1)
 		return (-2);
-	vertex = ft_new_verex(id, name);
+	vertex = ft_new_verex(name);
 	vertex = ft_add_vertex_back(graph, vertex);
 	if (!ft_set_insert_vertex(vset, vertex))
 		res = -6;
@@ -55,8 +59,8 @@ ft_get_new_vertex(t_graph *graph, t_mem *mem, int id, t_set **vset, t_set **coor
 	return (res);
 }
 
-static int
-ft_get_start_end(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
+static int	ft_get_start_end(t_graph *graph, t_mem *mem, \
+			t_set **vset, t_set **coords)
 {
 	int status;
 	int	res;
@@ -71,7 +75,7 @@ ft_get_start_end(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
 		return (-7);
 	if (!ft_get_next_pointer(mem))
 		return (-8);
-	res = ft_get_new_vertex(graph, mem, status, vset, coords);
+	res = ft_get_new_vertex(graph, mem, vset, coords);
 	if (res > 0)
 	{
 		if (status == 0)
@@ -83,22 +87,22 @@ ft_get_start_end(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
 	return (res);
 }
 
-int	ft_get_vertex(t_graph *graph, t_mem *mem, t_set **vset)
+int			ft_get_vertex(t_graph *graph, t_mem *mem, t_set **vset)
 {
-	t_set *coords;
-	int id;
-	int err;
+	t_set	*coords;
+	int		id;
+	int		err;
 
 	coords = NULL;
 	id = 2;
 	err = -15;
 	while (ft_get_next_pointer(mem) && (mem->current[0]) && \
-            (mem->current[0] == '#' || ft_count_char(mem->current, ' ') == 2))
+			(mem->current[0] == '#' || ft_count_char(mem->current, ' ') == 2))
 	{
 		err = 1;
 		if (mem->current[0] != '#')
 		{
-			err = ft_get_new_vertex(graph, mem, id, vset, &coords);
+			err = ft_get_new_vertex(graph, mem, vset, &coords);
 			id += 2;
 		}
 		else if (mem->current[1] == '#')
@@ -109,4 +113,3 @@ int	ft_get_vertex(t_graph *graph, t_mem *mem, t_set **vset)
 	ft_set_destroy(&coords);
 	return (err);
 }
-

@@ -15,7 +15,7 @@
 
 static size_t	ft_test_push_ants(const int *len, int size, int ant_count)
 {
-	int	i;
+	int		i;
 	size_t	price;
 	size_t	sended_ants;
 
@@ -27,13 +27,12 @@ static size_t	ft_test_push_ants(const int *len, int size, int ant_count)
 		sended_ants += (len[i] - len[i - 1]) * i;
 		price += (len[i] - len[i - 1]);
 	}
-
 	price += (size_t)ft_ceil_ll((double)(ant_count - sended_ants) / (double)i);
-	price += (size_t) len[0];
+	price += (size_t)len[0];
 	return (price);
 }
 
-int			ft_accept_path(t_graph *graph)
+int				ft_accept_path(t_graph *graph)
 {
 	int		len[graph->pash_count];
 	int		count;

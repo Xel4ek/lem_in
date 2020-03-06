@@ -22,7 +22,7 @@ void ft_split_vertex(t_graph *graph)
 	current = (t_vertex *) graph->vertex_list->content;
 	if (current != graph->source && current != graph->sink)
 	{
-		new_vertex = ft_new_verex(current->id + 1, current->name);
+		new_vertex = ft_new_verex(current->name);
 		new_vertex->edge_out_list = current->edge_out_list;
 		new_vertex->edge_in_list = NULL;
 		current->edge_out_list = NULL;

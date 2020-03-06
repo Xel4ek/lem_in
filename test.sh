@@ -15,7 +15,7 @@ while IFS= read -r -d '' file; do
       CALC_TIME=$(bc <<< "${str//[^0-9\.]/}"+$CALC_TIME)
       fi
     printf "%s\n" "${str}"
-  done < <(./cmake-build-release/lem_in <"${file}" | grep "steps\|number of lines\|total\|calc\|Error\|vertex" | uniq)
+  done < <(./cmake-build-debug/lem_in <"${file}" | grep "steps\|number of lines\|total\|calc\|Error\|vertex" | uniq)
   COUNT=$((COUNT + 1))
   dif=$((num_calc - num_need))
   if [[ dif -gt 0 ]]; then

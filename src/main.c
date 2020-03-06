@@ -77,9 +77,6 @@ int			main(void)
 	int		fd;
 	int		res;
 
-//	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
-//	fd = open("../checker/lemin-tools/maps/valid/map_overflow", O_RDONLY);
-//	fd = open("../50k_5543", O_RDONLY);
 	fd = STDIN_FILENO;
 	if(!(ft_init(&memory, &graph)))
 		return (0);

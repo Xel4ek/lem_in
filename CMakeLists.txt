@@ -32,7 +32,6 @@ set(SRC
 #        src/inactive/ft_check_n_add_edge.c
 #        src/inactive/ft_init_hash.c
         src/ft_get_next_pointer.c
-        src/ft_print_mem.c
         src/ft_init_graph.c
         src/ft_init_memory.c
         src/ft_print_error.c

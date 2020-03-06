@@ -13,7 +13,8 @@
 #include "libft.h"
 #include "lem_in.h"
 
-t_vertex *ft_new_verex(const int vertex_id, char* name){
+t_vertex *ft_new_verex(char* name)
+{
 	t_vertex *new_vertex;
 
 	if(!(new_vertex = (t_vertex*)ft_memalloc(sizeof(t_vertex))))
@@ -29,7 +30,6 @@ t_vertex *ft_new_verex(const int vertex_id, char* name){
 	new_vertex->parrent = 0;
 	new_vertex->weight = 0;
 	new_vertex->potecial = 0;
-	new_vertex->id = vertex_id;
 	ft_strcpy(new_vertex->name, name);
 	return (new_vertex);
 }

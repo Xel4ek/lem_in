@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "lem_in.h"
 
-int ft_get_next_pointer(t_mem *mem)
+int	ft_get_next_pointer(t_mem *mem)
 {
 	if (!mem->current)
 		mem->current = mem->head;
@@ -22,7 +22,8 @@ int ft_get_next_pointer(t_mem *mem)
 		*(mem->endl - 1) = '\n';
 		mem->current = mem->endl;
 	}
-	if ((mem->endl = ft_strch(mem->current, '\n'))) {
+	if ((mem->endl = ft_strch(mem->current, '\n')))
+	{
 		*mem->endl = 0;
 		mem->endl++;
 	}

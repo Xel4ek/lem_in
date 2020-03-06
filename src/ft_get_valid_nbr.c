@@ -41,7 +41,7 @@ static long long int	ft_atoi_ll(const char *str)
 
 int						ft_get_valid_nbr(const char *str)
 {
-	int 			i;
+	int				i;
 	long long int	nbr;
 
 	i = -1;

@@ -106,7 +106,15 @@ SRC =	ft_abs.c \
 		ft_printf_src/parse_tool.c \
 		ft_printf_src/print_tool.c \
 		ft_printf_src/string_tool.c \
-		ft_printf_src/tools.c
+		ft_printf_src/tools.c \
+		ft_new_heap.c \
+        ft_heap_add.c \
+        ft_pop_min_heap.c \
+        ft_heap_merge.c \
+        fast_get_next_line.c \
+        ft_hash_tab.c \
+        ft_set.c
+
 
 SRCDIR = src
 OBJDIR = obj
