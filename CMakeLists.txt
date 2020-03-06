@@ -12,7 +12,6 @@ set(SRC
         src/ft_remove_vertex.c
         src/ft_convert_graph.c
         src/ft_min_cost_flow.c
-        src/ft_set_edge.c
         src/ft_new_edge.c
         src/ft_new_vertex.c
         src/ft_reverse_edge.c

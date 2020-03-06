@@ -16,76 +16,76 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-static void	ft_clear_all(t_mem **mem, t_graph **graph)
+static int ft_init(t_mem **memory, t_graph **graph)
 {
-	if (mem && (*mem))
+	if (!(*memory = ft_init_memory()))
+		return (0);
+	if (!(*graph = ft_init_graph()))
+	{
+		ft_memdel((void **)&(*memory)->head);
+		ft_memdel((void **)memory);
+		return (0);
+	}
+	return (1);
+}
+
+static int	ft_free_alloceted(t_mem **mem, t_graph **graph, int err)
+{
+	if (mem && *mem)
 	{
 		ft_memdel((void **)&(*mem)->head);
 		ft_memdel((void **)mem);
 	}
-	if (graph && *graph)
+	if (graph)
 		ft_del_graph(graph);
+	if (err < 0)
+		ft_print_error(err);
+	return (0);
 }
 
-static void	ft_convert_graph(t_graph **graph)
+static int ft_search_optimal_ways(t_graph *graph)
 {
 	ft_convert_graph_to_oriented(graph);
-	while (ft_min_cost_flow((*graph)))
+	while (ft_min_cost_flow(graph))
 		;
-}
-
-static long int	ft_find_path(t_graph *graph, t_path **path_list)
-{
-	long int tail;
-
 	ft_remove_zero_flow(graph);
-	*path_list = ft_new_path_list(graph);
-	tail = ft_set_ant_to_pash(graph->ants_count, *path_list, graph->pash_count);
-	return (tail);
+	return (graph->pash_count);
 }
 
-static void	ft_print_path(t_path *path_list, t_graph *graph, long int  tail, \
-			t_mem **mem)
+static  void ft_output(t_graph *graph,t_mem *memory)
 {
+	t_path	*path_list;
+	long int tail;
 	int	id;
-
 	id = 0;
-	ft_print_mem(mem);
+
+	path_list = ft_new_path_list(graph);
+	tail = ft_set_ant_to_pash(graph->ants_count, path_list, graph->pash_count);
+	ft_printf("%s\n", memory->head);
 	while (tail--)
 	{
 		ft_push_ant(path_list, graph, &id);
 		ft_printf("\n");
 	}
+	ft_memdel((void**)&path_list);
 }
 
 int			main(void)
 {
 	t_graph	*graph;
-	t_path	*path_list;
-	int		fd;
 	t_mem	*memory;
-	long int		res;
+	int		fd;
+	int		res;
 
 //	fd = open("../checker/lemin-tools/maps/valid/big_sup/map_big_sup_10", O_RDONLY);
 //	fd = open("../50k_5543", O_RDONLY);
 	fd = STDIN_FILENO;
-
-	if (!(memory = ft_init_memory()))
+	if(!(ft_init(&memory, &graph)))
 		return (0);
-	if ((res = ft_get_graph_2(&graph, memory, fd)) <= 0)
-	{
-		ft_clear_all(&memory, &graph);
-		return (ft_print_error(res));
-	}
-	ft_convert_graph(&graph);
-	if (!graph->pash_count)
-	{
-		ft_clear_all(&memory, &graph);
-		return (ft_print_error(-13));
-	}
-	res = ft_find_path(graph, &path_list);
-	ft_print_path(path_list, graph, res, &memory);
-	ft_del_graph(&graph);
-	ft_memdel((void**)&path_list);
-	return (0);
+	if ((res = ft_get_graph(graph, memory, fd)) <= 0)
+		return (ft_free_alloceted(&memory, &graph, res));
+	if (!ft_search_optimal_ways(graph))
+		return (ft_free_alloceted(&memory, &graph, -13));
+	ft_output(graph, memory);
+	return (ft_free_alloceted(&memory, &graph, 0));
 }

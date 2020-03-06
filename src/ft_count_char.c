@@ -15,13 +15,9 @@ int	ft_count_char(char *str, char c)
 	int i;
 
 	i = 0;
-	if (!str)
-		return (0);
-	while (*str)
-	{
-		if (*str == c)
-			i++;
-		str++;
-	}
+	if (str)
+		while (*str)
+			if (*str++ == c)
+				i++;
 	return (i);
 }

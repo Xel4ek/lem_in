@@ -86,7 +86,7 @@ int main()
 		printf(" %d(%d) |", flow, nflow);
 		printf(" %d(%d) |", oprient, noprient);
 //		printf(" %d%d(%d%d) |\n|", (cost>>1) &1 ,cost &1, (ncost>>1) &1,ncost &1 );
-		printf(" %2d(%2d) |\n|", cost ,ncost );
+		printf(" %2d(%2d) |\n", cost ,ncost );
 	}
 	printf("*\t|-------|------|------|--------|\n");
 

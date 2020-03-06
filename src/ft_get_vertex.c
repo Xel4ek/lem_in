@@ -124,7 +124,7 @@ static int ft_vertex_validate(char *src, char *name, char *point)
 }
 
 static int
-ft_get_new_vertex_2(t_graph *graph, t_mem *mem, int id, t_set **vset, t_set **coords)
+ft_get_new_vertex(t_graph *graph, t_mem *mem, int id, t_set **vset, t_set **coords)
 {
 	t_vertex	*vertex;
 	char		name[mem->endl - mem->current];
@@ -149,7 +149,7 @@ ft_get_new_vertex_2(t_graph *graph, t_mem *mem, int id, t_set **vset, t_set **co
 }
 
 static int
-ft_get_start_end_2(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
+ft_get_start_end(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
 {
 	int status;
 
@@ -163,12 +163,12 @@ ft_get_start_end_2(t_graph *graph, t_mem *mem, t_set **vset, t_set **coords)
 		return (-7);
 	if (!ft_get_next_pointer(mem))
 		return (-8);
-	status = ft_get_new_vertex_2(graph, mem, status, vset, coords);
+	status = ft_get_new_vertex(graph, mem, status, vset, coords);
 	status = (status < 0) ? -8 : status;
 	return (status);
 }
 
-int	ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset)
+int	ft_get_vertex(t_graph *graph, t_mem *mem, t_set **vset)
 {
 	t_set *coords;
 	int id;
@@ -183,11 +183,11 @@ int	ft_get_vertex_2(t_graph *graph, t_mem *mem, t_set **vset)
 		err = 1;
 		if (mem->current[0] != '#')
 		{
-			err = ft_get_new_vertex_2(graph, mem, id, vset, &coords);
+			err = ft_get_new_vertex(graph, mem, id, vset, &coords);
 			id += 2;
 		}
 		else if (mem->current[1] == '#')
-			err = ft_get_start_end_2(graph, mem, vset, &coords);
+			err = ft_get_start_end(graph, mem, vset, &coords);
 		if (err <= 0)
 			break ;
 	}

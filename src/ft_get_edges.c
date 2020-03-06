@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-//static int ft_clear_all(t_hash_old **edge_hash, int res)
+//static int ft_free_alloceted(t_hash_old **edge_hash, int res)
 //{
 //	ft_delete_edge_hash(edge_hash, res);
 //	return (res);
@@ -50,15 +50,15 @@
 //		{
 //			if (ft_count_char(mem->current, '-') != 1 || \
 //				ft_count_char(mem->current, ' ') > 0)
-//				return (ft_clear_all(ehash, -11));
+//				return (ft_free_alloceted(ehash, -11));
 //			e_names = ft_get_names(mem->current);
 //			if ((res = ft_check_n_add_edge(&e_names, ehash, htab)) <= 0)
-//				return (ft_clear_all(ehash, res));
+//				return (ft_free_alloceted(ehash, res));
 //		}
 //		else if (mem->current[1] != '#')
 //			;
 //		else if (!ft_strcmp(START, mem->current) || !ft_strcmp(END, mem->current))
-//			return (ft_clear_all(ehash, -8));
+//			return (ft_free_alloceted(ehash, -8));
 //		ft_get_next_pointer(mem);
 //	}
 //	return (ft_delete_edge_hash(ehash, 1));
@@ -92,7 +92,7 @@ static int 		ft_get_new_edge(t_mem *mem, t_set *vset)
 }
 
 
-int				ft_get_edges_2(t_mem *mem, t_set *vset)
+int				ft_get_edges(t_mem *mem, t_set *vset)
 {
 	int	res;
 

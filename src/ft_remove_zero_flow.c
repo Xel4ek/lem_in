@@ -13,7 +13,7 @@
 #include "lem_in.h"
 #include "libft.h"
 
-void ft_remove_zero_flow(t_graph *graph)
+static void ft_remove_zero_flow_edges(t_graph *graph)
 {
 	int i;
 	int j;
@@ -31,6 +31,12 @@ void ft_remove_zero_flow(t_graph *graph)
 				vertex->edge_out_list = vertex->edge_out_list->next;
 		graph->vertex_list = graph->vertex_list->next;
 	}
+}
+
+void ft_remove_zero_flow_vertex(t_graph *graph)
+{
+	int i;
+
 	i = graph->vertex_count;
 	while (i--)
 		if (!((t_vertex *) graph->vertex_list->content)->edge_out_list &&
@@ -39,4 +45,10 @@ void ft_remove_zero_flow(t_graph *graph)
 							 (t_vertex **) &graph->vertex_list->content);
 		else
 			graph->vertex_list = graph->vertex_list->next;
+}
+
+void ft_remove_zero_flow(t_graph *graph)
+{
+	ft_remove_zero_flow_edges(graph);
+	ft_remove_zero_flow_vertex(graph);
 }
