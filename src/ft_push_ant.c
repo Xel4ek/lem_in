@@ -13,44 +13,42 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static void ft_print_path(t_vertex *head)
+static void	ft_print_path(t_vertex *head, t_vertex *source)
 {
-	char *name;
-	int *cur_id;
+	char	*name;
+	int		*cur_id;
+
 	if (head->ant_id)
-		ft_printf("L%d-%s ", head->ant_id,
-				  (*(t_edge **) head->edge_in_list->content)->start->name);
-	while (head->id != 0)
+		ft_printf("L%d-%s ", head->ant_id, \
+		(*(t_edge **)head->edge_in_list->content)->start->name);
+	while (head != source)
 	{
 		name = head->name;
 		cur_id = &head->ant_id;
-		head = (*(t_edge **) head->edge_out_list->content)->end;
-		head = (*(t_edge **) head->edge_out_list->content)->end;
+		head = (*(t_edge **)head->edge_out_list->content)->end;
+		head = (*(t_edge **)head->edge_out_list->content)->end;
 		if (head->ant_id)
 			ft_printf("L%d-%s ", head->ant_id, name);
 		*cur_id = head->ant_id;
 	}
-
 }
 
-void ft_push_ant(t_list *path_list, t_graph *graph, int *id)
+void		ft_push_ant(t_path *path_list, t_graph *graph, int *id)
 {
-	size_t len;
-	t_vertex *vertex;
+	size_t		len;
+	t_vertex	*vertex;
 
-	len = ft_lstdlen(path_list);
+	len = graph->pash_count;
 	while (len--)
 	{
-		vertex = (t_vertex *) ((t_path *) path_list->content)->head;
-		if (((t_path *) path_list->content)->ant_count &&
-			graph->ants_count >= *id)
+		vertex = (t_vertex *)path_list[len].head;
+		if (path_list[len].ant_count && graph->ants_count >= *id)
 		{
 			graph->source->ant_id = ++(*id);
-			(((t_path *) path_list->content)->ant_count)--;
+			path_list[len].ant_count--;
 		}
 		else
 			graph->source->ant_id = 0;
-		ft_print_path(vertex);
-		path_list = path_list->next;
+		ft_print_path(vertex, graph->source);
 	}
 }

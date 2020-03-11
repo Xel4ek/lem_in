@@ -13,34 +13,35 @@
 #include "lem_in.h"
 #include "libft.h"
 
-static int	ft_test_push_ants(const int *len, int size, int ant_count)
+static size_t	ft_test_push_ants(const int *len, int size, int ant_count)
 {
-	int	i;
-	int	price;
-	int	sended_ants;
+	int		i;
+	size_t	price;
+	size_t	sended_ants;
 
 	i = 0;
 	price = 0;
 	sended_ants = 0;
-	while (ant_count > sended_ants && ++i < size)
+	while ((size_t)ant_count > sended_ants && ++i < size)
 	{
 		sended_ants += (len[i] - len[i - 1]) * i;
 		price += (len[i] - len[i - 1]);
 	}
-	price += ft_ceil((double)(ant_count - sended_ants) / (double)i);
-	price += len[0];
+	price += (size_t)ft_ceil_ll((double)(ant_count - sended_ants) / (double)i);
+	price += (size_t)len[0];
 	return (price);
 }
 
-int			ft_accept_path(t_graph *graph)
+int				ft_accept_path(t_graph *graph)
 {
-	int		len[graph->pash_count];
+	int		*len;
 	int		count;
-	int		index;
-	int		steps;
+	size_t	index;
 	t_list	*list;
 
 	index = 0;
+	if (!(len = (int*)malloc(sizeof(*len) * graph->pash_count)))
+		return (0);
 	list = graph->sink->edge_out_list;
 	count = ft_lstdlen(graph->sink->edge_out_list);
 	while (count--)
@@ -51,9 +52,10 @@ int			ft_accept_path(t_graph *graph)
 		list = list->next;
 	}
 	ft_quick_sort(len, len + graph->pash_count - 1);
-	steps = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
-	if (steps > graph->path_lenght)
+	index = ft_test_push_ants(len, graph->pash_count, graph->ants_count);
+	ft_memdel((void**)&len);
+	if (index > graph->path_lenght)
 		return (0);
-	graph->path_lenght = steps;
+	graph->path_lenght = index;
 	return (1);
 }

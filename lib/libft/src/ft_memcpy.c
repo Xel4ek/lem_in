@@ -14,31 +14,28 @@
 
 void	*ft_memcpy(void *const dst, const void *src, size_t n)
 {
-	unsigned long int			*dst_ptr;
-	unsigned long int			*src_ptr;
+	size_t			*dst_ptr;
+	size_t			*src_ptr;
 	unsigned char	*dst_ptr_char;
 	unsigned char	*src_ptr_char;
-	size_t			long_len;
 
-	long_len = sizeof(unsigned long int);
 	if (!(n++) || dst == src)
 		return (dst);
 	dst_ptr_char = (unsigned char*)dst;
-	while (--n && ((unsigned long int) dst_ptr_char & (sizeof(unsigned long int) - 1)))
+	while (--n && ((size_t)dst_ptr_char & 7u))
 		*dst_ptr_char++ = *(unsigned char*)src++;
-	dst_ptr = (unsigned long int*)dst_ptr_char;
-	src_ptr = (unsigned long int*)src;
-	while (n > long_len - 1)
+	dst_ptr = (size_t*)dst_ptr_char;
+	src_ptr = (size_t*)src;
+	while (n > 7u)
 	{
 		*dst_ptr++ = *src_ptr++;
-		n -= long_len;
+		n -= 8u;
 	}
-	if (n)
-	{
-		dst_ptr_char = (unsigned char*)dst_ptr;
-		src_ptr_char = (unsigned char*)src_ptr;
-		while (n--)
-			*dst_ptr_char++ = *src_ptr_char++;
-	}
+	if (!n)
+		return (dst);
+	dst_ptr_char = (unsigned char*)dst_ptr;
+	src_ptr_char = (unsigned char*)src_ptr;
+	while (n--)
+		*dst_ptr_char++ = *src_ptr_char++;
 	return (dst);
 }

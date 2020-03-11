@@ -1,1 +1,0 @@
-/usr/bin/clang -O3 -DNDEBUG   CMakeFiles/test_str_len.dir/test_str_len.c.o  -o test_str_len lib/libft/liblibft.a 

@@ -10,20 +10,33 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <ft_printf.h>
 #include "lem_in.h"
 
-int ft_set_ant_to_pash(int total_ant, t_list *path_list)
+long int	ft_set_ant_to_pash(size_t total_ant, t_path *path_list, \
+			int pash_count)
 {
-	t_path *path;
-	int min_path;
+	int			i;
+	long int	price;
+	size_t		sended_ants;
 
-	min_path = -1;
-	while (total_ant--)
+	price = 0;
+	sended_ants = 0;
+	i = 0;
+	while (total_ant > sended_ants && ++i < pash_count)
 	{
-		path = ft_find_shortest_path(path_list);
-		if (min_path == -1)
-			min_path = path->price;
-		ft_add_ant(path);
+		sended_ants += (path_list[i].price - path_list[i - 1].price) * i;
+		price += (path_list[i].price - path_list[i - 1].price);
 	}
-	return (min_path);
+	price += ft_ceil_ll((double)(total_ant - sended_ants) / (double)i);
+	price += path_list[0].price;
+	sended_ants = 0;
+	while (i--)
+	{
+		path_list[i].ant_count = price - path_list[i].price;
+		sended_ants += path_list[i].ant_count;
+	}
+	while (sended_ants-- != total_ant)
+		path_list[++i].ant_count--;
+	return (price);
 }

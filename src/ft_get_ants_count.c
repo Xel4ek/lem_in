@@ -19,9 +19,8 @@ int	ft_get_ants_count(t_mem *mem)
 
 	while (ft_get_next_pointer(mem) && mem->current[0] == '#')
 	{
-		if  (!ft_strcmp(START, mem->current) || !ft_strcmp(END, mem->current))
+		if (!ft_strcmp(START, mem->current) || !ft_strcmp(END, mem->current))
 			return (-8);
-		ft_get_next_pointer(mem);
 	}
 	if (!(mem->current[0]))
 		return (-1);

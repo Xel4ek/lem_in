@@ -70,7 +70,7 @@ void	ft_dtoa_helper(t_param *param, int max_len, uintmax_t mantissa,
 	i = BASE_NBR_LEN + (power > 0 ? power : 0);
 	while (i--)
 	{
-		str[i] = (char) (mantissa % 10);
+		str[i] = (char)(mantissa % 10);
 		mantissa /= 10;
 	}
 	calculate_number(str, max_len, exponent);
@@ -89,7 +89,7 @@ int		ft_dtoa(long double nbr, t_param *param)
 		param->precision = DEFAULT_PRECISION;
 	ft_memcpy(&mantissa, &nbr, sizeof(mantissa));
 	ft_memcpy(&exponent, (void *)(&nbr) + sizeof(mantissa), sizeof(exponent));
-	param->sign = (char) (((unsigned)exponent & 0x8000u) >> 15u);
+	param->sign = (char)(((unsigned)exponent & 0x8000u) >> 15u);
 	exponent &= 0x7fffu;
 	i = (int)(exponent) - (int)(1u << 14u) - 62;
 	power = BASE_NBR_LEN + ft_ceil(((double)i) * LOG2) - 6;

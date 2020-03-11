@@ -6,7 +6,7 @@
 /*   By: hwolf <hwolf@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/03/03 18:54:36 by hwolf             #+#    #+#             */
-/*   Updated: 2020/03/03 18:54:55 by ayooden          ###   ########.fr       */
+/*   Updated: 2020/03/06 19:28:15 by ayooden          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,87 +16,74 @@
 #include <unistd.h>
 #include <fcntl.h>
 
-static void	ft_clear_all(t_mem **mem, t_graph **graph)
+static int	ft_init(t_mem **memory, t_graph **graph)
 {
-	if (!mem && !(*mem))
+	if (!(*memory = ft_init_memory()))
+		return (0);
+	if (!(*graph = ft_init_graph()))
+	{
+		ft_memdel((void **)&(*memory)->head);
+		ft_memdel((void **)memory);
+		return (0);
+	}
+	return (1);
+}
+
+static int	ft_free_alloceted(t_mem **mem, t_graph **graph, int err)
+{
+	if (mem && *mem)
 	{
 		ft_memdel((void **)&(*mem)->head);
 		ft_memdel((void **)mem);
 	}
-	if (!graph && !*graph)
+	if (graph)
 		ft_del_graph(graph);
+	if (err < 0)
+		ft_print_error(err);
+	return (0);
 }
 
-static void	ft_convert_graph(t_graph **graph)
+static int	ft_search_optimal_ways(t_graph *graph)
 {
 	ft_convert_graph_to_oriented(graph);
-	(*graph)->vertex_count = ft_lstdlen((*graph)->vertex_list);
-	(*graph)->path_lenght = (*graph)->vertex_count + (*graph)->ants_count + 1;
-	while (ft_min_cost_flow((*graph)))
+	while (ft_min_cost_flow(graph))
 		;
-}
-
-static int	ft_find_path(t_graph *graph, t_list **path_list)
-{
-	int	tail;
-	int	pash_count;
-
 	ft_remove_zero_flow(graph);
-	*path_list = ft_new_path_list(graph);
-	ft_set_ant_to_pash(graph->ants_count, *path_list);
-	tail = 0;
-	pash_count = ft_lstdlen(*path_list);
-	while (pash_count--)
-	{
-		if (tail < ((t_path *)(*path_list)->content)->price && \
-			tail < ((t_path *)(*path_list)->content)->ant_count)
-			tail = ((t_path *)(*path_list)->content)->price;
-		*path_list = (*path_list)->next;
-	}
-	return (tail);
+	return (graph->pash_count);
 }
 
-static void	ft_print_path(t_list *path_list, t_graph *graph, int tail, \
-			t_mem **mem)
+static void	ft_output(t_graph *graph, t_mem *memory)
 {
-	int	temp;
-	int	id;
+	t_path		*path_list;
+	long int	tail;
+	int			id;
 
 	id = 0;
-	temp = tail;
-	ft_print_mem(mem);
-	while (temp--)
+	path_list = ft_new_path_list(graph);
+	tail = ft_set_ant_to_pash(graph->ants_count, path_list, graph->pash_count);
+	ft_printf("%s\n", memory->head);
+	while (tail--)
 	{
 		ft_push_ant(path_list, graph, &id);
 		ft_printf("\n");
 	}
+	ft_memdel((void**)&path_list);
 }
 
 int			main(void)
 {
 	t_graph	*graph;
-	t_list	*path_list;
-	int		fd;
 	t_mem	*memory;
+	int		fd;
 	int		res;
 
-	fd = 0;
-	if (!(memory = ft_init_memory()))
+	fd = STDIN_FILENO;
+	if (!(ft_init(&memory, &graph)))
 		return (0);
-	if ((res = ft_get_graph(&graph, memory, fd)) <= 0)
-	{
-		ft_clear_all(&memory, &graph);
-		return (ft_print_error(res));
-	}
-	ft_convert_graph(&graph);
-	if (!graph->pash_count)
-	{
-		ft_clear_all(&memory, &graph);
-		return (ft_print_error(-13));
-	}
-	res = ft_find_path(graph, &path_list);
-	ft_print_path(path_list, graph, res, &memory);
-	ft_del_graph(&graph);
-	ft_lstd_del(&path_list);
-	return (0);
+	if ((res = ft_get_graph(graph, memory, fd)) <= 0)
+		return (ft_free_alloceted(&memory, &graph, res));
+	if (!ft_search_optimal_ways(graph))
+		return (ft_free_alloceted(&memory, &graph, -13));
+	ft_output(graph, memory);
+	return (ft_free_alloceted(&memory, &graph, 0));
 }

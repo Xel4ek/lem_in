@@ -12,21 +12,56 @@
 
 #include "libft.h"
 
-unsigned int	ft_hash(const char *string, unsigned int size)
+unsigned int	ft_hash_old(const char *string, \
+				unsigned int size)
 {
-	unsigned int hash;
+	unsigned long int	hash;
 
 	hash = 0;
 	if (string)
 		while (*string)
-			hash = hash * 13 + *string++ - 32 + 1;
+			hash = hash * 53 + *string++ - 31;
 	return (hash % size);
+}
+
+t_hash			ft_hash(const char *string, unsigned int size)
+{
+	t_hash				hash;
+	unsigned long int	key;
+
+	key = 0;
+	hash.value = (void*)string;
+	if (string)
+		while (*string)
+			key = key * 53 + *string++ - 31;
+	hash.key = key;
+	hash.index = key % size;
+	hash.next = NULL;
+	return (hash);
+}
+
+void			ft_hash_destroy(t_hash **hashtab, size_t size)
+{
+	t_hash	*hash;
+	t_hash	*keep;
+
+	while (size--)
+	{
+		hash = ((*hashtab) + size)->next;
+		while (hash)
+		{
+			keep = hash->next;
+			ft_memdel((void**)&hash);
+			hash = keep;
+		}
+	}
+	ft_memdel((void**)hashtab);
 }
 
 unsigned int	ft_hash_int(const int *tab,
 			unsigned int len, const unsigned int size)
 {
-	unsigned int hash;
+	unsigned int	hash;
 
 	hash = 0;
 	if (tab)

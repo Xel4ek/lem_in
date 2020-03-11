@@ -35,7 +35,7 @@ char	*ft_strjoin_free_first(char **s1, char const *s2)
 {
 	char	*ptr;
 	char	*temp_ptr;
-	size_t		len;
+	size_t	len;
 
 	if (s1 && s2 && *s1)
 	{
@@ -54,7 +54,7 @@ char	*ft_strjoin_free_second(char const *s1, char **s2)
 {
 	char	*ptr;
 	char	*temp_ptr;
-	size_t		len;
+	size_t	len;
 
 	if (s1 && s2 && *s2)
 	{
