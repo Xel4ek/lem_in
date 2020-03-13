@@ -73,9 +73,9 @@ void		ft_lstditer_two(t_list *list1, t_list *list2,
 		while (i < size)
 		{
 			ft_apply_funcion(&list1, i < len1, (*f));
-			ft_printf("\t");
+//			ft_printf("\t");
 			ft_apply_funcion(&list2, i < len2, (*f));
-			ft_printf("\n");
+//			ft_printf("\n");
 			i++;
 		}
 	}

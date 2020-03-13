@@ -23,8 +23,6 @@
 # define MAX_FD 1024
 # define BUFF_SIZE 1024
 
-int				ft_printf(const char *format, ...);
-int				ft_printf_fd(const int fd, const char *format, ...);
 void			ft_striter(char *s, void (*f)(char *));
 int				ft_strcmp(const char *s1, const char *s2);
 void			ft_strclr(char *s);

@@ -95,33 +95,34 @@ SRC =	ft_atoi_base.c \
         ft_max.c \
         ft_abs.c \
         ft_min.c \
-        ft_printf_src/apply_flags.c \
-        ft_printf_src/data.c \
-        ft_printf_src/e_double.c \
-        ft_printf_src/e_double_tool.c \
-        ft_printf_src/f_double.c \
-        ft_printf_src/ft_printf.c \
-        ft_printf_src/int_funcions.c \
-        ft_printf_src/parse.c \
-        ft_printf_src/parse_tool.c \
-        ft_printf_src/print_tool.c \
-        ft_printf_src/string_tool.c \
-        ft_printf_src/tools.c \
-        ft_new_heap.c \
-        ft_heap_add.c \
-        ft_pop_min_heap.c \
-        ft_heap_merge.c \
-        fast_get_next_line.c \
-        ft_hash_tab.c \
-        ft_set.c \
-        ft_set_2.c
+		ft_new_heap.c \
+		ft_heap_add.c \
+		ft_pop_min_heap.c \
+		ft_heap_merge.c \
+		fast_get_next_line.c \
+		ft_hash_tab.c \
+		ft_set.c \
+		ft_set_2.c
+#        ft_printf_src/apply_flags.c \
+#        ft_printf_src/data.c \
+#        ft_printf_src/e_double.c \
+#        ft_printf_src/e_double_tool.c \
+#        ft_printf_src/f_double.c \
+#        ft_printf_src/ft_printf.c \
+#        ft_printf_src/int_funcions.c \
+#        ft_printf_src/parse.c \
+#        ft_printf_src/parse_tool.c \
+#        ft_printf_src/print_tool.c \
+#        ft_printf_src/string_tool.c \
+#        ft_printf_src/tools.c \
+
 
 
 SRCDIR = src
 OBJDIR = obj
 HEADERS = includes
 OBJ = $(addprefix $(OBJDIR)/,$(SRC:.c=.o))
-HEADER  = libft.h ft_printf.h libft_structs.h
+HEADER  = libft.h libft_structs.h
 
 
 .PHONY: all clean fclean re help
@@ -146,7 +147,6 @@ re: fclean  all
 
 $(OBJDIR):
 	@mkdir -p $(OBJDIR)
-	@mkdir -p $(OBJDIR)/ft_printf_src
 
 $(OBJ): $(OBJDIR)/%.o: $(SRCDIR)/%.c $(addprefix $(HEADERS)/, $(HEADER))
 	$(CC) $(CFLAGS) -I$(HEADERS) -o $@ -c $<

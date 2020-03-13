@@ -49,17 +49,17 @@ OBJDIR          =   obj
 
 OBJ				=	$(SRC:.c=.o)
 
-LIBFTDIR		=	lib/libft/
+LIBFTDIR		=	lib/libft/ lib/ft_printf/
 
-INCL			=	-Iincludes/ -I$(LIBFTDIR)includes
+INCL			=	-Iincludes/ -Ilib/libft/includes -Ilib/ft_printf/includes
 
 CFLAGS			=	-Wall -Werror -Wextra
 
 NAME			=	lem-in
 
-LFTFLAG			=	-L$(LIBFTDIR) -lft
+LFTFLAG			=	-Llib/libft/ -Llib/ft_printf/ -lft -lftprintf
 
-LFT				=	$(LIBFTDIR)libft.a
+LFT				=	lib/libft/libft.a lib/ft_printf/libftprintf.a
 
 DEPS			=	includes/lem_in.h
 
