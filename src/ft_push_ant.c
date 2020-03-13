@@ -12,6 +12,7 @@
 
 #include "lem_in.h"
 #include "libft.h"
+#include "ft_printf.h"
 
 static void	ft_print_path(t_vertex *head, t_vertex *source)
 {

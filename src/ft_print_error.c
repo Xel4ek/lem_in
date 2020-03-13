@@ -12,6 +12,7 @@
 
 #include <unistd.h>
 #include "libft.h"
+#include "ft_printf.h"
 
 static int	ft_print_error_2(long int error_code)
 {

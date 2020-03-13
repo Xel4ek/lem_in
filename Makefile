@@ -59,7 +59,7 @@ NAME			=	lem-in
 
 LFTFLAG			=	-Llib/libft/ -Llib/ft_printf/ -lft -lftprintf
 
-LFT				=	lib/libft/libft.a lib/ft_printf/libftprintf.a
+LFT			=	lib/ft_printf/libftprintf.a lib/libft/libft.a
 
 DEPS			=	includes/lem_in.h
 
