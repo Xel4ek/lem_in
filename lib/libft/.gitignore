@@ -1,0 +1,3 @@
+#ignore all obgect and library files
+*.o
+*.a
