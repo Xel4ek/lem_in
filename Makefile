@@ -33,7 +33,6 @@ SRC				=   src/ft_add_edge.c \
                     src/ft_get_valid_nbr.c \
                     src/ft_get_next_pointer.c \
                     src/ft_init_graph.c \
-                    src/ft_init_memory.c \
                     src/ft_print_error.c \
                     src/ft_new_path_list.c \
                     src/ft_accept_path.c \

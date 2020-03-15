@@ -16,7 +16,7 @@
 # include <libft_structs.h>
 # define START "##start"
 # define END "##end"
-# define START_MEMORY_SIZE 1024
+
 
 enum				e_color
 {
@@ -71,7 +71,6 @@ int					ft_char_in_str(char *str, char c);
 int					ft_get_valid_nbr(const char *str);
 int					ft_get_next_pointer(t_mem *mem);
 t_graph				*ft_init_graph(void);
-t_mem				*ft_init_memory(void);
 int					ft_print_error(long int error_code);
 void				ft_set_edge(t_edge *edge, t_vertex *start, t_vertex *end, \
 					unsigned int param);
